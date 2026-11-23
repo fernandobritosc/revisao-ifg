@@ -1,0 +1,738 @@
+{
+  "schema_version": "1.1.0",
+  "id": "arquivologia-aula-01",
+  "materia": "Arquivologia",
+  "numero": 1,
+  "titulo": "Classificação de documentos",
+  "resumo": "Documento como suporte e informação, classificação por gênero, espécie, tipo e categoria, natureza do assunto, forma (tradição documental), formato, diplomática e tipologia, além da Lei nº 8.159/1991 e dos graus de sigilo da LAI. Inclui três pegadinhas de banca e um quiz de seis questões.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "arquivologia",
+    "classificacao-documental",
+    "genero-documental",
+    "lai",
+    "aula-01"
+  ],
+  "fontes": [
+    {
+      "id": "lei-8159",
+      "tipo": "norma",
+      "titulo": "Lei nº 8.159/1991",
+      "detalhes": "Art. 8º: idades dos arquivos (corrente, intermediário e permanente)."
+    },
+    {
+      "id": "lai-12527",
+      "tipo": "norma",
+      "titulo": "Lei nº 12.527/2011 (LAI)",
+      "detalhes": "Art. 3º e art. 4º: publicidade como preceito, graus de sigilo e prazos de 25, 15 e 5 anos."
+    },
+    {
+      "id": "conarq-1995",
+      "tipo": "norma",
+      "titulo": "Resolução CONARQ nº 01/1995",
+      "detalhes": "Art. 1º: obrigatoriedade de organização dos arquivos correntes pelos órgãos do SINAR."
+    },
+    {
+      "id": "bellotto",
+      "tipo": "livro",
+      "titulo": "Obras de Maria Ligia Bellotto citadas na aula",
+      "detalhes": "Categorias documentais, tipologia e análise documental; o título exato não foi identificado no resumo legado."
+    },
+    {
+      "id": "curso-arc-01",
+      "tipo": "curso",
+      "titulo": "Arquivologia — Aula 01: Classificação",
+      "detalhes": "Material do acervo legado; base do resumo e das seis questões do quiz."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "conceito-de-documento",
+      "numero": 1,
+      "titulo": "Conceito de documento e seus elementos",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Documento (DBTA, 2005)** — \"unidades de registro de informações, **qualquer que seja o suporte ou formato**\"",
+            "**Fórmula de prova** — Documento = Suporte + Informação; o formato é apenas a **característica de apresentação**",
+            "**Informação (DBTA)** — \"elemento referencial, noção, ideia ou **mensagem contida** em um documento\" — o significado que o suporte carrega",
+            "**Suporte (DBTA)** — \"material no qual são **registradas as informações**\": papel, microfilme, CD, DVD, pendrive, disco magnético, fita magnética, filme de nitrato, papiro, pergaminho, argila",
+            "**Formato (DBTA)** — \"conjunto das **características físicas de apresentação**, das técnicas de registro e da estrutura da informação e conteúdo\": livro, caderno, mapa, planta, cartaz, rolo de filme, folha"
+          ],
+          "titulo": "A definição e a fórmula central",
+          "id": "conceito-de-documento-a-definicao-e-a-formula"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**CIA (Conselho Internacional de Arquivos)** — informação registrada, independente de forma ou suporte, **produzida ou recebida no decorrer da atividade** de uma instituição ou pessoa, com **conteúdo, contexto e estrutura** suficientes para **servir de evidência** dessa atividade",
+            "**Bernardes e Delatorre** — produzidos, recebidos ou acumulados **organicamente** no exercício de funções e atividades do órgão/empresa e **já nascem com valor probatório**: (1) testemunham o exercício de uma função/atividade; (2) podem assegurar **direitos individuais ou coletivos**",
+            "**Características diplomáticas (e-ARQ/Conarq)** — o simples registro de ações não basta; é preciso cumprir: **ação, forma fixa, conteúdo estável, relação orgânica, pessoas e contexto identificáveis** — sem todas elas, o documento é apenas **\"potencialmente arquivístico\"**",
+            "**Bellotto** — \"qualquer elemento gráfico, iconográfico, plástico ou fônico pelo qual o homem se expressa\"; tudo produzido por motivos funcionais, jurídicos, científicos, técnicos ou artísticos é documento",
+            "⚠️ **Teste prático:** a **fotografia** vira documento arquivístico quando serve de **referência/prova** em um processo — colada em mural, cartão-postal ou no antiquário, não passa no teste (é o vínculo com a atividade que conta, não o suporte)."
+          ],
+          "titulo": "O que transforma um documento em documento de ARQUIVO",
+          "id": "conceito-de-documento-o-que-transforma-um-docu"
+        },
+        {
+          "tipo": "gotcha",
+          "titulo": "Pegadinha da banca",
+          "texto": "São **dois dicionários diferentes**: o **DTA (1996)** e o **DBTA (2005)**, que nasceu para \"uniformizar, definir e aprovar uma única terminologia arquivística no país\". A NOBRADE adota as definições de **espécie e tipo** do DBTA. A banca cobras as duas fontes — identifique qual está no enunciado antes de responder.",
+          "id": "conceito-de-documento-pegadinha-da-banca"
+        }
+      ],
+      "subtitulo": "Documento = Suporte + Informação — a fórmula mais cobrada da matéria"
+    },
+    {
+      "id": "classificacao-por-genero",
+      "numero": 2,
+      "titulo": "Classificação por gênero",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Gênero (DBTA)** — \"reunião de espécies documentais que se assemelham por seus caracteres essenciais, particularmente o **suporte e o formato**, e que exigem **processamento técnico específico** e, por vezes, **mediação técnica para acesso**\"",
+            "**Gênero (DTA, 1996)** — \"configuração que assume um documento de acordo com o **sistema de signos** utilizado na comunicação de seu conteúdo\"",
+            "**Fonte da lista** — Leite Paes: os documentos classificam-se por gênero e por natureza do assunto conforme **características, forma e conteúdo**"
+          ],
+          "titulo": "O que define o gênero — 2 definições cobradas",
+          "id": "classificacao-por-genero-o-que-define-o-genero"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Gênero (Leite Paes)",
+            "Característica + exemplos"
+          ],
+          "linhas": [
+            [
+              "**Escritos ou textuais**",
+              "Manuscritos, datilografados ou impressos: contratos, folhas de pagamento, requisições, atas, regulamentos, correspondências"
+            ],
+            [
+              "**Cartográficos**",
+              "Representações geográficas, arquitetônicas ou de engenharia, em formatos e dimensões variáveis: **mapas, plantas, perfis**, fotografias aéreas"
+            ],
+            [
+              "**Iconográficos**",
+              "**Imagens estáticas** em suportes sintéticos (papel emulsionado ou não): fotografias, diapositivos, desenhos, gravuras"
+            ],
+            [
+              "**Filmográficos**",
+              "**Imagens em movimento** (com ou sem som): películas cinematográficas e fitas magnéticas de imagem (tapes)"
+            ],
+            [
+              "**Sonoros**",
+              "**Registros fonográficos**, em dimensões e rotações variáveis: discos e fitas audiomagnéticas"
+            ],
+            [
+              "**Micrográficos**",
+              "**Suporte fílmico da microrreprodução** de imagens, por técnicas específicas: rolo, microficha, jaqueta, cartão-janela"
+            ],
+            [
+              "**Informáticos**",
+              "Produzidos, tratados ou armazenados **em computador**: disquete, disco rígido/winchester, disco óptico"
+            ]
+          ],
+          "id": "classificacao-por-genero-o-que-define-o-genero-2"
+        },
+        {
+          "tipo": "gotcha",
+          "titulo": "Pegadinha da banca",
+          "texto": "→ **Microfilme é MICROgráfico** — não filmográfico (o que define é a microrreprodução) → **Fotografia é ICONOGRÁFICA** — imagem **estática**, nunca filmográfica → **\"Ostensivo/sigiloso\" não é gênero** — é classificação pela **natureza do assunto**",
+          "id": "classificacao-por-genero-pegadinha-da-banca"
+        }
+      ],
+      "subtitulo": "Agrupar pelo suporte e formato — e a pegadinha micrográfico × filmográfico"
+    },
+    {
+      "id": "especie-tipo-e-categoria",
+      "numero": 3,
+      "titulo": "Espécie, tipo e categoria documental",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Espécie (DBTA/NOBRADE)** — \"divisão de **gênero** documental que reúne **tipos documentais por seu formato**\" — ex.: ata, carta, boletim, certidão, declaração, decreto, filme, folheto, fotografia, memorando, ofício, planta, relatório",
+            "**Espécie (DTA, 1996)** — \"configuração que assume um documento de acordo com a **disposição e a natureza das informações** nele contidas\"",
+            "**Tipo (DBTA/NOBRADE)** — \"divisão de **espécie** documental que reúne documentos por suas **características comuns** quanto à **fórmula diplomática, natureza de conteúdo ou técnica do registro**\"",
+            "**Tipo (DTA, 1996)** — \"configuração que assume uma espécie documental, de acordo com a **atividade que a gerou**\"",
+            "**Fórmula do tipo** — Tipo = Espécie + atividade/função geradora: boletim de ocorrência, carta precatória, decreto-lei, certidão de óbito, relatório de fiscalização, laudo de perícia criminal, declaração de imposto de renda",
+            "⚠️ **Não inverter:** objeto da **Diplomática = espécie**; objeto da **Tipologia = tipo**."
+          ],
+          "titulo": "Espécie e tipo — a escada gênero → espécie → tipo",
+          "id": "especie-tipo-e-categoria-especie-e-tipo-a-esca"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Base da classificação** — Bellotto: categorias definidas \"pelas **gradações da representatividade jurídica**\" dos conteúdos; a Diplomática **acata a classificação do Direito Administrativo** para os atos",
+            "**Mapeamento de prova** — portaria = normativo (**dispositivo**); tratado = ajuste (**dispositivo**); notificação = correspondência (**dispositivo**); ata = assentamento (**testemunhal**)"
+          ],
+          "titulo": "As 6 categorias documentais (Bellotto) + os 3 grupos de Vazquez",
+          "id": "especie-tipo-e-categoria-as-6-categorias-docum"
+        }
+      ],
+      "subtitulo": "Da divisão do gênero ao enquadramento pelo conteúdo: a escada da classificação"
+    },
+    {
+      "id": "natureza-do-assunto",
+      "numero": 4,
+      "titulo": "Natureza do assunto — ostensivo × sigiloso",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Ostensivos (ordinários)** — \"aqueles cuja **divulgação não prejudica a administração**\" (Leite Paes); DBTA: \"documento **sem qualquer restrição de acesso**\" — na tramitação, a regra é o **acesso livre** (não tramita em envelope lacrado)",
+            "**Sigilosos** — \"por sua natureza, devam ser de **conhecimento restrito** e requeiram **medidas especiais de salvaguarda** para sua custódia e divulgação\"; DBTA: \"documento que pela natureza de seu conteúdo **sofre restrição de acesso**\" — tramita em **envelope lacrado**",
+            "**Obrigação normativa** — **Resolução CONARQ 01/1995, art. 1º**: os órgãos do **SINAR** devem organizar seus arquivos correntes por métodos de classificação que considerem a **natureza dos assuntos** dos documentos"
+          ],
+          "titulo": "Ostensivos × sigilosos — a definição e a norma que obriga",
+          "id": "natureza-do-assunto-ostensivos-sigilosos-a-def"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Art. 4º, III, LAI** — informação sigilosa é a submetida **temporariamente** à restrição em razão de sua **imprescindibilidade para a segurança da sociedade e do Estado**",
+            "**Art. 3º, I, LAI** — publicidade é preceito geral e sigilo é exceção: a autoridade classificadora deve usar **sempre o critério menos restritivo possível**",
+            "**Art. 24, § 2º, LAI** — informações que puderem colocar em risco a segurança do **Presidente e Vice-Presidente** (e cônjuges/filhos) → classificação **reservada**, até o término do mandato (ou do último, em caso de reeleição)",
+            "**Os 8 riscos do art. 23 (LAI)** — defesa e soberania nacional; negociações e relações internacionais; vida, segurança ou saúde da população; estabilidade financeira/econômica/monetária; planos e operações estratégicos das Forças Armadas; pesquisa e desenvolvimento científico/tecnológico e áreas de interesse estratégico; segurança de instituições e altas autoridades; atividades de inteligência, investigação ou fiscalização em andamento",
+            "⚠️ **Não existe \"confidencial\"** na classificação vigente: o **Decreto 4.553/2002** (que previa confidencial) foi **revogado pelo Decreto 7.845/2012** — a LAI deixou os 3 graus acima."
+          ],
+          "titulo": "Graus de sigilo da LAI — prazos 25/15/5",
+          "id": "natureza-do-assunto-graus-de-sigilo-da-lai-pra"
+        }
+      ],
+      "subtitulo": "Acesso livre × acesso restrito; graus e prazos da LAI"
+    },
+    {
+      "id": "forma-tradicao-documental",
+      "numero": 5,
+      "titulo": "Forma — a tradição documental",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Definição** — parte da **Diplomática** que se ocupa \"dos vários **modos de transmissão do documento** no decorrer do tempo\"; também chamada **Tradição Documental**",
+            "**Fórmula de prova** — classificar em pré-original (minuta), original ou pós-original (cópia) = classificar quanto à **FORMA** (estágio de preparação e transmissão)",
+            "**\"Ingenuidade documental\"** — o grau de **relação do documento com seu original** (matriz)"
+          ],
+          "titulo": "O que é a classificação por forma",
+          "id": "forma-tradicao-documental-o-que-e-a-classifica"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Minuta (Bellotto)** — \"escrito **preparatório e reduzido** para que, a partir dele, se confeccione o **original**\"; reúne as notas com os dados essenciais à redação definitiva — DBTA: \"**versão preliminar** de documento sujeita à aprovação\"",
+            "**Rascunho (DBTA)** — \"esboço que serve de base para a **elaboração final** de um documento\" — texto ainda sujeito a **correções e rasuras**, com supressões, acréscimos e substituições",
+            "⚠️ **Minuta não é rascunho:** a minuta é forma mais **abreviada e menos completa** do original, **sem as formas finais de validação** — distinção recorrente em prova. E no mundo digital: programa que gera documento pronto mas **ainda não assinado** produziu uma **minuta**."
+          ],
+          "titulo": "Minuta × rascunho — a dupla que a banca troca",
+          "id": "forma-tradicao-documental-minuta-rascunho-a-du"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Definição (Bellotto)** — \"feito por **direta vontade dos autores** e conservado na **matéria e forma genuínas** em que foi emitido; escrito que é um ato jurídico revestido de uma ou mais **assinaturas**\" — DBTA: documento \"**produzido pela primeira vez**\" ou \"**versão final**\"",
+            "**Os 2 caracteres do original** — (1) caráter de **primeiro, de matriz**; (2) caráter de **acabado, limpo e perfeito**; o elemento que mais o caracteriza é a **subscrição**",
+            "**Autógrafo** — possui a **assinatura do próprio emitente** (DBTA: \"manuscrito do próprio punho do autor, assinado ou não\")",
+            "**Heterógrafo** — deriva do autor, mas **não é assinado por ele** nem deriva dele materialmente",
+            "**Originais múltiplos** — original não é sinônimo de único: **circulares** (mesmo conteúdo a vários destinatários, com obrigações recíprocas) e **multiplicados** (mesmo conteúdo ao mesmo destinatário, em tempos e meios diferentes, para assegurar o recebimento)"
+          ],
+          "titulo": "Original — os 2 caracteres, autógrafo × heterógrafo e originais múltiplos",
+          "id": "forma-tradicao-documental-original-os-2-caract"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Ampliação** — reprodução do original **revestida de autenticidade**, porém com diferenciação (ex.: diploma mais rebuscado, colorido, com brasões)",
+            "**Renovação / neo original** — **substituição do original em data posterior**, para suprir sua ausência: o clássico exemplo da **segunda via** (perda, furto, roubo)",
+            "**Inserção** — inclusão do **texto completo de um ato em outro** já possuidor de individualidade própria",
+            "**Confirmação** — ato jurídico novo que **menciona documentos anteriores** que justificam e confirmam o presente (frequentemente o original já desapareceu)"
+          ],
+          "titulo": "Categorias entre o original e a cópia (não são cópias!)",
+          "id": "forma-tradicao-documental-categorias-entre-o-o"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Definição** — \"documentos **formalmente idênticos** a um original\"; finalidades: (1) **reproduzir** originais existentes; (2) **substituir** originais desaparecidos; as **autógrafas** são feitas pelo próprio autor do original",
+            "**1. Simples ou livres** — independem de controle e **não têm valor jurídico**",
+            "**2. Autorizadas** — com fé pública: **traslados** (fé notarial + força jurídica do original) e **certificadas** (validadas por autoridade civil ou eclesiástica, com mesmo efeito do original)",
+            "**3. Imitativas ou figuradas** — reproduzem exatamente os caracteres do original, mas **não têm valor legal** (moda da Idade Média); só teriam valor diplomático se baseadas no **original**, não em cópia autógrafa",
+            "**4. Códices diplomáticos** — livros-copiadores: **Registros** (cópias feitas pelo **expedidor** — documentos expedidos) × **Cartulários** (cópias feitas pelo **receptor** — correspondência recebida)",
+            "⚠️ **Quem mantém o efeito do original:** apenas as cópias **autorizadas/autenticadas** — a **autenticação** atesta que a cópia reproduz fielmente o original conforme as normas legais de validação."
+          ],
+          "titulo": "Cópia — 4 modalidades e seus efeitos",
+          "id": "forma-tradicao-documental-copia-4-modalidades"
+        }
+      ],
+      "subtitulo": "Pré-original, original e cópia: o estágio de preparação e transmissão do documento"
+    },
+    {
+      "id": "formato-e-correspondencia",
+      "numero": 6,
+      "titulo": "Formato e correspondência",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Formato (DBTA)** — \"conjunto das características **físicas de apresentação**, das técnicas de registro e da estrutura da informação e conteúdo\": livros, fichários, cadernos, apostilas, mapa, planta, cartaz, rolo de filme, folha, dispositivo",
+            "**Fita magnética é SUPORTE** — \"fita recoberta por camada magnética que armazena informações sob a forma de **sinais eletromagnéticos**\" (DBTA); dizê-la \"suporte circular plano onde se gravam sons\" é **erro** — esse seria o disco",
+            "⚠️ **Detalhe DBTA:** **anopistógrafo** = documento escrito/impresso de **um só lado**; **opistógrafo** = dos **dois lados** — distinção que \"já caiu em provas recentes\". Complementos: **papiro** tem origem **vegetal**; **pergaminho** tem origem **animal** (pele tratada; também chamado **velino**)."
+          ],
+          "titulo": "Formato — e a armadilha da fita magnética",
+          "id": "formato-e-correspondencia-formato-e-a-armadilh"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Definição (Leite Paes)** — \"toda e qualquer forma de **comunicação escrita**, produzida e destinada a pessoas jurídicas ou físicas, e vice-versa, inclusive entre órgãos e servidores de uma instituição\"; DBTA: \"comunicação escrita, **expedida (ativa) ou recebida (passiva)**\"",
+            "**Quanto ao destino e procedência** — **externa** (instituição ↔ outras entidades/pessoas: ofícios, cartas, telegramas) × **interna** (entre órgãos da mesma instituição: memorandos e despachos circulares)",
+            "**Quanto ao interesse** — **oficial** (assunto de serviço ou das atividades da instituição) × **particular** (interesse pessoal dos servidores)",
+            "⚠️ **Não inverter os critérios:** externa/interna julgam **destino e procedência**; oficial/particular julgam **interesse**. E a correspondência **continua oficial mesmo quando mantida com empresas privadas** — o que conta é o assunto de serviço."
+          ],
+          "titulo": "Correspondência — 2 classificações, critérios diferentes",
+          "id": "formato-e-correspondencia-correspondencia-2-cl"
+        }
+      ],
+      "subtitulo": "A apresentação física do documento e sua comunicação escrita"
+    },
+    {
+      "id": "diplomatica-e-tipologia",
+      "numero": 7,
+      "titulo": "Diplomática e tipologia documental",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Diplomática (DBTA)** — \"disciplina que tem como objeto o estudo da **estrutura formal** e da **autenticidade** dos documentos\" — lida com o documento de forma **isolada**, do ponto de vista **interno**",
+            "**Tipologia (Bellotto)** — \"ampliação da Diplomática na direção da **gênese documental** e de sua **contextualização** nas atribuições, competências, funções e atividades da entidade geradora\" — estuda a **lógica orgânica dos conjuntos**",
+            "**Objetos** — Diplomática analisa a **espécie**; Tipologia, o **tipo** — e a tipologia parte do princípio da **Proveniência**",
+            "**Nomes da tipologia** — pode ser chamada \"diplomática arquivística\" ou \"diplomática contemporânea\"; estudos tipológicos podem partir **da Diplomática e da Arquivística**",
+            "**Utilidade prática** — as duas análises servem às tarefas arquivísticas básicas: **classificação, avaliação e descrição**; o emprego da tipologia começou em meados dos anos 1980 (Grupo de Trabalho dos Arquivistas Municipais de **Madri**)",
+            "⚠️ **Tendência:** com a supremacia do suporte eletrônico (menos \"solenidade documental\"), já há autores que atestam a **prevalência da Tipologia** — e a maior dificuldade da diplomática aplicada a **documentos eletrônicos** é a manutenção da **autenticidade**."
+          ],
+          "titulo": "As duas disciplinas — e o quadro que separa os objetos",
+          "id": "diplomatica-e-tipologia-as-duas-disciplinas-e"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Séculos XVI-XVII** — a Diplomática nasce do **espírito crítico** diante de diplomas medievais falsos; principal usuária inicial: a **área do direito (eclesiástico)**; antes disso, até o século VI, a autenticidade era conferida pelo **local de guarda** — e o **Código Civil de Justiniano** trouxe as primeiras regras contra falsificações",
+            "**1681** — o monge **Mabillon** publica **De re diplomatica libri VI**: marca o **nascimento da Diplomática** (\"estabelecer termos e regras certos pelos quais instrumentos autênticos podem ser distinguidos dos espúrios\")",
+            "**1708** — o termo **Paleografia** aparece, em obra do monge **Bernard Montfaucon**; século XIX: a Paleografia se desenvolve como disciplina autônoma na **Ecole de Chartes de Paris**",
+            "**Diplomática × Paleografia** — Paleografia estuda a **escrita manuscrita antiga** e foca elementos **EXTRÍNSECOS** (aparência externa, escrita); Diplomática foca elementos **INTRÍNSECOS** (a ação documentada e seu contexto) — a confusão entre elas \"está enraizada na história das duas disciplinas\" (Duranti)"
+          ],
+          "titulo": "Origens — Mabillon (1681) e a História que confunde as disciplinas",
+          "id": "diplomatica-e-tipologia-origens-mabillon-1681"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Análise diplomática** — 1) **autenticidade** (espécie, conteúdo, finalidade); 2) **datação**; 3) **origem/proveniência**; 4) **transmissão/tradição documental**; 5) **fixação do texto** — e ela **independe do conjunto** documental",
+            "**Análise tipológica** — 1) **origem/proveniência**; 2) **vinculação à competência e funções** da entidade acumuladora; 3) **associação espécie ↔ tipo**; 4) **conteúdo**; 5) **datação**",
+            "**Elementos intrínsecos × extrínsecos** — intrínsecos = **conteúdo** substantivo + proveniência/função; extrínsecos = **estrutura física e forma de apresentação** (ligados ao **gênero** — sistema de signos)",
+            "**Data tópica (DBTA)** — \"elemento de identificação do **lugar de produção**\" — elemento **interno** para a diplomática (não indica ano/mês/dia nem produtor)"
+          ],
+          "titulo": "As sequências de análise (Bellotto) — decore a ordem",
+          "id": "diplomatica-e-tipologia-as-sequencias-de-anali"
+        },
+        {
+          "tipo": "gotcha",
+          "titulo": "Pegadinha da banca",
+          "texto": "→ **Não atribui graus de sigilo** (ultrassecreto, secreto, reservado) — isso é classificação de segurança → **Não ocupa-se dos elementos internos** do documento — trata do **contexto de criação**, das relações e da organicidade (elementos externos) → **É aplicável às funções de classificação e avaliação** — e vincula a espécie à sua **função/atividade** (tipologia = espécie + função, não \"gênero + espécie\") → **Não é papel de técnico de TI** propor tipologias documentais — é dos **arquivistas**/responsáveis pela administração documental → **Não é a variável mais importante na conservação** — a forma adequada de conservar depende de **suporte, formato, idade e estado de conservação**",
+          "id": "diplomatica-e-tipologia-pegadinha-da-banca"
+        }
+      ],
+      "subtitulo": "Da autenticidade dos diplomas medievais à lógica orgânica dos conjuntos"
+    },
+    {
+      "id": "dbta-aplicada",
+      "numero": 8,
+      "titulo": "DBTA aplicada a documentos",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Termo (DBTA)",
+            "Definição literal",
+            "Chave"
+          ],
+          "linhas": [
+            [
+              "**Minuta**",
+              "\"Versão preliminar de documento sujeita à aprovação\"",
+              "≠ rascunho"
+            ],
+            [
+              "**Rascunho**",
+              "\"Esboço que serve de base para a elaboração final de um documento\"",
+              "Sujeito a rasuras"
+            ],
+            [
+              "**Original**",
+              "\"Documento produzido pela primeira vez\" / \"versão final de um documento\"",
+              "Matriz + acabado"
+            ],
+            [
+              "**Cópia**",
+              "Resultado da reprodução de um documento, qualificada por função ou processo de duplicação",
+              "Pós-original"
+            ],
+            [
+              "**Autenticação**",
+              "\"Atestação de que um documento é verdadeiro ou de que uma **cópia reproduz fielmente o original**, de acordo com as normas legais de validação\"",
+              "Dá efeito de original à cópia"
+            ],
+            [
+              "**Apógrafo**",
+              "\"Cópia **manuscrita, de época**, realizada por outro que não o autor\"",
+              "Manuscrita por terceiro"
+            ],
+            [
+              "**Apócrifo**",
+              "\"Documento de **identidade não reconhecida**\"",
+              "Identidade falsa/desconhecida"
+            ],
+            [
+              "**Hológrafo**",
+              "\"Documento escrito **inteiramente pela mão de seu autor**\" — termo aplicado em especial a **testamentos**",
+              "Próprio punho + próprio autor"
+            ],
+            [
+              "**Anopistógrafo**",
+              "Documento escrito ou impresso de **um único lado**",
+              "Oposto: opistógrafo (2 lados)"
+            ],
+            [
+              "**Item documental**",
+              "\"Menor unidade documental, **intelectualmente indivisível**, integrante de dossiês ou processos\" — também chamada **peça**",
+              "Unidade mínima"
+            ],
+            [
+              "**Dossiê**",
+              "Conjunto de documentos relacionados **por assunto** (ação, evento, pessoa, lugar, projeto), que constitui **unidade de arquivamento**",
+              "≠ processo"
+            ],
+            [
+              "**Guia-fora**",
+              "\"Indicador colocado **no lugar** de uma unidade de arquivamento para assinalar sua **remoção temporária**\"",
+              "Também: fantasma/ficha-fantasma"
+            ],
+            [
+              "**Classificação**",
+              "\"Atribuição a documentos de **graus de sigilo**, conforme legislação específica\" — classificação de segurança",
+              "Não é a classificação temática"
+            ],
+            [
+              "**Desclassificação**",
+              "\"Ato pelo qual a autoridade competente **libera à consulta**, no todo ou em parte, documento anteriormente sujeito a grau de sigilo\"",
+              "Contrário de classificar"
+            ],
+            [
+              "**Dossiê de correspondência**",
+              "**Correspondência** = comunicação escrita expedida (ativa) ou recebida (passiva)",
+              "Ver seção 6"
+            ],
+            [
+              "**Paleografia**",
+              "\"Disciplina que estuda a **escrita manuscrita antiga**, suas formas e variações através do tempo\"",
+              "Extrínsecos; 1708"
+            ],
+            [
+              "**Diplomática**",
+              "\"Estudo da **estrutura formal e da autenticidade** dos documentos\"",
+              "Intrínsecos; 1681 (Mabillon)"
+            ],
+            [
+              "**Braquigrafia**",
+              "Área da Paleografia que estuda a origem, tipos e evolução das **abreviaturas**",
+              "Subárea da paleografia"
+            ],
+            [
+              "**Palimpsesto**",
+              "Pergaminho **reutilizado** mediante lavagem ou raspagem do texto anterior",
+              "Suporte reciclado"
+            ]
+          ],
+          "id": "dbta-aplicada-termo-dbta"
+        }
+      ],
+      "subtitulo": "Definições literais que a banca cobra sem contexto"
+    },
+    {
+      "id": "lei-8159-e-pontos",
+      "numero": 9,
+      "titulo": "Lei 8.159, art. 8º + pontos que mais caem",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "→ ⚠️ **Não confundir com \"ativos, de gestão e culturais\"** (ou \"ativos, temporários e elimináveis\") — o trio da lei é corrente/intermediário/permanente. Classificação paralela de **Sousa**: documentos **ativos** (corrente), **semiativos** (intermediária) e **inativos** (permanente).",
+          "titulo": "Lei 8.159/1991, art. 8º — as idades na letra da lei",
+          "id": "lei-8159-e-pontos-lei-8-159-1991-art-8o-as-ida"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Documento = suporte + informação** — o formato é só apresentação",
+            "**Gênero** — suporte + formato (micrográfico ≠ filmográfico; fotografia = iconográfico)",
+            "**Espécie** — divisão do **gênero**, pelo formato · **Tipo** — divisão da **espécie**, pela atividade geradora",
+            "**Categorias** — normativos, ajuste e correspondência = **dispositivos**; assentamento e comprobatórios = **testemunhais**; enunciativos = **informativos**",
+            "**Ostensivo × sigiloso** — natureza do **assunto**; envelope lacrado só para sigiloso",
+            "**LAI** — ultrassecreta **25**, secreta **15**, reservada **5**; \"confidencial\" foi com o **Decreto 4.553/2002** (revogado pelo 7.845/2012)",
+            "**Forma** — pré-original (minuta), original, pós-original (cópia); minuta ≠ rascunho; original não é único (circulares e multiplicados)",
+            "**Cópias autorizadas** — as únicas com efeito do original (traslados e certificadas); imitativas não têm valor legal",
+            "**Diplomática × tipologia** — espécie × tipo; isolada × orgânica; Mabillon **1681** × Montfaucon **1708**",
+            "**Intrínsecos × extrínsecos** — conteúdo × forma/gênero; data tópica = lugar de produção"
+          ],
+          "titulo": "🎯 Checklist de véspera — Aula 01",
+          "id": "lei-8159-e-pontos-checklist-de-vespera-aula-01"
+        }
+      ],
+      "subtitulo": "As 3 idades na letra da lei e o checklist de véspera"
+    },
+    {
+      "id": "incidencia-de-temas",
+      "numero": 10,
+      "titulo": "Incidência de temas (TEC)",
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "texto": "**Baixa incidência**",
+          "titulo": "📊 Contadores por tema",
+          "id": "incidencia-de-temas-contador"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Seção 3 — Espécie, tipo e categoria documental: 1",
+            "Seção 8 — DBTA aplicada a documentos: 1"
+          ],
+          "id": "incidencia-de-temas-temas"
+        }
+      ],
+      "subtitulo": "Priorize a revisão de cima para baixo — temas com mais questões primeiro"
+    }
+  ],
+  "quiz": {
+    "id": "quiz-arquivologia-aula-01",
+    "titulo": "Quiz — Classificação de documentos",
+    "instrucoes": "Escolha uma alternativa e confira a explicação em todas as opções.",
+    "questoes": [
+      {
+        "id": "q-tipo-documental",
+        "enunciado": "Certidão de óbito e laudo de perícia criminal são exemplos de:",
+        "opcoes": [
+          {
+            "texto": "Gênero documental, pois indicam o suporte da informação.",
+            "correta": false,
+            "explicacao": "Gênero = suporte + formato (textual, iconográfico...); certidão e laudo não indicam suporte."
+          },
+          {
+            "texto": "Formato documental, pois indicam a apresentação física.",
+            "correta": false,
+            "explicacao": "Formato = livro, caderno, mapa, folha; certidão e laudo não indicam apresentação física."
+          },
+          {
+            "texto": "Tipo documental, pois somam espécie + atividade geradora.",
+            "correta": true,
+            "explicacao": "Tipo = Espécie + atividade/função geradora (certidão DE óbito, laudo DE perícia)."
+          },
+          {
+            "texto": "Suporte documental, pois indicam onde a informação foi registrada.",
+            "correta": false,
+            "explicacao": "Suporte = papel, filme, meio digital; certidão e laudo não indicam material."
+          }
+        ],
+        "secao_id": "especie-tipo-e-categoria",
+        "fonte_id": "curso-arc-01"
+      },
+      {
+        "id": "q-generos-documentais",
+        "enunciado": "Sobre gêneros documentais, é correto:",
+        "opcoes": [
+          {
+            "texto": "Microfilme é documento filmográfico, pois usa suporte fílmico.",
+            "correta": false,
+            "explicacao": "Microfilme é MICROgráfico (microrreprodução); filmográfico = imagens em movimento."
+          },
+          {
+            "texto": "Fotografia é documento filmográfico, pois registra imagens.",
+            "correta": false,
+            "explicacao": "Fotografia é ICONOGRÁFICA (imagem estática); filmográfico exige movimento."
+          },
+          {
+            "texto": "'Ostensivo' e 'sigiloso' são gêneros documentais.",
+            "correta": false,
+            "explicacao": "Ostensivo/sigiloso = natureza do ASSUNTO, não gênero."
+          },
+          {
+            "texto": "Microfilme é micrográfico e fotografia é iconográfica.",
+            "correta": true,
+            "explicacao": "Micrográfico = microrreprodução em microforma; iconográfico = imagens fixas."
+          }
+        ],
+        "secao_id": "classificacao-por-genero",
+        "fonte_id": "curso-arc-01"
+      },
+      {
+        "id": "q-minuta-e-rascunho",
+        "enunciado": "Minuta e rascunho distinguem-se porque:",
+        "opcoes": [
+          {
+            "texto": "São sinônimos: ambos são a versão final do documento.",
+            "correta": false,
+            "explicacao": "Nenhum é versão final (isso é o original); e minuta ≠ rascunho."
+          },
+          {
+            "texto": "A minuta é versão preliminar sujeita a aprovação, mais abreviada e sem validação final; o rascunho é esboço ainda sujeito a correções e rasuras.",
+            "correta": true,
+            "explicacao": "Minuta = pré-original abreviado; rascunho = esboço com supressões e acréscimos."
+          },
+          {
+            "texto": "O rascunho é o pré-original e a minuta, o pós-original.",
+            "correta": false,
+            "explicacao": "Ambos são PRÉ-original (forma); pós-original é a cópia."
+          },
+          {
+            "texto": "A minuta já tem valor jurídico e o rascunho, não.",
+            "correta": false,
+            "explicacao": "Nenhum tem valor de original; só cópias autorizadas mantêm o efeito do original."
+          }
+        ],
+        "secao_id": "forma-tradicao-documental",
+        "fonte_id": "curso-arc-01"
+      },
+      {
+        "id": "q-lai-graus-de-sigilo",
+        "enunciado": "Pela LAI, os graus de sigilo e prazos máximos são:",
+        "opcoes": [
+          {
+            "texto": "Ultrassecreta 5 anos, secreta 15 anos, reservada 25 anos.",
+            "correta": false,
+            "explicacao": "Prazos invertidos: ultrassecreta 25, secreta 15, reservada 5."
+          },
+          {
+            "texto": "Confidencial 10 anos, secreta 15 anos, ultrassecreta 25 anos.",
+            "correta": false,
+            "explicacao": "'Confidencial' não existe na classificação vigente (era do Decreto 4.553/2002, revogado)."
+          },
+          {
+            "texto": "Ultrassecreta 25 anos, secreta 15 anos, reservada 5 anos.",
+            "correta": true,
+            "explicacao": "Art. 24 da LAI: 25/15/5; publicidade é a regra e o sigilo, a exceção."
+          },
+          {
+            "texto": "Reservada 25 anos, secreta 15 anos, ultrassecreta 5 anos.",
+            "correta": false,
+            "explicacao": "A ordem crescente de gravidade é reservada < secreta < ultrassecreta, com prazos 5/15/25."
+          }
+        ],
+        "secao_id": "natureza-do-assunto",
+        "fonte_id": "curso-arc-01"
+      },
+      {
+        "id": "q-diplomatica-e-tipologia",
+        "enunciado": "Diplomática e tipologia documental distinguem-se porque:",
+        "opcoes": [
+          {
+            "texto": "A diplomática estuda o tipo e a tipologia, a espécie.",
+            "correta": false,
+            "explicacao": "Invertido: diplomática = ESPÉCIE; tipologia = TIPO."
+          },
+          {
+            "texto": "Ambas partem do princípio da proveniência e estudam conjuntos.",
+            "correta": false,
+            "explicacao": "Só a tipologia parte da proveniência e vê conjuntos; a diplomática analisa o documento isolado."
+          },
+          {
+            "texto": "A diplomática analisa a espécie (documento isolado, estrutura formal) e a tipologia, o tipo (lógica orgânica dos conjuntos).",
+            "correta": true,
+            "explicacao": "Diplomática = estrutura formal e autenticidade da espécie; tipologia = espécie + função nos conjuntos."
+          },
+          {
+            "texto": "A tipologia é mais antiga, nascida com Mabillon em 1681.",
+            "correta": false,
+            "explicacao": "1681 (Mabillon) é o nascimento da DIPLOMÁTICA; a tipologia é contemporânea."
+          }
+        ],
+        "secao_id": "diplomatica-e-tipologia",
+        "fonte_id": "curso-arc-01"
+      },
+      {
+        "id": "q-forma-dos-documentos",
+        "enunciado": "Sobre a forma dos documentos (tradição documental), é correto:",
+        "opcoes": [
+          {
+            "texto": "Todo original é único: não existem originais múltiplos.",
+            "correta": false,
+            "explicacao": "Existem: circulares (vários destinatários) e multiplicados (mesmo destinatário, tempos/meios distintos)."
+          },
+          {
+            "texto": "Cópias imiativas têm o mesmo valor legal do original.",
+            "correta": false,
+            "explicacao": "Imitativas reproduzem os caracteres mas NÃO têm valor legal; só autorizadas têm efeito de original."
+          },
+          {
+            "texto": "Original = primeiro/matriz + acabado; circulares e multiplicados são originais múltiplos.",
+            "correta": true,
+            "explicacao": "Os 2 caracteres do original (matriz + acabado) convivem com a multiplicidade de vias."
+          },
+          {
+            "texto": "Segunda via por perda do original é uma cópia simples.",
+            "correta": false,
+            "explicacao": "Segunda via é RENOVAÇÃO (neo original), categoria intermediária — não cópia simples."
+          }
+        ],
+        "secao_id": "forma-tradicao-documental",
+        "fonte_id": "curso-arc-01"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Contador de temas do resumo legado",
+    "atualizado_em": "2026-11-22",
+    "temas": [
+      {
+        "nome": "Espécie, tipo e categoria documental",
+        "peso": 50,
+        "secao_ids": [
+          "especie-tipo-e-categoria"
+        ]
+      },
+      {
+        "nome": "DBTA aplicada a documentos",
+        "peso": 50,
+        "secao_ids": [
+          "dbta-aplicada"
+        ]
+      }
+    ],
+    "observacao": "Duas questões coladas, uma por tema; cada tema recebe peso 50. Não é estatística oficial da banca."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Revisar a diferença entre gênero, espécie, tipo e categoria.",
+      "Revisar os graus de sigilo e prazos da LAI.",
+      "Refazer o quiz sem consultar as explicações."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-22",
+    "atualizado_em": "2026-11-22",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Resumo publicado em Resumo_estudos/Arquivologia/Aula 01 do acervo pdfrevisao, convertido para o Hermes.",
+    "alteracoes": "Conversão do HTML legado para o contrato 1.1.0; revisão de conteúdo pendente."
+  },
+  "notas": "Migração automática: a estrutura foi extraída do HTML publicado e a redação foi preservada. O HTML legado não marca fontes por bloco, então a atribuição bloco a bloco fica pendente de revisão. A licença do material original não foi identificada, por isso NOASSERTION. O sketchnote da aula é um HTML ilustrativo (CSS), não uma imagem de conteúdo. Antes de publicar, confira o conteúdo contra a aula original."
+}

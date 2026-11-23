@@ -1,0 +1,705 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hermes:schema:aula:1.1.0",
+  "title": "Hermes — Aula",
+  "description": "Contrato de dados de uma aula/resumo do Hermes, independente de HTML, com fontes, seções, blocos, quiz, incidência e revisão.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "materia",
+    "numero",
+    "titulo",
+    "resumo",
+    "status",
+    "idioma",
+    "tags",
+    "fontes",
+    "secoes",
+    "revisao",
+    "metadados"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1.0",
+      "description": "Versão do contrato Hermes. Mudanças incompatíveis exigem nova versão."
+    },
+    "id": {
+      "$ref": "#/$defs/id",
+      "description": "Identificador estável da aula, em kebab-case."
+    },
+    "materia": {
+      "$ref": "#/$defs/nonEmptyString",
+      "description": "Nome editorial da matéria, como 'Redação Oficial'."
+    },
+    "numero": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 999,
+      "description": "Número ordinal da aula; Aula 00 usa 0."
+    },
+    "titulo": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "resumo": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 800
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "rascunho",
+        "revisao",
+        "publicado",
+        "arquivado"
+      ]
+    },
+    "idioma": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+      "description": "BCP-47, como pt-BR."
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 30,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      }
+    },
+    "fontes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "secoes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/secao"
+      }
+    },
+    "quiz": {
+      "$ref": "#/$defs/quiz"
+    },
+    "incidencia": {
+      "$ref": "#/$defs/incidencia"
+    },
+    "revisao": {
+      "$ref": "#/$defs/revisao"
+    },
+    "metadados": {
+      "$ref": "#/$defs/metadados"
+    },
+    "notas": {
+      "type": "string",
+      "maxLength": 4000,
+      "description": "Observações editoriais que não entram no conteúdo publicado."
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "fontesRef": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/id"
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "tipo",
+        "titulo"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "tipo": {
+          "type": "string",
+          "enum": [
+            "livro",
+            "norma",
+            "curso",
+            "artigo",
+            "site",
+            "video",
+            "outro"
+          ]
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "detalhes": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "ano": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 9999
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "secao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "numero",
+        "titulo",
+        "blocos"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "numero": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "subtitulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        },
+        "blocos": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/bloco"
+          }
+        }
+      }
+    },
+    "bloco": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/paragrafo"
+        },
+        {
+          "$ref": "#/$defs/topico"
+        },
+        {
+          "$ref": "#/$defs/lista"
+        },
+        {
+          "$ref": "#/$defs/tabela"
+        },
+        {
+          "$ref": "#/$defs/destaque"
+        },
+        {
+          "$ref": "#/$defs/gotcha"
+        },
+        {
+          "$ref": "#/$defs/mnemonico"
+        },
+        {
+          "$ref": "#/$defs/exemplo"
+        }
+      ]
+    },
+    "paragrafo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "texto"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "paragrafo"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        },
+        "titulo": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Título opcional do parágrafo, usado para dar nome a um bloco de prosa."
+        }
+      }
+    },
+    "lista": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "itens"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "lista"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "itens": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "ordenada": {
+          "type": "boolean",
+          "default": false
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "tabela": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "colunas",
+        "linhas"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "tabela"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "colunas": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "linhas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "destaque": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "nivel",
+        "texto"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "destaque"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "nivel": {
+          "type": "string",
+          "enum": [
+            "info",
+            "atencao",
+            "sucesso",
+            "erro"
+          ]
+        },
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "gotcha": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "texto"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "gotcha"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "mnemonico": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "texto"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "mnemonico"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "exemplo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "texto"
+      ],
+      "properties": {
+        "tipo": {
+          "const": "exemplo"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    },
+    "quiz": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "instrucoes",
+        "questoes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titulo": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "instrucoes": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "questoes": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/questao"
+          }
+        }
+      }
+    },
+    "questao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "enunciado",
+        "opcoes",
+        "secao_id",
+        "fonte_id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "enunciado": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "opcoes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/opcao"
+          },
+          "description": "Entre 2 (Certo/Errado) e 5 alternativas; exatamente uma correta."
+        },
+        "secao_id": {
+          "$ref": "#/$defs/id"
+        },
+        "fonte_id": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "opcao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texto",
+        "correta",
+        "explicacao"
+      ],
+      "properties": {
+        "texto": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "correta": {
+          "type": "boolean"
+        },
+        "explicacao": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "incidencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fonte",
+        "atualizado_em",
+        "temas",
+        "observacao"
+      ],
+      "properties": {
+        "fonte": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "atualizado_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "temas": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "$ref": "#/$defs/temaIncidencia"
+          }
+        },
+        "observacao": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "temaIncidencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nome",
+        "peso",
+        "secao_ids"
+      ],
+      "properties": {
+        "nome": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "peso": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "secao_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    },
+    "revisao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "proxima_em",
+        "ritual"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pendente",
+            "em_andamento",
+            "concluida"
+          ]
+        },
+        "ultima_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "proxima_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "ritual": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "metadados": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "versao",
+        "criado_em",
+        "atualizado_em",
+        "autores",
+        "revisores",
+        "licenca",
+        "origem",
+        "alteracoes"
+      ],
+      "properties": {
+        "versao": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+        },
+        "criado_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "atualizado_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "autores": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "revisores": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "licenca": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$"
+        },
+        "origem": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "alteracoes": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "topico": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "id",
+        "texto"
+      ],
+      "description": "Subtítulo interno de uma seção; agrupa os blocos que vêm depois dele.",
+      "properties": {
+        "tipo": {
+          "const": "topico"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "texto": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "fontes": {
+          "$ref": "#/$defs/fontesRef"
+        }
+      }
+    }
+  }
+}

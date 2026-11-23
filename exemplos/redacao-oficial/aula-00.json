@@ -1,0 +1,918 @@
+{
+  "schema_version": "1.1.0",
+  "id": "ro-aula-00",
+  "materia": "Redação Oficial",
+  "numero": 0,
+  "titulo": "Fundamentos, atributos e padrão ofício",
+  "resumo": "Aula inicial de Redação Oficial: definição do MRPR, atores da comunicação, atributos da redação oficial, pronomes de tratamento, alcance do Decreto nº 9.758/2019, unificação pelo padrão ofício e regras das partes do documento. O exemplo inclui seções estruturadas, um quiz de oito questões e campos para incidência e revisão.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "redacao-oficial",
+    "mrpr",
+    "padrao-oficio",
+    "pronomes-de-tratamento",
+    "aula-00"
+  ],
+  "fontes": [
+    {
+      "id": "mrpr-3",
+      "tipo": "norma",
+      "titulo": "Manual de Redação da Presidência da República",
+      "detalhes": "3. ed., 2018. Fonte principal das regras estudadas na aula."
+    },
+    {
+      "id": "decreto-9758",
+      "tipo": "norma",
+      "titulo": "Decreto nº 9.758/2019",
+      "detalhes": "Institui o pronome de tratamento 'senhor' na comunicação com agentes públicos federais.",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9758.htm"
+    },
+    {
+      "id": "curso-tec-ro",
+      "tipo": "curso",
+      "titulo": "Redação Oficial — Aula 00",
+      "detalhes": "TEC Concursos; quatro capítulos convertidos em 20/11/2026. Fonte da organização didática e do quiz."
+    },
+    {
+      "id": "cf-1988",
+      "tipo": "norma",
+      "titulo": "Constituição da República Federativa do Brasil de 1988",
+      "detalhes": "Art. 37, usado para explicar o embasamento dos atributos da redação oficial.",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+      "id": "lei-12230",
+      "tipo": "norma",
+      "titulo": "Lei nº 12.230/2010",
+      "detalhes": "Art. 3.º: tratamento protocolar dos delegados de polícia.",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12230.htm"
+    },
+    {
+      "id": "lei-13844",
+      "tipo": "norma",
+      "titulo": "Lei nº 13.844/2019",
+      "detalhes": "Organização da estrutura do Poder Executivo federal e cargos equiparados a ministro de Estado.",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13844.htm"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "o-que-e-redacao-oficial",
+      "numero": 1,
+      "titulo": "O que é redação oficial",
+      "subtitulo": "Definição do MRPR, atores da comunicação, alcance do Manual e a lista de atributos.",
+      "fontes": ["mrpr-3", "cf-1988"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "def-definicao",
+          "texto": "**Definição do MRPR:** redação oficial é a maneira pela qual o Poder Público redige comunicações oficiais e atos normativos. O método alcança todo o Poder Público — União, Estados, Distrito Federal e Municípios, nos três Poderes — e não apenas o Executivo Federal.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "def-atores",
+          "titulo": "Atores da comunicação oficial",
+          "itens": [
+            "**Emissor/remetente:** o serviço público; não existe redação oficial partindo de um particular.",
+            "**Mensagem:** assunto relativo às atribuições do órgão que comunica.",
+            "**Receptor/destinatário:** o público, composto por entidades privadas ou públicas e por particulares."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "def-metodo-produto",
+          "texto": "**Redação oficial é o método; comunicação oficial é o produto.** A comunicação oficial se materializa em atos oficiais ou normativos (leis, decretos, resoluções) e em expedientes, correspondências e documentos oficiais (ofícios, editais, e-mails). Para o MRPR, o termo comunicação oficial designa somente os expedientes oficiais; por isso, a distinção entre gênero e espécie importa em prova.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "def-atributos",
+          "titulo": "Atributos que o MRPR exige",
+          "itens": [
+            "Clareza e precisão.",
+            "Objetividade.",
+            "Concisão.",
+            "Coesão e coerência.",
+            "Impessoalidade.",
+            "Formalidade e padronização.",
+            "Uso da norma padrão da língua portuguesa."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "def-fundamento",
+          "texto": "**Por que esses atributos existem?** O MRPR relaciona os preceitos aos princípios da administração pública, especialmente publicidade, impessoalidade e eficiência. A publicidade não se esgota em publicar o ato: é preciso que o texto seja compreensível. A impessoalidade impede que a comunicação sirva a interesses pessoais. O método e a forma delimitam escolhas equivocadas de quem fala em nome da Administração.",
+          "fontes": ["mrpr-3", "cf-1988"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "def-alcance-mrpr",
+          "texto": "**Quem segue o MRPR?** O Manual se aplica, em tese, à administração pública federal, mas Senado, Câmara, tribunais e entidades do próprio Executivo podem ter manuais próprios. Ninguém é impedido de adotar o MRPR, e ele é cobrado em concursos de diferentes esferas. A resposta para o concurso é sempre o edital: ele define se vale o MRPR, o manual do órgão ou os dois.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "def-edital",
+          "nivel": "info",
+          "titulo": "Edital é a lei",
+          "texto": "A maioria dos editais cobra o MRPR, mas alguns órgãos possuem manual próprio. Antes de responder, verifique o que o edital e o comando da questão determinam.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "clareza-e-precisao",
+      "numero": 2,
+      "titulo": "Atributos — clareza e precisão",
+      "subtitulo": "O texto que se compreende de imediato e o vocabulário que não abre duplo sentido.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "clar-definicao",
+          "texto": "**Clareza** é a qualidade do texto que possibilita imediata compreensão pelo leitor. Não se concebe documento oficial ou ato normativo redigido de forma obscura. A clareza se liga ao princípio da publicidade: publicar não basta, se ninguém entende o que está publicado.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "clar-procedimentos",
+          "titulo": "Sete procedimentos para obter clareza",
+          "itens": [
+            "Usar palavras e expressões simples, em sentido comum, salvo quando o assunto for técnico e exigir nomenclatura própria.",
+            "Empregar frases curtas, bem estruturadas, e orações na ordem direta; evitar intercalações excessivas.",
+            "Manter uniformidade do tempo verbal em todo o texto.",
+            "Não utilizar regionalismos e neologismos.",
+            "Pontuar adequadamente.",
+            "Explicitar o significado de sigla na primeira referência.",
+            "Usar estrangeirismo apenas quando indispensável, em itálico."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "clar-precisao",
+          "texto": "**Precisão** complementa a clareza e se caracteriza por três escolhas: articular a linguagem comum ou técnica para fazer-se compreender; usar as mesmas palavras quando a sinonímia for apenas estilística; e evitar expressões que confiram duplo sentido. Na 2.ª edição do MRPR, o destaque era apenas à clareza; a 3.ª edição reuniu clareza e precisão no mesmo bloco.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "clar-gotcha",
+          "titulo": "Pegadinha: atributos não se atingem sozinhos",
+          "texto": "É falso afirmar que clareza e precisão se atingem por si sós. Elas dependem das demais características da redação oficial, como concisão, coesão, coerência, formalidade e revisão do texto.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "objetividade-concisao-coesao-coerencia",
+      "numero": 3,
+      "titulo": "Atributos — objetividade, concisão, coesão e coerência",
+      "subtitulo": "Quatro conceitos próximos, mas que a prova cobra de forma separada.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "obj-definicoes",
+          "texto": "**Objetividade** é ir direto ao assunto, sem voltas e sem redundâncias. **Concisão** é transmitir o máximo de informação com o mínimo de palavras. **Coesão** cuida da conexão entre as partes do texto; **coerência**, da lógica das ideias e da ausência de contradição.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "obj-tabela",
+          "titulo": "A diferença que resolve a questão",
+          "colunas": ["Atributo", "Cuida de"],
+          "linhas": [
+            ["Concisão", "Passar o máximo de informação com o menor número de palavras."],
+            ["Objetividade", "Do modo de apresentar as ideias: direto, sem subterfúgios."],
+            ["Coesão", "Da conexão entre palavras, orações e parágrafos."],
+            ["Coerência", "Da lógica das ideias, sem contradição."]
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "obj-coesao",
+          "titulo": "Os quatro mecanismos de coesão do MRPR",
+          "itens": [
+            "**Referência:** um termo remete a outro necessário à interpretação.",
+            "**Substituição:** um item lexical ocupa o lugar de outro ou de uma oração.",
+            "**Elipse:** omissão de termo recuperável pelo contexto.",
+            "**Conjunção:** ligação entre orações, períodos ou parágrafos."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "obj-alerta",
+          "nivel": "atencao",
+          "titulo": "Concisão não é economia de pensamento",
+          "texto": "Se duas formas têm o mesmo conteúdo, escolha a menor. Mas, se a menor perde informação essencial, prefira a maior: transmitir a informação correta vale mais do que apenas encurtar o texto.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "impessoalidade-formalidade-norma",
+      "numero": 4,
+      "titulo": "Atributos — impessoalidade, formalidade e norma padrão",
+      "subtitulo": "Os preceitos que retiram o 'eu' e o 'do meu jeito' da comunicação oficial.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "imp-definicao",
+          "texto": "**Impessoalidade** é a ausência de impressões pessoais do emissor. A redação oficial é elaborada em nome do serviço público e em atendimento ao interesse geral. Isso alcança quem comunica, quem recebe e o próprio assunto: o destinatário é concebido como público, e o tema deve pertencer ao interesse público.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "imp-dimensoes",
+          "titulo": "Três dimensões da impessoalidade",
+          "itens": [
+            "Ausência de impressões individuais de quem comunica.",
+            "Impessoalidade de quem recebe, mesmo quando o destinatário é uma pessoa.",
+            "Caráter impessoal do assunto, restrito ao interesse público."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "imp-formalidade",
+          "texto": "**Formalidade** exige as regras de forma do MRPR e civilidade no enfoque do assunto. **Padronização** — chamada de uniformidade na 2.ª edição — exige que comunicações e atos sigam o mesmo padrão. Formalidade é o conceito mais amplo; padronização é o complemento que dá uniformidade e coerência ao conjunto. Na 3.ª edição, o meio eletrônico passou a ser a regra e a impressão a exceção.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "imp-norma",
+          "titulo": "Norma padrão, jargão, neologismo e estrangeirismo",
+          "itens": [
+            "**Norma padrão:** acata a gramática formal e emprega léxico compartilhado pelos usuários da língua; não significa linguagem rebuscada.",
+            "**Jargão técnico/burocrático:** evitar; se for indispensável, explicar o termo.",
+            "**Neologismo:** não utilizar.",
+            "**Estrangeirismo:** apenas quando indispensável e em itálico, buscando equivalente português quando houver.",
+            "**Não existe 'padrão oficial de linguagem':** existe o uso da norma padrão nos atos e comunicações oficiais."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "imp-alerta",
+          "nivel": "atencao",
+          "titulo": "A letra seca vence",
+          "texto": "Em prova: neologismo é proibido; estrangeirismo é admitido apenas quando indispensável e em itálico; jargão técnico deve ser evitado, mas pode ser usado com explicação. Quem relativiza demais escorrega.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "pronomes-tratamento",
+      "numero": 5,
+      "titulo": "Pronomes de tratamento — visão geral e concordância",
+      "subtitulo": "Vossa Excelência, Vossa Senhoria e a concordância que a banca adora transformar em pegadinha.",
+      "fontes": ["mrpr-3", "decreto-9758", "lei-12230", "lei-13844"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "pron-visao",
+          "texto": "Pronome de tratamento é a forma como o destinatário será tratado. A 3.ª edição do MRPR simplificou o rol: **Vossa Excelência** e **Vossa Senhoria** são os pronomes de tratamento gerais. O rol de autoridades que recebem Vossa Excelência passou a ser exemplificativo, e não taxativo, porque a profusão de normas específicas tornou inviável arrolar todas as hipóteses.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "pron-ve",
+          "titulo": "Quem recebe Vossa Excelência (rol exemplificativo)",
+          "itens": [
+            "**Executivo:** Presidente e Vice-Presidente da República; ministros de Estado e cargos equivalentes; secretários-executivos; governadores e vice-governadores; secretários de Estado; prefeitos; embaixadores; oficiais-generais.",
+            "**Legislativo:** senadores, deputados federais, ministros do TCU, deputados estaduais e distritais, conselheiros de tribunais de contas estaduais e presidentes de câmaras municipais.",
+            "**Judiciário e funções essenciais à Justiça:** ministros dos tribunais superiores, membros de tribunais, juízes, auditores da Justiça Militar, membros do Ministério Público e da Defensoria Pública.",
+            "**Atenção:** alguns tratamentos decorrem de leis específicas, como o dos delegados; confira sempre o edital e o comando da questão."
+          ],
+          "fontes": ["mrpr-3", "lei-12230", "lei-13844"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "pron-vs",
+          "texto": "**Vossa Senhoria** é o pronome subsidiário: usado para as demais autoridades e para particulares. Quando não há pronome específico para determinada autoridade, a resposta é Vossa Senhoria. A 3.ª edição do MRPR não mantém o rol extenso de pronomes específicos da 2.ª edição; a tradição e as normas específicas continuam relevantes quando o edital manda aplicar outro manual.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "pron-especificos",
+          "titulo": "Pronomes específicos da tradição (2.ª edição)",
+          "colunas": ["Pronome", "Cargos ou pessoas"],
+          "linhas": [
+            ["Vossa Santidade", "Papa."],
+            ["Vossa Magnificência", "Reitores de universidade."],
+            ["Vossa Eminência ou Vossa Eminência Reverendíssima", "Cardeais."],
+            ["Vossa Excelência Reverendíssima", "Arcebispos e bispos."],
+            ["Vossa Reverendíssima ou Vossa Senhoria Reverendíssima", "Monsenhores, cônegos e superiores religiosos."],
+            ["Vossa Reverência", "Sacerdotes, clérigos e demais religiosos."]
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "pron-concordancia",
+          "titulo": "Concordância com pronomes de tratamento",
+          "itens": [
+            "**Verbal e pronominal:** sempre na 3.ª pessoa, embora o pronome se refira a quem ouve. Exemplo: 'Vossa Senhoria designará seu assessor.'",
+            "**Nominal:** o adjetivo concorda com o sexo da pessoa. Exemplo: 'Vossa Senhoria está atarefada' (mulher) ou 'atarefado' (homem).",
+            "**Nunca:** 'Vossa Senhoria designarás vosso assessor' — verbo e pronome possessivo ficam errados."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "pron-gotcha",
+          "titulo": "Pegadinha: 3.ª pessoa no verbo, sexo da pessoa no adjetivo",
+          "texto": "A banca mistura as duas concordâncias. O verbo e o possessivo vão para a 3.ª pessoa; apenas o adjetivo acompanha o sexo da pessoa a quem se refere.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "vossa-sua-enderecamento",
+      "numero": 6,
+      "titulo": "Vossa × Sua — endereçamento e vocativo",
+      "subtitulo": "Quando se fala COM a pessoa e quando se fala DA pessoa; onde o pronome aparece no documento.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "vossa-definicao",
+          "texto": "**Vossa** é usado quando se fala COM a pessoa, em comunicação direta com o receptor. **Sua** é usado quando se fala DA pessoa, em referência indireta, e é comum no endereçamento. Essa é uma das regras mais cobradas da matéria.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "vossa-momentos",
+          "titulo": "Os três momentos do pronome no documento",
+          "itens": [
+            "**Endereçamento:** texto do envelope ou da identificação do destinatário.",
+            "**Vocativo:** forma como o autor se dirige ao destinatário no início do documento.",
+            "**Corpo do texto:** a mensagem propriamente dita, com pronomes por extenso ou abreviados."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "vossa-tabela",
+          "titulo": "Vocativo e endereçamento por autoridade",
+          "colunas": ["Pronome", "Cargos ou pessoas", "Vocativo", "Endereçamento"],
+          "linhas": [
+            ["Vossa Excelência", "Chefes de Poder (Presidente da República, do Congresso Nacional e do STF)", "Excelentíssimo Senhor + cargo", "A Sua Excelência o Senhor"],
+            ["Vossa Excelência", "Demais autoridades tratadas por Vossa Excelência", "Senhor + cargo", "A Sua Excelência o Senhor"],
+            ["Vossa Senhoria", "Autoridades e cargos tratados por Vossa Senhoria", "Senhor + cargo", "Ao Senhor"],
+            ["Vossa Senhoria", "Particulares", "Senhor + Nome, ou Prezado Senhor, ou forma da instituição", "Ao Senhor"]
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "vossa-alerta",
+          "nivel": "erro",
+          "titulo": "Fórmulas que não existem",
+          "texto": "Não existem 'A Sua Senhoria o Senhor' nem 'A Sua Senhoria a Senhora'. O endereçamento de Vossa Excelência também nunca é 'Ao Senhor'. Para autoridade feminina: 'A Sua Excelência a Senhora' ou 'À Senhora'.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "vossa-interno",
+          "texto": "**Endereçamento interno:** o ofício interno tem endereçamento, mas não usa logradouro nem CEP obrigatório. Informa o setor, a cidade e a UF, além de vocativo, nome e cargo. Os demais elementos e o alinhamento à margem esquerda seguem o padrão.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "decreto-9758",
+      "numero": 7,
+      "titulo": "Decreto nº 9.758/2019 — o 'só senhor'",
+      "subtitulo": "O que o decreto mudou, o que ele não revogou e como resolver o conflito em prova.",
+      "fontes": ["decreto-9758", "mrpr-3", "lei-12230"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "decreto-regra",
+          "texto": "O Decreto nº 9.758/2019 estabelece que o único pronome de tratamento na comunicação com agentes públicos federais é **'senhor'**, independentemente do nível hierárquico, da natureza do cargo, da função ou da ocasião. O alcance é o Poder Executivo federal, incluindo o Presidente da República.",
+          "fontes": ["decreto-9758"]
+        },
+        {
+          "tipo": "lista",
+          "id": "decreto-limites",
+          "titulo": "O que o decreto não fez",
+          "itens": [
+            "Não revogou o MRPR e não alterou o texto do Manual.",
+            "Não eliminou os pronomes de tratamento nos demais Poderes e esferas.",
+            "Não criou tratamento específico para reitores ou outras autoridades.",
+            "Não resolve automaticamente o conflito com leis que atribuem tratamento protocolar a determinados cargos; o edital e o comando da questão orientam a resposta."
+          ],
+          "fontes": ["decreto-9758", "mrpr-3", "lei-12230"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "decreto-alerta",
+          "nivel": "atencao",
+          "titulo": "Não decore que o decreto revogou o MRPR",
+          "texto": "O MRPR segue vigente e é a referência quando o edital fala no Manual da Presidência. O Decreto nº 9.758/2019 entra em cena quando o edital ou o comando da questão abre espaço para ele.",
+          "fontes": ["mrpr-3", "decreto-9758"]
+        }
+      ]
+    },
+    {
+      "id": "padrao-oficio",
+      "numero": 8,
+      "titulo": "Padrão Ofício — a unificação dos expedientes",
+      "subtitulo": "Aviso, ofício e memorando: o que era na 2.ª edição e o que a 3.ª edição transformou.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "oficio-antes",
+          "titulo": "Até a 2.ª edição: três expedientes pela finalidade",
+          "itens": [
+            "**Aviso:** expedido exclusivamente por ministros de Estado, para autoridades de mesma hierarquia.",
+            "**Ofício:** expedido para e pelas demais autoridades.",
+            "**Memorando:** expedido entre unidades administrativas de um mesmo órgão."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "oficio-agora",
+          "texto": "Na 3.ª edição, o MRPR adotou nomenclatura e diagramação únicas: o **padrão ofício**. O que antes era aviso ou memorando passou a ser tratado como ofício. 'Padrão ofício' tornou-se sinônimo de ofício e continua sendo a expressão cobrada em prova.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "oficio-alerta",
+          "nivel": "info",
+          "titulo": "Para editais focados no MRPR",
+          "texto": "Aviso e memorando não existem mais no Manual. Fora do MRPR, porém, o memorando continua em manuais e rotinas de muitos órgãos; a resposta depende do edital e do manual cobrado.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "partes-documento-i",
+      "numero": 9,
+      "titulo": "Partes do documento (I) — cabeçalho a endereçamento",
+      "subtitulo": "O que vai em cada parte do ofício, com alinhamento e erros clássicos.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "partes-cabecalho",
+          "titulo": "Cabeçalho — somente na primeira página",
+          "itens": [
+            "Brasão de Armas da República no topo, centralizado; não é necessário usar cores.",
+            "Nome do órgão principal e, quando necessários, os órgãos secundários da maior para a menor hierarquia.",
+            "Espaçamento entrelinhas simples.",
+            "Rodapé opcional com dados do órgão, centralizado."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "partes-expediente",
+          "texto": "**Identificação do expediente:** nome do documento por extenso e em maiúsculas (OFÍCIO), abreviatura Nº, número, ano com quatro dígitos e siglas do setor, da menor para a maior hierarquia, separadas por barra. Exemplo: **OFÍCIO Nº 652/2018/SAA/SE/MT**, à margem esquerda.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "partes-data",
+          "texto": "**Local e data:** cidade sem sigla de UF, vírgula, dia ordinal apenas para o primeiro dia do mês, demais dias cardinais sem zero à esquerda, mês por extenso e em minúscula, ponto final e alinhamento à direita. Exemplo: **Brasília, 2 de fevereiro de 2018.**",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "partes-erros-data",
+          "titulo": "Erros clássicos de local e data",
+          "itens": [
+            "Zero à esquerda: '02 de fevereiro'.",
+            "Mês com inicial maiúscula: 'Fevereiro'.",
+            "Data numérica: '02/02/2018'.",
+            "Sigla da UF após a cidade: 'Brasília/DF'.",
+            "Dia por extenso: 'dois de fevereiro'.",
+            "Ordinal em dia que não é o primeiro: '2º de fevereiro'."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "partes-emissao",
+          "texto": "**Local e data correspondem ao lugar e ao momento da emissão/assinatura.** A assinatura marca o nascimento do documento; a data não é a do rascunho nem a da publicação. Emitir, expedir e produzir são tratados como sinônimos nesse contexto.",
+          "fontes": ["curso-tec-ro", "mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "partes-enderecamento",
+          "titulo": "Endereçamento — elementos e alinhamento",
+          "itens": [
+            "Vocativo adequado ao destinatário.",
+            "Nome e cargo do destinatário.",
+            "Endereço postal em duas linhas: logradouro/localidade e CEP/cidade/UF.",
+            "Alinhamento à margem esquerda.",
+            "Para Vossa Excelência: 'A Sua Excelência o Senhor' ou 'a Senhora'. Para Vossa Senhoria: 'Ao Senhor' ou 'À Senhora'."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "partes-exemplos-endereco",
+          "titulo": "Exemplos de endereçamento",
+          "colunas": ["Destinatário", "Endereçamento"],
+          "linhas": [
+            ["Ministro de Estado (VE)", "A Sua Excelência o Senhor / [Nome] / Ministro de Estado da Justiça"],
+            ["Diretora de gestão (VS)", "À Senhora / [Nome] / Diretora de Gestão de Pessoas"],
+            ["Chefe de divisão do mesmo órgão", "Ao Senhor / [Nome] / Chefe de Divisão de Compras / Diretoria de Material"]
+          ],
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "partes-documento-ii",
+      "numero": 10,
+      "titulo": "Partes do documento (II) — assunto, texto, fechos e signatário",
+      "subtitulo": "Do 'Assunto:' à numeração de páginas: o checklist completo do padrão ofício.",
+      "fontes": ["mrpr-3"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "partes-assunto",
+          "texto": "**Assunto:** título 'Assunto:' com dois-pontos, descrição com inicial maiúscula, sem verbos, de quatro a cinco palavras, tudo em negrito e ponto final. Exemplo: **Assunto: Aquisição de computadores.** O alinhamento é à margem esquerda.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "partes-assunto-erros",
+          "titulo": "Erros clássicos no assunto",
+          "itens": [
+            "Ponto e vírgula ou dois-pontos no lugar do ponto final.",
+            "Verbo na descrição: 'Encaminha Relatório...'.",
+            "Traço no lugar dos dois-pontos: 'Assunto - ...'.",
+            "Negrito ausente no título ou na descrição."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "partes-texto",
+          "titulo": "Texto do documento — dois formatos",
+          "itens": [
+            "**Formato A (encaminhamento):** introdução com referência ao expediente solicitante ou motivo do encaminhamento; desenvolvimento opcional; conclusão com a posição sobre o assunto.",
+            "**Formato B (demais casos):** introdução direta com a finalidade, desenvolvimento com uma ideia por parágrafo e conclusão com a posição.",
+            "**Evite:** 'Tenho a honra de', 'Tenho o prazer de', 'Cumpre-me informar'. Prefira 'Informo', 'Solicito', 'Comunico'.",
+            "**Alinhamento do texto:** justificado; espaçamento entre linhas simples."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "partes-paragrafos",
+          "texto": "**Numeração de parágrafos:** só quando houver três ou mais parágrafos, numerando-se desde o primeiro. Vocativo e fecho nunca são numerados. A banca costuma inverter a regra e dizer que se numera a partir do segundo ou que o vocativo também recebe número.",
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "lista",
+          "id": "partes-fechos",
+          "titulo": "Fechos e identificação do signatário",
+          "itens": [
+            "**Fechos:** apenas 'Respeitosamente,' e 'Atenciosamente,', à margem esquerda e sem numeração.",
+            "**Signatário:** espaço para assinatura, nome em maiúsculas e cargo, centralizados.",
+            "**Exceção:** comunicações expedidas pelo Presidente da República não têm identificação do signatário."
+          ],
+          "fontes": ["mrpr-3"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "partes-paginas",
+          "nivel": "info",
+          "titulo": "Numeração de páginas",
+          "texto": "A numeração é obrigatória a partir da segunda página e centralizada. A primeira página é facultativa: o Manual não a exige, mas também não proíbe numerá-la.",
+          "fontes": ["mrpr-3"]
+        }
+      ]
+    },
+    {
+      "id": "pontos-prova",
+      "numero": 11,
+      "titulo": "Pontos que mais caem em prova",
+      "subtitulo": "Checklist de véspera com os pontos de maior retorno, todos ancorados nas fontes da aula.",
+      "fontes": ["mrpr-3", "decreto-9758"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "pontos-lista",
+          "titulo": "Os 18 pontos para revisar antes da prova",
+          "itens": [
+            "**Definição literal:** redação oficial é a maneira pela qual o Poder Público redige comunicações oficiais e atos normativos.",
+            "**Embasamento:** publicidade, impessoalidade e eficiência, entre os princípios do art. 37 da CF.",
+            "**Lista de atributos:** clareza, precisão, objetividade, concisão, coesão, coerência, impessoalidade, formalidade, padronização e norma padrão.",
+            "**Concisão × clareza:** concisão é economia de palavras; clareza é compreensão imediata.",
+            "**Coesão × coerência:** coesão conecta as partes; coerência mantém a lógica das ideias.",
+            "**Impessoalidade:** ausência de impressões pessoais; comunicação em nome do serviço público e do interesse geral.",
+            "**Norma padrão:** não existe 'padrão oficial de linguagem'; existe uso da norma padrão.",
+            "**Vocabulário:** neologismo é proibido; estrangeirismo só indispensável e em itálico; jargão técnico evitar ou explicar.",
+            "**MRPR 3.ª edição:** só Vossa Excelência e Vossa Senhoria; 'uniformidade' virou 'padronização'; precisão juntou-se à clareza; tudo é ofício.",
+            "**Vossa × Sua:** Vossa para falar COM; Sua para falar DA pessoa.",
+            "**Concordância:** verbo e pronome na 3.ª pessoa; adjetivo conforme o sexo da pessoa.",
+            "**Vocativo:** chefes de Poder levam 'Excelentíssimo Senhor + cargo'; demais VE, 'Senhor + cargo'; VS também 'Senhor + cargo'.",
+            "**Endereçamento:** VE usa 'A Sua Excelência o Senhor/a Senhora'; VS usa 'Ao Senhor/À Senhora'; nunca 'A Sua Senhoria o Senhor'.",
+            "**Ofício:** caixa alta, Nº, ano com quatro dígitos e siglas da menor para a maior hierarquia.",
+            "**Data:** 1.º dia ordinal, demais cardinais, sem zero, mês minúsculo, cidade sem UF, ponto final e margem direita.",
+            "**Páginas:** numeração obrigatória da segunda em diante; primeira é facultativa.",
+            "**Decreto nº 9.758/2019:** 'senhor' para agentes públicos federais; não altera o MRPR; alcance é o Executivo federal.",
+            "**Introdução:** evitar 'Tenho a honra de'; usar Informo, Solicito, Comunico."
+          ],
+          "fontes": ["mrpr-3", "decreto-9758"]
+        }
+      ]
+    },
+    {
+      "id": "incidencia-tec",
+      "numero": 12,
+      "titulo": "Incidência de temas (TEC)",
+      "subtitulo": "Registro do que de fato foi cobrado; não confundir prioridade editorial com contagem de incidência.",
+      "fontes": ["curso-tec-ro"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "incidencia-explicacao",
+          "texto": "A incidência deve ser alimentada com as questões efetivamente coladas do TEC, indicando o tema, a seção correspondente e o peso relativo. Enquanto não houver questões registradas, o campo permanece vazio; não se deve inventar uma contagem para parecer completo.",
+          "fontes": ["curso-tec-ro"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "incidencia-alerta",
+          "nivel": "info",
+          "titulo": "Aula 00 sem questões TEC registradas",
+          "texto": "Nenhuma questão do TEC foi colada até a data de atualização. Quando houver, preencha `incidencia.temas`, mantendo a soma dos pesos em 100 e referenciando as seções existentes.",
+          "fontes": ["curso-tec-ro"]
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-ro-aula-00",
+    "titulo": "Quiz — Redação Oficial Aula 00",
+    "instrucoes": "Oito questões de recall para revisão ativa. Leia o enunciado, escolha uma alternativa e confira a explicação antes de avançar. O quiz é formativo e não substitui a resolução de questões da banca.",
+    "questoes": [
+      {
+        "id": "q-definicao",
+        "enunciado": "Segundo o MRPR (3.ª ed.), redação oficial é:",
+        "opcoes": [
+          {
+            "texto": "A maneira pela qual o Poder Público redige comunicações oficiais e atos normativos.",
+            "correta": true,
+            "explicacao": "Certo. É a definição literal do MRPR, com os três elementos que a banca cobra: Poder Público, comunicações oficiais e atos normativos."
+          },
+          {
+            "texto": "O conjunto de formalidades aplicáveis apenas às comunicações do Executivo Federal.",
+            "correta": false,
+            "explicacao": "Errado. O método alcança todo o Poder Público, nos três Poderes e nas diferentes esferas, e não apenas o Executivo Federal."
+          },
+          {
+            "texto": "A forma solene de linguagem exigida exclusivamente para atos normativos primários.",
+            "correta": false,
+            "explicacao": "Errado. O MRPR abrange comunicações oficiais em geral e atos normativos; não se limita a um subconjunto de atos."
+          },
+          {
+            "texto": "A padronização editorial dos textos publicados no Diário Oficial.",
+            "correta": false,
+            "explicacao": "Errado. A definição trata de método e preceitos de redação, não apenas de publicação ou editoração no Diário Oficial."
+          }
+        ],
+        "secao_id": "o-que-e-redacao-oficial",
+        "fonte_id": "mrpr-3"
+      },
+      {
+        "id": "q-padronizacao",
+        "enunciado": "Na edição atual do MRPR, o atributo anteriormente chamado de 'uniformidade' das comunicações passou a se chamar:",
+        "opcoes": [
+          {
+            "texto": "Padronização.",
+            "correta": true,
+            "explicacao": "Certo. A 3.ª edição aposentou o termo 'uniformidade' e passou a tratar de padronização das comunicações e atos do Poder Público."
+          },
+          {
+            "texto": "Formalidade.",
+            "correta": false,
+            "explicacao": "Errado. Formalidade é atributo próprio, ligado a regras de forma e civilidade; a padronização é que dá uniformidade ao conjunto."
+          },
+          {
+            "texto": "Impessoalidade.",
+            "correta": false,
+            "explicacao": "Errado. Impessoalidade diz respeito à ausência de impressões pessoais e ao interesse público, não à troca de nomenclatura do atributo."
+          },
+          {
+            "texto": "Oficialidade.",
+            "correta": false,
+            "explicacao": "Errado. 'Oficialidade' não é o nome do atributo na nomenclatura do MRPR."
+          }
+        ],
+        "secao_id": "impessoalidade-formalidade-norma",
+        "fonte_id": "mrpr-3"
+      },
+      {
+        "id": "q-assunto",
+        "enunciado": "Sobre a redação do campo 'Assunto' de um documento oficial, é correto afirmar:",
+        "opcoes": [
+          {
+            "texto": "Deve conter de quatro a cinco palavras, sem verbo, com inicial maiúscula, tudo em negrito, dois-pontos após 'Assunto' e ponto final.",
+            "correta": true,
+            "explicacao": "Certo. O MRPR exige título com dois-pontos, descrição sem verbos, aproximadamente quatro a cinco palavras, negrito, ponto final e alinhamento à esquerda."
+          },
+          {
+            "texto": "Deve iniciar com verbo no infinitivo, em uma única linha, sem negrito.",
+            "correta": false,
+            "explicacao": "Errado. Verbos não devem ser utilizados e o destaque em negrito é obrigatório para título e descrição."
+          },
+          {
+            "texto": "Deve resumir o conteúdo em uma oração completa com verbo de ligação.",
+            "correta": false,
+            "explicacao": "Errado. O assunto é uma descrição sucinta, não uma oração completa; verbos são vedados."
+          },
+          {
+            "texto": "Dispensa ponto final por ser um rótulo.",
+            "correta": false,
+            "explicacao": "Errado. O MRPR determina ponto final depois do assunto."
+          }
+        ],
+        "secao_id": "partes-documento-ii",
+        "fonte_id": "mrpr-3"
+      },
+      {
+        "id": "q-data",
+        "enunciado": "Qual grafia de local e data está de acordo com o Padrão Ofício?",
+        "opcoes": [
+          {
+            "texto": "Brasília, 1º de fevereiro de 2018.",
+            "correta": true,
+            "explicacao": "Certo. O primeiro dia usa ordinal, o mês fica em minúscula, a cidade não leva UF e há ponto final; o alinhamento é à direita."
+          },
+          {
+            "texto": "Brasília/DF, 01 de fevereiro de 2018.",
+            "correta": false,
+            "explicacao": "Errado. A cidade não leva sigla de UF, o dia não leva zero à esquerda e o primeiro dia exige ordinal."
+          },
+          {
+            "texto": "Brasília, 1 de Fevereiro de 2018",
+            "correta": false,
+            "explicacao": "Errado. Falta o ordinal no primeiro dia, o mês deve ficar em minúscula e o ponto final é obrigatório."
+          },
+          {
+            "texto": "Brasília, 1º de fevereiro de 2018",
+            "correta": false,
+            "explicacao": "Errado. A grafia do dia e do mês está correta, mas falta o ponto final."
+          }
+        ],
+        "secao_id": "partes-documento-i",
+        "fonte_id": "mrpr-3"
+      },
+      {
+        "id": "q-emissao",
+        "enunciado": "Para fins de local e data do documento, 'emissão' corresponde a:",
+        "opcoes": [
+          {
+            "texto": "O momento em que a autoridade signatária assina o documento, marcando seu nascimento.",
+            "correta": true,
+            "explicacao": "Certo. A assinatura cria o momento de emissão; a data não é a do rascunho nem a da publicação."
+          },
+          {
+            "texto": "O momento em que o expediente é publicado no Diário Oficial.",
+            "correta": false,
+            "explicacao": "Errado. A publicação é etapa posterior; a emissão se consuma com a assinatura."
+          },
+          {
+            "texto": "O momento em que o rascunho é concluído pela unidade de origem.",
+            "correta": false,
+            "explicacao": "Errado. Sem assinatura, o texto é rascunho/minuta e ainda não há emissão."
+          },
+          {
+            "texto": "O momento em que o protocolo registra o recebimento no órgão destinatário.",
+            "correta": false,
+            "explicacao": "Errado. O recebimento pertence à tramitação e não define a emissão do documento."
+          }
+        ],
+        "secao_id": "partes-documento-i",
+        "fonte_id": "curso-tec-ro"
+      },
+      {
+        "id": "q-decreto",
+        "enunciado": "Sobre o Decreto nº 9.758/2019, é correto afirmar:",
+        "opcoes": [
+          {
+            "texto": "Instituiu o pronome de tratamento único 'senhor' para autoridades do Executivo Federal, sem alterar o MRPR.",
+            "correta": true,
+            "explicacao": "Certo. O decreto alcança o Executivo federal e não revogou o Manual; a distinção importa quando a banca mistura os dois normativos."
+          },
+          {
+            "texto": "Revogou o MRPR e uniformizou 'Vossa Excelência' para todos os Poderes.",
+            "correta": false,
+            "explicacao": "Errado. O decreto não revogou o MRPR e não uniformizou o tratamento em todos os Poderes."
+          },
+          {
+            "texto": "Extinguiu os pronomes de tratamento em todos os Poderes e esferas.",
+            "correta": false,
+            "explicacao": "Errado. Fora do Executivo federal continuam valendo as regras do MRPR e dos manuais específicos."
+          },
+          {
+            "texto": "Criou o tratamento 'Magnífico' para reitores de universidades federais.",
+            "correta": false,
+            "explicacao": "Errado. O decreto não criou esse tratamento; formas específicas têm origem em outras normas e tradições."
+          }
+        ],
+        "secao_id": "decreto-9758",
+        "fonte_id": "decreto-9758"
+      },
+      {
+        "id": "q-enderecamento",
+        "enunciado": "No bloco de endereçamento e no vocativo de um ofício a um Ministro de Estado (Vossa Excelência, não Chefe de Poder), está correto:",
+        "opcoes": [
+          {
+            "texto": "Endereçamento: 'A Sua Excelência o Senhor'; Vocativo: 'Senhor Ministro,'.",
+            "correta": true,
+            "explicacao": "Certo. Chefes de Poder recebem 'Excelentíssimo Senhor + cargo'; os demais tratados por Vossa Excelência recebem 'Senhor + cargo'."
+          },
+          {
+            "texto": "Endereçamento: 'Excelentíssimo Senhor Ministro,'.",
+            "correta": false,
+            "explicacao": "Errado. 'Excelentíssimo Senhor' é reservado aos chefes de Poder, não a um ministro de Estado em geral."
+          },
+          {
+            "texto": "Endereçamento: 'A Sua Senhoria o Senhor Ministro,'.",
+            "correta": false,
+            "explicacao": "Errado. A fórmula 'A Sua Senhoria o Senhor' não existe no MRPR e a banca a trata como incorreta."
+          },
+          {
+            "texto": "Endereçamento: 'Ao Senhor Ministro de Estado,'.",
+            "correta": false,
+            "explicacao": "Errado. 'Ao Senhor' é endereçamento de quem é tratado por Vossa Senhoria, não por Vossa Excelência."
+          }
+        ],
+        "secao_id": "vossa-sua-enderecamento",
+        "fonte_id": "mrpr-3"
+      },
+      {
+        "id": "q-fechos",
+        "enunciado": "Quanto aos fechos das comunicações oficiais e à numeração de parágrafos, assinale a correta:",
+        "opcoes": [
+          {
+            "texto": "Só existem dois fechos ('Respeitosamente,' para Vossa Excelência e 'Atenciosamente,' para os demais), à margem esquerda; parágrafos só se numeram com três ou mais, desde o primeiro, e vocativo e fecho nunca se numeram.",
+            "correta": true,
+            "explicacao": "Certo. O MRPR admite dois fechos, alinhados à esquerda; a numeração de parágrafos começa no primeiro quando há três ou mais, e nunca alcança vocativo e fecho."
+          },
+          {
+            "texto": "São admitidos 'Respeitosamente,', 'Atenciosamente,' e 'Cordialmente,' conforme a hierarquia.",
+            "correta": false,
+            "explicacao": "Errado. 'Cordialmente' não é fecho oficial; o MRPR admite somente dois fechos."
+          },
+          {
+            "texto": "O fecho deve ser centralizado na página.",
+            "correta": false,
+            "explicacao": "Errado. O fecho fica à margem esquerda; o que se centraliza é a identificação do signatário."
+          },
+          {
+            "texto": "Todos os parágrafos recebem numeração ordinal a partir do segundo.",
+            "correta": false,
+            "explicacao": "Errado. A numeração só ocorre com três ou mais parágrafos e começa no primeiro; vocativo e fecho nunca são numerados."
+          }
+        ],
+        "secao_id": "partes-documento-ii",
+        "fonte_id": "mrpr-3"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "TEC Concursos",
+    "atualizado_em": "2026-11-20",
+    "temas": [],
+    "observacao": "Nenhuma questão do TEC foi colada até a data. Quando houver, registrar os temas efetivamente cobrados, as seções correspondentes e pesos que somem 100."
+  },
+  "revisao": {
+    "status": "pendente",
+    "ultima_em": "2026-11-20",
+    "proxima_em": "2026-11-27",
+    "ritual": [
+      "Ler o resumo e refazer o quiz sem consultar as respostas.",
+      "Registrar os erros e a explicação de cada alternativa errada.",
+      "Revisar as seções indicadas pela incidência antes da próxima sessão."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-22",
+    "atualizado_em": "2026-11-22",
+    "autores": ["Equipe Hermes"],
+    "revisores": [],
+    "licenca": "CC-BY-4.0",
+    "origem": "Exemplo didático reconstruído para o Hermes a partir da Aula 00 de Redação Oficial do acervo de estudos.",
+    "alteracoes": "Versão inicial do exemplo no formato estruturado do Hermes."
+  },
+  "notas": "O exemplo é um conteúdo de estudo, não um manual oficial. Antes de publicar, confira o edital, a versão do MRPR, os links e a licença dos materiais de terceiros."
+}

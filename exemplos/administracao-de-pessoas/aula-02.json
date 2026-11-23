@@ -1,0 +1,1047 @@
+{
+  "schema_version": "1.1.0",
+  "id": "gestao-pessoas-aula-02",
+  "materia": "Administração de Pessoas",
+  "numero": 2,
+  "titulo": "Administração de pessoas — Aula 2: Recrutamento e seleção, cargos e remuneração, treinamento e desenvolvimento e avaliação de desempenho",
+  "resumo": "Apresenta as funções práticas da administração de pessoas: recrutamento e seleção (fontes, etapas, critérios e o concurso público); cargos, carreiras e remuneração (análise de cargo, progressão e promoção, componentes da remuneração); treinamento e desenvolvimento (T&D) e a Política Nacional de Desenvolvimento de Pessoas (PNDP, D. 9.991/2019); e avaliação de desempenho, com a norma do estágio probatório (D. 12.374/2025: fatores, ciclos, pontuação e aprovação).",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "administracao-de-pessoas",
+    "gestao-de-pessoas",
+    "recrutamento",
+    "selecao",
+    "concurso-publico",
+    "cargos",
+    "carreiras",
+    "remuneracao",
+    "treinamento",
+    "desenvolvimento",
+    "pndp",
+    "avaliacao-de-desempenho",
+    "estagio-probatorio",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "chiavenato",
+      "tipo": "livro",
+      "titulo": "Gestão de Pessoas: conceitos, funções e práticas",
+      "ano": 2014,
+      "detalhes": "Obra de referência em gestão de pessoas no Brasil. Os conceitos de recrutamento, seleção, análise de cargo, remuneração, treinamento e avaliação de desempenho desta aula seguem a abordagem da obra. O texto original não foi reproduzido."
+    },
+    {
+      "id": "marras",
+      "tipo": "livro",
+      "titulo": "Administração de Recursos Humanos",
+      "ano": 2010,
+      "detalhes": "Livro-texto de referência em administração de recursos humanos, com tratamento de recrutamento, seleção, cargos e remuneração, treinamento e avaliação. Consultado para os conceitos teóricos; o texto original não foi reproduzido."
+    },
+    {
+      "id": "maximiano",
+      "tipo": "livro",
+      "titulo": "Administração de Recursos Humanos",
+      "ano": 2009,
+      "detalhes": "Obra de referência em administração de recursos humanos; consultada para as funções de recrutamento, seleção, remuneração e avaliação de desempenho. O texto original não foi reproduzido."
+    },
+    {
+      "id": "gil",
+      "tipo": "livro",
+      "titulo": "Gestão de Pessoas: o novo papel dos recursos humanos",
+      "ano": 2006,
+      "detalhes": "Obra de referência em gestão de pessoas, com foco na gestão estratégica, análise de cargos, carreiras e avaliação. Consultada para as seções de cargos, remuneração e desenvolvimento. O texto original não foi reproduzido."
+    },
+    {
+      "id": "decreto-9991",
+      "tipo": "norma",
+      "titulo": "Decreto nº 9.991, de 4 de janeiro de 2019 — Política Nacional de Desenvolvimento de Pessoas (PNDP)",
+      "ano": 2019,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9991.htm",
+      "detalhes": "Lido no Planalto em 23/11/2026 (capítulo inicial do texto). Estabelece a Política Nacional de Desenvolvimento de Pessoas para a administração pública federal direta, autárquica e fundacional e seus instrumentos: Plano de Desenvolvimento de Pessoas (PDP), relatórios, Plano Consolidado e trilhas de formação. Citado nesta aula para a função 'desenvolvimento'."
+    },
+    {
+      "id": "decreto-12374",
+      "tipo": "norma",
+      "titulo": "Decreto nº 12.374, de 6 de fevereiro de 2025 — Avaliação de desempenho durante o estágio probatório",
+      "ano": 2025,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12374.htm",
+      "detalhes": "Lido no Planalto em 22/11/2026 (texto integral; alterado pelo Decreto nº 12.967/2026). Dispõe sobre critérios e procedimentos de avaliação de desempenho de servidores em estágio probatório (art. 20 da Lei nº 8.112/1990): fatores (art. 3º), avaliação pela chefia, pelo servidor e pelos pares (art. 4º), três ciclos (art. 5º), pontuação (art. 6º), aprovação (art. 8º) e programa de desenvolvimento inicial (art. 9º)."
+    },
+    {
+      "id": "lei-8112",
+      "tipo": "norma",
+      "titulo": "Lei nº 8.112, de 11 de dezembro de 1990 — Regime Jurídico dos Servidores Públicos Federais",
+      "ano": 1990,
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8112.htm",
+      "detalhes": "Consultada em 23/11/2026 para contextualizar recrutamento, provimento, cargos e remuneração no serviço público federal: a lei define concurso público, posse, exercício, estágio probatório (art. 20) e o regime de remuneração dos servidores. Dispositivos específicos transcritos nesta aula são os já conferidos nas aulas de Legislação."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "recrutamento-e-selecao",
+      "numero": 1,
+      "titulo": "Recrutamento e seleção",
+      "subtitulo": "Captar candidatos e escolher os mais adequados",
+      "fontes": [
+        "chiavenato",
+        "marras"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "rs-def",
+          "texto": "**Recrutamento** é o processo de **buscar e atrair candidatos** para ocupar vagas ou cargos; **seleção** é o processo de **avaliar os candidatos e escolher** quem melhor se adapta à vaga, aos requisitos e à organização. O recrutamento **amplia o número de candidatos**; a seleção **reduz e qualifica** o conjunto, até indicar o nomeado. São dois momentos sequenciais e complementares.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rs-origem",
+          "texto": "O recrutamento pode usar **fontes internas** (reposicionamento, promoção, transferência, lista de aprovados em concurso, banco de talentos) e **fontes externas** (concurso público, divulgação em jornais, internet e redes sociais, agências de recrutamento, indicações, feiras e eventos, instituições de ensino). No **serviço público**, a forma ordinária de provimento de cargo efetivo é o **concurso público** — procedimento que garante igualdade e impessoalidade a todos os candidatos.",
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "lei-8112"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "rs-fontes",
+          "titulo": "Fontes de recrutamento (o que cada uma oferece)",
+          "itens": [
+            "**Interna**: vaga anunciada para os que já são da organização; favorece a motivação, mas pode limitar a base de candidatos.",
+            "**Externa por concurso público**: provimento de cargo efetivo no serviço público; garante isonomia e ampla concorrência.",
+            "**Externa por divulgação**: jornais, sites, redes sociais, boletins — atinge público amplo.",
+            "**Agências e headhunters**: captação especializada, usada para cargos de alta complexidade.",
+            "**Indicação**: um collaborador indica um candidato; é rápida, mas exige cuidado com imparcialidade.",
+            "**Banco de talentos / CAD (cadastro de candidatos)**: cadastro de candidatos aprovados em processos anteriores, mantido para futuras vagas."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "rs-etapas",
+          "titulo": "Etapas típicas da seleção",
+          "colunas": [
+            "Etapa",
+            "Objetivo",
+            "Cuidado comum na prova"
+          ],
+          "linhas": [
+            [
+              "Análise de currículo / dados cadastrais",
+              "Conferir formação, experiência e requisitos",
+              "Currículo não basta: exigir comprovação"
+            ],
+            [
+              "Prova objetiva",
+              "Avaliar conhecimentos e habilidades técnicas",
+              "Prestar atenção ao enunciado e à pontuação"
+            ],
+            [
+              "Prova discursiva / escrita",
+              "Avaliar razão, clareza e conhecimentos específicos",
+              "Escrever com coerência, coesão e ortografia"
+            ],
+            [
+              "Entrevista",
+              "Conhecer o candidato, sua adequação e comunicação",
+              "Evitar perguntas inválidas ou pessoalmente discriminatórias"
+            ],
+            [
+              "Testes psicotécnicos",
+              "Avaliar perfil, habilidades e compatibilidade",
+              "Somente com profissional qualificado e critério legal"
+            ],
+            [
+              "Curso de formação",
+              "Avaliar desempenho em ambiente simulado",
+              "Aprovar por nota mínima definida em edital"
+            ],
+            [
+              "Aptidão física / avaliação de saúde",
+              "Conferir aptidão para o trabalho",
+              "Respeitar os limites legais (não podem ser discriminatórios)"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rs-criterios",
+          "texto": "Critérios de seleção: **competência técnica** (conhecimentos, experiência), **adequação ao cargo** (perfil, habilidades comportamentais), **ética e idoneidade** (conhecimento da lei, integridade) e **legalidade** (conformidade com o edital, normas e regime). A seleção deve ser **objetiva, transparente e impessoal**, embasada em critérios previamente divulgados.",
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "rs-destaque",
+          "titulo": "Concurso público: a forma ordinária no serviço público",
+          "nivel": "info",
+          "texto": "No setor público, o **concurso público** é o meio ordinário de provimento de cargo efetivo: garante **igualdade de condições** a todos os candidatos, impessoalidade e seleção pelo mérito, conforme o regime dos servidores (Lei nº 8.112/1990).",
+          "fontes": [
+            "lei-8112",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "rs-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **recrutamento por seleção** (o recrutamento capta; a seleção escolhe); afirma que **'basta o currículo'** (o currículo é uma etapa, mas a seleção exige provas, entrevistas e comprovação); e afirma que **seleção é 'escolher o melhor amigo' ou 'o mais conhecido'** — a seleção é impessoal, objetiva e por mérito, em especial no serviço público."
+        }
+      ]
+    },
+    {
+      "id": "cargos-e-remuneracao",
+      "numero": 2,
+      "titulo": "Cargos, carreiras e remuneração",
+      "subtitulo": "Analisar, estruturar e valorizar o trabalho",
+      "fontes": [
+        "gil",
+        "chiavenato"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "cargo-def",
+          "texto": "**Cargo** é a **unidade de trabalho** da organização: conjunto de **atribuições, responsabilidades e requisitos** cometidos a uma pessoa. **Análise de cargo** é o processo de **investigar e descrever** o cargo: levantamento de dados sobre o trabalho, descrição das tarefas e atribuições, definição dos requisitos (escolaridade, experiência, competências) e determinação do valor/remuneração do cargo.",
+          "fontes": [
+            "gil",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "cargo-fases",
+          "titulo": "Fases da análise de cargo",
+          "itens": [
+            "**Levantamento de dados**: observação, entrevista com o ocupante e com a chefia, registro de atividades, levantamento de tempos e métodos.",
+            "**Descrição do cargo**: definição precisa das atribuições, responsabilidades, condições de trabalho e relações do cargo.",
+            "**Especificação do cargo**: requisitos de conhecimentos, habilidades, formação, experiência e competências.",
+            "**Valoração do cargo**: classificação ou escalonamento do cargo para definir a remuneração e o posicionamento na carreira."
+          ],
+          "fontes": [
+            "gil",
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "carreira-def",
+          "texto": "**Carreira** é a **sequência de cargos** que uma pessoa pode ocupar ao longo do tempo. **Plano de cargos e carreira** organiza os cargos em **níveis**, define **requisitos**, **formas de acesso**, **progressão** e **promoção**, oferecendo perspectiva de desenvolvimento. **Progressão** é a passagem para cargo de nível superior, geralmente por **capacitação/curso**; **promoção** pode decorrer de **concurso interno** ou de **desempenho**, conforme a regra da carreira.",
+          "fontes": [
+            "gil",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "carreira-tabela",
+          "titulo": "Progressão × promoção (o que os termos significam)",
+          "colunas": [
+            "Termo",
+            "Significado",
+            "Geralmente depende de"
+          ],
+          "linhas": [
+            [
+              "Progressão",
+              "Ascensão a nível superior dentro da mesma carreira",
+              "Curso/capacitação, tempo, requisitos"
+            ],
+            [
+              "Promoção",
+              "Ascensão a cargo de maior responsabilidade/grado",
+              "Concurso interno, desempenho, critérios da carreira"
+            ],
+            [
+              "Remoção",
+              "Transferência do servidor para outra unidade/cargo",
+              "Interesse da administração ou do servidor, regras"
+            ],
+            [
+              "Recondução",
+              "Volta do servidor ao cargo anterior",
+              "Falta de desempenho, novo edital, critérios legais"
+            ],
+            [
+              "Exoneração",
+              "Demissão do cargo em comissão/confiança",
+              "Decisão da autoridade, conforme a lei"
+            ]
+          ],
+          "fontes": [
+            "gil",
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rem-def",
+          "texto": "**Remuneração** é tudo o que o trabalhador recebe pelo serviço: **salário** (retribuição base pelo trabalho), **vantagens** (gratificações, adicionais, abonos), **benefícios** (vale-refeição, vale-transporte, assistência) e **encargos** (FGTS, INSS, impostos). No serviço público, a remuneração do servidor comprende **vencimento**, **vantagens** e **gratificações**, conforme a lei.",
+          "fontes": [
+            "gil",
+            "marras",
+            "lei-8112"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "rem-tabela",
+          "titulo": "Componentes da remuneração",
+          "colunas": [
+            "Componente",
+            "O que é",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Salário / vencimento",
+              "Retribuição base pelo trabalho prestado",
+              "Salário mínimo, vencimento do cargo"
+            ],
+            [
+              "Gratificações e adicionais",
+              "Complementos por condições específicas",
+              "Gratificação de função, adicional por tempo"
+            ],
+            [
+              "Vantagens",
+              "Acréscimos legalmente previstos",
+              "13º salário, férias + 1/3 constitucional"
+            ],
+            [
+              "Benefícios",
+              "Prestações previdenciárias ou assistenciais",
+              "Vale-transporte, vale-refeição, saúde"
+            ],
+            [
+              "Encargos",
+              "Contribuições devidas sobre a remuneração",
+              "FGTS, INSS, imposto de renda"
+            ]
+          ],
+          "fontes": [
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rem-justica",
+          "texto": "A remuneração deve observar **justiça interna** (valores compatíveis entre cargos da mesma organização), **justiça externa** (compatibilidade com o mercado de trabalho) e **legalidade** (cumprimento da lei, inclusive do piso nacional). O **planejamento de remuneração** atua sobre **cargos, carreiras e níveis** para manter coerência, **competitividade** e capacidade de atrair e reter pessoas.",
+          "fontes": [
+            "gil",
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "cargo-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca afirma que **cargo é 'a vaga'** (cargo é a unidade de trabalho com atribuições definidas; vaga é a necessidade de preenchimento); que **remuneração é só o salário** (a remuneração inclui vencimento, vantagens, gratificações, benefícios e encargos); e que **progressão e promoção são a mesma coisa** (a progressão geralmente depende de capacitação; a promoção, de critérios de carreira ou concurso interno)."
+        }
+      ]
+    },
+    {
+      "id": "desenvolvimento-e-treinamento",
+      "numero": 3,
+      "titulo": "Treinamento e desenvolvimento",
+      "subtitulo": "Capacitar para o hoje e desenvolver para o amanhã",
+      "fontes": [
+        "chiavenato",
+        "marras"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "td-def",
+          "texto": "**Treinamento** é a **capacitação para o cargo atual**: ensina habilidades e conhecimentos específicos para o desempenho da tarefa de hoje. **Desenvolvimento** é o **preparo para o futuro**: amplia competências para o cargo que o profissional pode assumir, a carreira e a organização. **T&D** (treinamento e desenvolvimento) cobre ambos: **treina para o presente, desenvolve para o futuro**.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "td-tabela",
+          "titulo": "Treinamento × desenvolvimento",
+          "colunas": [
+            "Aspecto",
+            "Treinamento",
+            "Desenvolvimento"
+          ],
+          "linhas": [
+            [
+              "Objetivo",
+              "Capacitar para a tarefa atual",
+              "Preparar para o futuro e a carreira"
+            ],
+            [
+              "Foco",
+              "Habilidades específicas, técnica",
+              "Competências amplas, gerencial, estratégico"
+            ],
+            [
+              "Tempo",
+              "Curto prazo",
+              "Longo prazo, contínuo"
+            ],
+            [
+              "Exemplo",
+              "Curso de sistema, norma, equipamento",
+              "Curso de gestão, liderança, pós-graduação"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "td-processo",
+          "texto": "Processo de T&D: **levantamento de necessidades** (diagnóstico — quais competências faltam, onde e por quê), **planejamento** (definir objetivos, conteúdos, público, recursos e cronograma), **execução** (realizar as ações de formação) e **avaliação** (verificar se o conhecimento foi aprendido e se houve impacto no trabalho). Um T&D sem diagnóstico e sem avaliação costuma ser apenas 'cursar por cursar'.",
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "td-etapas",
+          "titulo": "Etapas do processo de T&D",
+          "itens": [
+            "**Diagnóstico**: levantar necessidades de treinamento e competências da organização.",
+            "**Planejamento**: definir objetivos, conteúdos, público, métodos, recursos e prazos.",
+            "**Execução**: realizar o treinamento (presencial, a distância, no próprio posto de trabalho, mentoria).",
+            "**Avaliação**: medir aprendizado e impacto no desempenho do trabalho.",
+            "**Acompanhamento**: conferir a aplicação dos conhecimentos e a evolução das competências."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "td-pndp",
+          "texto": "Na **administração pública federal**, o **Desenvolto de Pessoas** tem respaldo na **Política Nacional de Desenvolvimento de Pessoas (PNDP)**, instituída pelo **Decreto nº 9.991/2019**. A política estabelece **diretrizes** e **instrumentos**: o **Plano de Desenvolvimento de Pessoas (PDP)** de cada órgão, **relatórios de execução**, o **Plano Consolidado de Desenvolvimento de Pessoas** e **trilhas** de formação — além de **escolas de governo**, que executam a formação. O **PDP** é elaborado anualmente e deve conter, no mínimo, as diretrizes e os conteúdos mínimos definidos, com **diagnostico de competências** como base preferencial.",
+          "fontes": [
+            "decreto-9991",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "td-pndp-destaque",
+          "titulo": "PNDP em uma linha",
+          "nivel": "info",
+          "texto": "**Decreto nº 9.991/2019 (PNDP)** → cada órgão elabora seu **Plano de Desenvolvimento de Pessoas (PDP)** anual → **relatórios** e **Plano Consolidado** avaliam a execução → **escolas de governo** realizam a formação.",
+          "fontes": [
+            "decreto-9991"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "td-aprendizagem",
+          "texto": "**Aprendizagem organizacional** é a capacidade da organização de **criar, adquirir e compartilhar conhecimento** e de transformá-lo em resultados. T&D contribui para ela por meio de **capacitação contínua, cultura de retorno, mentoria, conhecimento tácito** (experiência) e **conhecimento explícito** (procedimentos, manuais, normas). Uma organização que aprende se adapta melhor às mudanças.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "td-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **treinamento por desenvolvimento** (treinamento é para o hoje; desenvolvimento para o futuro); afirma que **T&D é só 'dar um curso'** (sem diagnóstico e avaliação, o treinamento pode não gerar resultados); e diz que **'capacitação é dispensável'** — no serviço público, cursos de formação e capacitação são etapas de provimento, progressão e mesmo de aprovação em estágio (vide o programa de desenvolvimento inicial do Decreto nº 12.374/2025)."
+        }
+      ]
+    },
+    {
+      "id": "avaliacao-de-desempenho",
+      "numero": 4,
+      "titulo": "Avaliação de desempenho",
+      "subtitulo": "Medir, reconhecer e desenvolver o trabalho",
+      "fontes": [
+        "chiavenato",
+        "marras"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ad-def",
+          "texto": "**Avaliação de desempenho** é o processo de **medir e avaliar o trabalho** das pessoas: o **comportamento** (atitudes, valores, competências) e os **resultados** (o que foi produzido). Serve para **reconhecer** o trabalho, **identificar necessidades de treinamento**, **justificar** promoções e progressão, **orientar** o retorno e **planejar** o desenvolvimento. Avaliação não é punição: é **instrumento de gestão e desenvolvimento**.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "ad-criterios",
+          "titulo": "Critérios comumente usados na avaliação",
+          "itens": [
+            "**Resultados/produtividade**: o que foi produzido, com qual qualidade, dentro de qual prazo.",
+            "**Comportamento/competências**: atitudes, habilidades interpessoais, cooperação, ética.",
+            "**Conhecimentos e capacidades**: domínio das atividades, capacidade de iniciativa e aprendizado.",
+            "**Responsabilidade e disciplina**: cumprimento de prazos, normas, assiduidade."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ad-metodos",
+          "titulo": "Métodos e fontes de avaliação",
+          "colunas": [
+            "Método",
+            "Quem avalia",
+            "Característica"
+          ],
+          "linhas": [
+            [
+              "Avaliação pela chefia",
+              "Chefe imediato",
+              "Visão global, referência principal"
+            ],
+            [
+              "Autoavaliação",
+              "O próprio servidor",
+              "Reflexão sobre seus resultados e comportamento"
+            ],
+            [
+              "Avaliação por pares",
+              "Colegas da equipe",
+              "Retorno sobre convivência e cooperação"
+            ],
+            [
+              "Avaliação 360 graus",
+              "Chefia, pares, equipes e até clientes",
+              "Múltiplas visões, mais completo, mais complexo"
+            ],
+            [
+              "Avaliação por indicadores (KPIs)",
+              "Resultados mensuráveis",
+              "Objetiva, mas pode ignorar o comportamento"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ad-feedback",
+          "texto": "**Feedback** é o **retorno** sobre o desempenho, informando o que foi bom, o que precisa mudar e como melhorar. O feedback deve ser **específico, oportuno, construtivo e equilibrado** — não é só elogio nem só crítica. Uma avaliação sem retorno desperdiça seu potencial de desenvolvimento: o servidor precisa saber **por que foi avaliado** e **o que fazer com o resultado**.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ad-decreto-intro",
+          "texto": "**No serviço público federal**, a avaliação de desempenho ganha norma própria: o **Decreto nº 12.374/2025** disciplina a **avaliação de desempenho de servidores em estágio probatório** (art. 20 da Lei nº 8.112/1990). O servidor aprovado em concurso e nomeado para cargo efetivo **fica em estágio probatório por 36 meses**, contados da data de início do **efetivo exercício** no cargo.",
+          "fontes": [
+            "decreto-12374",
+            "lei-8112"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ad-fatores",
+          "titulo": "Fatores de avaliação do estágio probatório (art. 3º do D. 12.374/2025)",
+          "colunas": [
+            "Fator",
+            "O que avalia"
+          ],
+          "linhas": [
+            [
+              "Assiduidade",
+              "Presença, frequência e pontualidade"
+            ],
+            [
+              "Disciplina",
+              "Cumprimento de normas, conduta e obediência"
+            ],
+            [
+              "Capacidade de iniciativa",
+              "Proatividade, autonomia, sugestões e soluções"
+            ],
+            [
+              "Produtividade",
+              "Quantidade e qualidade do trabalho produzido"
+            ],
+            [
+              "Responsabilidade",
+              "Assumir tarefas, cumprir obrigações, cuidado com o serviço"
+            ]
+          ],
+          "fontes": [
+            "decreto-12374"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ad-decreto-mecanismo",
+          "texto": "A avaliação é feita **pela chefia imediata**, **pelo próprio servidor (autoavaliação)** e **pelos pares** da equipe (art. 4º). A **avaliação por pares é dispensada** quando não houver, no mínimo, **três pares estáveis com mais de seis meses de atuação na mesma equipe**. Os resultados compõem **três ciclos avaliativos**, realizados **após 12, 24 e 32 meses** de efetivo exercício (art. 5º). Cada ciclo vale **100 pontos**: com pares, **chefia 60%, pares 25% e autoavaliação 15%**; sem pares, **chefia 72,5% e autoavaliação 27,5%** (art. 6º).",
+          "fontes": [
+            "decreto-12374"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ad-decreto-aprovacao",
+          "texto": "**Será aprovado** na avaliação do estágio probatório o servidor que: **I** — obtiver **média igual ou superior a 80 pontos**, calculada com base nos três ciclos; e **II** — apresentar o **certificado de conclusão do programa de desenvolvimento inicial** (art. 8º). O **programa de desenvolvimento inicial**, disponibilizado pela **Enap**, abrange no mínimo organização da administração pública federal, integridade e ética no serviço público, Estado Democrático de Direito, políticas públicas, **letramento digital** e gestão do conhecimento e da comunicação, e deve ser concluído **no prazo de 30 meses** (art. 9º, com redação do D. 12.967/2026), durante a jornada de trabalho e considerado como serviço. A aprovação é **indispensável para a estabilidade**.",
+          "fontes": [
+            "decreto-12374"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ad-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **avaliação de desempenho com punição** (a avaliação é gestão e desenvolvimento, não só sanção); afirma que **'avaliação é só pela chefia'** (no estágio probatório, também cabe autoavaliação e avaliação por pares); e pergunta o **prazo do estágio** ('24 meses' — não: o estágio probatório é de **36 meses**, com ciclos em 12, 24 e 32 meses). Além disso, **média 80 pontos + certificado** são requisitos de aprovação, não apenas a nota."
+        }
+      ]
+    },
+    {
+      "id": "pontos-que-mais-caem",
+      "numero": 5,
+      "titulo": "Pontos que mais caem em prova",
+      "subtitulo": "Resumo de charge e revisão rápida",
+      "fontes": [
+        "chiavenato",
+        "gil"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "pq-resumo",
+          "texto": "Resumo rápido: **Recrutamento capta, seleção escolhe**; no serviço público, a forma ordinária de provimento é o **concurso público**. **Cargo** é a unidade de trabalho com atribuições; a **análise de cargo** descreve e valora o trabalho; **progressão** (por capacitação) e **promoção** (por critérios de carreira) não são a mesma coisa. **Treinamento** é para o cargo atual, **desenvolvimento** para o futuro; no setor público, a **PNDP (D. 9.991/2019)** e o **PDP** orientam a formação. **Avaliação de desempenho** mede comportamento e resultados; no **estágio probatório (D. 12.374/2025)**, os fatores são **assiduidade, disciplina, capacidade de iniciativa, produtividade e responsabilidade**, em **três ciclos (12, 24 e 32 meses)**, com **média 80** e **certificado de desenvolvimento inicial** para aprovação.",
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "pq-mnemonico",
+          "titulo": "FATORES do estágio probatório",
+          "texto": "**A**ssiduidade — **D**isciplina — **C**apacidade de **i**niciativa — **P**rodutividade — **R**esponsabilidade. (AD-C-P-R: lembre os cinco fatores do art. 3º do D. 12.374/2025.)"
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "pq-mnemonico-td",
+          "titulo": "T&D em uma frase",
+          "texto": "**T**reinamento para **o presente** (cargo atual); **D**esenvolvimento para **o futuro** (carreira e competências novas). Lembre: T&D = presente + futuro."
+        },
+        {
+          "tipo": "tabela",
+          "id": "pq-tabela",
+          "titulo": "Termos frequentes × definição rápida",
+          "colunas": [
+            "Termo",
+            "Definição rápida"
+          ],
+          "linhas": [
+            [
+              "Concurso público",
+              "Forma ordinária de provimento de cargo efetivo no serviço público"
+            ],
+            [
+              "Recrutamento",
+              "Captar candidatos para a vaga"
+            ],
+            [
+              "Seleção",
+              "Escolher o candidato mais adequado"
+            ],
+            [
+              "Cargo",
+              "Unidade de trabalho com atribuições, responsabilidades e requisitos"
+            ],
+            [
+              "Progressão",
+              "Ascensão a nível superior, geralmente por capacitação"
+            ],
+            [
+              "Promoção",
+              "Ascensão a cargo de maior responsabilidade, por critérios da carreira"
+            ],
+            [
+              "Remuneração",
+              "Vencimento + vantagens + gratificações + benefícios (+ encargos)"
+            ],
+            [
+              "Treinamento",
+              "Capacitação para o cargo atual"
+            ],
+            [
+              "Desenvolvimento",
+              "Preparação para o futuro e a carreira"
+            ],
+            [
+              "Avaliação de desempenho",
+              "Medir comportamento e resultados do trabalho"
+            ],
+            [
+              "Estágio probatório",
+              "36 meses, avaliado em 3 ciclos (12, 24, 32 meses)"
+            ],
+            [
+              "Aprovação no estágio",
+              "Média ≥ 80 pontos + certificado de desenvolvimento inicial"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "pq-exemplo",
+          "texto": "**Exemplo de prova**: pergunta sobre o estágio probatório pergunta: 'O servidor aprovado em concurso e nomeado para cargo efetivo fica em estágio probatório por quanto tempo, e com quais requisitos é aprovado?' Resposta: **36 meses** contados do início do efetivo exercício; aprovado com **média igual ou superior a 80 pontos** nos três ciclos **e certificado de conclusão de programa de desenvolvimento inicial**.",
+          "fontes": [
+            "decreto-12374"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "pq-gotcha",
+          "titulo": "As pegadinhas mais comuns",
+          "texto": "A banca costuma trocar **recrutamento/seleção**, **progressão/promoção**, **treinamento/desenvolvimento** e **avaliação de desempenho com punição**; também testa o **prazo de 36 meses** do estágio probatório (24 meses é a resposta errada clássica), a **média 80** e os **cinco fatores** de avaliação. Releia os termos, os números e os requisitos legais antes da prova."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-gestao-pessoas-02",
+    "titulo": "Quiz — Administração de pessoas (aula 2)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-rs-def",
+        "enunciado": "Assinale a alternativa correta sobre recrutamento e seleção:",
+        "opcoes": [
+          {
+            "texto": "Recrutamento e seleção são o mesmo processo: ambos escolhem o candidato para a vaga.",
+            "correta": false,
+            "explicacao": "Não. Recrutamento capta e atrai candidatos; seleção avalia e escolhe quem melhor se adapta à vaga."
+          },
+          {
+            "texto": "O recrutamento busca e atrai candidatos; a seleção avalia os candidatos e escolhe quem melhor se adapta à vaga e aos requisitos.",
+            "correta": true,
+            "explicacao": "Certo. São dois momentos sequenciais: recrutamento amplia o número; seleção reduz e qualifica o conjunto."
+          },
+          {
+            "texto": "Recrutamento é só a divulgação de vagas em redes sociais; seleção é só a análise do currículo.",
+            "correta": false,
+            "explicacao": "Não. Recrutamento usa várias fontes (interna, concurso, agências) e a seleção inclui provas, entrevistas e outras etapas."
+          },
+          {
+            "texto": "No serviço público, a seleção para cargo efetivo pode ser feita por indicação direta da chefia, sem procedimento objetivo.",
+            "correta": false,
+            "explicacao": "Não. A forma ordinária de provimento de cargo efetivo é o concurso público, que garante isonomia e impessoalidade."
+          },
+          {
+            "texto": "Recrutamento e seleção são processos puramente burocráticos, sem relação com a estratégia da organização.",
+            "correta": false,
+            "explicacao": "Não. Ambos são funções da gestão de pessoas e servem aos objetivos da organização."
+          }
+        ],
+        "secao_id": "recrutamento-e-selecao",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-concurso",
+        "enunciado": "Sobre o recrutamento no serviço público, é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "O concurso público é o meio ordinário de provimento de cargo efetivo, garantindo igualdade de condições e impessoalidade aos candidatos.",
+            "correta": true,
+            "explicacao": "Certo. O concurso público é a forma ordinária de provimento de cargo efetivo, conforme o regime dos servidores (Lei nº 8.112/1990)."
+          },
+          {
+            "texto": "O servidor pode ser nomeado para cargo efetivo por indicação pessoal do superior hierárquico, sem concurso.",
+            "correta": false,
+            "explicacao": "Não. O provimento de cargo efetivo se faz, ordináriamente, por concurso público."
+          },
+          {
+            "texto": "Concurso público só é necessário para cargos de confiança, não para os efetivos.",
+            "correta": false,
+            "explicacao": "Não. Cargos efetivos são providos por concurso público; cargos em comissão/de confiança são distintos."
+          },
+          {
+            "texto": "Em qualquer hipótese, a vaga deve ser preenchida por transferência interna, sem abertura a candidatos externos.",
+            "correta": false,
+            "explicacao": "Não. O concurso público abre a vaga a todos os candidatos, internal e externamente."
+          },
+          {
+            "texto": "O concurso público pode ser realizado sem edital e sem critérios previamente divulgados.",
+            "correta": false,
+            "explicacao": "Não. O concurso exige regras e critérios previamente divulgados, para garantir transparência e isonomia."
+          }
+        ],
+        "secao_id": "recrutamento-e-selecao",
+        "fonte_id": "lei-8112"
+      },
+      {
+        "id": "q-cargo-progressao",
+        "enunciado": "Em relação a cargos, carreiras e remuneração, considere as afirmações. A progressão e a promoção se diferenciam porque:",
+        "opcoes": [
+          {
+            "texto": "São sinônimos: ambas dependem exclusivamente de tempo de serviço no cargo.",
+            "correta": false,
+            "explicacao": "Não. Progressão (por capacitação) e promoção (por critérios de carreira) não são sinônimos e não dependem só do tempo."
+          },
+          {
+            "texto": "A progressão é a ascensão a nível superior, geralmente por capacitação; a promoção é a ascensão a cargo de maior responsabilidade, por critérios da carreira (como desempenho ou concurso interno).",
+            "correta": true,
+            "explicacao": "Certo. Progressão depende de capacitação; promoção, de critérios da carreira."
+          },
+          {
+            "texto": "Progressão é a demissão do servidor por falta de desempenho; promoção é a transferência para outra unidade.",
+            "correta": false,
+            "explicacao": "Não. Progressão e promoção são formas de ascensão, não demissões ou transferências."
+          },
+          {
+            "texto": "Progressão só ocorre após aprovação em novo concurso público; promoção não tem nenhuma regra.",
+            "correta": false,
+            "explicacao": "Não. A progressão costuma depender de capacitação; a promoção tem regras de carreira, mas não exige novo concurso."
+          },
+          {
+            "texto": "A progressão é um benefício em dinheiro, sem alteração de cargo.",
+            "correta": false,
+            "explicacao": "Não. Progressão é ascensão a nível superior na carreira, não benefício financeiro."
+          }
+        ],
+        "secao_id": "cargos-e-remuneracao",
+        "fonte_id": "gil"
+      },
+      {
+        "id": "q-remuneracao",
+        "enunciado": "A remuneração do trabalhador compreende diferentes componentes. Entre eles, o **salário** (ou vencimento) corresponde a:",
+        "opcoes": [
+          {
+            "texto": "A retribuição base pelo trabalho prestado, sem os complementos da remuneração.",
+            "correta": true,
+            "explicacao": "Certo. Salário/vencimento é a retribuição base; a remuneração total inclui também vantagens, gratificações, benefícios e encargos."
+          },
+          {
+            "texto": "O conjunto de todos os benefícios assistenciais pagos pela organização.",
+            "correta": false,
+            "explicacao": "Não. Benefícios são outro componente da remuneração; o salário é a retribuição base pelo trabalho."
+          },
+          {
+            "texto": "A contribuição previdenciária descontada do trabalhador.",
+            "correta": false,
+            "explicacao": "Não. Encargos são contribuições sobre a remuneração, não o salário."
+          },
+          {
+            "texto": "A gratificação de função paga ao servidor em cargo de confiança.",
+            "correta": false,
+            "explicacao": "Não. Gratificações são complementos da remuneração; o salário é a retribuição base."
+          },
+          {
+            "texto": "A quantia fixa paga independentemente de qualquer trabalho, como auxílio-alimentação.",
+            "correta": false,
+            "explicacao": "Não. Auxílios e benefícios não se confundem com o salário, que decorre do trabalho prestado."
+          }
+        ],
+        "secao_id": "cargos-e-remuneracao",
+        "fonte_id": "gil"
+      },
+      {
+        "id": "q-td",
+        "enunciado": "Sobre treinamento e desenvolvimento (T&D), é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "Treinamento capacita para o cargo atual; desenvolvimento prepara para o futuro, a carreira e competências novas.",
+            "correta": true,
+            "explicacao": "Certo. Treinamento é para o presente; desenvolvimento é para o futuro."
+          },
+          {
+            "texto": "Treinamento e desenvolvimento são o mesmo: ambos servem apenas para a progressão em carreira.",
+            "correta": false,
+            "explicacao": "Não. Treinamento foca a tarefa atual; desenvolvimento foca a carreira e o futuro."
+          },
+          {
+            "texto": "O treinamento deve ser realizado apenas após a avaliação de desempenho, sem diagnóstico prévio de necessidades.",
+            "correta": false,
+            "explicacao": "Não. O T&D começa por diagnóstico de necessidades; treinar sem diagnóstico pode não gerar resultados."
+          },
+          {
+            "texto": "No serviço público federal, o desenvolvimento de pessoas não tem qualquer respaldo normativo.",
+            "correta": false,
+            "explicacao": "Não. A Política Nacional de Desenvolvimento de Pessoas (Decreto nº 9.991/2019) e o Plano de Desenvolvimento de Pessoas (PDP) orientam a formação."
+          },
+          {
+            "texto": "A formação em serviço público deve ser sempre remunerada com adicional, independentemente da lei.",
+            "correta": false,
+            "explicacao": "Não. A regra da remuneração e da duração da formação depende da norma aplicável; não se afirma 'sempre'."
+          }
+        ],
+        "secao_id": "desenvolvimento-e-treinamento",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-pndp",
+        "enunciado": "A Política Nacional de Desenvolvimento de Pessoas (PNDP), do Decreto nº 9.991/2019, tem entre seus instrumentos:",
+        "opcoes": [
+          {
+            "texto": "O Plano de Desenvolvimento de Pessoas (PDP) de cada órgão, os relatórios de execução e o Plano Consolidado de Desenvolvimento de Pessoas.",
+            "correta": true,
+            "explicacao": "Certo. A PNDP define esses instrumentos para a administração pública federal direta, autárquica e fundacional."
+          },
+          {
+            "texto": "A concessão obrigatória de 13º salário extra a todos os servidores.",
+            "correta": false,
+            "explicacao": "Não. O 13º é vantagem legal; a PNDP trata de desenvolvimento de pessoas, não de 13º extra."
+          },
+          {
+            "texto": "A criação de um novo piso salarial nacional para servidores federais.",
+            "correta": false,
+            "explicacao": "Não. A PNDP não define piso salarial; trata de desenvolvimento e formação."
+          },
+          {
+            "texto": "A extinção dos planos de carreira dos órgãos da administração federal.",
+            "correta": false,
+            "explicacao": "Não. A PNDP orienta a formação, não extingue planos de carreira."
+          },
+          {
+            "texto": "A obrigatoriedade de licença remunerada para todos os servidores por capacitação.",
+            "correta": false,
+            "explicacao": "Não. A PNDP estabelece diretrizes e instrumentos de desenvolvimento, não essa regra específica."
+          }
+        ],
+        "secao_id": "desenvolvimento-e-treinamento",
+        "fonte_id": "decreto-9991"
+      },
+      {
+        "id": "q-avaliacao-fatores",
+        "enunciado": "O Decreto nº 12.374/2025 define os fatores de avaliação de desempenho de servidores em estágio probatório. Entre eles estão:",
+        "opcoes": [
+          {
+            "texto": "Assiduidade, disciplina, capacidade de iniciativa, produtividade e responsabilidade.",
+            "correta": true,
+            "explicacao": "Certo. São os cinco fatores do art. 3º do Decreto nº 12.374/2025."
+          },
+          {
+            "texto": "Honestidade, lealdade, criatividade, liderança e prestígio.",
+            "correta": false,
+            "explicacao": "Não. São características genéricas; os fatores do decreto são assiduidade, disciplina, capacidade de iniciativa, produtividade e responsabilidade."
+          },
+          {
+            "texto": "Produtividade, assiduidade, pontualidade, simpatia e lealdade.",
+            "correta": false,
+            "explicacao": "Não. A lista correta inclui disciplina, capacidade de iniciativa e responsabilidade, além de assiduidade e produtividade."
+          },
+          {
+            "texto": "Competência técnica, grau de instrução, tempo de serviço e aposentadoria.",
+            "correta": false,
+            "explicacao": "Não. Esses elementos não compõem a lista de fatores do art. 3º."
+          },
+          {
+            "texto": "Assiduidade e disciplina apenas, pois os demais fatores são opcionais.",
+            "correta": false,
+            "explicacao": "Não. São cinco fatores: assiduidade, disciplina, capacidade de iniciativa, produtividade e responsabilidade."
+          }
+        ],
+        "secao_id": "avaliacao-de-desempenho",
+        "fonte_id": "decreto-12374"
+      },
+      {
+        "id": "q-aprovacao-estagio",
+        "enunciado": "Para ser aprovado na avaliação de desempenho do estágio probatório, o servidor deve:",
+        "opcoes": [
+          {
+            "texto": "Obter média igual ou superior a 80 pontos, calculada a partir dos três ciclos avaliativos, e apresentar o certificado de conclusão do programa de desenvolvimento inicial.",
+            "correta": true,
+            "explicacao": "Certo. Essas são as duas condições do art. 8º do Decreto nº 12.374/2025."
+          },
+          {
+            "texto": "Obter aprovação apenas por avaliação da chefia, sem média nem certificado.",
+            "correta": false,
+            "explicacao": "Não. A aprovação exige média 80 e certificado; a avaliação inclui chefia, autoavaliação e pares."
+          },
+          {
+            "texto": "Apresentar apenas o certificado de conclusão do programa, sem média mínima.",
+            "correta": false,
+            "explicacao": "Não. Também é necessário média igual ou superior a 80 pontos nos três ciclos."
+          },
+          {
+            "texto": "Ser aprovado após dois ciclos avaliativos, com média 60 pontos.",
+            "correta": false,
+            "explicacao": "Não. São três ciclos (12, 24 e 32 meses) e média igual ou superior a 80 pontos."
+          },
+          {
+            "texto": "Prestar novo concurso público para comprovar aptidão.",
+            "correta": false,
+            "explicacao": "Não. A aprovação se dá pela avaliação de desempenho, não por novo concurso."
+          }
+        ],
+        "secao_id": "avaliacao-de-desempenho",
+        "fonte_id": "decreto-12374"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-23",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre administração de pessoas foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100. O conteúdo foi elaborado a partir das referências teóricas da área e das normas consultadas, não de banca específica."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler recrutamento e seleção, incluindo as fontes de recrutamento e o concurso público.",
+      "Revisar análise de cargo, progressão e promoção, e os componentes da remuneração.",
+      "Conferir a PNDP (Decreto nº 9.991/2019): instrumentos, PDP e escolas de governo.",
+      "Conferir o D. 12.374/2025 no Planalto: fatores, ciclos (12, 24, 32 meses), pontuação, média 80 e programa de desenvolvimento inicial.",
+      "Revisar o glossário rápido da seção 5 e as pegadinhas mais cobradas."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-23",
+    "atualizado_em": "2026-11-23",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Aula escrita para o cargo 301 (Assistente em Administração, IFG) a partir de obras de referência em administração de recursos humanos e de normas consultadas no Planalto em 22/11/2026 (Decreto nº 12.374/2025) e 23/11/2026 (Decreto nº 9.991/2019, Lei nº 8.112/1990).",
+    "alteracoes": "Versão inicial da aula 2 (recrutamento e seleção, cargos e remuneração, treinamento e desenvolvimento e avaliação de desempenho)."
+  },
+  "notas": "Blocos teóricos escritos a partir de obras de referência em administração de recursos humanos (Chiavenato, Marras, Maximiano, Gil) e de normas consultadas no Planalto: Decreto nº 12.374/2025 (lido integralmente em 22/11/2026, com a redação do D. 12.967/2026) e Decreto nº 9.991/2019 (capítulo inicial, 23/11/2026). Dispositivos do Decreto nº 12.374/2025 (fatores, ciclos, pontuação, aprovação, programa de desenvolvimento inicial) conferidos no texto. Revisão de ortografia feita manualmente (sem corretor ortográfico no sandbox)."
+}
