@@ -8,6 +8,7 @@
 | [`etica/aula-01.json`](etica/aula-01.json) | Aula 01 — Conceitos, fundamentos, ética profissional e assédio | Ética geral e profissional | rascunho | 8 questões |
 | [`administracao-de-pessoas/aula-01.json`](administracao-de-pessoas/aula-01.json) | Aula 01 — Conceito, funções, estratégia, liderança, equipe e motivação | Administração de Pessoas | rascunho | 8 questões |
 | [`administracao-de-pessoas/aula-02.json`](administracao-de-pessoas/aula-02.json) | Aula 02 — Recrutamento e seleção, cargos e remuneração, T&D e avaliação de desempenho | Administração de Pessoas | rascunho | 8 questões |
+| [`portugues/aula-01.json`](portugues/aula-01.json) | Aula 01 — Concordância, crase, regência e pontuação | Língua Portuguesa | rascunho | 8 questões |
 
 ### Legislação federal (cargo 301 — Assistente em Administração, IFG)
 

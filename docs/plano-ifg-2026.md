@@ -37,7 +37,7 @@ Legenda: ✅ coberto · 🟡 parcial · ❌ ausente.
 
 | Área | Tópicos do edital | Cobertura | Situação |
 |---|---|---:|---|
-| **Língua Portuguesa** (20 pts) | 21 tópicos | 🟡 ~7/21 | Há 7 aulas (ortografia, classes de palavras, verbos, locuções, funções sintáticas, coordenação, colocação pronominal). Faltam crase, concordância, regência, pontuação, coesão, figuras de linguagem, gêneros textuais, formação de palavras, variação linguística. |
+| **Língua Portuguesa** (20 pts) | 21 tópicos | 🟡 ~8/21 | Há 7 aulas no acervo (ortografia, classes de palavras, verbos, locuções, funções sintáticas, coordenação, colocação pronominal) e a **aula-01 no Hermes (23/11/2026)** cobre crase, concordância, regência e pontuação. Ainda faltam coesão, figuras de linguagem, gêneros textuais, formação de palavras, variação linguística. |
 | **Legislação** (10 pts) | 11 normas | ✅ 10/11 | Dez aulas em `exemplos/legislacao/` (22/11/2026; aula-01 corrigida no mesmo dia): 8.112, D. 1.171 + D. 6.029, LDB, 11.892, 11.091, 9.784, LGPD, LAI, 8.429, 14.133 — 79 seções, 376 blocos, 76 questões. CF/88 é citada nas aulas, sem aula própria. Status: `rascunho`, falta revisão. |
 | **Raciocínio Lógico e Matemática** (5 pts) | 5 blocos | 🟡 1/5 | Só lógica proposicional. Faltam combinatória, aritmética, conjuntos e geometria. |
 | **Informática** (5 pts) | 8 blocos | 🟡 3/8 | Cobertos: redes, busca, navegadores, e-mail. Faltam hardware, Windows, Office, LibreOffice, segurança. |
@@ -64,7 +64,7 @@ Risco = pontos em jogo × tamanho da lacuna.
 |---:|---|---:|---|
 | 1 | **Ética + materiais/logística + gestão de pessoas** (específicos) | ~20–30 | 60% da prova; Ética e gestão de pessoas já têm aula (23/11/2026), mas faltam materiais/logística e administração financeira. |
 | 2 | ~~**Legislação federal do servidor** (8.112, 1.171, 9.394, 11.892, 11.091, 9.784, LGPD)~~ | ~6 | ✅ **Concluído em 22/11/2026**: 10 aulas escritas a partir da lei (ver [`exemplos/legislacao/`](../exemplos/legislacao/)). Próximo passo é a revisão (`rascunho` → `revisao`). |
-| 3 | **Português** (crase, concordância, regência, pontuação, coesão) | ~13 | Maior bloco de conhecimentos gerais; 13 tópicos sem aula. |
+| 3 | **Português** (crase, concordância, regência, pontuação, coesão) | ~13 | Maior bloco de conhecimentos gerais; os 4 pilares mais cobrados já têm aula (23/11/2026); faltam coesão, figuras, gêneros, formação de palavras e variação. |
 | 4 | **RLM** (combinatória, aritmética, conjuntos, geometria) | ~4 | Quatro dos cinco blocos sem aula. |
 | 5 | **Informática** (hardware, Office, LibreOffice, Windows, segurança) | ~3 | Cinco blocos sem aula, mas são os pontos mais “decoráveis” da prova. |
 
@@ -79,7 +79,7 @@ Meta: **fechar as lacunas de maior rendimento**, não migrar o acervo inteiro.
 | 1–2 | **Legislação federal** | ✅ Entregue em 22/11/2026: 10 aulas curtas (8.112/1990, D. 1.171/1994 + D. 6.029/2007, LDB 9.394/1996, 11.892/2008, 11.091/2005, 9.784/1999, LGPD, LAI, 8.429/1992, 14.133/2021). Falta a revisão de cada aula. |
 | 3–5 | **Específicos (parte 1)** | ✅ Ética (aula 1) e gestão de pessoas (aulas 1–2) entregues em 23/11/2026; comportamento organizacional (grupos, conflito) ainda não. |
 | 6–7 | **Específicos (parte 2)** | Materiais/patrimônio/logística; administração financeira (DRE, fluxo de caixa, balanço) |
-| 8–9 | **Português** | Crase; concordância; regência; pontuação e coesão; figuras/gêneros; formação de palavras |
+| 8–9 | **Português** | ✅ Crase, concordância, regência e pontuação (aula-01 entregue 23/11/2026); ainda faltam coesão, figuras/gêneros, formação de palavras |
 | 10 | **RLM** | Combinatória; aritmética; conjuntos; geometria |
 | 11 | **Informática** | Hardware; Office/LibreOffice; Windows; segurança |
 | 12 | **Revisão** | Refazer quizzes, revisar incidência, simulado |
