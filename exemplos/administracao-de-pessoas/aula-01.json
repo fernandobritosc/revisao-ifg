@@ -1,0 +1,1101 @@
+{
+  "schema_version": "1.1.0",
+  "id": "gestao-pessoas-aula-01",
+  "materia": "Administração de Pessoas",
+  "numero": 1,
+  "titulo": "Administração de pessoas — Aula 1: Conceito, funções, estratégia, liderança, equipe e motivação",
+  "resumo": "Apresenta a administração de pessoas (gestão de pessoas): conceito, objeto e importância; evolução histórica (administração científica, relações humanas, RH, gestão estratégica) e funções da área; estratégia, planejamento, cargos, carreiras e remuneração; liderança e seus estilos; trabalho em equipe e o modelo de Tuckman; e motivação (Maslow, Herzberg, McClelland) e clima organizacional.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "administracao-de-pessoas",
+    "gestao-de-pessoas",
+    "recursos-humanos",
+    "funcoes-cap",
+    "estrategia-de-pessoas",
+    "lideranca",
+    "estilos-de-lideranca",
+    "trabalho-em-equipe",
+    "tuckman",
+    "motivacao",
+    "maslow",
+    "herzberg",
+    "mcclelland",
+    "clima-organizacional",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "chiavenato",
+      "tipo": "livro",
+      "titulo": "Gestão de Pessoas: conceitos, funções e práticas",
+      "ano": 2014,
+      "detalhes": "Obra de referência em gestão de pessoas no Brasil (edição atualizada). Os conceitos desta aula — funções da gestão de pessoas, estratégia, liderança, motivação — seguem a abordagem da obra. O texto original não foi reproduzido."
+    },
+    {
+      "id": "marras",
+      "tipo": "livro",
+      "titulo": "Administração de Recursos Humanos",
+      "ano": 2010,
+      "detalhes": "Livro-texto de referência em administração de recursos humanos, com tratamento de recrutamento, seleção, desenvolvimento, avaliação e relações de trabalho. Consultado para os conceitos teóricos; o texto original não foi reproduzido."
+    },
+    {
+      "id": "maximiano",
+      "tipo": "livro",
+      "titulo": "Administração de Recursos Humanos",
+      "ano": 2009,
+      "detalhes": "Obra de referência em administração de recursos humanos; consultada para a evolução histórica (administração científica, relações humanas, estratégia) e para as funções da área. O texto original não foi reproduzido."
+    },
+    {
+      "id": "gil",
+      "tipo": "livro",
+      "titulo": "Gestão de Pessoas: o novo papel dos recursos humanos",
+      "ano": 2006,
+      "detalhes": "Obra de referência em gestão de pessoas, com foco na transição da administração de RH tradicional para a gestão de pessoas orientada pela estratégia. Consultada para a seção de estratégia e para a análise de cargos e carreiras. O texto original não foi reproduzido."
+    },
+    {
+      "id": "decreto-9991",
+      "tipo": "norma",
+      "titulo": "Decreto nº 9.991, de 4 de janeiro de 2019 — Política Nacional de Desenvolvimento de Pessoas (PNDP)",
+      "ano": 2019,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9991.htm",
+      "detalhes": "Lido no Planalto em 23/11/2026 (capítulo inicial do texto). Estabelece a Política Nacional de Desenvolvimento de Pessoas para a administração pública federal direta, autárquica e fundacional e seus instrumentos (Plano de Desenvolvimento de Pessoas, relatórios, Plano Consolidado de Desenvolvimento de Pessoas). Citado nesta aula apenas para contextualizar a função 'desenvolvimento'."
+    },
+    {
+      "id": "lei-8112",
+      "tipo": "norma",
+      "titulo": "Lei nº 8.112, de 11 de dezembro de 1990 — Regime Jurídico dos Servidores Públicos Federais",
+      "ano": 1990,
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8112.htm",
+      "detalhes": "Consultada em 23/11/2026 para contextualizar a gestão de pessoas no serviço público federal: o regime dos servidores define direitos, deveres, cargos e a relação de trabalho que a administração de pessoas no setor público organiza no dia a dia."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "conceito-e-importancia",
+      "numero": 1,
+      "titulo": "Conceito, objeto e importância",
+      "subtitulo": "O que é administração de pessoas e por que ela importa",
+      "fontes": [
+        "chiavenato",
+        "gil"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "gp-def",
+          "texto": "**Administração de pessoas** (também chamada **gestão de pessoas** ou **administração/gestão de recursos humanos**) é o conjunto de **políticas, práticas e processos** que buscam **atrair, selecionar, desenvolver, avaliar, remunerar e reter pessoas** de modo que seus talentos e esforços concorram para os objetivos da organização. O objeto da área é a **pessoa no trabalho**: o indivíduo e o grupo, seus comportamentos, competências, necessidades e relações.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "gp-objeto",
+          "texto": "O objeto da administração de pessoas pode ser visto em três níveis: **individual** (recrutamento, seleção, treinamento, avaliação, remuneração do trabalhador), **coletivo** (clima organizacional, relações de trabalho, trabalho em equipe, liderança) e **estratégico** (alinhamento da força de trabalho com os objetivos da organização). A área não lida apenas com “puros processos de RH”, mas com **resultados** por meio das pessoas.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "gp-diferenca",
+          "titulo": "Administração de pessoas × administração de RH tradicional",
+          "colunas": [
+            "Aspecto",
+            "Administração de RH (tradicional)",
+            "Administração/Gestão de pessoas (atual)"
+          ],
+          "linhas": [
+            [
+              "Foco",
+              "Processos e transações (cadastro, folha, admissões)",
+              "Pessoas e resultados: competências, engajamento, desempenho"
+            ],
+            [
+              "Papel",
+              "Administrativa e de suporte",
+              "Estratégica: participa da definição de objetivos"
+            ],
+            [
+              "Tempo",
+              "Reativo, voltado à rotina",
+              "Proativa, com planejamento e diagnóstico"
+            ],
+            [
+              "Resultado",
+              "Eficiência dos processos",
+              "Valor criado pela capacidade das pessoas"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "gp-importancia",
+          "titulo": "Por que a gestão de pessoas importa",
+          "itens": [
+            "**Atrair e reter talentos**: em ambiente de concorrência por mão de obra qualificada, a organização que cuida das pessoas retém mais competência.",
+            "**Aumentar o desempenho**: práticas de seleção, desenvolvimento e avaliação alinhadas elevam a produtividade e a qualidade dos resultados.",
+            "**Sustentar a estratégia**: objetivos estratégicos só se concretizam com pessoas com as competências necessárias, no lugar e no tempo certos.",
+            "**Garantir conformidade e clima**: a área cuida das relações de trabalho, do clima e das obrigações legais, reduzindo riscos trabalhistas e falhas de execução.",
+            "**Engajamento e motivação**: gente motivada, com propósito e reconhecimento, apresenta menor rotatividade e melhor clima organizacional."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "gp-destaque",
+          "titulo": "A gestão de pessoas é fator de diferenciação",
+          "nivel": "info",
+          "texto": "Organizações de igual porte, tecnologia e mercado produzem resultados diferentes — e o principal fator de diferenciação, com frequência, é **como ela lida com suas pessoas**. A administração de pessoas deixou de ser 'setor de folha' para ser **criadora de valor**.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "gp-competencias",
+          "texto": "Competências do profissional que atua com pessoas: **conhecimento técnico** das funções (recrutamento, remuneração, desenvolvimento, direito trabalhista), **habilidades humanas** (comunicação, escuta, negociação, feedback), **visão de negócio** (entender os objetivos da organização) e **ética** (tratar cada pessoa com isenção e respeito).",
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "gp-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **administração de pessoas por 'tratar bem todo mundo'** (não é disso: a área tem objetivos, métricas e exigências de conformidade); **não confunda gestão de pessoas com psicologia organizacional ou com ações de capacitação isoladas** — são abordagens complementares, mas a administração de pessoas inclui decisão, política e processos; e **'recursos humanos' não é só custo a ser cortado**, mas ativo que gera valor quando bem gerido."
+        }
+      ]
+    },
+    {
+      "id": "historico-e-funcoes",
+      "numero": 2,
+      "titulo": "Evolução histórica e funções da área",
+      "subtitulo": "De Taylor e Mayo ao planejamento estratégico de pessoas",
+      "fontes": [
+        "maximiano",
+        "marras"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ev-intro",
+          "texto": "A administração de pessoas acompanha a evolução da **administração**. A **Escola da Administração Científica** (Frederick Taylor) buscou a eficiência máxima por meio da padronização do trabalho; **Henri Fayol** sistematizou as funções da administração e os princípios gerais. A **Escola das Relações Humanas** (Elton Mayo, estudos de Hawthorne) mostrou que fatores sociais e psicológicos influenciam a produção. Depois vieram a **escola comportamental**, a **administração de RH** (foco em processos) e a **gestão de pessoas estratégica** (alinhamento com a estratégia da organização).",
+          "fontes": [
+            "maximiano",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ev-tabela",
+          "titulo": "Evolução das ideias sobre o trabalho e as pessoas",
+          "colunas": [
+            "Época",
+            "Corrente",
+            "Foco principal",
+            "Noção sobre as pessoas"
+          ],
+          "linhas": [
+            [
+              "Fim do séc. XIX / início XX",
+              "Administração Científica (Taylor)",
+              "Eficiência, padronização, piece rate",
+              "Mão de obra como fator de produção"
+            ],
+            [
+              "Década de 1920",
+              "Relações Humanas (Mayo)",
+              "Fatores sociais e psicológicos",
+              "Pessoa como ser social, motivado por relações"
+            ],
+            [
+              "Décadas de 1940-60",
+              "Administração de RH",
+              "Processos e rotinas",
+              "Pessoa como recurso a ser administrado"
+            ],
+            [
+              "A partir dos anos 1980",
+              "Gestão de pessoas estratégica",
+              "Alinhamento com objetivos",
+              "Pessoa como patrimônio e fonte de vantagem competitiva"
+            ]
+          ],
+          "fontes": [
+            "maximiano",
+            "marras",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "fun-cap",
+          "texto": "As **funções da administração de pessoas** (frequentemente chamadas de funções **CAP**) são: **Recrutamento** (procura de candidatos), **Seleção** (escolha entre os candidatos), **Integração** (acompanhamento dos que ingressam), **Desenvolvimento** (treinamento, capacitação, aprendizado), **Avaliação** (desempenho e potencial), **Remuneração** (cargos, salários, benefícios) e **Relações de trabalho** (clima, saúde, condições, representação).",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "fun-mnemonico",
+          "titulo": "CAP — as funções da área",
+          "texto": "**C** — **A**dministração de **P**essoas. Suas funções principais: **R**ecrutamento, **S**eleção, **I**ntegração, **D**esenvolvimento, **A**valiação, **R**emuneração e **R**elações de trabalho. (Lembre: a área não se resume a 'contratar e pagar'.)"
+        },
+        {
+          "tipo": "lista",
+          "id": "fun-lista",
+          "titulo": "Funções detalhadas (o que cada uma faz)",
+          "itens": [
+            "**Recrutamento**: levantar necessidades, divulgar vagas, captar candidatos (concursos, vagas, banco de talentos).",
+            "**Seleção**: analisar currículos, aplicar provas, entrevistas e testes, decidir a contratação ou nomeação.",
+            "**Integração**: receber o ingressante, apresentar a organização, regras, equipe e condições de trabalho.",
+            "**Desenvolvimento**: treinar, capacitar, aperfeiçoar competências (formação técnico-profissional e cursos).",
+            "**Avaliação**: medir desempenho e comportamento; identificar acertos, erros e necessidades de capacitação.",
+            "**Remuneração**: estruturar cargos e salários, pagos, benefícios e encargos.",
+            "**Relações de trabalho**: clima organizacional, saúde, segurança, comunicação e representação dos trabalhadores."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ev-diagnostico",
+          "texto": "A administração de pessoas também faz **pesquisa e diagnóstico**: levantamento de necessidades de pessoal, análise do cargo, do trabalho e do clima, que alimentam o planejamento. O diagnóstico de competências — identificar quais competências a organização tem e quais precisa desenvolver — é a base de um planejamento de pessoas consistente.",
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ev-pndp",
+          "texto": "Na **administração pública federal**, o **Desenvolvimento de Pessoas** tem respaldo normativo: o **Decreto nº 9.991/2019** instituiu a **Política Nacional de Desenvolvimento de Pessoas (PNDP)**, que define diretrizes e **instrumentos** — entre eles o **Plano de Desenvolvimento de Pessoas (PDP)** de cada órgão, os relatórios de execução e o Plano Consolidado — para a formação e o desenvolvimento dos servidores da administração pública federal direta, autárquica e fundacional.",
+          "fontes": [
+            "decreto-9991",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "ev-pndp-destaque",
+          "titulo": "PNDP em uma linha",
+          "nivel": "info",
+          "texto": "**Decreto nº 9.991/2019** → **Política Nacional de Desenvolvimento de Pessoas (PNDP)** → cada órgão elabora seu **Plano de Desenvolvimento de Pessoas (PDP)**, com diretrizes, conteúdos e metas de formação.",
+          "fontes": [
+            "decreto-9991"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estrategia-e-gestao",
+      "numero": 3,
+      "titulo": "Estratégia, planejamento e estrutura de pessoas",
+      "subtitulo": "Alinhar a força de trabalho aos objetivos",
+      "fontes": [
+        "gil",
+        "chiavenato"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "es-def",
+          "texto": "**Estratégia de pessoas** é o conjunto de decisões e práticas que orientam a gestão da força de trabalho para **ajudar a organização a atingir seus objetivos**. A estratégia de pessoas responde a perguntas como: quantas pessoas precisamos, com quais competências, onde e quando; como atrair, desenvolver e reter essas pessoas; e como avaliar e remunerar o trabalho de forma a sustentar a estratégia.",
+          "fontes": [
+            "gil",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "es-plan",
+          "texto": "**Planejamento de pessoas** (planejamento de RH) é o processo de **prever** necessidades futuras de pessoal e competências e definir como supri-las. Envolve **previsão de necessidades** (quantas pessoas, com quais habilidades), **análise de oferta** (quem já está na organização, internalização, rotatividade) e **plano de ação** (contratação, capacitação, realocação, terceirização, aposentadoria).",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "es-tabela",
+          "titulo": "Estratégia de pessoas × objetivos da organização",
+          "colunas": [
+            "Objetivo organizacional",
+            "Decisão de gestão de pessoas",
+            "Exemplo prático"
+          ],
+          "linhas": [
+            [
+              "Aumentar a produtividade",
+              "Seleção rigorosa, treinamento, avaliação de desempenho",
+              "Formação em processos e metas por metas de desempenho"
+            ],
+            [
+              "Reduzir rotatividade",
+              "Integração, remuneração adequada, reconhecimento, clima",
+              "Programa de integração e plano de cargos"
+            ],
+            [
+              "Expansão de mercado",
+              "Previsão de pessoal, desenvolvimento de competências",
+              "Novas vagas com capacitação programada"
+            ],
+            [
+              "Melhorar qualidade",
+              "Avaliação de desempenho, desenvolvimento",
+              "Avaliação contínua e feedback estruturado"
+            ]
+          ],
+          "fontes": [
+            "gil",
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "es-cargos",
+          "texto": "**Cargos e salários** é a função que estrutura **organicamente** o trabalho: define **cargos** (com suas atribuições, requisitos e responsabilidades), **carreiras** (sequências de cargos e progressão), e a **remuneração** adequada. Análise de cargo é a base: identificar conteúdo, condições e requisitos do trabalho para então definir o cargo e sua remuneração com justiça interna e externa.",
+          "fontes": [
+            "gil",
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "es-carreira",
+          "texto": "**Carreira** é a trajetória de desenvolvimento profissional. **Plano de carreira** organiza as etapas, os requisitos e as formas de progressão e promoção, oferecendo perspectiva ao trabalhador e garantindo a sucessão de competências. No setor público, a carreira tem regras próprias (concursos, progressão, promoção e capacitação), mas o princípio é o mesmo: **esperança de progresso** retém e motiva as pessoas.",
+          "fontes": [
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "es-destaque",
+          "titulo": "Pessoas = ativo estratégico",
+          "nivel": "info",
+          "texto": "A gestão de pessoas estratégica **não é apenas suporte administrativo**: ela antecipa necessidades, define competências e avalia desempenho como parte da definição do negócio. Quem define o futuro da organização precisa pensar na força de trabalho.",
+          "fontes": [
+            "gil",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "es-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta se a gestão de pessoas **é só custo** (não — produz valor e risco, e negligenciá-la tem custos de rotatividade, baixa produtividade e sanções); **estratégia de pessoas** não é um plano de ação isolado, mas a **articulação entre objetivos, competências e práticas**; e **plano de cargos e carreira** não é 'dar promoção a todos' — promoção obedece a critérios, requisitos e processos objetivos."
+        }
+      ]
+    },
+    {
+      "id": "lideranca",
+      "numero": 4,
+      "titulo": "Liderança",
+      "subtitulo": "Influenciar pessoas para atingir objetivos",
+      "fontes": [
+        "chiavenato",
+        "gil"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "lid-def",
+          "texto": "**Liderança** é a capacidade de **influenciar positivamente as pessoas** para que trabalhem com vontade e direção na direção dos objetivos da organização. **Liderança não é cargo**: ocupar um cargo de chefia confere autoridade, mas não necessariamente liderança; o líder é quem **movimenta pessoas**. Diferencia-se de **administração/gestão**, que foca em processos, métodos e resultados operacionais — uma pessoa pode ser boa gestora sem ser líder, e vice-versa.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "lid-estilos",
+          "titulo": "Principais estilos de liderança",
+          "colunas": [
+            "Estilo",
+            "Característica principal",
+            "Situação em que funciona bem",
+            "Risco principal"
+          ],
+          "linhas": [
+            [
+              "Autocrático",
+              "O líder decide sozinho, dá ordens",
+              "Situações de emergência, equipes sem experiência",
+              "Resistência, baixa motivação, dependência"
+            ],
+            [
+              "Democrático",
+              "O líder consulta a equipe e decide com participação",
+              "Equipes preparadas, necessidade de engajamento",
+              "Pode ser lento em decisões urgentes"
+            ],
+            [
+              "Transacional",
+              "Foco em objetivos, recompensas e punições por resultados",
+              "Tarefas claras, metas bem definidas",
+              "Não inspira, não desenvolve"
+            ],
+            [
+              "Transformacional",
+              "Inspira, motiva, desenvolve e transforma valores",
+              "Mudança, inovação, equipes com capacidade",
+              "Exige maturidade e tempo de aproximação"
+            ],
+            [
+              "Situacional",
+              "O líder adapta o estilo ao nível de maturidade da equipe",
+              "Equipes em diferentes estágios",
+              "Pode parecer inconsistente sem clareza"
+            ],
+            [
+              "Servant (servir)",
+              "O líder serve primeiro, capacita e apoia a equipe",
+              "Equipes autônomas, clima de confiança",
+              "Risco de perda de direção sem disciplina"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "lid-transform",
+          "texto": "A **liderança transformacional** se destaca por **inspirar** a equipe a perseguir objetivos maiores: cria **visão** compartilhada, estimula a **inovação**, desenvolve as pessoas e atua pela **transformação** dos valores e do desempenho. Em ambientes de mudança, ela costuma superar a liderança transacional, que se baseia em **transações** (recompensas por resultados) e não produz engajamento profundo.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "lid-competencias",
+          "titulo": "Competências do líder (o que se cobra em prova)",
+          "itens": [
+            "**Visão**: entender e transmitir os objetivos e a direção.",
+            "**Comunicação**: clareza, escuta, feedback construtivo.",
+            "**Decisão**: definir, assumir responsabilidade e dar retorno.",
+            "**Motivação e inspiração**: engajar, reconhecer, valorizar.",
+            "**Desenvolvimento de pessoas**: orientar, capacitar, delegar com confiança.",
+            "**Integridade e ética**: coerência de palavras e ações, transparência."
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "lid-publico",
+          "texto": "**No serviço público**, a liderança se aplica a cargos de chefia e orientação de equipes de servidores: o chefe **coordena** o trabalho, **orienta** sobre direitos e deveres, **acompanha** a execução e **avalia** o desempenho, sempre com **transparência, isenção e respeito** à lei e à hierarquia. A lei dos servidores (Lei nº 8.112/1990) define o regime de trabalho, os direitos e os deveres que a liderança no setor público deve respeitar.",
+          "fontes": [
+            "lei-8112",
+            "chiavenato"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "lid-exemplo",
+          "texto": "**Exemplo**: um líder em uma repartição percebe que a equipe está desmotivada e com baixa produtividade. Em vez de simplesmente aumentar a cobrança, ele **diagnostica** as causas, **clarifica** objetivos, **escuta** os integrantes, **delega** com acompanhamento e **reconhece** resultados — aplicando liderança transformacional e, ao mesmo tempo, cumprindo as regras de gestão de pessoas e de relação de trabalho.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "lid-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **liderança por cargo** ('ser chefe é ser líder' — não necessariamente; a liderança é influência, não hierarquia formal); **liderança transacional com transformacional** (a primeira remunera resultados já concretizados, a segunda inspira e transforma valores); e pergunta se **liderança significa mandar e controlar** — líderes modernos **servem, orientam e capacitam**, não apenas 'comandam'."
+        }
+      ]
+    },
+    {
+      "id": "equipe",
+      "numero": 5,
+      "titulo": "Trabalho em equipe",
+      "subtitulo": "Grupo não é equipe: de Tuckman à coesão",
+      "fontes": [
+        "chiavenato",
+        "marras"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "eq-def",
+          "texto": "**Grupo** é um conjunto de pessoas que trabalham juntas, mas cada uma faz sua parte individualmente. **Equipe** é um grupo cujos integrantes **comprometem-se com um objetivo comum**, **cooperam**, **competem internamente de forma saudável** e se sentem **responsáveis pelo resultado coletivo**. O que distingue a equipe é a **interdependência**, a confiança e o compromisso compartilhado.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "eq-tuckman-mnemonico",
+          "titulo": "FSNPA — os estágios de Tuckman",
+          "texto": "**F**orming (formação) — **S**torming (conflito) — **N**orming (normação) — **P**erforming (atuação) — **A**djourning (encerramento). O modelo de Bruce Tuckman descreve como um grupo se transforma em equipe: primeiro se conhece, depois entra em conflito, estabelece normas, atua com alta produtividade e, ao final, se encerra."
+        },
+        {
+          "tipo": "tabela",
+          "id": "eq-tuckman-tabela",
+          "titulo": "Os estágios de Tuckman",
+          "colunas": [
+            "Estágio",
+            "Características",
+            "O que o líder faz"
+          ],
+          "linhas": [
+            [
+              "Forming (formação)",
+              "Os membros se conhecem, são cautelosos, buscam orientação",
+              "Apresenta objetivos, define papéis, cria vínculo"
+            ],
+            [
+              "Storming (conflito)",
+              "Surgem divergências sobre tarefas, liderança e normas",
+              "Media conflitos, orienta, mantém o foco no objetivo"
+            ],
+            [
+              "Norming (normação)",
+              "O grupo estabelece normas e formas de trabalho",
+              "Aproveita a participação, consolida processos"
+            ],
+            [
+              "Performing (atuação)",
+              "O grupo trabalha com alto desempenho e coesão",
+              "Delega, apoia, mede resultados e reconhece"
+            ],
+            [
+              "Adjourning (encerramento)",
+              "O grupo se dissolve ou remaneja após o trabalho",
+              "Valoriza os resultados, reconhece o esforço"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "eq-conflitos",
+          "texto": "**Conflitos** são naturais em qualquer equipe. O importante não é evitá-los, mas **administrar-los**: conflitos **funcionais** (sobre ideias e métodos) podem melhorar decisões e desempenho, enquanto conflitos **disfuncionais** (pessoais, de interesse) prejudicam o clima e a produção. A liderança **mediadora** orienta as partes, foca nos fatos e no objetivo comum, sem pessoalizar.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "eq-coesao",
+          "texto": "**Coesão de equipe** é a força que une os integrantes ao grupo e ao objetivo. Equipes coesas **cooperam**, compartilham normas, apoiam-se e defendem o grupo. A coesão cresce com **objetivos claros**, **trabalho bem distribuído**, **reconhecimento** e **boa comunicação** — e é um fator determinante de desempenho e clima organizacional.",
+          "fontes": [
+            "chiavenato",
+            "gil"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "eq-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **grupo por equipe** (grupos trabalham junto; equipes comprometem-se com um resultado comum); **Tuckman** não é uma sequência obrigatória e linear — os estágios podem se repetir, voltar ou ocorrer em paralelo (um novo membro, por exemplo, 'volta' o grupo a formar-se); e **conflitos nem sempre são ruins** — os funcionais podem ser produtivos e inovar."
+        }
+      ]
+    },
+    {
+      "id": "motivacao-e-clima",
+      "numero": 6,
+      "titulo": "Motivação e clima organizacional",
+      "subtitulo": "Teorias clássicas e o que movimenta as pessoas",
+      "fontes": [
+        "chiavenato",
+        "marras",
+        "maximiano"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "mot-def",
+          "texto": "**Motivação** é o **processo que explica o comportamento** das pessoas, direcionando e intensificando sua **energia e esforço** para atingir objetivos. Em trabalho, motivação se traduz em **esforço, persistência e direção** na execução de tarefas. As teorias de motivação ajudam a entender **o que leva alguém a trabalhar com vontade** e como a organização pode favorecer isso.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "mot-maslow",
+          "titulo": "Pirâmide das necessidades de Maslow",
+          "colunas": [
+            "Nível (de baixo para cima)",
+            "Necessidade",
+            "Exemplo no trabalho"
+          ],
+          "linhas": [
+            [
+              "1",
+              "Fisiológicas",
+              "Salário adequado, alimentação, condições básicas"
+            ],
+            [
+              "2",
+              "Segurança",
+              "Estabilidade, emprego garantido, condições de saúde e segurança"
+            ],
+            [
+              "3",
+              "Social/afetivas",
+              "Integração, equipe, relações boas, pertencimento"
+            ],
+            [
+              "4",
+              "Estima",
+              "Reconhecimento, promoção, status, confiança"
+            ],
+            [
+              "5",
+              "Auto realização",
+              "Trabalho desafiador, desenvolvimento, realização pessoal"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "mot-herzberg",
+          "texto": "**Herzberg** propôs que as necessidades no trabalho são **dois conjuntos distintos**: os **fatores de higiene** (salário, condições de trabalho, políticas, relações) **preventivos** — sua ausência **desmotiva**, mas sua presença não motiva; e os **fatores motivadores** (reconhecimento, conquista, responsabilidade, avanço, crescimento) — que **geram motivação**. Em resumo: **higiene evita insatisfação; motivadores produzem satisfação e empenho**.",
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "mot-herzberg-tabela",
+          "titulo": "Fatores de Herzberg",
+          "colunas": [
+            "Fator de higiene (preventivo)",
+            "Fator motivador (gerador)"
+          ],
+          "linhas": [
+            [
+              "Salário e benefícios",
+              "Reconhecimento do trabalho"
+            ],
+            [
+              "Condições físicas de trabalho",
+              "Senso de realização"
+            ],
+            [
+              "Políticas e normas da organização",
+              "Responsabilidade maior"
+            ],
+            [
+              "Relações com colegas e chefia",
+              "Oportunidade de crescimento"
+            ],
+            [
+              "Segurança no emprego",
+              "Avanço na carreira"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "mot-mcclelland",
+          "texto": "**McClelland** destacou **três necessidades**: **realização** (desejo de superar metas e conquistar), **pertença** (desejo de vínculos e relações) e **poder** (desejo de influência e controle). Pessoas com alta necessidade de realização preferem metas desafiadoras, responsabilidade pessoal e feedback; as de pertencimento buscam equipes coesas; as de poder buscam influência — líderes, em geral, possuem alta necessidade de poder aliada à responsabilidade social.",
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "mot-processo",
+          "titulo": "Teorias de processo (como a motivação acontece)",
+          "colunas": [
+            "Teoria",
+            "Ideia central",
+            "Consequência para a gestão"
+          ],
+          "linhas": [
+            [
+              "Expectativa (Vroom)",
+              "Esforço → resultado → recompensa; a motivação depende da expectativa de sucesso e do valor da recompensa",
+              "Clarear metas, garantir que o esforço leve a resultados e a reconhecimento"
+            ],
+            [
+              "Equidade (Adams)",
+              "A pessoa compara sua entrada/saída com o de colegas e reage a percepções de injustiça",
+              "Remuneração e reconhecimento justos, critérios transparentes"
+            ],
+            [
+              "Reforço (Skinner)",
+              "Consequências reforçam ou enfraquecem comportamentos",
+              "Reconhecer resultados e corrigir com critérios objetivos"
+            ]
+          ],
+          "fontes": [
+            "chiavenato",
+            "marras",
+            "maximiano"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "mot-clima",
+          "texto": "**Clima organizacional** é a **percepção que as pessoas têm** do ambiente de trabalho — o conjunto de impressões, sentimentos e avaliações sobre a organização. Clima bom favorece **motivação, retenção e desempenho**; clima ruim gera **rotatividade, absenteísmo, conflitos e baixa produtividade**. A administração de pessoas cuida do clima por meio de **comunicação, reconhecimento, condições de trabalho, segurança, saúde e participação**.",
+          "fontes": [
+            "chiavenato",
+            "gil",
+            "marras"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "mot-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca afirma que **'o salário motiva qualquer um'** (não: salário é fator de higiene em Herzberg — sua ausência desmotiva, mas não basta para motivar); que **Maslow é uma escada obrigatória e linear** (as necessidades não se cumprem em sequência rígida; alguém pode buscar realização sem ter totalmente satisfeito as fisiológicas, e mais de uma necessidade atua ao mesmo tempo); e que **motivação se resolve com benefícios isolados** — a combinação de reconhecimento, desenvolvimento, condições justas e clima é o que sustenta o esforço."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-gestao-pessoas-01",
+    "titulo": "Quiz — Administração de pessoas (aula 1)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-gp-def",
+        "enunciado": "Em relação à administração de pessoas, é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "Ela se reduz ao cadastro de servidores, ao pagamento de salários e às rotinas de admissão, sem qualquer ligação com os objetivos da organização.",
+            "correta": false,
+            "explicacao": "Não. Essa é a visão puramente administrativa do RH tradicional; a gestão de pessoas é estratégica e voltada a resultados por meio das pessoas."
+          },
+          {
+            "texto": "É o conjunto de políticas, práticas e processos que buscam atrair, selecionar, desenvolver, avaliar, remunerar e reter pessoas de modo que contribuam para os objetivos da organização.",
+            "correta": true,
+            "explicacao": "Certo. É a definição da área: ela lida com a pessoa no trabalho em três níveis (individual, coletivo e estratégico) para atingir objetivos."
+          },
+          {
+            "texto": "É uma atividade de psicologia que busca o bem-estar do trabalhador, sem preocupação com metas, resultados ou conformidade legal.",
+            "correta": false,
+            "explicacao": "Não. O bem-estar é parte do clima, mas a área também lida com objetivos, desempenho, remuneração e conformidade."
+          },
+          {
+            "texto": "Corresponde apenas à função de remuneração: estruturar cargos e pagar salários e benefícios.",
+            "correta": false,
+            "explicacao": "Não. Remuneração é uma das funções; a área também faz recrutamento, seleção, integração, desenvolvimento, avaliação e relações de trabalho."
+          },
+          {
+            "texto": "Tem como objeto exclusivo a criação de planos de cargos e carreiras para a direção da organização.",
+            "correta": false,
+            "explicacao": "Não. Cargos e carreiras são parte da função, mas o objeto é a pessoa no trabalho em seus níveis individual, coletivo e estratégico."
+          }
+        ],
+        "secao_id": "conceito-e-importancia",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-funcoes-cap",
+        "enunciado": "Assinale a alternativa que apresenta corretamente as principais funções da administração de pessoas (CAP):",
+        "opcoes": [
+          {
+            "texto": "Recrutamento, seleção, integração, desenvolvimento, avaliação, remuneração e relações de trabalho.",
+            "correta": true,
+            "explicacao": "Certo. Essas são as funções clássicas da área, lembradas pelo mnemônico CAP (Administração de Pessoas)."
+          },
+          {
+            "texto": "Marketing, finanças, logística, compras e atendimento ao cliente.",
+            "correta": false,
+            "explicacao": "Não. São áreas funcionais da organização, não funções da administração de pessoas."
+          },
+          {
+            "texto": "Concurso público, licitação, contrato e execução orçamentária.",
+            "correta": false,
+            "explicacao": "Não. São processos administrativos e de contratação de bens/serviços, não as funções da gestão de pessoas."
+          },
+          {
+            "texto": "Treinamento, avaliação e punição disciplinar apenas.",
+            "correta": false,
+            "explicacao": "Não. Desenvolvimento e avaliação são funções, mas a área tem mais funções (recrutamento, seleção, integração, remuneração, relações)."
+          },
+          {
+            "texto": "Planejamento orçamentário, tomada de contas e prestação de contas.",
+            "correta": false,
+            "explicacao": "Não. São funções financeiras e de controle, não de gestão de pessoas."
+          }
+        ],
+        "secao_id": "historico-e-funcoes",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-evolucao",
+        "enunciado": "A evolução das ideias sobre a gestão do trabalho e das pessoas inclui, entre outras, a Escola das Relações Humanas. Essa corrente, associada a Elton Mayo, tem como marca principal:",
+        "opcoes": [
+          {
+            "texto": "A busca máxima da eficiência por meio da padronização e da remuneração por produção.",
+            "correta": false,
+            "explicacao": "Não. É o foco da Administração Científica de Taylor, anterior às Relações Humanas."
+          },
+          {
+            "texto": "A compreensão de que fatores sociais e psicológicos influenciam o comportamento e a produção no trabalho.",
+            "correta": true,
+            "explicacao": "Certo. Os estudos de Hawthorne de Mayo demonstraram que relações, reconhecimento e grupo influenciam o desempenho."
+          },
+          {
+            "texto": "O alinhamento de todos os processos de RH com a estratégia da organização.",
+            "correta": false,
+            "explicacao": "Não. É a marca da gestão de pessoas estratégica, fase posterior às Relações Humanas."
+          },
+          {
+            "texto": "A divisão do trabalho em tarefas minúsculas e o controle rigoroso do tempo.",
+            "correta": false,
+            "explicacao": "Não. Refere-se à Administração Científica, não às Relações Humanas."
+          },
+          {
+            "texto": "A substituição da pessoa pela máquina no processo produtivo.",
+            "correta": false,
+            "explicacao": "Não. As Relações Humanas, ao contrário, destacam a pessoa e seus fatores sociais."
+          }
+        ],
+        "secao_id": "historico-e-funcoes",
+        "fonte_id": "maximiano"
+      },
+      {
+        "id": "q-pndp",
+        "enunciado": "O Decreto nº 9.991/2019 instituiu a Política Nacional de Desenvolvimento de Pessoas (PNDP). Sobre esse instrumento, é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "Ele define diretrizes e instrumentos de desenvolvimento de pessoas para a administração pública federal direta, autárquica e fundacional, incluindo o Plano de Desenvolvimento de Pessoas (PDP) de cada órgão.",
+            "correta": true,
+            "explicacao": "Certo. Essa é a orientação da PNDP: política nacional de desenvolvimento com instrumentos, entre eles o PDP de cada órgão."
+          },
+          {
+            "texto": "Ele cria um piso nacional de salário mínimo para servidores federais.",
+            "correta": false,
+            "explicacao": "Não. O decreto trata de desenvolvimento de pessoas, não de remuneração ou piso salarial."
+          },
+          {
+            "texto": "Ele determina que todo servidor público, sem exceção, deve ser aprovado em concurso público anualmente.",
+            "correta": false,
+            "explicacao": "Não. A PNDP não trata de concursos anuais; trata de desenvolvimento e formação."
+          },
+          {
+            "texto": "Ele estabelece a obrigatoriedade de pós-graduação para todos os servidores no primeiro ano de serviço.",
+            "correta": false,
+            "explicacao": "Não. A PNDP define diretrizes e instrumentos de desenvolvimento, não essa obrigatoriedade específica."
+          },
+          {
+            "texto": "Ele extingue os planos de carreira dos servidores públicos federais.",
+            "correta": false,
+            "explicacao": "Não. O decreto é de desenvolvimento de pessoas e não extingue planos de carreira."
+          }
+        ],
+        "secao_id": "historico-e-funcoes",
+        "fonte_id": "decreto-9991"
+      },
+      {
+        "id": "q-estilos-lideranca",
+        "enunciado": "Sobre liderança, considere as afirmações. A liderança transformacional se distingue principalmente por:",
+        "opcoes": [
+          {
+            "texto": "Ser a líder que decide sozinho, sem consultar a equipe, para agilizar as decisões.",
+            "correta": false,
+            "explicacao": "Não. É o estilo autocrático, não o transformacional."
+          },
+          {
+            "texto": "Inspirar, motivar, desenvolver as pessoas e transformar valores e desempenho para os objetivos do grupo.",
+            "correta": true,
+            "explicacao": "Certo. A liderança transformacional cria visão compartilhada, estimula inovação e desenvolve as pessoas."
+          },
+          {
+            "texto": "Recompensar e punir os resultados já concretizados, com foco apenas em metas operacionais.",
+            "correta": false,
+            "explicacao": "Não. Esse é o estilo transacional, que não inspira nem transforma."
+          },
+          {
+            "texto": "Ser exercida exclusivamente pelo ocupante de cargo de chefia, por força da hierarquia.",
+            "correta": false,
+            "explicacao": "Não. Liderança não é cargo; é influência. O cargo confere autoridade, mas não necessariamente liderança."
+          },
+          {
+            "texto": "Ser uma prática puramente individual, sem relação com a equipe ou os objetivos da organização.",
+            "correta": false,
+            "explicacao": "Não. A liderança se exerce na direção de pessoas e objetivos; não é isolada da equipe."
+          }
+        ],
+        "secao_id": "lideranca",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-tuckman",
+        "enunciado": "O modelo de Tuckman descreve a formação e atuação de uma equipe em etapas. Assinale a sequência correta:",
+        "opcoes": [
+          {
+            "texto": "Norming, Storming, Forming, Performing, Adjourning.",
+            "correta": false,
+            "explicacao": "Não. A ordem está trocada: o grupo se forma antes de entrar em conflito."
+          },
+          {
+            "texto": "Forming, Storming, Norming, Performing, Adjourning.",
+            "correta": true,
+            "explicacao": "Certo. Formação, conflito, normação, atuação e encerramento (FSNPA)."
+          },
+          {
+            "texto": "Performing, Norming, Storming, Forming, Adjourning.",
+            "correta": false,
+            "explicacao": "Não. A etapa de atuação (performing) é a fase de alto desempenho, que vem após a normação."
+          },
+          {
+            "texto": "Forming, Performing, Norming, Storming, Adjourning.",
+            "correta": false,
+            "explicacao": "Não. O conflito (storming) ocorre após a formação, antes da normação."
+          },
+          {
+            "texto": "Adjourning, Forming, Storming, Norming, Performing.",
+            "correta": false,
+            "explicacao": "Não. O encerramento (adjourning) é a última etapa, não a primeira."
+          }
+        ],
+        "secao_id": "equipe",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-maslow-herzberg",
+        "enunciado": "Sobre as teorias de motivação, é correto afirmar que, na teoria de Herzberg, os fatores de higiene e os fatores motivadores se diferenciam porque:",
+        "opcoes": [
+          {
+            "texto": "Os fatores de higiene geram motivação, enquanto os fatores motivadores previnem a insatisfação.",
+            "correta": false,
+            "explicacao": "Invertido. Os fatores de higiene previnem a insatisfação; os motivadores geram a motivação."
+          },
+          {
+            "texto": "Os fatores de higiene, quando ausentes, causam insatisfação, mas sua presença não motiva; os fatores motivadores geram satisfação e empenho.",
+            "correta": true,
+            "explicacao": "Certo. Essa é a distinção central de Herzberg: higiene previne insatisfação; motivadores produzem motivação."
+          },
+          {
+            "texto": "Todos os fatores, hygiene e motivadores, produzem a mesma reação nas pessoas.",
+            "correta": false,
+            "explicacao": "Não. A teoria de Herzberg separa os dois conjuntos por efeitos diferentes."
+          },
+          {
+            "texto": "Os fatores motivadores são salário e condições de trabalho.",
+            "correta": false,
+            "explicacao": "Não. Salário e condições são fatores de higiene, não motivadores."
+          },
+          {
+            "texto": "Na teoria de Herzberg, o reconhecimento é um fator de higiene.",
+            "correta": false,
+            "explicacao": "Não. Reconhecimento é um fator motivador, não de higiene."
+          }
+        ],
+        "secao_id": "motivacao-e-clima",
+        "fonte_id": "chiavenato"
+      },
+      {
+        "id": "q-motivacao-pratic",
+        "enunciado": "Um gestor deseja aumentar a motivação de sua equipe. Segundo as teorias apresentadas, a medida mais adequada, em termos de princípios, é:",
+        "opcoes": [
+          {
+            "texto": "Oferecer apenas um aumento salarial, pois o salário motiva todos os trabalhadores de qualquer perfil.",
+            "correta": false,
+            "explicacao": "Não. Salário é fator de higiene: sua ausência desmotiva, mas sua presença não basta para motivar (Herzberg)."
+          },
+          {
+            "texto": "Combinar reconhecimento do trabalho, responsabilidade, oportunidades de desenvolvimento, critérios transparentes e bom clima, sem descuidar das condições básicas de trabalho.",
+            "correta": true,
+            "explicacao": "Certo. A motivação se sustenta na combinação de fatores motivadores (reconhecimento, responsabilidade, crescimento) com condições justas (higiene) e clima positivo."
+          },
+          {
+            "texto": "Manter o grupo isolado, sem definir objetivos, para que a autonomia gere motivação espontânea.",
+            "correta": false,
+            "explicacao": "Não. Objetivos claros, participação e retorno são essenciais; a autonomia sem direção não sustenta a motivação."
+          },
+          {
+            "texto": "Praticar apenas o reforço positivo, sem feedback, para evitar qualquer desgaste com a equipe.",
+            "correta": false,
+            "explicacao": "Não. O feedback e a correção com critérios objetivos são parte do processo de motivação."
+          },
+          {
+            "texto": "Suspender o treinamento da equipe, concentrando todos os esforços em metas de produtividade.",
+            "correta": false,
+            "explicacao": "Não. Desenvolvimento e capacitação são fatores motivadores e parte do processo de gestão de pessoas."
+          }
+        ],
+        "secao_id": "motivacao-e-clima",
+        "fonte_id": "marras"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-23",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre administração de pessoas foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100. O conteúdo foi elaborado a partir das referências teóricas da área e das normas consultadas, não de banca específica."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler as funções da área (CAP) e a evolução histórica (Taylor, Fayol, Mayo, RH, gestão estratégica).",
+      "Conferir os estilos de liderança (transacional, transformacional, situacional, servant) e a diferença entre liderança e cargo.",
+      "Revisar os estágios de Tuckman (FSNPA) e o tratamento de conflitos em equipe.",
+      "Revisar as teorias de motivação (Maslow, Herzberg, McClelland) e a diferença entre fatores de higiene e motivadores.",
+      "Conferir as normas citadas (Decreto nº 9.991/2019 e Lei nº 8.112/1990) no Planalto."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-23",
+    "atualizado_em": "2026-11-23",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Aula escrita para o cargo 301 (Assistente em Administração, IFG) a partir de obras de referência em administração de recursos humanos e de normas consultadas no Planalto em 23/11/2026.",
+    "alteracoes": "Versão inicial da aula 1 (conceito, funções, estratégia, liderança, equipe e motivação)."
+  },
+  "notas": "Blocos teóricos escritos a partir de obras de referência em administração de recursos humanos (Chiavenato, Marras, Maximiano, Gil) e de normas consultadas no Planalto em 23/11/2026 (Decreto nº 9.991/2019, Lei nº 8.112/1990). Nenhum texto normativo foi transcrito na íntegra nesta aula; as normas citadas aparecem apenas para contextualizar a gestão de pessoas no serviço público. Revisão de ortografia feita manualmente (sem corretor ortográfico no sandbox)."
+}

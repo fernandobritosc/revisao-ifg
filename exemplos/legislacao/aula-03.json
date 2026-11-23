@@ -1,0 +1,830 @@
+{
+  "schema_version": "1.1.0",
+  "id": "legislacao-lei-9394",
+  "materia": "Legislação",
+  "numero": 3,
+  "titulo": "Lei nº 9.394/1996 — Diretrizes e Bases da Educação Nacional (LDB)",
+  "resumo": "Lei de Diretrizes e Bases da Educação Nacional: princípios, dever do Estado, organização dos sistemas de ensino, níveis e modalidades (educação básica e superior, educação profissional, EJA, educação especial, EaD), gestão democrática, profissionais da educação e financiamento. Base legal do IFG como instituição federal de ensino.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "legislacao",
+    "ldb",
+    "lei-9394",
+    "educacao-basica",
+    "educacao-superior",
+    "educacao-profissional",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "ldb",
+      "tipo": "norma",
+      "titulo": "Lei nº 9.394/1996",
+      "detalhes": "Estabelece as diretrizes e bases da educação nacional. Texto do Planalto com as notas de alterações (redações dadas, incluídos e revogados), capturado em 04/11/2026.",
+      "ano": 1996,
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/L9394.htm"
+    },
+    {
+      "id": "lei-13415",
+      "tipo": "norma",
+      "titulo": "Lei nº 13.415/2017",
+      "detalhes": "Institui a política de fomento à implementação de escolas de ensino em tempo integral e altera a LDB (Novo Ensino Médio): arts. 35 e 36. Citada nas notas do texto consolidado.",
+      "ano": 2017,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13415.htm"
+    },
+    {
+      "id": "lei-11892",
+      "tipo": "norma",
+      "titulo": "Lei nº 11.892/2008",
+      "detalhes": "Cria os Institutos Federais; o art. 3º remete ao art. 52 da LDB para classificar a UTFPR como universidade especializada.",
+      "ano": 2008,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11892.htm"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "principios",
+      "numero": 1,
+      "titulo": "Educação, princípios e fins",
+      "subtitulo": "Arts. 1º a 3º: o que é educação escolar e em que bases o ensino é ministrado.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-1",
+          "texto": "**Art. 1º:** a educação abrange os processos formativos desenvolvidos na vida familiar, na convivência humana, no trabalho, nas instituições de ensino e pesquisa, nos movimentos sociais e organizações da sociedade civil e nas manifestações culturais. A Lei disciplina a **educação escolar**, que se desenvolve predominantemente por meio do ensino, em instituições próprias, e que deverá **vincular-se ao mundo do trabalho e à prática social**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-2",
+          "texto": "**Art. 2º:** a educação, **dever da família e do Estado**, inspirada nos princípios de liberdade e nos ideais de solidariedade humana, tem por finalidade o pleno desenvolvimento do educando, seu preparo para o exercício da cidadania e sua qualificação para o trabalho.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-3",
+          "titulo": "Art. 3º — princípios do ensino",
+          "itens": [
+            "I — igualdade de condições para o acesso e permanência na escola;",
+            "II — liberdade de aprender, ensinar, pesquisar e divulgar a cultura, o pensamento, a arte e o saber;",
+            "III — pluralismo de ideias e de concepções pedagógicas;",
+            "IV — respeito à liberdade e apreço à tolerância;",
+            "V — coexistência de instituições públicas e privadas de ensino;",
+            "VI — gratuidade do ensino público em estabelecimentos oficiais;",
+            "VII — valorização do profissional da educação escolar;",
+            "VIII — gestão democrática do ensino público, na forma da Lei e da legislação dos Estados, Municípios e Distrito Federal;",
+            "IX — garantia de padrão de qualidade;",
+            "X — valorização da experiência extraescolar;",
+            "XI — vinculação entre a educação escolar, o trabalho e as práticas sociais;",
+            "XII — consideração com a diversidade étnico-racial;",
+            "XIII — garantia do direito à educação e à aprendizagem ao longo da vida;",
+            "XIV — respeito à diversidade humana, linguística, cultural e identitária das pessoas surdas, surdo-cegas e com deficiência auditiva;",
+            "XV — garantia do direito de acesso a informações públicas sobre a gestão da educação."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-principios",
+          "titulo": "Gestão democrática é princípio e regra",
+          "texto": "A **gestão democrática do ensino público** aparece como princípio (art. 3º, VIII) e é detalhada no art. 14 (educação básica) e no art. 56 (educação superior). A banca troca 'gestão democrática' por 'gestão participativa' ou limita a 'escolas de ensino fundamental'."
+        }
+      ]
+    },
+    {
+      "id": "dever-do-estado",
+      "numero": 2,
+      "titulo": "Direito à educação e dever do Estado",
+      "subtitulo": "Arts. 4º a 6º: obrigatória e gratuita dos 4 aos 17 anos; direito público subjetivo.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-4",
+          "titulo": "Art. 4º — o dever do Estado com a educação escolar pública",
+          "itens": [
+            "I — educação básica **obrigatória e gratuita dos 4 aos 17 anos** de idade, organizada em pré-escola, ensino fundamental e ensino médio;",
+            "II — educação infantil **gratuita às crianças de até 5 anos**;",
+            "III — atendimento educacional especializado gratuito aos educandos com deficiência, transtornos globais do desenvolvimento e altas habilidades ou superdotação, transversal a todos os níveis, etapas e modalidades, preferencialmente na rede regular de ensino;",
+            "VIII — programas suplementares de material didático-escolar, transporte, alimentação e assistência à saúde;",
+            "IX — padrões mínimos de qualidade de ensino;",
+            "X — vaga na escola pública de educação infantil ou de ensino fundamental mais próxima de sua residência a toda criança a partir do dia em que o usuário ou responsável solicitar a matrícula;",
+            "XI — ensino médio gratuito a todos que o exigirem;",
+            "XII — educação profissional;",
+            "XIII — educação de jovens e adultos."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-5",
+          "texto": "**Art. 5º:** o acesso à educação básica obrigatória é **direito público subjetivo**, podendo qualquer cidadão, grupo de cidadãos, associação comunitária, organização sindical, entidade de classe ou outra legalmente constituída e, ainda, o **Ministério Público**, acionar o poder público para exigi-lo. Compete ao poder público recensear anualmente as crianças e adolescentes em idade escolar e os jovens e adultos que não concluíram a educação básica.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-6",
+          "texto": "**Art. 6º:** é dever dos pais ou responsáveis efetuar a **matrícula das crianças na educação básica a partir dos 4 anos de idade**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-4-17",
+          "titulo": "4 aos 17, não 6 aos 14",
+          "texto": "A faixa de **escolaridade obrigatória** é dos **4 aos 17 anos** (art. 4º, I). A matrícula é dever dos pais **a partir dos 4 anos** (art. 6º). O ensino fundamental, por sua vez, inicia-se **aos 6 anos** e tem **9 anos** de duração (art. 32)."
+        }
+      ]
+    },
+    {
+      "id": "organizacao-sistemas",
+      "numero": 3,
+      "titulo": "Organização da educação nacional",
+      "subtitulo": "Arts. 8º a 20: regime de colaboração, competências de cada ente e categorias de instituições.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-8",
+          "texto": "**Art. 8º:** a União, os Estados, o Distrito Federal e os Municípios organizarão, em **regime de colaboração**, os respectivos sistemas de ensino. Cabe à União a coordenação da política nacional de educação, exercendo **função normativa, redistributiva e supletiva** em relação às demais instâncias educacionais.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ldb-tabela-competencias",
+          "titulo": "Competências por ente federativo",
+          "colunas": ["Ente", "Art.", "Principais incumbências"],
+          "linhas": [
+            ["União", "9º", "Plano Nacional de Educação; órgãos e instituições oficiais do sistema federal de ensino; assistência técnica e financeira aos demais entes; processo nacional de avaliação do ensino escolar"],
+            ["Estados", "10", "Seus sistemas de ensino; colaboração com os Municípios no ensino fundamental; autorizar, reconhecer, credenciar, supervisionar e avaliar seus estabelecimentos"],
+            ["Municípios", "11", "Seus sistemas; ação redistributiva; educação infantil e, com prioridade, o ensino fundamental"],
+            ["Estabelecimentos", "12", "Elaborar e executar a proposta pedagógica; administrar pessoal e recursos; assegurar dias letivos e horas-aula"],
+            ["Docentes", "13", "Participar da proposta pedagógica; elaborar e cumprir plano de trabalho; zelar pela aprendizagem; ministrar os dias letivos"]
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-14",
+          "texto": "**Art. 14:** lei dos Estados, Municípios e Distrito Federal definirá as normas da **gestão democrática do ensino público na educação básica**, conforme os princípios da participação dos profissionais da educação na elaboração do **projeto pedagógico** e da participação das comunidades escolar e local em **Conselhos Escolares** e equivalentes. O Conselho Escolar é órgão **deliberativo**, composto pelo Diretor da escola, membro nato, e por representantes das comunidades escolar e local.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-15",
+          "texto": "**Art. 15:** os sistemas de ensino assegurarão às unidades escolares públicas de educação básica **progressivos graus de autonomia pedagógica e administrativa e de gestão financeira**, observadas as normas gerais de direito financeiro público.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-16",
+          "titulo": "Art. 16 — sistema federal de ensino",
+          "itens": [
+            "As instituições de ensino mantidas pela União.",
+            "As instituições de educação superior mantidas pela iniciativa privada.",
+            "Os órgãos federais de educação."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-20",
+          "titulo": "Art. 20 — categorias das instituições privadas de ensino",
+          "itens": [
+            "**Particulares em sentido estrito:** instituídas e mantidas por uma ou mais pessoas físicas ou jurídicas de direito privado que não apresentem as características dos demais incisos.",
+            "**Comunitárias:** instituídas por grupos de pessoas físicas ou por uma ou mais pessoas jurídicas, inclusive cooperativas educacionais, sem fins lucrativos, que incluam em sua entidade mantenedora representantes da comunidade.",
+            "**Confessionais:** instituídas por grupos de pessoas físicas ou por uma ou mais pessoas jurídicas que atendem a orientação confessional e ideologia específicas e ao disposto no inciso anterior.",
+            "**Filantrópicas:** na forma da lei."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-sistema-federal",
+          "titulo": "O IFG integra o sistema federal de ensino",
+          "texto": "Pelo art. 16, I, o sistema federal de ensino compreende as instituições de ensino **mantidas pela União** — é o caso do IFG (autarquia federal). Note que o inciso II inclui também as instituições de **educação superior privadas**, que integram o sistema federal, e não os sistemas municipais."
+        }
+      ]
+    },
+    {
+      "id": "educacao-basica",
+      "numero": 4,
+      "titulo": "Educação básica",
+      "subtitulo": "Arts. 21 a 38: composição, regras comuns, etapas e carga horária.",
+      "fontes": ["ldb", "lei-13415"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-21",
+          "texto": "**Art. 21:** a educação escolar compõe-se de **educação básica**, formada pela **educação infantil, ensino fundamental e ensino médio**, e de **educação superior**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-22",
+          "texto": "**Art. 22:** a educação básica tem por finalidades desenvolver o educando, assegurar-lhe a formação comum indispensável para o exercício da cidadania e fornecer-lhe meios para progredir no trabalho e em estudos posteriores. São objetivos precípuos a **alfabetização plena e a formação de leitores**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-24",
+          "titulo": "Art. 24 — regras comuns dos ensinos fundamental e médio",
+          "itens": [
+            "Carga horária mínima anual: **800 horas** para o ensino fundamental e **1.000 horas** para o ensino médio, distribuídas por, no mínimo, **200 dias** de efetivo trabalho escolar, excluído o tempo de exames finais.",
+            "Classificação em qualquer série ou etapa, exceto a primeira do fundamental, por **promoção**, **transferência** ou **independentemente de escolarização anterior**, mediante avaliação.",
+            "Progressão regular por série, admitindo formas de progressão parcial.",
+            "Controle de frequência a cargo da escola, exigida frequência mínima de **75%** do total de horas letivas para aprovação.",
+            "Cabe a cada instituição expedir históricos escolares, declarações de conclusão de série e diplomas ou certificados."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ldb-tabela-etapas",
+          "titulo": "Etapas da educação básica",
+          "colunas": ["Etapa", "Idade / duração", "Regras principais"],
+          "linhas": [
+            ["Educação infantil", "Até 5 anos: creches (até 3) e pré-escolas (4 e 5)", "Desenvolvimento integral; avaliação por acompanhamento e registro, sem objetivo de promoção; 800 horas e 200 dias"],
+            ["Ensino fundamental", "9 anos, a partir dos 6 anos", "Formação básica do cidadão; jornada de pelo menos 4 horas diárias; tempo integral progressivo"],
+            ["Ensino médio", "Duração mínima de 3 anos", "Etapa final da educação básica; itinerários formativos com carga mínima de 600 horas; 1.000 horas anuais"]
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-31",
+          "texto": "**Art. 31:** na educação infantil, a avaliação se faz mediante **acompanhamento e registro do desenvolvimento das crianças, sem o objetivo de promoção**, mesmo para o acesso ao ensino fundamental; a carga horária mínima anual é de 800 horas, distribuídas por um mínimo de 200 dias.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-32",
+          "texto": "**Art. 32:** o ensino fundamental, **obrigatório, com duração de 9 anos, gratuito na escola pública e iniciando-se aos 6 anos de idade**, tem por objetivo a formação básica do cidadão, tendo como meios básicos o pleno domínio da leitura, da escrita e do cálculo.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-35",
+          "texto": "**Art. 35 (redação da Lei nº 13.415/2017):** o ensino médio, **etapa final da educação básica, com duração mínima de três anos**, tem por finalidades consolidar e aprofundar os conhecimentos adquiridos no fundamental, preparar basicamente para o trabalho e a cidadania e aprimorar o educando como pessoa humana. **Art. 36:** os **itinerários formativos** terão carga horária mínima de **600 horas**, ressalvadas as especificidades da formação técnica e profissional.",
+          "fontes": ["ldb", "lei-13415"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-cargas",
+          "titulo": "800 / 1.000 / 600",
+          "texto": "**800 horas** — educação infantil e ensino fundamental. **1.000 horas** — ensino médio. **600 horas** — itinerários formativos do ensino médio. **200 dias** — mínimo anual para toda a educação básica. A banca embaralha os três números de horas."
+        }
+      ]
+    },
+    {
+      "id": "modalidades",
+      "numero": 5,
+      "titulo": "Modalidades: EJA, educação profissional, educação especial e EaD",
+      "subtitulo": "Arts. 37 a 42, 58 e 80.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-37",
+          "texto": "**Art. 37:** a **educação de jovens e adultos** será destinada àqueles que não tiveram acesso ou continuidade de estudos nos ensinos fundamental e médio na idade própria e constituirá instrumento para a educação e a aprendizagem ao longo da vida. **Art. 38:** os sistemas manterão cursos e exames supletivos, que realizar-se-ão **no nível de conclusão do ensino fundamental para os maiores de 15 anos** e **no nível de conclusão do ensino médio para os maiores de 18 anos**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-39",
+          "texto": "**Art. 39:** a **educação profissional e tecnológica**, no cumprimento dos objetivos da educação nacional, **integra-se aos diferentes níveis e modalidades de educação** e às dimensões do trabalho, da ciência e da tecnologia. Os cursos poderão ser organizados por **eixos tecnológicos**, possibilitando diferentes **itinerários formativos**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-39-2",
+          "titulo": "Art. 39, § 2º — cursos abrangidos",
+          "itens": [
+            "I — de **formação inicial e continuada** ou qualificação profissional;",
+            "II — de **educação profissional técnica de nível médio**;",
+            "III — de **educação profissional tecnológica de graduação e pós-graduação**."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigos-40-42",
+          "titulo": "Arts. 40 a 42 — articulação, aproveitamento e cursos especiais",
+          "itens": [
+            "**Art. 40:** a educação profissional será desenvolvida em **articulação com o ensino regular** ou por diferentes estratégias de educação continuada, em instituições especializadas ou no ambiente de trabalho.",
+            "**Art. 41:** o conhecimento adquirido na educação profissional e tecnológica, inclusive no trabalho, poderá ser objeto de **avaliação, reconhecimento e certificação** para prosseguimento ou conclusão de estudos.",
+            "**Art. 42:** as instituições de educação profissional e tecnológica, além dos cursos regulares, oferecerão **cursos especiais, abertos à comunidade**, condicionada a matrícula à capacidade de aproveitamento e **não necessariamente ao nível de escolaridade**."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-58",
+          "texto": "**Art. 58:** a **educação especial** é a modalidade de educação escolar oferecida **preferencialmente na rede regular de ensino**, para educandos com **deficiência, transtornos globais do desenvolvimento e altas habilidades ou superdotação**. Haverá, quando necessário, serviços de apoio especializado na escola regular.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-80",
+          "texto": "**Art. 80:** o Poder Público incentivará programas de **ensino a distância**, em todos os níveis e modalidades, e de educação continuada. A educação a distância será oferecida por **instituições especificamente credenciadas pela União**; a União regulamentará os requisitos para a realização de exames e registro de diploma.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "destaque",
+          "id": "ldb-ifg-educacao-profissional",
+          "nivel": "info",
+          "titulo": "Onde o IFG se encaixa",
+          "texto": "O IFG oferece educação profissional e tecnológica **em todos os níveis** (art. 39): formação inicial e continuada, técnica de nível médio e tecnológica de graduação e pós-graduação. Os cursos técnicos integrados ao ensino médio são a matriz da Rede Federal.",
+          "fontes": ["ldb"]
+        }
+      ]
+    },
+    {
+      "id": "educacao-superior",
+      "numero": 6,
+      "titulo": "Educação superior e universidades",
+      "subtitulo": "Arts. 43 a 56: cursos, avaliação, autonomia e gestão democrática.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-43",
+          "titulo": "Art. 43 — finalidades da educação superior",
+          "itens": [
+            "Estimular a criação cultural e o desenvolvimento do espírito científico e do pensamento reflexivo.",
+            "Formar diplomados nas diferentes áreas do conhecimento, aptos para a inserção profissional e a participação no desenvolvimento da sociedade.",
+            "Incentivar a pesquisa e a investigação científica, visando ao desenvolvimento da ciência, da tecnologia e da cultura.",
+            "Promover a divulgação de conhecimentos culturais, científicos e técnicos que constituem patrimônio da humanidade."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-44",
+          "titulo": "Art. 44 — cursos e programas da educação superior",
+          "itens": [
+            "I — cursos **sequenciais** por campo de saber, abertos a quem concluiu o ensino médio ou equivalente;",
+            "II — cursos de **graduação**, abertos a quem concluiu o ensino médio ou equivalente e foi classificado em processo seletivo;",
+            "III — cursos de **pós-graduação**, compreendendo programas de mestrado e doutorado, cursos de especialização e aperfeiçoamento;",
+            "IV — cursos de **extensão** e outros."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-46",
+          "texto": "**Art. 46:** a autorização e o reconhecimento de cursos, bem como o credenciamento de instituições de educação superior, terão **prazos limitados**, sendo renovados periodicamente, após processo regular de avaliação. Após prazo para saneamento de deficiências, haverá reavaliação, que poderá resultar em **desativação de cursos, intervenção na instituição, suspensão temporária de prerrogativas da autonomia**, entre outras medidas.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-52",
+          "titulo": "Art. 52 — características das universidades",
+          "itens": [
+            "Instituições **pluridisciplinares** de formação dos quadros profissionais de nível superior, de pesquisa, de extensão e de domínio e cultivo do saber humano.",
+            "I — produção intelectual institucionalizada mediante o estudo sistemático dos temas e problemas mais relevantes, do ponto de vista científico, cultural, regional e nacional.",
+            "II — **um terço do corpo docente, pelo menos, com titulação acadêmica de mestrado ou doutorado**.",
+            "III — **um terço do corpo docente em regime de tempo integral**."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-53",
+          "titulo": "Art. 53 — autonomia das universidades",
+          "itens": [
+            "Criar, organizar e extinguir, em sua sede, cursos e programas de educação superior previstos na Lei, obedecendo às normas gerais da União.",
+            "Fixar os currículos dos seus cursos e programas, observadas as diretrizes gerais pertinentes.",
+            "Estabelecer planos, programas e projetos de pesquisa científica, produção artística e atividades de extensão.",
+            "Fixar o número de vagas conforme a capacidade institucional e as exigências do seu meio.",
+            "Elaborar e reformar os seus estatutos e regimentos em consonância com as normas gerais atinentes."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-54",
+          "texto": "**Art. 54:** as universidades mantidas pelo Poder Público gozarão, na forma da lei, de **estatuto jurídico especial** para atender às peculiaridades de sua estrutura, organização e financiamento, assim como dos seus planos de carreira e do regime jurídico do seu pessoal. No exercício da autonomia, poderão **propor o seu quadro de pessoal docente, técnico e administrativo**, bem como um plano de cargos e salários, e elaborar o regulamento de seu pessoal.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-56",
+          "texto": "**Art. 56:** as instituições públicas de educação superior obedecerão ao princípio da **gestão transparente e democrática**, assegurada a existência de **órgãos colegiados deliberativos**, dos quais participarão os segmentos da comunidade institucional, local e regional. Em qualquer caso, **os docentes ocuparão setenta por cento dos assentos** em cada órgão colegiado e comissão, inclusive na elaboração e modificação de estatutos e na escolha de dirigentes.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-70",
+          "titulo": "70% dos assentos são dos docentes",
+          "texto": "No art. 56, parágrafo único, os **docentes ocupam 70%** dos assentos em cada órgão colegiado e comissão das instituições públicas de educação superior. A banca troca por 50% ou por 'maioria simples'. Já na Lei nº 11.892/2008 o Conselho Superior do IF é composto com **paridade** dos segmentos da comunidade acadêmica — as duas regras são distintas e não se confundem."
+        }
+      ]
+    },
+    {
+      "id": "profissionais-da-educacao",
+      "numero": 7,
+      "titulo": "Profissionais da educação",
+      "subtitulo": "Arts. 61 a 67: quem é profissional da educação básica, formação e valorização.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-61",
+          "titulo": "Art. 61 — profissionais da educação escolar básica",
+          "itens": [
+            "I — professores habilitados em nível médio ou superior para a docência na educação infantil e nos ensinos fundamental e médio;",
+            "II — trabalhadores em educação portadores de diploma de pedagogia, com habilitação em administração, planejamento, supervisão, inspeção e orientação educacional, bem como com títulos de mestrado ou doutorado nas mesmas áreas;",
+            "III — trabalhadores em educação portadores de diploma de curso técnico ou superior em área pedagógica ou afim;",
+            "IV — profissionais com notório saber reconhecido pelos respectivos sistemas de ensino."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-62",
+          "texto": "**Art. 62:** a formação de docentes para atuar na educação básica far-se-á em **nível superior, em curso de licenciatura plena**, admitida, como formação mínima para o exercício do magistério na **educação infantil e nos cinco primeiros anos do ensino fundamental**, a oferecida em **nível médio, na modalidade normal**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigos-63-66",
+          "titulo": "Arts. 63 a 66 — formação e prática",
+          "itens": [
+            "**Art. 63:** os institutos superiores de educação manterão cursos formadores de profissionais para a educação básica, inclusive o curso normal superior, programas de formação pedagógica e programas de educação continuada.",
+            "**Art. 64:** a formação de profissionais para administração, planejamento, inspeção, supervisão e orientação educacional será feita em cursos de **graduação em pedagogia** ou em nível de pós-graduação.",
+            "**Art. 65:** a formação docente, exceto para a educação superior, incluirá **prática de ensino de, no mínimo, 300 horas**.",
+            "**Art. 66:** a preparação para o exercício do magistério superior far-se-á em nível de **pós-graduação**, prioritariamente em programas de mestrado e doutorado; o notório saber reconhecido por universidade com curso de doutorado em área afim poderá suprir a exigência de título acadêmico."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-67",
+          "titulo": "Art. 67 — valorização dos profissionais da educação",
+          "itens": [
+            "I — ingresso **exclusivamente por concurso público de provas e títulos**;",
+            "II — aperfeiçoamento profissional continuado, inclusive com **licenciamento periódico remunerado**;",
+            "III — **piso salarial** profissional;",
+            "IV — progressão funcional baseada na titulação ou habilitação e na avaliação do desempenho;",
+            "V — **período reservado a estudos, planejamento e avaliação, incluído na carga de trabalho**;",
+            "VI — condições adequadas de trabalho."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-assistente",
+          "titulo": "Assistente em Administração não é 'profissional da educação' no art. 61",
+          "texto": "O art. 61 define os **profissionais da educação escolar básica** (docentes e trabalhadores em educação com formação pedagógica). O Assistente em Administração é servidor do Plano de Carreira dos Técnico-Administrativos (Lei nº 11.091/2005), com atribuições de apoio administrativo — não se enquadra nas hipóteses do art. 61."
+        }
+      ]
+    },
+    {
+      "id": "financiamento-e-gestao",
+      "numero": 8,
+      "titulo": "Financiamento e gestão financeira",
+      "subtitulo": "Arts. 69 a 71: percentuais de impostos e o que é (ou não) manutenção e desenvolvimento do ensino.",
+      "fontes": ["ldb"],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-69",
+          "texto": "**Art. 69:** a União aplicará, anualmente, **nunca menos de 18%**, e os Estados, o Distrito Federal e os Municípios, **25%**, ou o que constar nas respectivas Constituições ou Leis Orgânicas, da **receita resultante de impostos**, compreendidas as transferências constitucionais, na **manutenção e desenvolvimento do ensino público**.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ldb-artigo-70",
+          "texto": "**Art. 70:** consideram-se despesas de **manutenção e desenvolvimento do ensino (MDE)** as realizadas com vistas à consecução dos objetivos básicos das instituições educacionais, compreendendo, entre outras, remuneração e aperfeiçoamento do pessoal docente e demais profissionais da educação, aquisição, manutenção, construção e conservação de instalações e equipamentos necessários ao ensino e realização de atividades-meio necessárias ao funcionamento dos sistemas de ensino.",
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "lista",
+          "id": "ldb-artigo-71",
+          "titulo": "Art. 71 — NÃO constituem despesas de MDE",
+          "itens": [
+            "I — pesquisa, quando não vinculada às instituições de ensino ou efetivada fora dos sistemas de ensino;",
+            "II — subvenção a instituições públicas ou privadas de caráter assistencial, desportivo ou cultural;",
+            "III — formação de quadros especiais para a administração pública, sejam militares ou civis, inclusive diplomáticos;",
+            "IV — programas suplementares de alimentação, assistência médico-odontológica, farmacêutica e psicológica, e outras formas de assistência social;",
+            "V — obras de infraestrutura, ainda que realizadas para beneficiar direta ou indiretamente a rede escolar;",
+            "VI — pessoal docente e demais trabalhadores da educação, quando em **desvio de função** ou em atividade alheia à manutenção e desenvolvimento do ensino."
+          ],
+          "fontes": ["ldb"]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "ldb-mnemonico-18-25",
+          "titulo": "Mnemônico dos percentuais",
+          "texto": "**U-18 / E-25:** União, 18%; Estados, DF e Municípios, 25%. Ambos sobre a **receita de impostos** (incluídas as transferências constitucionais)."
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ldb-gotcha-mde",
+          "titulo": "Despesa com pessoal em desvio de função não é MDE",
+          "texto": "Remunerar docente é MDE (art. 70, I). Mas se o docente ou outro trabalhador da educação está em **desvio de função** ou em atividade alheia ao ensino, a despesa **não** é MDE (art. 71, VI). Idem programas de alimentação e assistência à saúde (art. 71, IV) e obras de infraestrutura (art. 71, V) — ainda que beneficiem a escola."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-lei-9394",
+    "titulo": "Quiz — Lei nº 9.394/1996 (LDB)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-composicao-basica",
+        "enunciado": "Nos termos da LDB, a educação escolar compõe-se de:",
+        "opcoes": [
+          {
+            "texto": "Educação básica, formada pela educação infantil, pelo ensino fundamental e pelo ensino médio, e educação superior.",
+            "correta": true,
+            "explicacao": "Certo. Art. 21 da LDB."
+          },
+          {
+            "texto": "Educação infantil, ensino fundamental e educação superior.",
+            "correta": false,
+            "explicacao": "Errado. Falta o ensino médio e a educação infantil não é nível autônomo fora da educação básica."
+          },
+          {
+            "texto": "Educação básica, formada pelo ensino fundamental e pelo ensino médio, e educação profissional.",
+            "correta": false,
+            "explicacao": "Errado. A educação infantil integra a educação básica; a educação profissional é modalidade, não nível."
+          },
+          {
+            "texto": "Ensino fundamental, ensino médio, ensino superior e educação de jovens e adultos.",
+            "correta": false,
+            "explicacao": "Errado. A EJA é modalidade, e falta a educação infantil."
+          },
+          {
+            "texto": "Educação infantil, educação básica e educação superior.",
+            "correta": false,
+            "explicacao": "Errado. A educação infantil está dentro da educação básica, não ao lado dela."
+          }
+        ],
+        "secao_id": "educacao-basica",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-carga-horaria",
+        "enunciado": "Sobre as cargas horárias mínimas na LDB, é correto afirmar:",
+        "opcoes": [
+          {
+            "texto": "800 horas anuais para o ensino fundamental e 1.000 horas anuais para o ensino médio, distribuídas por, no mínimo, 200 dias de efetivo trabalho escolar.",
+            "correta": true,
+            "explicacao": "Certo. Art. 24, I, da LDB."
+          },
+          {
+            "texto": "1.000 horas para o ensino fundamental e 800 horas para o ensino médio.",
+            "correta": false,
+            "explicacao": "Errado. Os valores estão invertidos."
+          },
+          {
+            "texto": "800 horas para ambas as etapas, distribuídas por 180 dias letivos.",
+            "correta": false,
+            "explicacao": "Errado. O mínimo é de 200 dias, e o ensino médio exige 1.000 horas."
+          },
+          {
+            "texto": "600 horas para o ensino médio, correspondentes aos itinerários formativos.",
+            "correta": false,
+            "explicacao": "Errado. 600 horas é a carga mínima dos itinerários formativos (art. 36), não a carga anual do ensino médio."
+          },
+          {
+            "texto": "Não há carga horária mínima legal, cabe a cada sistema fixá-la.",
+            "correta": false,
+            "explicacao": "Errado. O art. 24 fixa os mínimos nacionais."
+          }
+        ],
+        "secao_id": "educacao-basica",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-ef-9-anos",
+        "enunciado": "O ensino fundamental, nos termos da LDB:",
+        "opcoes": [
+          {
+            "texto": "É obrigatório, com duração de 9 anos, gratuito na escola pública e inicia-se aos 6 anos de idade.",
+            "correta": true,
+            "explicacao": "Certo. Art. 32 da LDB."
+          },
+          {
+            "texto": "É obrigatório, com duração de 8 anos, iniciando-se aos 7 anos de idade.",
+            "correta": false,
+            "explicacao": "Errado. Desde a Lei nº 11.274/2006 são 9 anos, com início aos 6 anos."
+          },
+          {
+            "texto": "Tem duração de 9 anos, mas é facultativo na faixa dos 6 aos 10 anos.",
+            "correta": false,
+            "explicacao": "Errado. O ensino fundamental é obrigatório."
+          },
+          {
+            "texto": "Inicia-se aos 4 anos de idade, com duração de 10 anos.",
+            "correta": false,
+            "explicacao": "Errado. A matrícula a partir dos 4 anos é na educação básica (pré-escola); o fundamental começa aos 6."
+          },
+          {
+            "texto": "Tem jornada mínima de 6 horas diárias em todas as escolas.",
+            "correta": false,
+            "explicacao": "Errado. A jornada mínima é de 4 horas (art. 34), com ampliação progressiva e tempo integral a critério dos sistemas."
+          }
+        ],
+        "secao_id": "educacao-basica",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-universidades",
+        "enunciado": "São características das universidades, conforme o art. 52 da LDB:",
+        "opcoes": [
+          {
+            "texto": "Pelo menos um terço do corpo docente com titulação de mestrado ou doutorado e pelo menos um terço do corpo docente em regime de tempo integral.",
+            "correta": true,
+            "explicacao": "Certo. Incisos II e III do art. 52."
+          },
+          {
+            "texto": "Pelo menos metade do corpo docente com doutorado e metade em tempo integral.",
+            "correta": false,
+            "explicacao": "Errado. O mínimo legal é de um terço para cada requisito."
+          },
+          {
+            "texto": "Um terço do corpo docente com mestrado e dois terços em regime de tempo parcial.",
+            "correta": false,
+            "explicacao": "Errado. O art. 52 exige um terço em tempo integral."
+          },
+          {
+            "texto": "Todos os docentes com doutorado e em dedicação exclusiva.",
+            "correta": false,
+            "explicacao": "Errado. Não é exigência legal."
+          },
+          {
+            "texto": "Apenas produção intelectual institucionalizada, sem requisito de titulação.",
+            "correta": false,
+            "explicacao": "Errado. O art. 52 também fixa os requisitos de titulação e de tempo integral."
+          }
+        ],
+        "secao_id": "educacao-superior",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-gestao-democratica-superior",
+        "enunciado": "Sobre a gestão das instituições públicas de educação superior, a LDB estabelece que:",
+        "opcoes": [
+          {
+            "texto": "Obedecem ao princípio da gestão transparente e democrática, com órgãos colegiados deliberativos, em que os docentes ocupam setenta por cento dos assentos.",
+            "correta": true,
+            "explicacao": "Certo. Art. 56 e parágrafo único."
+          },
+          {
+            "texto": "A gestão é exclusivamente do Reitor, sem órgãos colegiados deliberativos.",
+            "correta": false,
+            "explicacao": "Errado. O art. 56 assegura órgãos colegiados deliberativos."
+          },
+          {
+            "texto": "Os técnicos-administrativos ocupam cinquenta por cento dos assentos dos colegiados.",
+            "correta": false,
+            "explicacao": "Errado. A LDB fixa 70% dos assentos para os docentes."
+          },
+          {
+            "texto": "A gestão democrática só se aplica à educação básica.",
+            "correta": false,
+            "explicacao": "Errado. O art. 56 trata expressamente das instituições públicas de educação superior."
+          },
+          {
+            "texto": "Os estudantes são impedidos de participar dos colegiados.",
+            "correta": false,
+            "explicacao": "Errado. Participam os segmentos da comunidade institucional, local e regional."
+          }
+        ],
+        "secao_id": "educacao-superior",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-mde",
+        "enunciado": "NÃO constitui despesa de manutenção e desenvolvimento do ensino, conforme o art. 71 da LDB:",
+        "opcoes": [
+          {
+            "texto": "Programas suplementares de alimentação e assistência médico-odontológica.",
+            "correta": true,
+            "explicacao": "Certo. Inciso IV do art. 71."
+          },
+          {
+            "texto": "Remuneração e aperfeiçoamento do pessoal docente.",
+            "correta": false,
+            "explicacao": "É MDE, conforme art. 70, I."
+          },
+          {
+            "texto": "Aquisição, manutenção e conservação de instalações e equipamentos necessários ao ensino.",
+            "correta": false,
+            "explicacao": "É MDE, conforme art. 70, II."
+          },
+          {
+            "texto": "Levantamentos estatísticos e pesquisas visando ao aprimoramento da qualidade e à expansão do ensino.",
+            "correta": false,
+            "explicacao": "É MDE, conforme art. 70, IV."
+          },
+          {
+            "texto": "Atividades-meio necessárias ao funcionamento dos sistemas de ensino.",
+            "correta": false,
+            "explicacao": "É MDE, conforme art. 70, V."
+          }
+        ],
+        "secao_id": "financiamento-e-gestao",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-percentuais",
+        "enunciado": "Sobre os recursos públicos destinados à manutenção e desenvolvimento do ensino, a LDB estabelece:",
+        "opcoes": [
+          {
+            "texto": "A União aplicará anualmente nunca menos de 18% e Estados, Distrito Federal e Municípios, 25% da receita resultante de impostos, compreendidas as transferências constitucionais.",
+            "correta": true,
+            "explicacao": "Certo. Art. 69 da LDB."
+          },
+          {
+            "texto": "A União aplicará 25% e os demais entes, 18%.",
+            "correta": false,
+            "explicacao": "Errado. Os percentuais estão invertidos."
+          },
+          {
+            "texto": "Todos os entes aplicarão 25% da receita corrente líquida.",
+            "correta": false,
+            "explicacao": "Errado. A LDB fala em receita de impostos e fixa 18% para a União."
+          },
+          {
+            "texto": "A União aplicará 18%, mas apenas sobre receitas próprias, sem as transferências constitucionais.",
+            "correta": false,
+            "explicacao": "Errado. O art. 69 inclui as transferências constitucionais na base de cálculo dos entes receptores."
+          },
+          {
+            "texto": "Não há percentual mínimo legal para a União.",
+            "correta": false,
+            "explicacao": "Errado. O mínimo federal é de 18%."
+          }
+        ],
+        "secao_id": "financiamento-e-gestao",
+        "fonte_id": "ldb"
+      },
+      {
+        "id": "q-eja-exames",
+        "enunciado": "Os exames supletivos previstos no art. 38 da LDB realizar-se-ão:",
+        "opcoes": [
+          {
+            "texto": "No nível de conclusão do ensino fundamental, para os maiores de 15 anos, e no de conclusão do ensino médio, para os maiores de 18 anos.",
+            "correta": true,
+            "explicacao": "Certo. Art. 38, § 1º, I e II."
+          },
+          {
+            "texto": "No nível de conclusão do ensino fundamental, para os maiores de 18 anos, e no de conclusão do ensino médio, para os maiores de 21 anos.",
+            "correta": false,
+            "explicacao": "Errado. As idades corretas são 15 e 18 anos."
+          },
+          {
+            "texto": "Em qualquer idade, independentemente do nível.",
+            "correta": false,
+            "explicacao": "Errado. A lei fixa idades mínimas."
+          },
+          {
+            "texto": "Apenas no nível de conclusão do ensino médio.",
+            "correta": false,
+            "explicacao": "Errado. Há exames nos dois níveis."
+          },
+          {
+            "texto": "Somente para quem comprovar estar trabalhando.",
+            "correta": false,
+            "explicacao": "Errado. Não há essa exigência no art. 38."
+          }
+        ],
+        "secao_id": "modalidades",
+        "fonte_id": "ldb"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-22",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre a LDB foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler a tabela de etapas e cargas horárias.",
+      "Revisar as listas do art. 71 (não são MDE) e do art. 67 (valorização).",
+      "Refazer o quiz sem consultar as explicações."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-22",
+    "atualizado_em": "2026-11-22",
+    "autores": ["Equipe Hermes"],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Texto da Lei nº 9.394/1996 (Planalto, via espelho Licitei/leis), convertido para o Hermes.",
+    "alteracoes": "Versão inicial produzida a partir do texto com notas de alterações, capturado em 04/11/2026."
+  },
+  "notas": "Aula produzida a partir do texto do Planalto (L9394.htm) espelhado em Licitei/leis, capturado em 04/11/2026. O espelho não certifica vigência: antes de publicar, conferir as últimas alterações (ex.: Lei nº 15.xxx de 2026 se houver) no Planalto."
+}

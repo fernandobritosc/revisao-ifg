@@ -1,0 +1,845 @@
+{
+  "schema_version": "1.1.0",
+  "id": "legislacao-lei-11091",
+  "materia": "Legislação",
+  "numero": 5,
+  "titulo": "Lei nº 11.091/2005 — Plano de Carreira dos Cargos Técnico-Administrativos em Educação (PCCTAE)",
+  "resumo": "Plano de Carreira dos cargos técnico-administrativos em educação das Instituições Federais de Ensino: níveis de classificação A a E, ingresso por concurso, desenvolvimento por progressão por mérito e aceleração por capacitação (a partir de 2025), Incentivo à Qualificação, Reconhecimento de Saberes e Competências (2026), remuneração, comissões de supervisão, afastamentos e redistribuição. Regula a carreira do Assistente em Administração do IFG.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "legislacao",
+    "lei-11091",
+    "plano-de-carreira",
+    "tecnico-administrativo",
+    "progressao",
+    "incentivo-a-qualificacao",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "lei-11091",
+      "tipo": "norma",
+      "titulo": "Lei nº 11.091/2005",
+      "detalhes": "Estrutura o Plano de Carreira dos Cargos Técnico-Administrativos em Educação. Texto consolidado do Planalto com as notas de alteração (Leis nº 11.784/2008, nº 12.772/2012, nº 14.695/2023, nº 15.141/2025 e nº 15.367/2026), capturado em 22/11/2026.",
+      "ano": 2005,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11091.htm"
+    },
+    {
+      "id": "lei-15141",
+      "tipo": "norma",
+      "titulo": "Lei nº 15.141/2025",
+      "detalhes": "Conforme as notas do texto consolidado, reestruturou a carreira a partir de 2025: revogou o 'nível de capacitação' e o art. 6º, instituiu os arts. 7º-A, 7º-B, 10-B e 12-A e revogou o art. 10-A e o art. 12.",
+      "ano": 2025,
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2025/Lei/L15141.htm"
+    },
+    {
+      "id": "lei-15367",
+      "tipo": "norma",
+      "titulo": "Lei nº 15.367/2026",
+      "detalhes": "Conforme as notas do texto consolidado, instituiu, a partir de 1º/4/2026, o Reconhecimento de Saberes e Competências para o PCCTAE (arts. 12-B a 12-I).",
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/L15367.htm"
+    },
+    {
+      "id": "lei-8112",
+      "tipo": "norma",
+      "titulo": "Lei nº 8.112/1990",
+      "detalhes": "Regime jurídico dos cargos do Plano de Carreira (art. 1º, § 2º, da Lei nº 11.091/2005).",
+      "ano": 1990,
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/L8112cons.htm"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "o-plano-de-carreira",
+      "numero": 1,
+      "titulo": "O Plano de Carreira e as Instituições Federais de Ensino",
+      "subtitulo": "Arts. 1º e 2º: alcance do plano e regime jurídico.",
+      "fontes": [
+        "lei-11091",
+        "lei-8112"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "plano-artigo-1",
+          "texto": "**Art. 1º:** fica estruturado o **Plano de Carreira dos Cargos Técnico-Administrativos em Educação**, composto pelos cargos efetivos de **técnico-administrativos** e de **técnico-marítimos** de que trata a Lei nº 7.596/1987 e pelos cargos referidos no § 5º do art. 15 da Lei. Os cargos, vagos e ocupados, **integram o quadro de pessoal das Instituições Federais de Ensino**.",
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "plano-regime-juridico",
+          "nivel": "info",
+          "titulo": "Regime jurídico: Lei nº 8.112/1990",
+          "texto": "O **regime jurídico dos cargos do Plano de Carreira é o instituído pela Lei nº 8.112/1990** (art. 1º, § 2º), observadas as disposições da Lei nº 11.091/2005. Ou seja: o Assistente em Administração é **estatutário**; a 11.091 discipline a **carreira**, não o regime.",
+          "fontes": [
+            "lei-11091",
+            "lei-8112"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "plano-artigo-2",
+          "texto": "**Art. 2º:** para os efeitos desta Lei, são consideradas **Instituições Federais de Ensino** os órgãos e entidades públicos **vinculados ao Ministério da Educação** que tenham por **atividade-fim** o desenvolvimento e aperfeiçoamento do ensino, da pesquisa e da extensão e que integram o **Sistema Federal de Ensino**.",
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "plano-gotcha-ifg",
+          "titulo": "O IFG é IFE por dois títulos",
+          "texto": "O IFG é Instituição Federal de Ensino porque é autarquia federal vinculada ao MEC com atividade-fim de ensino, pesquisa e extensão (art. 2º da Lei nº 11.091) e, ao mesmo tempo, integra a Rede Federal de Educação Profissional, Científica e Tecnológica (Lei nº 11.892/2008)."
+        }
+      ]
+    },
+    {
+      "id": "principios-e-conceitos",
+      "numero": 2,
+      "titulo": "Princípios, diretrizes e conceitos",
+      "subtitulo": "Arts. 3º e 5º — com as definições atualizadas pela Lei nº 15.141/2025.",
+      "fontes": [
+        "lei-11091",
+        "lei-15141"
+      ],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "plano-artigo-3",
+          "titulo": "Art. 3º — princípios e diretrizes da gestão dos cargos",
+          "itens": [
+            "I — natureza do processo educativo, função social e objetivos do Sistema Federal de Ensino;",
+            "II — dinâmica dos processos de pesquisa, ensino, extensão e administração e as competências específicas decorrentes;",
+            "III — qualidade do processo de trabalho;",
+            "IV — reconhecimento do **saber não instituído** resultante da atuação profissional na dinâmica de ensino, pesquisa e extensão;",
+            "V — vinculação ao planejamento estratégico e ao desenvolvimento organizacional das instituições;",
+            "VI — investidura em cada cargo **condicionada à aprovação em concurso público**;",
+            "VII — desenvolvimento do servidor vinculado aos objetivos institucionais;",
+            "VIII — garantia de programas de capacitação que contemplem a formação específica e a geral, nesta incluída a educação formal;",
+            "IX — avaliação do desempenho funcional como **processo pedagógico**, realizada mediante critérios objetivos decorrentes das metas institucionais, referenciada no caráter coletivo do trabalho e nas expectativas dos usuários;",
+            "X — oportunidade de acesso às atividades de direção, assessoramento, chefia, coordenação e assistência, respeitadas as normas específicas."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "plano-artigo-5",
+          "titulo": "Art. 5º — conceitos",
+          "itens": [
+            "**Plano de carreira:** conjunto de princípios, diretrizes e normas que regulam o desenvolvimento profissional dos servidores titulares de cargos que integram determinada carreira, constituindo-se em instrumento de gestão do órgão ou entidade.",
+            "**Nível de classificação:** conjunto de cargos de mesma hierarquia, classificados a partir do requisito de escolaridade, nível de responsabilidade, conhecimentos, habilidades específicas, formação especializada, experiência, risco e esforço físico para o desempenho de suas atribuições.",
+            "**Padrão de vencimento (redação da Lei nº 15.141/2025):** posição do servidor na escala de vencimento da carreira **em função do cargo e do nível de classificação**.",
+            "**Cargo:** conjunto de atribuições e responsabilidades previstas na estrutura organizacional que são cometidas a um servidor.",
+            "**Ambiente organizacional:** área específica de atuação do servidor, integrada por atividades afins ou complementares, organizada a partir das necessidades institucionais e que orienta a política de desenvolvimento de pessoal.",
+            "**Usuários:** pessoas ou coletividades internas ou externas à Instituição Federal de Ensino que usufruem direta ou indiretamente dos serviços por ela prestados."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "plano-nivel-capacitacao-revogado",
+          "nivel": "atencao",
+          "titulo": "'Nível de capacitação' não existe mais",
+          "texto": "O conceito de **nível de capacitação** (antigo inciso V do art. 5º) foi **revogado** pela Lei nº 15.141/2025, e o art. 6º — que estruturava o plano em 5 níveis de classificação com 4 níveis de capacitação e 39 padrões — foi revogado. Questões de prova antigas que falam em 'nível de capacitação' estão **desatualizadas**.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estrutura-da-carreira",
+      "numero": 3,
+      "titulo": "Estrutura da carreira: níveis de classificação e padrões",
+      "subtitulo": "Arts. 7º, 7º-A e 7º-B — cinco níveis, dezenove padrões e os novos cargos.",
+      "fontes": [
+        "lei-11091",
+        "lei-15141"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "estrutura-artigo-7",
+          "texto": "**Art. 7º (redação da Lei nº 15.141/2025):** os cargos do Plano de Carreira são organizados em **cinco níveis de classificação — A, B, C, D e E**, de acordo com o art. 5º, caput, inciso II, no Anexo II e no Anexo II-A.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "estrutura-artigo-7a",
+          "texto": "**Art. 7º-A (incluído pela Lei nº 15.141/2025):** a partir de **1º de janeiro de 2025**, os cargos que compõem o Plano de Carreira em cada nível de classificação serão estruturados em **dezenove padrões de vencimento**, conforme correlação estabelecida no Anexo I-D.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "estrutura-artigo-7b",
+          "titulo": "Art. 7º-B — cargos que integram o Plano de Carreira",
+          "itens": [
+            "I — **Técnico em Educação**: nível de classificação **D**, com atribuições voltadas para atividades de **apoio técnico, administrativo e logístico**, relativas à execução das competências constitucionais e legais das Instituições Federais de Ensino;",
+            "II — **Analista em Educação**: nível de classificação **E**, com atribuições voltadas para atividades técnicas, administrativas e logísticas, relativas à execução das competências constitucionais e legais a cargo das Instituições Federais de Ensino.",
+            "§ 1º — ficam criados, por transformação de cargos vagos, **4.040 cargos de Técnico em Educação** e **6.060 cargos de Analista em Educação** no âmbito do MEC, para redistribuição às IFEs.",
+            "§ 2º — o concurso público para ingresso nesses cargos ocorrerá **após a sua regulamentação**; § 4º — áreas, especialidades, formação e atribuições específicas serão estabelecidas em regulamento."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "estrutura-tabela-niveis",
+          "titulo": "Níveis de classificação — escolaridade típica e exemplos",
+          "colunas": [
+            "Nível",
+            "Escolaridade (Anexo II)",
+            "Exemplos do Anexo II e do edital IFG 2026"
+          ],
+          "linhas": [
+            [
+              "A",
+              "Alfabetizado ou fundamental incompleto",
+              "Auxiliar de Limpeza (alfabetizado); Auxiliar de Carpintaria (fundamental incompleto)"
+            ],
+            [
+              "B",
+              "Fundamental incompleto ou completo",
+              "Marceneiro (fundamental incompleto + 12 meses); Telefonista (fundamental completo + 12 meses)"
+            ],
+            [
+              "C",
+              "Fundamental completo ou médio completo",
+              "Auxiliar em Administração (fundamental completo + 12 meses); Assistente de Alunos (médio completo + 6 meses) — edital IFG 2026, cargo 201"
+            ],
+            [
+              "D",
+              "Médio profissionalizante ou médio completo, com curso técnico ou experiência",
+              "Assistente em Administração (médio profissionalizante ou médio completo + 12 meses) — cargo 301; Técnico em Contabilidade — cargo 303; Técnico de Tecnologia da Informação"
+            ],
+            [
+              "E",
+              "Curso superior",
+              "Administrador; Analista de Tecnologia da Informação — cargo 401; Técnico em Assuntos Educacionais"
+            ]
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "estrutura-tabela-nota",
+          "texto": "A tabela reproduz a distribuição do **Anexo II da Lei nº 11.091/2005** (cargos por nível e requisitos de ingresso), conferida no Planalto em 22/11/2026, e os cargos do **edital IFG 2026**. O Anexo II de 2005 aparece riscado no Planalto; a Lei nº 15.141/2025 incluiu o **Anexo II-A**, com os cargos de nível **D (Técnico em Educação)** e **E (Analista em Educação)**. Os editais do IFG continuam a espelhar a distribuição de 2005.",
+          "fontes": [
+            "lei-11091"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atribuicoes-e-ingresso",
+      "numero": 4,
+      "titulo": "Atribuições gerais e ingresso",
+      "subtitulo": "Arts. 8º e 9º.",
+      "fontes": [
+        "lei-11091"
+      ],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "atribuicoes-artigo-8",
+          "titulo": "Art. 8º — atribuições gerais dos cargos do Plano",
+          "itens": [
+            "I — planejar, organizar, executar ou avaliar as atividades inerentes ao **apoio técnico-administrativo ao ensino**;",
+            "II — planejar, organizar, executar ou avaliar as atividades técnico-administrativas e especializadas relativas às ações de **pesquisa, extensão, inovação, gestão e assistência especializada** nas Instituições Federais de Ensino;",
+            "III — executar tarefas específicas, utilizando-se de recursos materiais, financeiros e outros de que a Instituição disponha, a fim de assegurar a eficiência, a eficácia e a efetividade das atividades de pesquisa, extensão, inovação, gestão e assistência especializada.",
+            "§ 1º — as atribuições gerais serão exercidas de acordo com o **ambiente organizacional**."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "atribuicoes-artigo-8-3",
+          "texto": "**Art. 8º, § 3º (Lei nº 14.695/2023):** as atribuições do inciso II incluem a **coordenação de projetos de pesquisa e extensão**, cabendo a percepção de bolsas pagas diretamente pelas Instituições Federais de Ensino, por agência oficial de fomento, por fundação de apoio devidamente credenciada ou por organismo internacional.",
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "ingresso-artigo-9",
+          "titulo": "Art. 9º — ingresso no cargo",
+          "itens": [
+            "O ingresso ocorrerá no **padrão inicial do respectivo nível de classificação**, mediante **concurso público de provas ou de provas e títulos**, observados os requisitos de ingresso estabelecidos no Anexo II.",
+            "§ 1º — o concurso poderá ser realizado **por áreas de especialização**, organizado em **1 (uma) ou mais fases**, bem como incluir **curso de formação**, conforme dispuser o plano de desenvolvimento dos integrantes do Plano de Carreira.",
+            "§ 2º — o edital definirá as características de cada fase, os requisitos de escolaridade, a formação especializada e a experiência profissional, os critérios eliminatórios e classificatórios, bem como eventuais restrições e condicionantes decorrentes do ambiente organizacional ao qual serão destinadas as vagas."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ingresso-gotcha-padrao-inicial",
+          "titulo": "Ingresso sempre no padrão inicial",
+          "texto": "O servidor entra no **padrão inicial do nível de classificação** do cargo (art. 9º), ainda que tenha qualificação superior. A qualificação superior rende **Incentivo à Qualificação**, não posicionamento inicial mais alto."
+        }
+      ]
+    },
+    {
+      "id": "desenvolvimento",
+      "numero": 5,
+      "titulo": "Desenvolvimento na carreira (a partir de 2025)",
+      "subtitulo": "Art. 10-B — progressão por mérito a cada 12 meses e aceleração por capacitação a cada 5 anos.",
+      "fontes": [
+        "lei-11091",
+        "lei-15141"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "desenvolvimento-artigo-10b",
+          "texto": "**Art. 10-B (Lei nº 15.141/2025):** a partir de **1º de janeiro de 2025**, o desenvolvimento do servidor na carreira ocorrerá pela **mudança de padrão de vencimento**, mediante **progressão por mérito** ou **aceleração da progressão por capacitação**.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "desenvolvimento-merito",
+          "titulo": "Progressão por mérito (art. 10-B, §§ 1º e 2º)",
+          "itens": [
+            "Mudança para o padrão de vencimento **imediatamente subsequente**, a cada **12 meses de efetivo exercício**.",
+            "Exige que o servidor apresente **resultado fixado em programa de avaliação de desempenho**.",
+            "Na contagem do interstício, será aproveitado o tempo computado **desde a última progressão**."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "desenvolvimento-aceleracao",
+          "titulo": "Aceleração da progressão por capacitação (art. 10-B, §§ 3º a 6º)",
+          "itens": [
+            "Mudança de padrão de vencimento decorrente da obtenção de **certificação em programa de capacitação**, compatível com o cargo ocupado.",
+            "Respeitado o **interstício de 5 anos de efetivo exercício** e cumprida a **carga horária mínima** em ações de desenvolvimento (Anexo III-A).",
+            "Para fins do interstício, serão computados **5 anos de efetivo exercício para cada mudança de padrão** decorrente de desenvolvimento pelo antigo instituto de progressão por capacitação.",
+            "Cada **evento de capacitação será computado uma única vez**.",
+            "O saldo remanescente do interstício de progressão por mérito anterior a 1º/1/2025 será considerado **uma única vez** para a progressão subsequente."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "id": "desenvolvimento-o-que-caiu",
+          "nivel": "atencao",
+          "titulo": "O que a Lei nº 15.141/2025 revogou",
+          "texto": "Foram revogados: o **art. 10-A** (interstício de 18 meses para a progressão por mérito), o § 2º do art. 10 (antiga progressão por mérito a cada 2 anos), o **art. 12** (antigo Incentivo à Qualificação com 4 anos de exercício) e o **art. 6º** (estrutura com níveis de capacitação). O caput e o § 1º do art. 10 ainda constam do texto consolidado, mas a regra operacional de 2025 em diante é a do **art. 10-B**.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "desenvolvimento-mnemonico",
+          "titulo": "12 meses mérito, 5 anos capacitação",
+          "texto": "**Mérito = 12 meses** + avaliação de desempenho. **Capacitação = 5 anos** + certificação. Dezenove padrões por nível de classificação."
+        }
+      ]
+    },
+    {
+      "id": "incentivo-a-qualificacao",
+      "numero": 6,
+      "titulo": "Incentivo à Qualificação e Reconhecimento de Saberes e Competências",
+      "subtitulo": "Arts. 11, 12-A e 12-B a 12-I.",
+      "fontes": [
+        "lei-11091",
+        "lei-15141",
+        "lei-15367"
+      ],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "iq-artigo-12a",
+          "titulo": "Art. 12-A (Lei nº 15.141/2025) — Incentivo à Qualificação",
+          "itens": [
+            "A partir de **1º de janeiro de 2025**, calculado com base no **padrão de vencimento percebido** pelo servidor, na forma do Anexo IV.",
+            "Concedido ao servidor que possuir **certificado, diploma ou titulação que exceda a exigência de escolaridade mínima** para ingresso no cargo do qual seja titular, **independentemente do nível de classificação** do cargo ocupado.",
+            "Os percentuais **não são acumuláveis** e serão **incorporados aos proventos de aposentadoria e pensão**.",
+            "Somente integrará os proventos e as pensões quando os certificados considerados para a concessão tiverem sido obtidos **até a data da aposentadoria** ou da instituição da pensão."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rsc-artigo-12b",
+          "texto": "**Art. 12-B (Lei nº 15.367/2026):** a partir de **1º de abril de 2026**, fica instituído o **Reconhecimento de Saberes e Competências para o Plano de Carreira dos Cargos Técnico-Administrativos em Educação (RSC-PCCTAE)**, caracterizado pelo reconhecimento do **saber não instituído** dos servidores ativos, resultante da atuação profissional no exercício do cargo, na dinâmica de ensino, pesquisa e extensão das Instituições Federais de Ensino. Será utilizado **exclusivamente para fins de percepção do Incentivo à Qualificação**, como modalidade alternativa aos critérios do § 2º do art. 12-A, e poderá ser concedido pela respectiva Instituição Federal de Ensino de lotação do servidor.",
+          "fontes": [
+            "lei-11091",
+            "lei-15367"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "rsc-artigo-12c",
+          "titulo": "Art. 12-C — níveis do RSC-PCCTAE e percentuais do Incentivo à Qualificação",
+          "colunas": [
+            "Nível",
+            "Destinado a servidor com",
+            "Incentivo (% do vencimento básico)"
+          ],
+          "linhas": [
+            [
+              "RSC-PCCTAE-I",
+              "Não concluiu o ensino fundamental",
+              "10%"
+            ],
+            [
+              "RSC-PCCTAE-II",
+              "Certificado de conclusão do ensino fundamental",
+              "15%"
+            ],
+            [
+              "RSC-PCCTAE-III",
+              "Ensino médio ou técnico de nível médio",
+              "25%"
+            ],
+            [
+              "RSC-PCCTAE-IV",
+              "Diploma de graduação no ensino superior",
+              "30%"
+            ],
+            [
+              "RSC-PCCTAE-V",
+              "Pós-graduação lato sensu",
+              "52%"
+            ],
+            [
+              "RSC-PCCTAE-VI",
+              "Diploma de mestrado",
+              "75%"
+            ]
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15367"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "rsc-regras",
+          "titulo": "Regras do RSC-PCCTAE (arts. 12-C a 12-I)",
+          "itens": [
+            "Poderá ser concedido para, no máximo, **75% do total de servidores** do PCCTAE, observada a disponibilidade orçamentária (§ 1º do art. 12-C).",
+            "Concedido **exclusivamente a servidor ativo em efetivo exercício**, incluído o requisitado, movimentado para composição de força de trabalho ou cedido.",
+            "Prioridade de análise aos servidores em exercício na **própria Instituição de lotação**.",
+            "**Não se aplica aos servidores em estágio probatório**.",
+            "Requisitos: participação em grupos de trabalho, comissões, comitês ou núcleos; atuação em projetos institucionais; premiação em evento de reconhecimento público; designação para responsabilidades técnico-administrativas; exercício de função ou cargo de direção ou assessoramento; produção, prospecção e difusão de conhecimento. Cada fato é utilizado **uma única vez**.",
+            "Análise pela **Comissão para Reconhecimento de Saberes e Competências (CRSC-PCCTAE)** de cada IFE, em até **120 dias** do protocolo, com análise de mérito e recurso cabível.",
+            "Só pode ser requerido após o interstício de **3 anos** da última concessão, e sempre para o percentual subsequente ao recebido.",
+            "Efeitos financeiros a partir da data da concessão, **sem retroação** à data do requerimento."
+          ],
+          "fontes": [
+            "lei-11091",
+            "lei-15367"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remuneracao-e-gestao",
+      "numero": 7,
+      "titulo": "Remuneração, comissões de supervisão e plano de desenvolvimento",
+      "subtitulo": "Arts. 13, 13-A, 14, 22 e 24.",
+      "fontes": [
+        "lei-11091"
+      ],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "remuneracao-artigo-13",
+          "titulo": "Art. 13 — composição da remuneração",
+          "itens": [
+            "**Vencimento básico** do padrão de vencimento do **nível de classificação** do cargo ocupado pelo servidor, acrescido dos **incentivos previstos na Lei** e das **demais vantagens pecuniárias estabelecidas em lei**.",
+            "Parágrafo único — os integrantes do Plano de Carreira **não fazem jus** à Gratificação Temporária — GT (Lei nº 10.868/2004) nem à Gratificação Específica de Apoio Técnico-Administrativo e Técnico-Marítimo às Instituições Federais de Ensino — GEAT (Lei nº 10.908/2004).",
+            "**Art. 13-A** — os servidores lotados nas IFEs integrantes do Plano **não fazem jus** à Vantagem Pecuniária Individual — VPI (Lei nº 10.698/2003)."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "remuneracao-artigo-14",
+          "texto": "**Art. 14 (redação da Lei nº 15.141/2025):** os vencimentos básicos do Plano de Carreira estão estruturados na forma do **Anexo I-D**, com efeitos financeiros a partir das datas nele especificadas. Sobre os vencimentos básicos incidirão os reajustes concedidos a título de **revisão geral da remuneração** dos servidores públicos federais.",
+          "fontes": [
+            "lei-11091",
+            "lei-15141"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "comissoes-artigo-22",
+          "titulo": "Art. 22 — supervisão do Plano de Carreira",
+          "itens": [
+            "Fica criada a **Comissão Nacional de Supervisão do Plano de Carreira**, vinculada ao MEC, para acompanhar, assessorar e avaliar a implementação do Plano.",
+            "Compete-lhe propor normas regulamentares (diretrizes gerais, ingresso, progressão, capacitação e avaliação), acompanhar a implementação, avaliar anualmente as propostas de lotação e examinar casos omissos.",
+            "Composição **paritária**: representantes do MEC, dos dirigentes das IFEs e das entidades representativas da categoria.",
+            "§ 3º — cada IFE deverá ter uma **Comissão Interna de Supervisão** do Plano, composta por servidores integrantes do Plano, para acompanhar, orientar, fiscalizar e avaliar sua implementação."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "plano-artigo-24",
+          "titulo": "Art. 24 — plano de desenvolvimento dos integrantes do Plano",
+          "itens": [
+            "O plano de desenvolvimento institucional de cada IFE **contemplará** plano de desenvolvimento dos integrantes do Plano de Carreira.",
+            "O plano de desenvolvimento dos integrantes deverá conter: I — **dimensionamento das necessidades institucionais**, com modelos de alocação de vagas; II — **Programa de Capacitação e Aperfeiçoamento**; III — **Programa de Avaliação de Desempenho**.",
+            "Será elaborado com base em diretrizes nacionais estabelecidas em regulamento."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afastamento-e-redistribuicao",
+      "numero": 8,
+      "titulo": "Afastamento para colaboração e redistribuição de cargos",
+      "subtitulo": "Arts. 26-A e 26-B — os dois pontos que mais caem da Lei nº 11.091.",
+      "fontes": [
+        "lei-11091"
+      ],
+      "blocos": [
+        {
+          "tipo": "lista",
+          "id": "afastamento-artigo-26a",
+          "titulo": "Art. 26-A — afastamento para colaboração",
+          "itens": [
+            "O ocupante de cargo do Plano de Carreira poderá afastar-se de suas funções para **prestar colaboração a outra instituição federal de ensino ou de pesquisa e ao Ministério da Educação**.",
+            "Com **ônus para a instituição de origem**.",
+            "O afastamento **não pode exceder 4 (quatro) anos**.",
+            "Parágrafo único — será **autorizado pelo dirigente máximo da IFE** e deverá estar vinculado a **projeto ou convênio** com prazos e finalidades objetivamente definidos."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "redistribuicao-artigo-26b",
+          "titulo": "Art. 26-B — vedação da redistribuição",
+          "itens": [
+            "É **vedada a aplicação do instituto da redistribuição** aos cargos vagos ou ocupados dos Quadros de Pessoal das IFEs **para outros órgãos e entidades da administração pública** e dos Quadros desses órgãos e entidades **para as IFEs**.",
+            "Parágrafo único — a vedação **não se aplica às redistribuições de cargos entre Instituições Federais de Ensino**."
+          ],
+          "fontes": [
+            "lei-11091"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "redistribuicao-gotcha",
+          "titulo": "Entre IFEs, pode",
+          "texto": "A vedação do art. 26-B é **uma via de mão dupla**: nem cargos das IFEs saem para outros órgãos, nem cargos de outros órgãos entram nas IFEs por redistribuição. A **exceção** é a redistribuição **entre IFEs** (por exemplo, de um IF para outro), que continua possível."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-lei-11091",
+    "titulo": "Quiz — Lei nº 11.091/2005 (PCCTAE)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-niveis-classificacao",
+        "enunciado": "Nos termos do texto atual da Lei nº 11.091/2005, os cargos do Plano de Carreira dos Cargos Técnico-Administrativos em Educação são organizados:",
+        "opcoes": [
+          {
+            "texto": "Em cinco níveis de classificação, A, B, C, D e E, com dezenove padrões de vencimento por nível a partir de 1º de janeiro de 2025.",
+            "correta": true,
+            "explicacao": "Certo. Arts. 7º e 7º-A (redação e inclusão da Lei nº 15.141/2025)."
+          },
+          {
+            "texto": "Em cinco níveis de classificação com quatro níveis de capacitação cada e 39 padrões de vencimento.",
+            "correta": false,
+            "explicacao": "Errado no texto atual. Essa era a estrutura do art. 6º, revogado pela Lei nº 15.141/2025."
+          },
+          {
+            "texto": "Em três níveis de classificação (A, B e C) e doze padrões.",
+            "correta": false,
+            "explicacao": "Errado. São cinco níveis (A a E) e dezenove padrões."
+          },
+          {
+            "texto": "Em níveis de classificação e níveis de capacitação, conforme o Anexo I-C.",
+            "correta": false,
+            "explicacao": "Errado. O nível de capacitação foi revogado; os vencimentos estão no Anexo I-D."
+          },
+          {
+            "texto": "Por curso de formação, sem níveis de classificação.",
+            "correta": false,
+            "explicacao": "Errado. A estrutura por níveis de classificação é a regra do art. 7º."
+          }
+        ],
+        "secao_id": "estrutura-da-carreira",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-progressao-merito",
+        "enunciado": "A progressão por mérito, a partir de 1º de janeiro de 2025, é a mudança para o padrão de vencimento imediatamente subsequente:",
+        "opcoes": [
+          {
+            "texto": "A cada doze meses de efetivo exercício, desde que o servidor apresente resultado fixado em programa de avaliação de desempenho.",
+            "correta": true,
+            "explicacao": "Certo. Art. 10-B, § 1º (Lei nº 15.141/2025)."
+          },
+          {
+            "texto": "A cada dezoito meses de efetivo exercício, independentemente de avaliação de desempenho.",
+            "correta": false,
+            "explicacao": "Errado. O interstício de 18 meses era do art. 10-A, revogado; a avaliação de desempenho é exigência."
+          },
+          {
+            "texto": "A cada vinte e quatro meses de efetivo exercício.",
+            "correta": false,
+            "explicacao": "Errado. Dois anos era o antigo § 2º do art. 10, revogado."
+          },
+          {
+            "texto": "A cada cinco anos, mediante certificação em programa de capacitação.",
+            "correta": false,
+            "explicacao": "Errado. Cinco anos e certificação é a aceleração da progressão por capacitação (art. 10-B, § 3º)."
+          },
+          {
+            "texto": "Somente por ocasião da mudança de nível de classificação.",
+            "correta": false,
+            "explicacao": "Errado. A mudança de nível de classificação depende de concurso (ingresso em outro cargo); a progressão é dentro do nível."
+          }
+        ],
+        "secao_id": "desenvolvimento",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-aceleracao",
+        "enunciado": "Sobre a aceleração da progressão por capacitação, é correto afirmar:",
+        "opcoes": [
+          {
+            "texto": "Exige certificação em programa de capacitação compatível com o cargo, interstício de cinco anos de efetivo exercício e cumprimento da carga horária mínima em ações de desenvolvimento.",
+            "correta": true,
+            "explicacao": "Certo. Art. 10-B, § 3º."
+          },
+          {
+            "texto": "Dispensa interstício, bastando qualquer curso de curta duração.",
+            "correta": false,
+            "explicacao": "Errado. Exige interstício de cinco anos e carga horária mínima (Anexo III-A)."
+          },
+          {
+            "texto": "Permite que o mesmo evento de capacitação seja computado várias vezes.",
+            "correta": false,
+            "explicacao": "Errado. Cada evento de capacitação é computado uma única vez (§ 5º)."
+          },
+          {
+            "texto": "Aplica-se apenas aos servidores de nível de classificação E.",
+            "correta": false,
+            "explicacao": "Errado. Não há restrição de nível no art. 10-B."
+          },
+          {
+            "texto": "Exige resultado em avaliação de desempenho e interstício de doze meses.",
+            "correta": false,
+            "explicacao": "Errado. Esses são os requisitos da progressão por mérito, não da aceleração por capacitação."
+          }
+        ],
+        "secao_id": "desenvolvimento",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-incentivo-qualificacao",
+        "enunciado": "Sobre o Incentivo à Qualificação no texto atual da Lei nº 11.091/2005:",
+        "opcoes": [
+          {
+            "texto": "É calculado com base no padrão de vencimento percebido, é devido a quem possuir certificado, diploma ou titulação que exceda a escolaridade mínima para ingresso no cargo, independentemente do nível de classificação, e seus percentuais não são acumuláveis.",
+            "correta": true,
+            "explicacao": "Certo. Art. 12-A, caput, §§ 2º e 3º (Lei nº 15.141/2025)."
+          },
+          {
+            "texto": "É devido somente após quatro anos de efetivo exercício no cargo.",
+            "correta": false,
+            "explicacao": "Errado. Esse requisito constava do antigo art. 12, revogado pela Lei nº 15.141/2025."
+          },
+          {
+            "texto": "É concedido apenas a servidores do nível de classificação E.",
+            "correta": false,
+            "explicacao": "Errado. É devido independentemente do nível de classificação."
+          },
+          {
+            "texto": "Os percentuais são acumuláveis entre si.",
+            "correta": false,
+            "explicacao": "Errado. Os percentuais não são acumuláveis."
+          },
+          {
+            "texto": "Não se incorpora aos proventos de aposentadoria.",
+            "correta": false,
+            "explicacao": "Errado. É incorporado aos proventos e às pensões, observado o § 4º (certificados obtidos até a aposentadoria)."
+          }
+        ],
+        "secao_id": "incentivo-a-qualificacao",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-rsc",
+        "enunciado": "Sobre o Reconhecimento de Saberes e Competências para o PCCTAE (RSC-PCCTAE), instituído em 2026:",
+        "opcoes": [
+          {
+            "texto": "Reconhece o saber não instituído, é usado exclusivamente para percepção do Incentivo à Qualificação, pode ser concedido a no máximo 75% dos servidores e não se aplica a servidores em estágio probatório.",
+            "correta": true,
+            "explicacao": "Certo. Arts. 12-B, 12-C (§§ 1º e 5º) e 12-D a 12-I (Lei nº 15.367/2026)."
+          },
+          {
+            "texto": "É uma progressão funcional que muda o padrão de vencimento.",
+            "correta": false,
+            "explicacao": "Errado. É usado exclusivamente para fins de percepção do Incentivo à Qualificação."
+          },
+          {
+            "texto": "Aplica-se também a servidores em estágio probatório e a inativos.",
+            "correta": false,
+            "explicacao": "Errado. Não se aplica a estágio probatório e exige servidor ativo em efetivo exercício."
+          },
+          {
+            "texto": "Poderá ser concedido a até 100% dos servidores, sem limite.",
+            "correta": false,
+            "explicacao": "Errado. O limite é de 75% do total de servidores do PCCTAE."
+          },
+          {
+            "texto": "Produz efeitos financeiros retroativos à data do requerimento.",
+            "correta": false,
+            "explicacao": "Errado. Os efeitos ocorrem a partir da concessão e não retroagem à data do requerimento (art. 12-H)."
+          }
+        ],
+        "secao_id": "incentivo-a-qualificacao",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-redistribuicao",
+        "enunciado": "Sobre a redistribuição de cargos das Instituições Federais de Ensino, a Lei nº 11.091/2005 estabelece que:",
+        "opcoes": [
+          {
+            "texto": "É vedada a redistribuição de cargos dos quadros das IFEs para outros órgãos e entidades e destes para as IFEs, salvo entre Instituições Federais de Ensino.",
+            "correta": true,
+            "explicacao": "Certo. Art. 26-B, caput e parágrafo único."
+          },
+          {
+            "texto": "É livre entre quaisquer órgãos e entidades da administração pública.",
+            "correta": false,
+            "explicacao": "Errado. Há vedação expressa, com exceção apenas entre IFEs."
+          },
+          {
+            "texto": "É vedada inclusive entre Instituições Federais de Ensino.",
+            "correta": false,
+            "explicacao": "Errado. O parágrafo único excepciona as redistribuições entre IFEs."
+          },
+          {
+            "texto": "Depende de autorização do Ministro da Educação em todos os casos.",
+            "correta": false,
+            "explicacao": "Errado. O art. 26-B não prevê essa autorização como regra."
+          },
+          {
+            "texto": "Só é permitida para cargos vagos.",
+            "correta": false,
+            "explicacao": "Errado. A vedação alcança cargos vagos e ocupados."
+          }
+        ],
+        "secao_id": "afastamento-e-redistribuicao",
+        "fonte_id": "lei-11091"
+      },
+      {
+        "id": "q-afastamento",
+        "enunciado": "O afastamento do ocupante de cargo do Plano de Carreira para prestar colaboração a outra instituição federal de ensino ou de pesquisa e ao Ministério da Educação:",
+        "opcoes": [
+          {
+            "texto": "Ocorre com ônus para a instituição de origem, não pode exceder quatro anos, é autorizado pelo dirigente máximo da IFE e deve estar vinculado a projeto ou convênio com prazos e finalidades definidos.",
+            "correta": true,
+            "explicacao": "Certo. Art. 26-A, caput e parágrafo único."
+          },
+          {
+            "texto": "Ocorre sem ônus para a origem e pode durar até dez anos.",
+            "correta": false,
+            "explicacao": "Errado. O ônus é da instituição de origem e o limite é de 4 anos."
+          },
+          {
+            "texto": "É autorizado pelo Presidente da República.",
+            "correta": false,
+            "explicacao": "Errado. A autorização é do dirigente máximo da IFE."
+          },
+          {
+            "texto": "Depende de concurso público para a instituição destinatária.",
+            "correta": false,
+            "explicacao": "Errado. Não há exigência de concurso."
+          },
+          {
+            "texto": "É vedado a servidor em efetivo exercício.",
+            "correta": false,
+            "explicacao": "Errado. O art. 26-A permite o afastamento, nas condições que fixa."
+          }
+        ],
+        "secao_id": "afastamento-e-redistribuicao",
+        "fonte_id": "lei-11091"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-22",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre a Lei nº 11.091/2005 foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler a tabela de níveis de classificação e a regra dos dezenove padrões.",
+      "Revisar os prazos: 12 meses (mérito), 5 anos (capacitação), 4 anos (afastamento), 3 anos (RSC).",
+      "Conferir no Planalto o Anexo II (escolaridade dos cargos) e eventuais regulamentos posteriores."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-22",
+    "atualizado_em": "2026-11-22",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Texto consolidado da Lei nº 11.091/2005 (Planalto), convertido para o Hermes.",
+    "alteracoes": "Versão inicial produzida a partir do texto consolidado capturado em 22/11/2026, já com as alterações das Leis nº 15.141/2025 e nº 15.367/2026."
+  },
+  "notas": "Aula produzida a partir do texto consolidado do Planalto capturado em 22/11/2026. A carreira foi reestruturada em 2025 (Lei nº 15.141/2025) e recebeu o RSC-PCCTAE em 2026 (Lei nº 15.367/2026): questões de bancas anteriores a essas leis podem estar desatualizadas. A tabela de cargos por nível foi conferida no Anexo II (página de anexos do Planalto) e no edital IFG 2026 em 22/11/2026; o Anexo II de 2005 consta riscado no Planalto e o Anexo II-A (Lei nº 15.141/2025) traz apenas Técnico em Educação (D) e Analista em Educação (E)."
+}
