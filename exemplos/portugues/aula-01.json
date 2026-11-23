@@ -1,0 +1,968 @@
+{
+  "schema_version": "1.1.0",
+  "id": "portugues-aula-01",
+  "materia": "Língua Portuguesa",
+  "numero": 1,
+  "titulo": "Língua Portuguesa — Aula 01: Concordância, crase, regência e pontuação",
+  "resumo": "Apresenta os quatro pilares da gramática normativa mais cobrados em prova: concordância (nominal e verbal, sujeito composto e coletivos); crase (fusão da preposição a com o artigo feminino, casos e locuções); regência (transitividade, verbos transitivos diretos e indiretos e as preposições mais comuns); e pontuação (usos da vírgula e dos demais sinais). Fecha com resumo, mnemonicos e pontos que mais caem.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "portugues",
+    "lingua-portuguesa",
+    "concordancia",
+    "crase",
+    "regencia",
+    "pontuacao",
+    "gramatica",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "cunha-cintra",
+      "tipo": "livro",
+      "titulo": "Nova Gramática Portuguesa",
+      "ano": 2006,
+      "detalhes": "Gramática normativa de referência (Cunha e Cintra). Consultada para as regras de concordância, crase, regência e pontuação. O texto original não foi reproduzido."
+    },
+    {
+      "id": "rocha-lima",
+      "tipo": "livro",
+      "titulo": "Gramática Portuguesa",
+      "ano": 2004,
+      "detalhes": "Gramática normativa de referência (Rocha Lima). Consultada para regência verbal, crase e pontuação. O texto original não foi reproduzido."
+    },
+    {
+      "id": "bechara",
+      "tipo": "livro",
+      "titulo": "Moderna Gramática Portuguesa",
+      "ano": 2009,
+      "detalhes": "Gramática normativa de referência (Evanildo Bechara). Consultada para concordância, regência e crase. O texto original não foi reproduzido."
+    },
+    {
+      "id": "migliori",
+      "tipo": "livro",
+      "titulo": "Língua Portuguesa: gramática e redação",
+      "ano": 2012,
+      "detalhes": "Obra de referência para o estudo de gramática e redação. Consultada para as pegadinhas e os pontos que mais caem em prova. O texto original não foi reproduzido."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "concordancia",
+      "numero": 1,
+      "titulo": "Concordância",
+      "subtitulo": "Flexão de número e pessoa entre nome e pronome",
+      "fontes": [
+        "cunha-cintra",
+        "bechara"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "con-def",
+          "texto": "**Concordância** é a correspondência de **número** (singular/plural) e **pessoa** (1ª, 2ª, 3ª) entre palavras que se referem umas às outras — sobretudo entre **núcleos** (o termo principal) e seus **adjuntos adnominais** (adjetivos, artigos, pronomes). A regra geral é a **concordância nominal e verbal**: o termo determinante (artigo, adjetivo, pronome) acompanha o **núcleo** em número e pessoa.",
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "con-nom-verb",
+          "titulo": "Concordância nominal × verbal",
+          "colunas": [
+            "Tipo",
+            "O que se concorda",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Nominal",
+              "Número (e gênero) entre núcleo e adjunto adnominal",
+              "A **casa** grande / As **casas** grandes"
+            ],
+            [
+              "Verbal",
+              "Pessoa e número entre sujeito e verbo",
+              "**O aluno** estuda / **Os alunos** estudam"
+            ],
+            [
+              "Pleonasmático (vulgar)",
+              "Repetição da palavra para reforçar",
+              "Os **meninos** os **pequenos**"
+            ]
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "con-regra-geral",
+          "titulo": "Concordância nominal — regra principal",
+          "itens": [
+            "**Artigo, adjetivo e pronome** concordam com o **núcleo** do sintagma (a palavra principal).",
+            "Ex.: '**A casa** branca' / '**As casas** brancas' — o adjetivo acompanha o núcleo 'casa(s)'.",
+            "Quando há mais de um núcleo, observa-se a **concordância**, a **distribuição** ou o **gerúndio**, conforme o caso."
+          ],
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "con-plural",
+          "texto": "**Concordância com sujeito composto**: quando o sujeito tem mais de um núcleo, o verbo pode ficar no **singular** (se os núcleos se referem a uma única realidade ou têm o mesmo sentido), no **plural** (se são realidades distintas) ou em **ambos** (concordância apenas com um dos núcleos, por eventual **gerúndio**).",
+          "fontes": [
+            "cunha-cintra",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "con-sujeito-composto",
+          "titulo": "Sujeito composto e o verbo",
+          "colunas": [
+            "Situação",
+            "Verbo",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Núcleos com sentido único/unificado",
+              "Singular",
+              "**A maçã e a laranja** é a fruta da estação (considera a fruta em geral)"
+            ],
+            [
+              "Núcleos de realidades distintas",
+              "Plural",
+              "**O diretor e o secretário** foram à reunião"
+            ],
+            [
+              "Concordância com um núcleo (gerúndio)",
+              "Singular ou plural",
+              "**Os meninos** vão à escola; **o livro** é interessante"
+            ]
+          ],
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "con-culpa",
+          "texto": "**Concordância de culpa**: quando o sujeito tem **dois núcleos** de **sentido contrário** e **um deles** determina o verbo, usa-se o **singular** com o núcleo que prevalece. Exemplo: '**A dúvida e a certeza** **rende** discussão'. (Atenção: essa regra aparece em algumas gramáticas; em provas, o mais seguro é observar o sentido.)",
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "con-coletivo",
+          "titulo": "Concordância com coletivos",
+          "itens": [
+            "**Coletivo singular**: se o coletivo está no singular, o verbo fica no singular. Ex.: '**A turma** **está** contente.'",
+            "**Coletivo no plural** (para enfatizar os indivíduos): o verbo vai para o plural. Ex.: '**A turma** **estão** animados.' (mais raro, mas admitido).",
+            "**Obs.**: com coletivos, prefere-se o singular; o plural soa mais informal."
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "con-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta se **'o adjetivo concorda com o artigo'** (não: concorda com o **núcleo**); troca **concordância nominal por verbal**; e afirma que **'sujeito composto sempre exige verbo no plural'** (não: pode ser singular se os núcleos forem uma única realidade). Além disso, **coletivo no singular** pede verbo no **singular** ('a equipe **está**')."
+        }
+      ]
+    },
+    {
+      "id": "crase",
+      "numero": 2,
+      "titulo": "Crase",
+      "subtitulo": "A fusão da preposição a com o artigo a(s)",
+      "fontes": [
+        "cunha-cintra",
+        "rocha-lima"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "cr-def",
+          "texto": "**Crase** é a **fusão** (junção) da **preposição `a`** com o **artigo definido `a`/`as`** (mesmo gênero). Resulta em uma única palavra: **à**, **às**. Só ocorre quando a preposição `a` — que liga dois termos — encontra, no segundo termo, um artigo definido feminino `a`/`as`.",
+          "fontes": [
+            "cunha-cintra",
+            "rocha-lima"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "cr-regra",
+          "titulo": "A regra de ouro da crase",
+          "texto": "**Primeiro**: existe **preposição `a`** antes do segundo termo? **Segundo**: o segundo termo **começa com artigo `a(s)`**? Se **sim** a ambos, **há crase**. Senão, **não há**."
+        },
+        {
+          "tipo": "tabela",
+          "id": "cr-tabela",
+          "titulo": "Preposição `a` + artigo `a(s)` = crase",
+          "colunas": [
+            "Preposição `a`",
+            "+ Artigo `a(s)`",
+            "Resultado"
+          ],
+          "linhas": [
+            [
+              "a (preposição)",
+              "a (artigo)",
+              "**à**"
+            ],
+            [
+              "a (preposição)",
+              "as (artigo)",
+              "**às**"
+            ],
+            [
+              "a (preposição)",
+              "outra palavra (não artigo)",
+              "**não há crase**"
+            ]
+          ],
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cr-casos",
+          "texto": "**Exemplos de crase**: '**Vou à** escola' (prep. `a` + art. `a`); '**Cheguei às** dez' (prep. `a` + art. `as`); '**Refere-se à** lei' (prep. `a` + art. `a`). **Exemplos sem crase**: '**Levei a** esposa' (o segundo termo não tem artigo, pois `esposa` já é precedido de outro artigo/próprio); '**Cheguei a** cidade' (sem artigo) — neste caso, a preposição `a` não se funde.",
+          "fontes": [
+            "cunha-cintra",
+            "rocha-lima"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cr-preposicao",
+          "texto": "**Atenção**: a crase **não ocorre** quando o segundo termo **não é precedido de artigo** — a preposição `a` permanece separada. Exemplo: '**Entreguei o livro ao** professor' — aqui `a` + `o` (artigo masculino) **não forma crase** (a crase só ocorre com artigo **feminino**).",
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "cr-com-verbos",
+          "titulo": "Verbos que regem a preposição e a crase",
+          "itens": [
+            "**Crescentes** (que regem preposição): '**ir a**', '**chegar a**', '**chegar às**', '**pertencer a**', '**dirigir-se a**'.",
+            "Ex.: '**Vamos à** praça'; '**Ele pertence à** equipe'; '**Dirigiu-se à** banca'.",
+            "**Cuidado**: verbos que não regem `a` não formam crase. Ex.: '**Ele entrou no** quarto' (regem `em`, não `a`)."
+          ],
+          "fontes": [
+            "rocha-lima",
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cr-locucoes",
+          "texto": "**Locuções**: em algumas expressões, a crase é **obrigatória** ou **opcional**. Ex.: '**à beira de**', '**à medida que**', '**à procura de**', '**às vezes**' (obrigatória); '**à guisa de**', '**à maneira de**' (opcional).",
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "cr-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta se **'crase é a preposição `a` + artigo `o`'** (não: crase só ocorre com artigo **feminino `a`/`as`**); se **'sempre há crase após verbo `ir`'** (não: depende do segundo termo — '**ir a**' + artigo feminino → crase; sem artigo → não); e se **'à é o mesmo que `a`'** (não: `à` já incorpora o artigo, enquanto `a` é só preposição)."
+        }
+      ]
+    },
+    {
+      "id": "regencia",
+      "numero": 3,
+      "titulo": "Regência",
+      "subtitulo": "Transitividade dos verbos e preposições",
+      "fontes": [
+        "bechara",
+        "rocha-lima"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "rg-def",
+          "texto": "**Regência verbal** é a **obrigação** que o verbo tem de **completar seu sentido** com outros termos: **objeto direto** (sem preposição), **objeto indireto** (com preposição) ou **predicativo**. Cada verbo rege determinadas preposições — memorizar os **verbos** e suas preposições é a base da regência.",
+          "fontes": [
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "rg-tipos",
+          "titulo": "Tipos de regência",
+          "colunas": [
+            "Tipo",
+            "Preposição",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Transitivo direto (TD)",
+              "não requer preposição",
+              "**Ele leu o** livro"
+            ],
+            [
+              "Transitivo indireto (TI)",
+              "com preposição (a, de, em, por, com, para...)",
+              "**Ele respondeu ao** elogio"
+            ],
+            [
+              "Intransitivo (I)",
+              "não necessita de complemento",
+              "**Ele chegou**"
+            ],
+            [
+              "De ligação / predicativo",
+              "com preposição, indica estado",
+              "**Ele é** apto"
+            ]
+          ],
+          "fontes": [
+            "bechara",
+            "rocha-lima"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "rg-verbos-td",
+          "titulo": "Verbos transitivos diretos (sem preposição)",
+          "itens": [
+            "**LER**, **escrever**, **amor** (sentir), **banhar**, **cumprimentar**, **gostar** (sentir), **mandar**.",
+            "Ex.: '**Ele leu o** livro'; '**Ela gostou a** padaria' (com `a` como objeto direto? não — ver abaixo)."
+          ],
+          "fontes": [
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rg-ti",
+          "texto": "**Verbos transitivos indiretos** exigem **preposição**. As mais comuns: `**a**` (responder **a**, referir-se **a**, assistir **a**), `**de**` (lembrar **de**, depender **de**, gostar **de**), `**em**` (confiar **em**, cair **em**), `**com**` (lidar **com**, identificar-se **com**), `**para**` (ir **para**, olhar **para**), `**por**` (buscar **por**).",
+          "fontes": [
+            "rocha-lima",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "rg-verbos-comuns",
+          "titulo": "Verbos e preposições (os mais cobrados)",
+          "colunas": [
+            "Verbo",
+            "Preposição",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Responder",
+              "a",
+              "**Respondi à** pergunta"
+            ],
+            [
+              "Referir-se / Assisti-se",
+              "a",
+              "**Ele refere-se à** lei"
+            ],
+            [
+              "Gostar / Lembrar",
+              "de",
+              "**Gosto de** você"
+            ],
+            [
+              "Confiar / Cair",
+              "em",
+              "**Confio em** você"
+            ],
+            [
+              "Lidar / Identificar-se",
+              "com",
+              "**Lido com** o público"
+            ],
+            [
+              "Ir / Olhar",
+              "para",
+              "**Vou para** casa"
+            ],
+            [
+              "Buscar",
+              "por",
+              "**Busquei por** você"
+            ]
+          ],
+          "fontes": [
+            "rocha-lima",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "rg-dual",
+          "texto": "**Verbos de dupla regência**: alguns verbos podem ser transitivos diretos **e** indiretos, dependendo do sentido. Ex.: '**amar**' (TD: amar o filho; TI: amar **a** Deus). '**gostar**' (TI: gostar **de**; em alguns contextos TD). '**responder**' (TI: responder **a**).",
+          "fontes": [
+            "bechara",
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "rg-reflexivo",
+          "titulo": "Verbos reflexivos e pronominais",
+          "itens": [
+            "**Verbos pronominais**: '**queixar-se**', '**levantar-se**', '**entregar-se**' — o pronome obriga a preposição (`se`).",
+            "Ex.: '**Ele queixa-se**' (queixar-se **de**); '**Ela entregou-se**' (entregar-se **a**).",
+            "**Cuidado**: o verbo pronominal rege a preposição e o pronome `se` — não confundir com crase."
+          ],
+          "fontes": [
+            "rocha-lima",
+            "bechara"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "rg-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta qual a preposição de **'responder'**, **'gostar'**, **'confiar'**, **'lidar'**, **'ir'** (sempre a preposição certa: **a**, **de**, **em**, **com**, **para**); troca **objeto direto por indireto** ('**leu a**' sem preposição = TD; '**respondeu a**' = TI); e afirma que **'todos os verbos são transitivos diretos'** — não: muitos são intransitivos ou transitivos indiretos."
+        }
+      ]
+    },
+    {
+      "id": "pontuacao",
+      "numero": 4,
+      "titulo": "Pontuação",
+      "subtitulo": "Vírgula, ponto, dois-pontos e outros sinais",
+      "fontes": [
+        "cunha-cintra",
+        "migliori"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "pon-def",
+          "texto": "**Pontuação** é o conjunto de **sinais** que organizam o texto, marcam pausas, separam ideias, indicam citações, abreviações e listas, e garantem a **clareza** e a **coerência**. O sinal principal é a **vírgula**; os demais (ponto final, ponto e vírgula, dois-pontos, travessão, aspas, reticências, parênteses) complementam.",
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "pon-virgula",
+          "titulo": "Usos principais da vírgula",
+          "itens": [
+            "**Separar adjuntos adverbiais** deslocados (no início, no meio ou no fim). Ex.: '**No dia seguinte,** ele retornou.'",
+            "**Isolar elementos** explicativos/intercalares. Ex.: '**Ele, contudo,** concordou.'",
+            "**Separar orações coordenadas** (que não sejam assindéticas) e termos em **enumeração**. Ex.: '**Choveu, fez frio e** ninguém saiu.'",
+            "**Isolar vocativos**, aposto e citação. Ex.: '**Maria,** venha aqui.'"
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "pon-tabela",
+          "titulo": "Sinais de pontuação e seus usos",
+          "colunas": [
+            "Sinal",
+            "Uso principal",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Vírgula ( , )",
+              "Pausa, separação de elementos e orações",
+              "**Ele, porém,** não veio"
+            ],
+            [
+              "Ponto final ( . )",
+              "Final de oração declarativa",
+              "**Ele não veio.**"
+            ],
+            [
+              "Ponto e vírgula ( ; )",
+              "Separar orações de um mesmo período",
+              "**Choveu;** fizemos o passeio"
+            ],
+            [
+              "Dois-pontos ( : )",
+              "Introduzir citação, lista, explicação",
+              "**Há três motivos:** ..."
+            ],
+            [
+              "Travessão ( — )",
+              "Isoar fala, pensamento ou intercalar",
+              "**Ele disse — e foi —** que viria"
+            ],
+            [
+              "Aspas ( \" \" )",
+              "Citação direta",
+              "**Ele disse: \"Vou\"**"
+            ],
+            [
+              "Reticências ( ... )",
+              "Suspensão, ideia não terminada",
+              "**Ele saiu ...**"
+            ],
+            [
+              "Parênteses ( ( ) )",
+              "Isolar explicação",
+              "**O evento (HOJE)** começa às 9h"
+            ]
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "pon-never",
+          "texto": "**Não usar vírgula** entre **sujeito e verbo**, nem entre **verbo e objeto** (quando o objeto vem depois). Ex.: '**O aluno** estudou' (sem vírgula); '**Ele ler o** livro' (sem vírgula entre verbo e objeto). A vírgula antes do verbo **só** é permitida quando o sujeito for **deslocado** ou muito longo.",
+          "fontes": [
+            "cunha-cintra",
+            "rocha-lima"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "pon-oracoes",
+          "texto": "**Orações coordenadas**: as **sinditéticas** (ligadas por conjunções) separam-se com vírgula; as **assindéticas** (sem conjunção) separam-se com **ponto e vírgula** ou **ponto final**. Ex.: '**Ele estuda e** trabalha' (com vírgula); '**Ele estuda.** **Trabalha**' (ponto final).",
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "pon-lista",
+          "titulo": "Enumerações e listas",
+          "itens": [
+            "**Enumeração simples**: separe os itens por **vírgula**. Ex.: '**Pão, leite e** queijo.'",
+            "**Enumeração complexa** (itens longos ou com vírgula): use **ponto e vírgula**.",
+            "**Último item**: antes do último, usa-se a conjunção (e, ou) precedida de vírgula."
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "pon-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta se **'se usa vírgula entre sujeito e verbo'** (não, exceto se o sujeito for longo ou deslocado); se **'toda pausa é marcada com vírgula'** (não: pausa de final de oração é ponto final); e se **'aspas servem para qualquer intercalação'** (não: aspas são para **citação direta**; intercalações usam vírgulas ou travessões)."
+        }
+      ]
+    },
+    {
+      "id": "pontos-que-mais-caem",
+      "numero": 5,
+      "titulo": "Pontos que mais caem em prova",
+      "subtitulo": "Resumo e revisão rápida",
+      "fontes": [
+        "cunha-cintra",
+        "migliori"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "pq-resumo",
+          "texto": "Resumo rápido: **Concordância** — adjetivo/artigo acompanham o **núcleo**; sujeito composto pode exigir verbo no **singular** (sentido único) ou **plural** (realidades distintas); coletivo no singular pede verbo no **singular**. **Crase** — é a **fusão** da preposição `a` com o artigo `a`/`as` (feminino): `à`, `às`. **Regência** — cada verbo rege sua **preposição** (`responder a`, `gostar de`, `confiar em`, `lidar com`, `ir para`). **Pontuação** — vírgula **não** separa sujeito de verbo; separa **adjuntos**, **orações** e **enumerações**.",
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "pq-mnemonico-regencia",
+          "titulo": "Regência verbal em uma frase",
+          "texto": "**Responder a** · **gostar de** · **confiar em** · **lidar com** · **ir para** · **buscar por**. (Cada verbo pede sua preposição — memorize por pares.)"
+        },
+        {
+          "tipo": "mnemonico",
+          "id": "pq-mnemonico-crase",
+          "titulo": "Crase em uma frase",
+          "texto": "**Preposição `a` + artigo `a(s)` = crase** → `à`, `às`. Não há artigo feminino no segundo termo → **não há crase**."
+        },
+        {
+          "tipo": "tabela",
+          "id": "pq-tabela",
+          "titulo": "Termos frequentes × definição rápida",
+          "colunas": [
+            "Termo",
+            "Definição rápida"
+          ],
+          "linhas": [
+            [
+              "Concordância nominal",
+              "Adj./art. acompanham o núcleo em número"
+            ],
+            [
+              "Concordância verbal",
+              "Verbo acompanha o sujeito em pessoa/número"
+            ],
+            [
+              "Crase",
+              "Preposição a + artigo a(s) → à, às"
+            ],
+            [
+              "Transitivo direto",
+              "Objeto sem preposição"
+            ],
+            [
+              "Transitivo indireto",
+              "Objeto com preposição"
+            ],
+            [
+              "Regência",
+              "Preposição que cada verbo exige"
+            ],
+            [
+              "Vírgula",
+              "Separa adjuntos, orações e enumerações"
+            ],
+            [
+              "Ponto final",
+              "Final de oração declarativa"
+            ]
+          ],
+          "fontes": [
+            "cunha-cintra",
+            "migliori"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "pq-exemplo",
+          "texto": "**Exemplo de prova**: 'Assinale a alternativa em que há **crase**:' — resposta: '**Vou à** escola' (prep. `a` + art. `a`). Outra: 'Qual a preposição de **'confiar'**?' — resposta: **`em`** ('confiar **em** alguém').",
+          "fontes": [
+            "cunha-cintra"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "pq-gotcha",
+          "titulo": "As pegadinhas mais comuns",
+          "texto": "A banca costuma trocar **concordância nominal por verbal**, **objeto direto por indireto**, **crase com artigo masculino** (não há), e perguntar a **preposição** de cada verbo. Releia os **núcleos** (concordância), os **artigos femininos** (crase), os **verbos + preposições** (regência) e os **sinais de pontuação** antes da prova."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-portugues-01",
+    "titulo": "Quiz — Língua Portuguesa (aula 1)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-concordancia",
+        "enunciado": "Em uma frase, o adjetivo e o artigo devem concordar em número com:",
+        "opcoes": [
+          {
+            "texto": "O sujeito da oração, independentemente do núcleo.",
+            "correta": false,
+            "explicacao": "Não. Concordância nominal se dá com o núcleo do sintagma, não com o sujeito."
+          },
+          {
+            "texto": "O núcleo do sintagma (a palavra principal), em número e gênero.",
+            "correta": true,
+            "explicacao": "Certo. O adjetivo e o artigo acompanham o núcleo ('a casa grande', 'as casas grandes')."
+          },
+          {
+            "texto": "O verbo da oração, em pessoa e número.",
+            "correta": false,
+            "explicacao": "Não. Isso é concordância verbal, não nominal."
+          },
+          {
+            "texto": "O último termo da frase, mesmo que não seja o núcleo.",
+            "correta": false,
+            "explicacao": "Não. A regra é com o núcleo, não com qualquer termo."
+          },
+          {
+            "texto": "O artigo inicial da frase, sempre no plural.",
+            "correta": false,
+            "explicacao": "Não. A concordância é com o núcleo, e o artigo não fica sempre no plural."
+          }
+        ],
+        "secao_id": "concordancia",
+        "fonte_id": "cunha-cintra"
+      },
+      {
+        "id": "q-sujeito-composto",
+        "enunciado": "Sobre a concordância verbal com sujeito composto, é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "Se os núcleos do sujeito se referem a uma única realidade ou têm sentido unificado, o verbo pode ficar no singular.",
+            "correta": true,
+            "explicacao": "Certo. Sujeito composto com núcleos de sentido único pode ter verbo no singular."
+          },
+          {
+            "texto": "Sujeito composto sempre exige verbo no plural, em qualquer situação.",
+            "correta": false,
+            "explicacao": "Não. Quando os núcleos formam uma única realidade, o verbo pode ficar no singular."
+          },
+          {
+            "texto": "A concordância verbal só depende do número de palavras no sujeito.",
+            "correta": false,
+            "explicacao": "Não. Depende do sentido dos núcleos, não apenas da quantidade de palavras."
+          },
+          {
+            "texto": "Coletivos no plural sempre exigem verbo no plural.",
+            "correta": false,
+            "explicacao": "Não. Coletivo no singular pede verbo no singular ('a equipe está')."
+          },
+          {
+            "texto": "Não há regra: cada verbo decide sozinho o número, sem critérios.",
+            "correta": false,
+            "explicacao": "Não. Há regra: singular (sentido único) ou plural (realidades distintas)."
+          }
+        ],
+        "secao_id": "concordancia",
+        "fonte_id": "cunha-cintra"
+      },
+      {
+        "id": "q-crase",
+        "enunciado": "A crase ocorre quando:",
+        "opcoes": [
+          {
+            "texto": "A preposição `a` se funde com o artigo definido feminino `a`/`as`.",
+            "correta": true,
+            "explicacao": "Certo. Crase é a fusão da preposição a com o artigo a(s) (feminino) — à, às."
+          },
+          {
+            "texto": "A preposição `a` se funde com o artigo `o`/`os` (masculino).",
+            "correta": false,
+            "explicacao": "Não. Crase só ocorre com artigo feminino (a/as); com artigo masculino não há crase."
+          },
+          {
+            "texto": "Ocorre sempre após qualquer verbo que comece com a letra 'a'.",
+            "correta": false,
+            "explicacao": "Não. Depende da preposição `a` e do artigo feminino no segundo termo, não da letra inicial do verbo."
+          },
+          {
+            "texto": "Qualquer encontro da preposição `a` com qualquer termo forma crase.",
+            "correta": false,
+            "explicacao": "Não. Só se o segundo termo começar com artigo feminino."
+          },
+          {
+            "texto": "A crase é idêntica à preposição `a` isolada, sem fusão.",
+            "correta": false,
+            "explicacao": "Não. Crase já incorpora o artigo (à); a preposição `a` isolada não tem artigo."
+          }
+        ],
+        "secao_id": "crase",
+        "fonte_id": "cunha-cintra"
+      },
+      {
+        "id": "q-crase-exemplo",
+        "enunciado": "Assinale a alternativa em que há crase:",
+        "opcoes": [
+          {
+            "texto": "Ele entregou o livro ao professor.",
+            "correta": false,
+            "explicacao": "Não. `a` + `o` (artigo masculino) não forma crase."
+          },
+          {
+            "texto": "Vou à escola todos os dias.",
+            "correta": true,
+            "explicacao": "Certo. Preposição `a` + artigo `a` → `à` (crase)."
+          },
+          {
+            "texto": "Ele chegou a cidade na hora.",
+            "correta": false,
+            "explicacao": "Não. `cidade` não tem artigo; a preposição `a` permanece separada."
+          },
+          {
+            "texto": "Ela olhou para o quadro na parede.",
+            "correta": false,
+            "explicacao": "Não. `para` + `o` (masculino) não forma crase."
+          },
+          {
+            "texto": "Levei a filha à escola e a mãe à feira.",
+            "correta": false,
+            "explicacao": "Não. Embora haja crase em 'à escola', a alternativa como conjunto não é uma afirmação de crase isolada; a questão pede uma frase com crase, e essa mistura confunde."
+          }
+        ],
+        "secao_id": "crase",
+        "fonte_id": "cunha-cintra"
+      },
+      {
+        "id": "q-regencia",
+        "enunciado": "Assinale a alternativa que indica corretamente a preposição exigida pelo verbo:",
+        "opcoes": [
+          {
+            "texto": "Confiar **em** alguém.",
+            "correta": true,
+            "explicacao": "Certo. 'Confiar' rege a preposição 'em'."
+          },
+          {
+            "texto": "Confiar **a** alguém.",
+            "correta": false,
+            "explicacao": "Não. 'Confiar' rege 'em', não 'a'."
+          },
+          {
+            "texto": "Responder **de** algo.",
+            "correta": false,
+            "explicacao": "Não. 'Responder' rege 'a'."
+          },
+          {
+            "texto": "Lidar **para** o público.",
+            "correta": false,
+            "explicacao": "Não. 'Lidar' rege 'com'."
+          },
+          {
+            "texto": "Gostar **em** você.",
+            "correta": false,
+            "explicacao": "Não. 'Gostar' rege 'de'."
+          }
+        ],
+        "secao_id": "regencia",
+        "fonte_id": "rocha-lima"
+      },
+      {
+        "id": "q-regencia-td",
+        "enunciado": "O objeto direto caracteriza-se por:",
+        "opcoes": [
+          {
+            "texto": "Ser complemento do verbo sem o uso de preposição.",
+            "correta": true,
+            "explicacao": "Certo. Objeto direto não usa preposição ('Ele leu o livro')."
+          },
+          {
+            "texto": "Ser complemento do verbo sempre com preposição.",
+            "correta": false,
+            "explicacao": "Não. Isso é objeto indireto; o direto não usa preposição."
+          },
+          {
+            "texto": "Ser apenas o termo que inicia a frase.",
+            "correta": false,
+            "explicacao": "Não. Objeto direto é complemento sem preposição, não por posição."
+          },
+          {
+            "texto": "Ser sempre um adjetivo.",
+            "correta": false,
+            "explicacao": "Não. Objeto direto é um substantivo (termo), não um adjetivo."
+          },
+          {
+            "texto": "Não depender do verbo, formando uma oração independente.",
+            "correta": false,
+            "explicacao": "Não. Objeto direto depende do verbo (é seu complemento)."
+          }
+        ],
+        "secao_id": "regencia",
+        "fonte_id": "bechara"
+      },
+      {
+        "id": "q-pontuacao",
+        "enunciado": "Sobre a pontuação, é correto afirmar que:",
+        "opcoes": [
+          {
+            "texto": "A vírgula deve ser usada para separar sujeito e verbo, em qualquer caso.",
+            "correta": false,
+            "explicacao": "Não. Não se usa vírgula entre sujeito e verbo (exceto sujeito deslocado ou muito longo)."
+          },
+          {
+            "texto": "A vírgula separa adjuntos adverbiais deslocados, orações coordenadas e termos em enumeração.",
+            "correta": true,
+            "explicacao": "Certo. Esse é o uso principal da vírgula."
+          },
+          {
+            "texto": "O ponto final serve para separar orações coordenadas dentro de um período.",
+            "correta": false,
+            "explicacao": "Não. Para isso usa-se vírgula ou ponto e vírgula; ponto final encerra o período."
+          },
+          {
+            "texto": "Aspas são usadas para isolar adjuntos adverbiais.",
+            "correta": false,
+            "explicacao": "Não. Aspas servem para citação direta; adjuntos usam vírgula."
+          },
+          {
+            "texto": "O ponto e vírgula serve para encerrar orações declarativas.",
+            "correta": false,
+            "explicacao": "Não. Ponto e vírgula separa orações de um mesmo período; ponto final encerra."
+          }
+        ],
+        "secao_id": "pontuacao",
+        "fonte_id": "cunha-cintra"
+      },
+      {
+        "id": "q-pontuacao-lista",
+        "enunciado": "Em uma enumeração, a separação dos itens se faz com:",
+        "opcoes": [
+          {
+            "texto": "Vírgula entre os itens (ou ponto e vírgula, em enumerações complexas).",
+            "correta": true,
+            "explicacao": "Certo. Enumeração simples usa vírgula; complexa, ponto e vírgula."
+          },
+          {
+            "texto": "Ponto final entre todos os itens.",
+            "correta": false,
+            "explicacao": "Não. Ponto final encerra o período; em enumeração usam-se vírgulas."
+          },
+          {
+            "texto": "Travessão entre todos os itens.",
+            "correta": false,
+            "explicacao": "Não. O travessão não é o sinal ordinário de enumeração."
+          },
+          {
+            "texto": "Dois-pontos entre os itens.",
+            "correta": false,
+            "explicacao": "Não. Dois-pontos introduzem a enumeração, não separam os itens."
+          },
+          {
+            "texto": "Nenhuma pontuação: os itens se justapõem sem sinais.",
+            "correta": false,
+            "explicacao": "Não. A enumeração exige vírgula (ou ponto e vírgula) entre os itens."
+          }
+        ],
+        "secao_id": "pontuacao",
+        "fonte_id": "migliori"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-23",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre língua portuguesa foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100. O conteúdo foi elaborado a partir de gramáticas normativas de referência, não de banca específica."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler as regras de concordância nominal e verbal, sujeito composto e coletivos.",
+      "Conferir a regra de crase (preposição a + artigo feminino) e os exemplos.",
+      "Revisar a regência: objeto direto, indireto e as preposições dos verbos mais cobrados.",
+      "Conferir os usos da vírgula e dos demais sinais de pontuação.",
+      "Revisar o glossário rápido e as pegadinhas da seção 5."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-23",
+    "atualizado_em": "2026-11-23",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Aula escrita para o cargo 301 (Assistente em Administração, IFG) a partir de gramáticas normativas de referência (Cunha e Cintra, Rocha Lima, Bechara, Migliori).",
+    "alteracoes": "Versão inicial da aula 1 de língua portuguesa (concordância, crase, regência e pontuação)."
+  },
+  "notas": "Blocos de gramática normativa escritos a partir de obras de referência consolidadas (Cunha e Cintra, Rocha Lima, Bechara, Migliori); não houve extração de página de nenhuma fonte. Revisão de ortografia feita manualmente (sem corretor ortográfico no sandbox)."
+}
