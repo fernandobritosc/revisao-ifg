@@ -60,7 +60,8 @@ A hierarquia espelha o edital: `CC-1.1`, `CC-2.3`, `CE-7.5` etc. O edital pulou 
 5. **Atualizar** `questoes`, `erros`, `questoes_lista`, `fontes`.
 6. **Garantir o bloco `decore`** com `chave`, `truque`, `erro` e a `explicacao` curta (3–4 parágrafos, com sigla quando ajudar). É obrigatório para todo card com incidência.
 7. **Fechar**: `python build.py`. Nunca escreva HTML na mão.
-8. **Responder** ao usuário dizendo: onde a questão caiu, o que foi fundido ou criado, e a contagem atual. Nada mais.
+8. **Deploy**: envie as alterações ao repositório remoto (`git add -A`, `git commit`, `git push`) para o GitHub Pages refletir a mudança; faça isso antes de responder.
+9. **Responder** ao usuário dizendo: onde a questão caiu, o que foi fundido ou criado, e a contagem atual. Nada mais.
 
 Status: `nao-mapeado` → `em-mapeamento` → `mapeado`. Só mude para `mapeado` quando o usuário disser explicitamente `fechou <id>`.
 
