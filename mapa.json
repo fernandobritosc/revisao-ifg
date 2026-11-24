@@ -87,7 +87,41 @@
     "CC-4": {
       "titulo": "Informática",
       "filhos": [
-        {"id": "CC-4.1", "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos"},
+        {
+            "id": "CC-4.1",
+            "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
+            "status": "em-mapeamento",
+            "questoes": 1,
+            "erros": 0,
+            "revisado_em": null,
+            "decore": {
+              "chave": "CPU = Unidade Central de Processamento (chip que executa as instruções)",
+              "truque": "U + C + A = Unidade de Controle e Unidade de Lógica e Aritmética; registradores são pequenos registros dentro do chip",
+              "erro": "Erros clássicos: A (USB/LPT na CPU), B (ROM no encapsulamento), C (HD como memória primária), E (plug-and-play)"
+            },
+            "explicacao": [
+              "CPU (Unidade Central de Processamento) é o chip responsável por interpretar e executar as instruções dos programas; é o dispositivo eletrônico mais importante do computador.",
+              "O chip é formado por dois blocos funcionais: a Unidade de Controle (UC), que gerencia, decodifica e executa as instruções, e a Unidade de Lógica e Aritmética (ULA), que realiza os cálculos lógicos e aritméticos.",
+              "Dentro do encapsulamento da CPU também existem os registradores: unidades muito pequenas e extremamente rápidas de memória.",
+              "Memórias dentro da CPU: registradores e cache. Não há ROM nem HD dentro da CPU — a ROM fica na placa-mãe e o HD é um dispositivo de memória secundária, não a memória primária das informações."
+            ],
+            "incidencias": [
+              {
+                "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
+                "vezes": 1,
+                "questoes": ["#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)"]
+              }
+            ],
+            "pegadinhas": [
+              "Assumir que a CPU tem portas USB/LPT — as portas ficam no gabinete e chegam à placa-mãe por barramentos",
+              "Assumir que ROM/HD estão dentro da CPU — dentro do encapsulamento são a cache e os registradores"
+            ],
+            "questoes_lista": [
+              "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)"
+            ],
+            "fora_do_resumo": [],
+            "fontes": []
+          },
         {"id": "CC-4.2", "titulo": "Softwares utilitários: compactadores, chat, e-mail, reprodutores, visualizadores, antivírus"},
         {"id": "CC-4.3", "titulo": "Ambientes operacionais: Windows 10 e 11 (português)"},
         {"id": "CC-4.4", "titulo": "Microsoft Office 365: Word, Excel e PowerPoint (português)"},
