@@ -1,4 +1,4 @@
-name: Publicar acervo (GitHub Pages)
+name: Publicar mapa de revisão (GitHub Pages)
 
 on:
   push:
@@ -16,35 +16,21 @@ concurrency:
 
 jobs:
   build:
-    name: Validar e gerar o site
+    name: Publicar site estático
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Validar as aulas
-        run: python validate.py
-
-      - name: Rodar os testes
-        run: python -m unittest discover -s tests -v
-
-      - name: Gerar HTML e índice
-        run: python build.py --out dist
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
-      - name: Empacotar o site
+      - name: Empacotar site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: .
 
   deploy:
     name: Publicar

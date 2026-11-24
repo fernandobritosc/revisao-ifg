@@ -1,2 +1,0 @@
-# O validador do Hermes usa somente a biblioteca padrão do Python 3.11+.
-# Este arquivo existe para sinalizar que não há dependências de terceiros.
