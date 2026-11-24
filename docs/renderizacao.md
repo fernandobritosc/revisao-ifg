@@ -45,7 +45,7 @@ python build.py --index
 
 ### Quando o índice é gerado
 
-- Entrada é um **diretório** → `index.html` com um cartão por aula.
+- Entrada é um **diretório** → `index.html` agrupado por matéria, com navegação por disciplina, contagens (aulas, seções e questões) e um cartão por aula.
 - Mais de um arquivo de aula → `index.html`.
 - Um único arquivo → sem índice, a menos que `--index` seja informado.
 
@@ -130,4 +130,4 @@ Em CI, valide e construa em passos separados; publique `dist/` como artefato ou 
 - Não baixa nem embute imagens: o modelo atual não tem bloco de imagem (decisão 010).
 - Não gera sketchnote: é uma apresentação derivada, fora do JSON.
 - Não calcula nota nem salva progresso do quiz.
-- O índice é uma página simples; um site com muitas aulas precisa de um gerador de índice por matéria.
+- O índice agrupa por matéria em ordem alfabética e ordena as aulas pelo número; não há busca, filtro por tag nem ordenação por peso no edital.
