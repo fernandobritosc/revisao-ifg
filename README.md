@@ -15,6 +15,7 @@ O nome **RO**, no exemplo deste repositório, significa **Redação Oficial** �
 | [`exemplos/etica/aula-01.json`](exemplos/etica/aula-01.json) | **Ética geral e profissional — Aula 01** (cargo 301): conceitos e fundamentos, ética profissional, relações de trabalho, responsabilidade social, assédio; 6 seções, 40 blocos e 8 questões. |
 | [`exemplos/administracao-de-pessoas/`](exemplos/administracao-de-pessoas/) | **Administração de pessoas — 2 aulas** (cargo 301): conceito, funções, estratégia, liderança, equipe e motivação; recrutamento e seleção, cargos e remuneração, treinamento e desenvolvimento e avaliação de desempenho; 11 seções, 81 blocos e 16 questões. |
 | [`exemplos/portugues/aula-01.json`](exemplos/portugues/aula-01.json) | **Língua Portuguesa — Aula 01** (cargo 301): concordância, crase, regência e pontuação; 5 seções, 37 blocos e 8 questões. |
+| [`exemplos/rlm/aula-01.json`](exemplos/rlm/aula-01.json) | **Raciocínio Lógico e Matemática — Aula 01** (cargo 301): lógica proposicional, conjuntos, combinatória, aritmética e geometria; 5 seções, 32 blocos e 8 questões. |
 | [`exemplos/legislacao/`](exemplos/legislacao/) | **Legislação federal — 10 aulas** escritas a partir do texto das normas (8.112, D. 1.171 e D. 6.029, LDB, 11.892, 11.091, 9.784, LGPD, LAI, 8.429, 14.133): 79 seções, 376 blocos e 76 questões de 5 alternativas, com fonte Planalto por bloco. |
 | [`validate.py`](validate.py) | Validador estrutural e semântico, sem dependências externas. |
 | [`build.py`](build.py) | Gerador de HTML autocontido e Markdown a partir do JSON. |
