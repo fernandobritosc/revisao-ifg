@@ -38,7 +38,7 @@ Legenda: ✅ coberto · 🟡 parcial · ❌ ausente.
 | Área | Tópicos do edital | Cobertura | Situação |
 |---|---|---:|---|
 | **Língua Portuguesa** (20 pts) | 21 tópicos | 🟡 ~8/21 | Há 7 aulas no acervo (ortografia, classes de palavras, verbos, locuções, funções sintáticas, coordenação, colocação pronominal) e a **aula-01 no Hermes (23/11/2026)** cobre crase, concordância, regência e pontuação. Ainda faltam coesão, figuras de linguagem, gêneros textuais, formação de palavras, variação linguística. |
-| **Legislação** (10 pts) | 11 normas | ✅ 10/11 | Dez aulas em `exemplos/legislacao/` (22/11/2026; aula-01 corrigida no mesmo dia): 8.112, D. 1.171 + D. 6.029, LDB, 11.892, 11.091, 9.784, LGPD, LAI, 8.429, 14.133 — 79 seções, 376 blocos, 76 questões. CF/88 é citada nas aulas, sem aula própria. Status: `rascunho`, falta revisão. |
+| **Legislação** (10 pts) | 11 normas | ✅ 11/11 | Onze aulas em `exemplos/legislacao/`: CF/88 (aula-11, 24/11/2026, recorte do edital — Administração Pública, Educação/Cultura/Desporto e CT&I), 8.112, D. 1.171 + D. 6.029, LDB, 11.892, 11.091, 9.784, LGPD, LAI, 8.429 e 14.133 — 91 seções, 435 blocos, 84 questões. Status: `rascunho`, falta revisão. |
 | **Raciocínio Lógico e Matemática** (5 pts) | 5 blocos | 🟡 **5/5** (aula-01 no Hermes, 23/11/2026) | A **aula-01** cobre todos os blocos: lógica proposicional, conjuntos, combinatória, aritmética e geometria. Status: `rascunho`, falta revisão. |
 | **Informática** (5 pts) | 8 blocos | 🟡 3/8 | Cobertos: redes, busca, navegadores, e-mail. Faltam hardware, Windows, Office, LibreOffice, segurança. |
 
@@ -63,7 +63,7 @@ Risco = pontos em jogo × tamanho da lacuna.
 | # | Lacuna | Pontos em jogo | Por que é crítico |
 |---:|---|---:|---|
 | 1 | **Ética + materiais/logística + gestão de pessoas** (específicos) | ~20–30 | 60% da prova; Ética e gestão de pessoas já têm aula (23/11/2026), mas faltam materiais/logística e administração financeira. |
-| 2 | ~~**Legislação federal do servidor** (8.112, 1.171, 9.394, 11.892, 11.091, 9.784, LGPD)~~ | ~6 | ✅ **Concluído em 22/11/2026**: 10 aulas escritas a partir da lei (ver [`exemplos/legislacao/`](../exemplos/legislacao/)). Próximo passo é a revisão (`rascunho` → `revisao`). |
+| 2 | ~~**Legislação federal do servidor** (8.112, 1.171, 9.394, 11.892, 11.091, 9.784, LGPD)~~ | ~6 | ✅ **Concluído em 22/11/2026**, fechado em 24/11/2026 com a aula de CF/88: 11 aulas escritas a partir da lei (ver [`exemplos/legislacao/`](../exemplos/legislacao/)). Próximo passo é a revisão (`rascunho` → `revisao`). |
 | 3 | **Português** (crase, concordância, regência, pontuação, coesão) | ~13 | Maior bloco de conhecimentos gerais; os 4 pilares mais cobrados já têm aula (23/11/2026); faltam coesão, figuras, gêneros, formação de palavras e variação. |
 | 4 | **RLM** (combinatória, aritmética, conjuntos, geometria) | ~4 | ✅ **Resolvido em 23/11/2026**: a aula-01 cobre lógica proposicional, conjuntos, combinatória, aritmética e geometria (ver `exemplos/rlm/`). |
 | 5 | **Informática** (hardware, Office, LibreOffice, Windows, segurança) | ~3 | Cinco blocos sem aula, mas são os pontos mais “decoráveis” da prova. |
@@ -76,7 +76,7 @@ Meta: **fechar as lacunas de maior rendimento**, não migrar o acervo inteiro.
 
 | Semanas | Frente | Entregas |
 |---|---|---|
-| 1–2 | **Legislação federal** | ✅ Entregue em 22/11/2026: 10 aulas curtas (8.112/1990, D. 1.171/1994 + D. 6.029/2007, LDB 9.394/1996, 11.892/2008, 11.091/2005, 9.784/1999, LGPD, LAI, 8.429/1992, 14.133/2021). Falta a revisão de cada aula. |
+| 1–2 | **Legislação federal** | ✅ Entregue em 22/11/2026: 10 aulas curtas (8.112/1990, D. 1.171/1994 + D. 6.029/2007, LDB 9.394/1996, 11.892/2008, 11.091/2005, 9.784/1999, LGPD, LAI, 8.429/1992, 14.133/2021). Em 24/11/2026 veio a 11ª: CF/88 no recorte do edital. Falta a revisão de cada aula. |
 | 3–5 | **Específicos (parte 1)** | ✅ Ética (aula 1) e gestão de pessoas (aulas 1–2) entregues em 23/11/2026; comportamento organizacional (grupos, conflito) ainda não. |
 | 6–7 | **Específicos (parte 2)** | Materiais/patrimônio/logística; administração financeira (DRE, fluxo de caixa, balanço) |
 | 8–9 | **Português** | ✅ Crase, concordância, regência e pontuação (aula-01 entregue 23/11/2026); ainda faltam coesão, figuras/gêneros, formação de palavras |
@@ -89,7 +89,7 @@ Meta: **fechar as lacunas de maior rendimento**, não migrar o acervo inteiro.
 ## 5. Decisões
 
 1. **Não migrar o acervo inteiro.** Só entram as aulas que o edital cobra. O resto continua no `pdfrevisao` como referência.
-2. **Produzir a lacuna, não copiar o vizinho.** As aulas de Legislação federal não existem em lugar nenhum do acervo; foram **escritas a partir do texto das normas** (10 aulas, `rascunho`), com `notas` de vigência e fonte Planalto por bloco — nunca a partir de apostilas de terceiros.
+2. **Produzir a lacuna, não copiar o vizinho.** As aulas de Legislação federal não existem em lugar nenhum do acervo; foram **escritas a partir do texto das normas** (11 aulas, `rascunho`), com `notas` de vigência e fonte Planalto por bloco — nunca a partir de apostilas de terceiros.
 3. **Quiz com 5 alternativas.** A prova do AOCP tem 5. O schema `1.1.0` já aceita 2 a 5, então as aulas novas devem usar 5 — e as migradas (2 ou 4) devem ser revisadas antes de virar material de prova.
 4. **Revisão antes de publicar.** Toda aula nova nasce `rascunho`, passa por `revisao` (fonte por bloco, licença) e só então vai para `publicado`.
 5. **Licença.** O material de curso pago não é seu. Use `NOASSERTION` até decidir a licença; não marque CC-BY sobre conteúdo de terceiros.

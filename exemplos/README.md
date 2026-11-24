@@ -13,10 +13,11 @@
 
 ### Legislação federal (cargo 301 — Assistente em Administração, IFG)
 
-Dez aulas escritas a partir do texto consolidado de cada norma (Planalto), com `fontes` de nível aula e fonte por bloco. Todas em `rascunho`, aguardando revisão; o aviso de vigência está em `notas` de cada arquivo.
+Onze aulas escritas a partir do texto consolidado de cada norma (Planalto), com `fontes` de nível aula e fonte por bloco. A aula-11 cobre o recorte da CF/88 do edital: Capítulo VII do Título III (Administração Pública) e Capítulos III e IV do Título VIII (Educação, Cultura, Desporto e Ciência e Tecnologia). Todas em `rascunho`, aguardando revisão; o aviso de vigência está em `notas` de cada arquivo.
 
 | Arquivo | Norma | Estrutura | Quiz |
 |---|---|---|---:|
+| [`legislacao/aula-11.json`](legislacao/aula-11.json) | CF/88 — Administração Pública (arts. 37 a 43), Educação, Cultura, Desporto e CT&I (arts. 205 a 219-B) | 12 seções, 59 blocos | 8 |
 | [`legislacao/aula-01.json`](legislacao/aula-01.json) | Lei nº 8.112/1990 — regime jurídico do servidor federal | 13 seções, 72 blocos | 8 |
 | [`legislacao/aula-02.json`](legislacao/aula-02.json) | Decreto nº 1.171/1994 (Código de Ética) e Decreto nº 6.029/2007 (Sistema de Gestão da Ética) | 8 seções, 32 blocos | 8 |
 | [`legislacao/aula-03.json`](legislacao/aula-03.json) | Lei nº 9.394/1996 — LDB | 8 seções, 48 blocos | 8 |
