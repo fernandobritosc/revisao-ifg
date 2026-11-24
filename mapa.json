@@ -97,7 +97,7 @@
             "decore": {
               "chave": "CPU = Unidade Central de Processamento (chip que executa as instruções)",
               "truque": "U + C + A = Unidade de Controle e Unidade de Lógica e Aritmética; registradores são pequenos registros dentro do chip",
-              "erro": "Erros clássicos: A (USB/LPT na CPU), B (ROM no encapsulamento), C (HD como memória primária), E (plug-and-play)"
+              "erro": "Erros clássicos: afirmar que a CPU tem portas de conexão (USB/LPT); que contém ROM; que usa o HD como memória primária; que tem suporte a plug-and-play"
             },
             "explicacao": [
               "CPU (Unidade Central de Processamento) é o chip responsável por interpretar e executar as instruções dos programas; é o dispositivo eletrônico mais importante do computador.",
