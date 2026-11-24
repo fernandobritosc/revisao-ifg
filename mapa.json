@@ -14,7 +14,7 @@
     {"id": "CC-1", "nome": "Língua Portuguesa", "grupo": "Comuns", "questoes": 10, "peso": 2, "minimo": 12.0, "maximo": 20.0},
     {"id": "CC-2", "nome": "Legislação", "grupo": "Comuns", "questoes": 10, "peso": 1, "minimo": 5.0, "maximo": 10.0},
     {"id": "CC-3", "nome": "Raciocínio Lógico e Matemática", "grupo": "Comuns", "questoes": 5, "peso": 1, "minimo": 2.0, "maximo": 5.0},
-    {"id": "CC-4", "nome": "Informática", "grupo": "Comuns", "questoes": 3, "peso": 1, "minimo": 2.0, "maximo": 5.0},
+    {"id": "CC-4", "nome": "Informática", "grupo": "Comuns", "questoes": 5, "peso": 1, "minimo": 2.0, "maximo": 5.0},
     {"id": "CE", "nome": "Conhecimentos Específicos", "grupo": "Específicos", "questoes": 20, "peso": 3, "minimo": 39.0, "maximo": 60.0}
   ],
   "areas": [
