@@ -91,7 +91,7 @@
             "id": "CC-4.1",
             "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
             "status": "em-mapeamento",
-            "questoes": 2,
+            "questoes": 3,
             "erros": 0,
             "revisado_em": null,
             "decore": {
@@ -110,6 +110,11 @@
                 "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
                 "vezes": 2,
                 "questoes": ["#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)", "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"]
+              },
+              {
+                "texto": "ROM (Read Only Memory): memória apenas de leitura — não se pode gravar, alterar ou apagar",
+                "vezes": 1,
+                "questoes": ["#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)"]
               }
             ],
             "pegadinhas": [
@@ -118,7 +123,8 @@
             ],
             "questoes_lista": [
               "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
-              "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"
+              "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)",
+              "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)"
             ],
             "fora_do_resumo": [],
             "fontes": []
