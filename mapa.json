@@ -142,7 +142,44 @@
         {"id": "CC-4.5", "titulo": "LibreOffice 7: Writer, Calc e Impress (português)"},
         {"id": "CC-4.6", "titulo": "Internet: conceitos, busca e pesquisa na Web"},
         {"id": "CC-4.7", "titulo": "Navegadores: Microsoft Edge, Mozilla Firefox, Google Chrome"},
-        {"id": "CC-4.8", "titulo": "Segurança na Internet e malwares"}
+        {"id": "CC-4.8", "titulo": "Segurança na Internet e malwares"},
+        {
+            "id": "CC-4.9",
+            "titulo": "Disco óptico e mídias de armazenamento",
+            "status": "em-mapeamento",
+            "questoes": 1,
+            "erros": 0,
+            "revisado_em": null,
+            "decore": {
+              "chave": "CD-RW: disco óptico regravável de armazenamento externo",
+              "truque": "RW = Read and Write — grava e regrava a mesma área; mídia não-volátil",
+              "erro": "Aceitar que CD-RW é write-once, volátil ou que tem senha de proteção"
+            },
+            "explicacao": [
+              "Disco óptico é mídia de armazenamento externo (não fica dentro do computador) que usa luz para ler/gravar dados em discos com reflexos.",
+              "A sigla CD-RW significa Compact Disc Read Write: 'Read' acesso à leitura, 'Write' gravação — e a mídia pode ser gravada e regravada várias vezes (apagando a área anterior).",
+              "A regravabilidade é o que torna CD-RW mais caro; CD-R (write-once) é mais barato. A capacidade de um CD é de ~700 MB, semelhante ao R.",
+              "Diferenças vistas nas alternativas erradas: CD-RW não tem senha de proteção por padrão, e mídias ópticas são não-voláteis (dados não são perdidos quando o computador é desligado)."
+            ],
+            "incidencias": [
+              {
+                "texto": "CD-RW permite gravação e regravação (RW = Read and Write)",
+                "vezes": 1,
+                "questoes": ["#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"]
+              }
+            ],
+            "pegadinhas": [
+              "Achar que CD-RW é write-once como CD-R",
+              "Achar que CD-RW tem senha de proteção",
+              "Achar que é volátil",
+              "Achar que capacidade é maior que CD-R"
+            ],
+            "questoes_lista": [
+              "#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"
+            ],
+            "fora_do_resumo": [],
+            "fontes": []
+          }
       ]
     },
     "CE": {
