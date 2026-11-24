@@ -91,7 +91,7 @@
             "id": "CC-4.1",
             "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
             "status": "em-mapeamento",
-            "questoes": 4,
+            "questoes": 5,
             "erros": 0,
             "revisado_em": null,
             "decore": {
@@ -113,8 +113,8 @@
               },
               {
                 "texto": "ROM (Read Only Memory): memória apenas de leitura — não se pode gravar, alterar ou apagar",
-                "vezes": 1,
-                "questoes": ["#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)"]
+                "vezes": 2,
+                "questoes": ["#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)", "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"]
               },
               {
                 "texto": "Memória CACHE: memória de acesso rápido que trabalha em conjunto com o processador (SRAM, entre DRAM e CPU)",
@@ -130,7 +130,8 @@
               "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
               "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)",
               "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)",
-              "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)"
+              "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)",
+              "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"
             ],
             "fora_do_resumo": [],
             "fontes": []
