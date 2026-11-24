@@ -91,7 +91,7 @@
             "id": "CC-4.1",
             "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
             "status": "em-mapeamento",
-            "questoes": 1,
+            "questoes": 2,
             "erros": 0,
             "revisado_em": null,
             "decore": {
@@ -108,8 +108,8 @@
             "incidencias": [
               {
                 "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
-                "vezes": 1,
-                "questoes": ["#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)"]
+                "vezes": 2,
+                "questoes": ["#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)", "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"]
               }
             ],
             "pegadinhas": [
@@ -117,7 +117,8 @@
               "Assumir que ROM/HD estão dentro da CPU — dentro do encapsulamento são a cache e os registradores"
             ],
             "questoes_lista": [
-              "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)"
+              "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
+              "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"
             ],
             "fora_do_resumo": [],
             "fontes": []
