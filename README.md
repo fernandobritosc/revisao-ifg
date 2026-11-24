@@ -66,7 +66,7 @@ O acervo renderizado fica em **<https://fernandobritosc.github.io/revisao-ifg/>*
 
 A publicação é automática: qualquer push na `main` dispara o workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml), que valida todas as aulas, roda os testes, gera o `dist/` e publica no GitHub Pages. Se a validação falhar, **nada é publicado** — o site nunca fica em um estado inválido. Também é possível disparar à mão em *Actions → Publicar acervo → Run workflow*.
 
-**Pré-requisito (uma vez só):** o Pages precisa estar habilitado em *Settings → Pages → Source: GitHub Actions*. O workflow tenta habilitar sozinho, mas isso exige que o repositório seja **público** (o Pages em repositório privado depende de um plano pago). Se o step “Configurar Pages” falhar com `Resource not accessible by integration`, é esse o motivo.
+**Pré-requisito (uma vez só, já feito neste repositório):** o Pages precisa estar habilitado em *Settings → Pages → Source: **GitHub Actions***. Essa etapa é manual por limitação do GitHub: criar o site do Pages pela API não é permitido para tokens de integração, então o `GITHUB_TOKEN` do Actions recebe `Resource not accessible by integration` mesmo com `pages: write`. Depois de habilitado, o workflow cuida de tudo sozinho.
 
 Para conferir o site localmente antes de subir:
 
