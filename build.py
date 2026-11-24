@@ -24,6 +24,7 @@ import argparse
 import html
 import re
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any, Sequence
 
@@ -667,6 +668,26 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .indice{max-width:1100px;margin:0 auto;padding:2rem 1rem 3rem}
 .indice h1{font-family:var(--font-display);font-size:1.9rem;margin:.2rem 0 .5rem}
 .indice p.sub{color:var(--text2);margin:0 0 1.5rem}
+.materias{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2.5rem;padding:0}
+.materias a{
+  display:inline-flex;align-items:center;gap:.45rem;
+  padding:.4rem .75rem;border:1px solid var(--border);border-radius:999px;
+  background:var(--card);color:var(--text);text-decoration:none;font-size:.88rem;
+}
+.materias a:hover{border-color:var(--mat-line);color:var(--mat-strong)}
+.materias .conta{
+  font-size:.72rem;font-weight:600;color:var(--mat-strong);
+  background:var(--mat-soft);border-radius:999px;padding:.05rem .4rem;
+}
+.grupo{margin:0 0 2.75rem}
+.grupo>h2{
+  font-family:var(--font-display);font-size:1.3rem;margin:0 0 .25rem;
+  padding-bottom:.4rem;border-bottom:2px solid var(--mat-line);
+}
+.grupo-meta{
+  font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);margin:.45rem 0 1rem;
+}
 .cartoes{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
 .cartoes a{
   display:block;height:100%;text-decoration:none;color:var(--text);
@@ -782,40 +803,100 @@ def render_html(document: dict[str, Any]) -> str:
     )
 
 
+def _slug_materia(text: str) -> str:
+    """Converte o nome da matéria em âncora estável (sem acentos)."""
+    normalized = unicodedata.normalize("NFKD", text)
+    ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-") or "materia"
+
+
+def _ordem_materia(text: str) -> str:
+    """Chave de ordenação alfabética que ignora acentos e caixa."""
+    normalized = unicodedata.normalize("NFKD", text)
+    return normalized.encode("ascii", "ignore").decode("ascii").lower()
+
+
+def _quiz_total(document: dict[str, Any]) -> int:
+    quiz = document.get("quiz") or {}
+    if not isinstance(quiz, dict):
+        return 0
+    return len(quiz.get("questoes") or [])
+
+
 def render_index(entries: Sequence[tuple[dict[str, Any], str]]) -> str:
-    """Gera um índice com cartões para as aulas construídas."""
-    cartoes = []
+    """Gera um índice agrupado por matéria, com contagens e navegação."""
+    grupos: dict[str, list[tuple[dict[str, Any], str]]] = {}
     for document, filename in entries:
-        materia = inline_html(str(document.get("materia", "")))
-        numero = _numero_aula(document.get("numero", 0))
-        titulo = inline_html(str(document.get("titulo", "")))
-        resumo = inline_html(str(document.get("resumo", "")))
-        status = str(document.get("status", "rascunho"))
-        quiz = document.get("quiz") or {}
-        questoes = len(quiz.get("questoes", [])) if isinstance(quiz, dict) else 0
-        extra = f"{questoes} questão(ões) de quiz" if questoes else "sem quiz"
-        cartoes.append(
-            "<li><a href=\""
-            + escape_attr(filename)
-            + '">'
-            f'<p class="cartao-meta">{materia} · Aula {numero} · '
-            f'{inline_html(STATUS_LABEL.get(status, status))}</p>'
-            f"<h2>{titulo}</h2><p>{resumo}</p>"
-            f'<p class="cartao-meta" style="margin-top:.5rem">{extra}</p>'
-            "</a></li>"
+        materia = str(document.get("materia") or "Sem matéria")
+        grupos.setdefault(materia, []).append((document, filename))
+
+    total_secoes = sum(len(d.get("secoes") or []) for d, _ in entries)
+    total_questoes = sum(_quiz_total(d) for d, _ in entries)
+
+    navegacao: list[str] = []
+    secoes_html: list[str] = []
+    for materia in sorted(grupos, key=_ordem_materia):
+        aulas = sorted(
+            grupos[materia],
+            key=lambda item: (_numero_aula(item[0].get("numero", 0)), item[1]),
         )
+        secoes_materia = sum(len(d.get("secoes") or []) for d, _ in aulas)
+        questoes_materia = sum(_quiz_total(d) for d, _ in aulas)
+        anchor = f"materia-{_slug_materia(materia)}"
+
+        cartoes = []
+        for document, filename in aulas:
+            numero = _numero_aula(document.get("numero", 0))
+            titulo = inline_html(str(document.get("titulo", "")))
+            resumo = inline_html(str(document.get("resumo", "")))
+            status = str(document.get("status", "rascunho"))
+            questoes = _quiz_total(document)
+            extra = f"{questoes} questão(ões) de quiz" if questoes else "sem quiz"
+            cartoes.append(
+                "<li><a href=\""
+                + escape_attr(filename)
+                + '">'
+                f'<p class="cartao-meta">Aula {numero} · '
+                f'{inline_html(STATUS_LABEL.get(status, status))}</p>'
+                f"<h2>{titulo}</h2><p>{resumo}</p>"
+                f'<p class="cartao-meta" style="margin-top:.5rem">{extra}</p>'
+                "</a></li>"
+            )
+
+        navegacao.append(
+            f'<li><a href="#{anchor}">{inline_html(materia)}'
+            f'<span class="conta">{len(aulas)}</span></a></li>'
+        )
+        contagem = (
+            f"{len(aulas)} aula(s) · {secoes_materia} seções · "
+            f"{questoes_materia} questões"
+        )
+        secoes_html.append(
+            f'<section class="grupo" id="{anchor}" aria-labelledby="{anchor}-titulo">'
+            f'<h2 id="{anchor}-titulo">{inline_html(materia)}</h2>'
+            f'<p class="grupo-meta">{contagem}</p>'
+            f'<ul class="cartoes">{"".join(cartoes)}</ul>'
+            "</section>"
+        )
+
+    resumo_geral = (
+        f"{len(entries)} aula(s) · {len(grupos)} disciplina(s) · "
+        f"{total_secoes} seções · {total_questoes} questões de quiz"
+    )
     return (
         "<!DOCTYPE html>\n"
         '<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f"<title>Índice — Hermes</title>\n"
+        f'<meta name="description" content="{escape_attr(resumo_geral)}">\n'
         f'<meta name="generator" content="Hermes build.py {BUILD_VERSION}">\n'
         f"<style>{CSS}</style>\n</head>\n<body>\n"
         '<a class="skip" href="#conteudo">Pular para o conteúdo</a>\n'
         '<main id="conteudo" tabindex="-1" class="indice">'
         "<h1>Índice de aulas</h1>"
-        f'<p class="sub">{len(cartoes)} aula(s) gerada(s) a partir do JSON do Hermes.</p>'
-        f'<ul class="cartoes">{"".join(cartoes)}</ul>'
+        f'<p class="sub">{resumo_geral}, geradas a partir do JSON do Hermes.</p>'
+        f'<nav aria-label="Disciplinas"><ul class="materias">{"".join(navegacao)}</ul></nav>'
+        f'{"".join(secoes_html)}'
         "</main>\n</body>\n</html>\n"
     )
 

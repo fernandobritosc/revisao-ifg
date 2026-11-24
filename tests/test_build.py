@@ -256,6 +256,34 @@ class BuildIndexTests(unittest.TestCase):
         self.assertIn('href="ro-aula-00.html"', index)
         self.assertIn("Índice de aulas", index)
 
+    def test_index_groups_lessons_by_materia(self) -> None:
+        base = {
+            "schema_version": "1.1.0",
+            "id": "teste",
+            "titulo": "Aula de teste",
+            "resumo": "resumo",
+            "status": "rascunho",
+            "secoes": [{"numero": 1, "titulo": "Um", "blocos": []}],
+            "quiz": {"questoes": []},
+        }
+        legislacao_2 = {**base, "id": "leg-2", "materia": "Legislação", "numero": 2}
+        legislacao_1 = {**base, "id": "leg-1", "materia": "Legislação", "numero": 1}
+        portugues = {**base, "id": "por-1", "materia": "Língua Portuguesa", "numero": 1}
+        index = build.render_index(
+            [
+                (legislacao_2, "leg-2.html"),
+                (portugues, "por-1.html"),
+                (legislacao_1, "leg-1.html"),
+            ]
+        )
+        self.assertEqual(index.count('<section class="grupo"'), 2)
+        self.assertIn('href="#materia-legislacao"', index)
+        self.assertIn('href="#materia-lingua-portuguesa"', index)
+        # cada matéria aparece uma vez no cabeçalho do grupo, não por aula
+        self.assertEqual(index.count(">Legislação</h2>"), 1)
+        # aulas da mesma matéria ficam em ordem numérica
+        self.assertLess(index.index("leg-1.html"), index.index("leg-2.html"))
+
 
 class BuildCliTests(unittest.TestCase):
     def _run(self, *args: str, cwd: Path = ROOT) -> subprocess.CompletedProcess[str]:
