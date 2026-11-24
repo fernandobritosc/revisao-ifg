@@ -226,7 +226,7 @@ def _lista_com_cauda(
 def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
     """Questões e fontes ficam dobradas; o resto aparece aberto no cartão."""
     if titulo in {"Questões", "Fontes"}:
-        total = conteudo.count("<li>")
+        total = conteudo.count("<li")
         rotulo = "questão(ões)" if titulo == "Questões" else "fonte(s)"
         return (
             '<details class="bloco bloco-dobra">'

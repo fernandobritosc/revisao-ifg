@@ -122,6 +122,9 @@ Estes erros já aconteceram e o usuário os pegou. Não repita:
 - **Contadores das disciplinas** contam **mapeamento iniciado**, não só `mapeado`:
   `status != nao-mapeado` OU `questoes > 0` OU `incidencias` não vazia. Assim
   CE-1.1 (`em-mapeamento`, 7 questões) aparece como `1/36`, não `0/36`.
+- **Contar itens com `conteudo.count("<li")`, nunca `"<li>"`:** itens marcados
+  (erros em vermelho) usam `<li class="...">` e eram subcontados no rótulo do
+  "ver mais".
 - **Padronizar valores dos filtros no JS:** use sempre `'todos'` para "sem filtro"
   (status e prioridade) e `'todas'` apenas para incidência. Um `todos`/`todas`
   trocado fez todos os assuntos com score 0 ficarem escondidos para sempre.
