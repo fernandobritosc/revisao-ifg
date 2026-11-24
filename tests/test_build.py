@@ -284,6 +284,31 @@ class BuildIndexTests(unittest.TestCase):
         # aulas da mesma matéria ficam em ordem numérica
         self.assertLess(index.index("leg-1.html"), index.index("leg-2.html"))
 
+    def test_index_follows_edital_order(self) -> None:
+        base = {
+            "schema_version": "1.1.0",
+            "id": "teste",
+            "titulo": "Aula de teste",
+            "resumo": "resumo",
+            "status": "rascunho",
+            "numero": 1,
+            "secoes": [{"numero": 1, "titulo": "Um", "blocos": []}],
+            "quiz": {"questoes": []},
+        }
+        index = build.render_index(
+            [
+                (dict(base, id="zoo", materia="Zoologia"), "zoo.html"),
+                (dict(base, id="leg", materia="Legislação"), "leg.html"),
+                (dict(base, id="por", materia="Língua Portuguesa"), "por.html"),
+            ]
+        )
+        # ordem do edital: gerais primeiro, na sequência do Anexo III
+        self.assertLess(
+            index.index("materia-lingua-portuguesa"), index.index("materia-legislacao")
+        )
+        # matéria fora do edital vai para o fim, sem quebrar o índice
+        self.assertLess(index.index("materia-legislacao"), index.index("materia-zoologia"))
+
 
 class BuildCliTests(unittest.TestCase):
     def _run(self, *args: str, cwd: Path = ROOT) -> subprocess.CompletedProcess[str]:

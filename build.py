@@ -810,10 +810,35 @@ def _slug_materia(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-") or "materia"
 
 
-def _ordem_materia(text: str) -> str:
-    """Chave de ordenação alfabética que ignora acentos e caixa."""
+def _texto_sem_acento(text: str) -> str:
+    """Normaliza texto para comparação, ignorando acentos e caixa."""
     normalized = unicodedata.normalize("NFKD", text)
     return normalized.encode("ascii", "ignore").decode("ascii").lower()
+
+
+# Ordem do Anexo III do Edital 001/2026 (cargo 301): primeiro os conhecimentos
+# gerais, na ordem do edital, depois os blocos de conhecimentos específicos.
+# Matérias fora desta lista vão para o fim, em ordem alfabética, para que uma
+# aula nova nunca quebre o índice nem exija mexer no código.
+ORDEM_MATERIAS: tuple[str, ...] = (
+    "Língua Portuguesa",
+    "Legislação",
+    "Raciocínio Lógico e Matemática",
+    "Informática",
+    "Redação Oficial",
+    "Arquivologia",
+    "Administração de Pessoas",
+    "Ética",
+)
+
+
+def _chave_materia(text: str) -> tuple[int, int, str]:
+    """Chave de ordenação: ordem do edital e, depois, alfabética."""
+    normalizado = _texto_sem_acento(text)
+    for indice, nome in enumerate(ORDEM_MATERIAS):
+        if _texto_sem_acento(nome) == normalizado:
+            return (0, indice, "")
+    return (1, 0, normalizado)
 
 
 def _quiz_total(document: dict[str, Any]) -> int:
@@ -835,7 +860,7 @@ def render_index(entries: Sequence[tuple[dict[str, Any], str]]) -> str:
 
     navegacao: list[str] = []
     secoes_html: list[str] = []
-    for materia in sorted(grupos, key=_ordem_materia):
+    for materia in sorted(grupos, key=_chave_materia):
         aulas = sorted(
             grupos[materia],
             key=lambda item: (_numero_aula(item[0].get("numero", 0)), item[1]),
