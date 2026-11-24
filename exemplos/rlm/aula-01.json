@@ -1,0 +1,906 @@
+{
+  "schema_version": "1.1.0",
+  "id": "rlm-aula-01",
+  "materia": "Raciocínio Lógico e Matemática",
+  "numero": 1,
+  "titulo": "Raciocínio Lógico e Matemática — Aula 01: Lógica proposicional, conjuntos, combinatória, aritmética e geometria",
+  "resumo": "Apresenta os cinco blocos de Raciocínio Lógico e Matemática: lógica proposicional (operadores, equivalências, silogismos); conjuntos (operações, regra da inclusão-exclusão); combinatória (arranjo, permutação, combinação); aritmética (regra de três, porcentagem, juros); e geometria (áreas, volumes, teorema de Pitágoras). Fecha com pegadinhas e pontos que mais caem.",
+  "status": "rascunho",
+  "idioma": "pt-BR",
+  "tags": [
+    "rlm",
+    "raciocinio-logico",
+    "matematica",
+    "logica-proposicional",
+    "conjuntos",
+    "combinaria",
+    "aritmetica",
+    "geometria",
+    "ifg",
+    "cargo-301"
+  ],
+  "fontes": [
+    {
+      "id": "iezzi",
+      "tipo": "livro",
+      "titulo": "Raciocínio Lógico",
+      "ano": 2015,
+      "detalhes": "Obra de referência em raciocínio lógico para concursos. Consultada para lógica proposicional, silogismos e estratégias de resolução. O texto original não foi reproduzido."
+    },
+    {
+      "id": "buzzetto",
+      "tipo": "livro",
+      "titulo": "Raciocínio Lógico e Matemático",
+      "ano": 2018,
+      "detalhes": "Obra de referência em raciocínio lógico e matemático. Consultada para conjuntos, combinatória, aritmética e geometria. O texto original não foi reproduzido."
+    },
+    {
+      "id": "matematica-geral",
+      "tipo": "livro",
+      "titulo": "Matemática: fundamentos e aplicações",
+      "ano": 2016,
+      "detalhes": "Obra de referência em matemática (aritmética, porcentagem, geometria). Consultada para as operações e fórmulas apresentadas. O texto original não foi reproduzido."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "logica-proposicional",
+      "numero": 1,
+      "titulo": "Lógica proposicional",
+      "subtitulo": "Operadores, equivalências e silogismos",
+      "fontes": [
+        "iezzi",
+        "buzzetto"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "lp-def",
+          "texto": "**Lógica proposicional** estuda as **proposições** (frases que podem ser **verdadeiras** ou **falsas**) e as **operações** que se fazem entre elas. Uma proposição é um enunciado com valor de verdade definido: **V** (verdadeiro) ou **F** (falso). As operações básicas são **negação**, **conjunção**, **disjunção**, **condicional** e **bicondicional**.",
+          "fontes": [
+            "iezzi"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "lp-operadores",
+          "titulo": "Operadores lógicos e seus significados",
+          "colunas": [
+            "Operador",
+            "Nome",
+            "Sentido",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "¬p",
+              "Negação",
+              "'não p': o oposto de p",
+              "¬V = F"
+            ],
+            [
+              "p ∧ q",
+              "Conjunção (e)",
+              "'p e q': ambas verdadeiras",
+              "V ∧ V = V"
+            ],
+            [
+              "p ∨ q",
+              "Disjunção (ou)",
+              "'p ou q': pelo menos uma verdadeira",
+              "F ∨ V = V"
+            ],
+            [
+              "p → q",
+              "Condicional",
+              "'se p, então q'",
+              "V → F = F"
+            ],
+            [
+              "p ↔ q",
+              "Bicondicional",
+              "'p se e somente se q'",
+              "V ↔ V = V"
+            ]
+          ],
+          "fontes": [
+            "iezzi",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "lp-tabela",
+          "texto": "Para saber o valor de uma proposição composta, monta-se a **tabela-verdade**: lista-se todas as combinações de V/F dos termos e calcula-se o resultado operação por operação, seguindo a precedência (negação > conjunção > disjunção > condicional).",
+          "fontes": [
+            "iezzi"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "lp-equivalencias",
+          "titulo": "Equivalências lógicas mais usadas",
+          "itens": [
+            "**Dupla negação**: ¬¬p equivale a **p**.",
+            "**Leis de De Morgan**: ¬(p ∧ q) = ¬p ∨ ¬q; ¬(p ∨ q) = ¬p ∧ ¬q.",
+            "**Implicação**: p → q equivale a ¬p ∨ q.",
+            "**Bicondicional**: p ↔ q equivale a (p → q) ∧ (q → p)."
+          ],
+          "fontes": [
+            "iezzi",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "lp-silogismo",
+          "texto": "**Silogismo** é um raciocínio que parte de **premissas** (proposições) para chegar a uma **conclusão**. Nas provas, aparecem **silogismos categóricos** (com termos como 'todo', 'nenhum', 'algum') e **silogismos hipotéticos** ('se... então'). A validade depende da **forma**, não do conteúdo.",
+          "fontes": [
+            "iezzi",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "lp-silogismo-tabela",
+          "titulo": "Silogismos comuns",
+          "colunas": [
+            "Forma",
+            "Premissa 1",
+            "Premissa 2",
+            "Conclusão"
+          ],
+          "linhas": [
+            [
+              "Modus ponens",
+              "Se p, então q",
+              "p",
+              "q"
+            ],
+            [
+              "Modus tollens",
+              "Se p, então q",
+              "¬q",
+              "¬p"
+            ],
+            [
+              "Silogismo hipotético",
+              "Se p, então q; se q, então r",
+              "p",
+              "r"
+            ],
+            [
+              "Silogismo categórico",
+              "Todo A é B",
+              "C é A",
+              "C é B"
+            ]
+          ],
+          "fontes": [
+            "iezzi"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "lp-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca testa se você confunde **conjunção (e) com disjunção (ou)** ('p e q' só é V se ambos forem V; 'p ou q' é V se **pelo menos um** for V); se **'se p então q'** é falsa **só** quando p é V e q é F; e se **negação de uma disjunção** inverte para **conjunção** (De Morgan). Lembre: uma proposição **deve** ter valor V ou F."
+        }
+      ]
+    },
+    {
+      "id": "conjuntos",
+      "numero": 2,
+      "titulo": "Conjuntos",
+      "subtitulo": "Notação, operações e problemas de conjuntos",
+      "fontes": [
+        "buzzetto",
+        "matematica-geral"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "cs-def",
+          "texto": "**Conjunto** é uma **coleção de objetos** (elementos) definida por uma propriedade. Se o elemento pertence ao conjunto, escreve-se **x ∈ A** (x pertence a A); se não pertence, **x ∉ A**. Conjuntos são representados por letras (A, B) e os elementos entre **chaves** { }.",
+          "fontes": [
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "cs-operacoes",
+          "titulo": "Operações entre conjuntos",
+          "itens": [
+            "**União (A ∪ B)**: elementos de A **ou** de B (pelo menos um).",
+            "**Interseção (A ∩ B)**: elementos de A **e** de B.",
+            "**Diferença (A − B)**: elementos de A que **não** estão em B.",
+            "**Complemento (A′)**: elementos do conjunto-universo que **não** estão em A."
+          ],
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "cs-tabela",
+          "titulo": "Operações × exemplo",
+          "colunas": [
+            "Operação",
+            "Significado",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "União",
+              "elementos de A ou de B",
+              "A={1,2,3}, B={3,4} → A∪B={1,2,3,4}"
+            ],
+            [
+              "Interseção",
+              "elementos comuns a A e B",
+              "A ∩ B = {3}"
+            ],
+            [
+              "Diferença",
+              "elementos de A que não estão em B",
+              "A − B = {1,2}"
+            ],
+            [
+              "Complemento",
+              "elementos do universo não em A",
+              "se U={1,2,3,4}, A′={4}"
+            ]
+          ],
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cs-diagrama",
+          "texto": "A **representação por diagramas de Venn** (círculos sobrepostos) ajuda a visualizar as operações: a interseção é a **sobreposição**, a união é a **área total** coberta, a diferença é a parte **exclusiva**. Em provas, o diagrama é um atalho rápido para o número de elementos.",
+          "fontes": [
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cs-numeros",
+          "texto": "**Cardinalidade**: o número de elementos de um conjunto, representado por **n(A)**. Exemplo: se A = {a, b, c}, então n(A) = 3. **Conjuntos equivalentes** têm a mesma quantidade de elementos, embora os elementos possam ser diferentes.",
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cs-regra",
+          "texto": "**Regra da inclusão-exclusão** para dois conjuntos: **n(A ∪ B) = n(A) + n(B) − n(A ∩ B)**. Usa-se para calcular a união quando se conhece a interseção — evita contar os elementos comuns duas vezes.",
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "cs-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca pergunta se **'união é a interseção'** (não: união soma os elementos; interseção pega os comuns); se **'A ∩ B tem mais elementos que A ∪ B'** (não: a interseção é **parte** da união, logo n(A∩B) ≤ n(A∪B)); e testa a **regra n(A∪B) = n(A)+n(B)−n(A∩B)**. Lembre que **diferença** retira os elementos que estão em B."
+        }
+      ]
+    },
+    {
+      "id": "combinaria",
+      "numero": 3,
+      "titulo": "Combinatória",
+      "subtitulo": "Arranjo, permutação e combinação",
+      "fontes": [
+        "buzzetto",
+        "matematica-geral"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "cm-def",
+          "texto": "**Combinatória** estuda a **contagem** de maneiras de organizar ou escolher objetos, **sem precisar listá-los todos**. Usa-se quando se quer saber **quantas** são as possibilidades (ex.: 'quantas senhas distintas?', 'quantas duplas se podem formar?').",
+          "fontes": [
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "cm-tabela",
+          "titulo": "As três grandezas combinatórias",
+          "colunas": [
+            "Grandeza",
+            "Situação",
+            "Fórmula",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Arranjo simples",
+              "selecionar **todos** os elementos, **com** ordem",
+              "A(n,p) = n! / (n−p)!",
+              "3 livros em 2 prateleiras, com ordem"
+            ],
+            [
+              "Permutação",
+              "organizar **todos** os elementos, **com** ordem",
+              "P(n) = n!",
+              "3 pessoas em fila = 3! = 6"
+            ],
+            [
+              "Combinação",
+              "selecionar **algumas**, **sem** ordem",
+              "C(n,p) = n! / [p! (n−p)!]",
+              "escolher 2 de 5 = 10"
+            ]
+          ],
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "lista",
+          "id": "cm-criterio",
+          "titulo": "Como identificar qual usar",
+          "itens": [
+            "**Com ordem importa?** Se sim, é **arranjo** ou **permutação**.",
+            "**Usa todos os elementos?** Se sim, é **permutação** (n!); se usa só alguns, é **arranjo** (A(n,p)).",
+            "**Ordem não importa?** Então é **combinação** (C(n,p))."
+          ],
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cm-fatorial",
+          "texto": "**Fatorial** de um número: **n! = n × (n−1) × (n−2) × ... × 2 × 1**. Ex.: 4! = 4 × 3 × 2 × 1 = 24. É a base das fórmulas de arranjo, permutação e combinação. **0! = 1** (por definição).",
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "cm-exemplo",
+          "texto": "**Exemplo**: de 5 pessoas, formam-se **duplas** (ordem não importa). Usa-se **combinação**: C(5,2) = 5! / [2! × 3!] = (5 × 4) / 2 = **10**. Se fosse **fila** com todas as 5, seria **permutação**: 5! = **120**.",
+          "fontes": [
+            "buzzetto",
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "cm-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **combinação com arranjo** (a diferença é a **ordem**: na combinação não importa; no arranjo importa); pergunta **'quantas duplas'** e espera **combinação** (não permutação); e testa **se usa todos os elementos** (permutação) **ou só alguns** (arranjo). Sempre veja: **ordem importa?** e **quantos elementos são usados?**"
+        }
+      ]
+    },
+    {
+      "id": "aritmetica",
+      "numero": 4,
+      "titulo": "Aritmética",
+      "subtitulo": "Regra de três, porcentagem e juros",
+      "fontes": [
+        "matematica-geral",
+        "buzzetto"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ar-def",
+          "texto": "**Aritmética** reúne as **operações** (soma, subtração, multiplicação, divisão) e as **regra de três**, **porcentagem** e **juros** — as aplicações numéricas mais cobradas. O ponto-chave é **montar a relação** entre os termos e resolver por **proporção**.",
+          "fontes": [
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ar-regra3",
+          "texto": "**Regra de três simples**: quando duas grandezas estão **proporcionais**, usa-se **x / a = b / c** (ou x : a = b : c), e resolve-se o valor da incógnita. **Regra de três composta**: quando há **mais de um termo** variando (ex.: 'quantos com mais de um fator...'), aplica-se a regra **termo a termo**.",
+          "fontes": [
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ar-porcentagem",
+          "texto": "**Porcentagem** é a razão por centem (por 100). **x% de a** = (x / 100) × a. **Acréscimo** (aumento): novo valor = a + (a × x / 100). **Desconto**: novo valor = a − (a × x / 100). **Juros simples**: J = C × i × t; **montante** = C + J = C × (1 + i × t).",
+          "fontes": [
+            "matematica-geral",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ar-tabela",
+          "titulo": "Fórmulas rápidas",
+          "colunas": [
+            "Situação",
+            "Fórmula",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "x% de a",
+              "(x/100) × a",
+              "20% de 150 = 30"
+            ],
+            [
+              "Acréscimo de x%",
+              "a × (1 + x/100)",
+              "150 com 20% = 180"
+            ],
+            [
+              "Desconto de x%",
+              "a × (1 − x/100)",
+              "150 com 20% = 120"
+            ],
+            [
+              "Juros simples",
+              "J = C × i × t",
+              "C=1000, i=5% ao mês, t=3 → J=150"
+            ],
+            [
+              "Montante",
+              "M = C × (1 + i × t)",
+              "M = 1000 × (1+0,05×3) = 1150"
+            ]
+          ],
+          "fontes": [
+            "matematica-geral",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ar-conversao",
+          "texto": "**Conversao de unidades**: use o fator de conversão e **multiplique/divida** para passar de uma unidade para outra (ex.: 1 h = 60 min; 1 km = 1000 m; 1 kg = 1000 g). Em provas, a conversão está escondida na **regra de três**.",
+          "fontes": [
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ar-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca testa **porcentagem** ('x% de a' = **(x/100) × a**, não x × a); **juros simples** (J = C × i × t, não C × i); e **regra de três** (montar a proporção correta: **x/a = b/c**). Cuidado com **aumento e desconto**: aumento = a × (1+x/100); desconto = a × (1−x/100)."
+        }
+      ]
+    },
+    {
+      "id": "geometria",
+      "numero": 5,
+      "titulo": "Geometria",
+      "subtitulo": "Áreas, volumes e o teorema de Pitágoras",
+      "fontes": [
+        "matematica-geral",
+        "buzzetto"
+      ],
+      "blocos": [
+        {
+          "tipo": "paragrafo",
+          "id": "ge-def",
+          "texto": "**Geometria** estuda as **figuras** e suas **propriedades**. Nas provas, o que mais cai são **áreas** e **volumes** de figuras planes e espaciais, e o **teorema de Pitágoras**. A regra é **memorizar as fórmulas** e **identificar a figura** antes de calcular.",
+          "fontes": [
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ge-area",
+          "titulo": "Áreas de figuras planas",
+          "colunas": [
+            "Figura",
+            "Fórmula",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Quadrado",
+              "A = l ²",
+              "l=4 → A=16"
+            ],
+            [
+              "Retângulo",
+              "A = l × b",
+              "l=5, b=3 → A=15"
+            ],
+            [
+              "Triângulo",
+              "A = (b × h) / 2",
+              "b=6, h=4 → A=12"
+            ],
+            [
+              "Trapézio",
+              "A = (B + b) × h / 2",
+              "B=6, b=4, h=2 → A=10"
+            ],
+            [
+              "Círculo",
+              "A = π ² r²",
+              "r=3 → A=9π"
+            ]
+          ],
+          "fontes": [
+            "matematica-geral",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "id": "ge-volume",
+          "titulo": "Volumes de figuras espaciais",
+          "colunas": [
+            "Figura",
+            "Fórmula",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "Cubo",
+              "V = l³",
+              "l=3 → V=27"
+            ],
+            [
+              "Paralelepípedo",
+              "V = l × b × h",
+              "5×4×3 → V=60"
+            ],
+            [
+              "Pirâmide",
+              "V = (A_base × h) / 3",
+              "base=9, h=6 → V=18"
+            ],
+            [
+              "Cilindro",
+              "V = π · r² · h",
+              "r=2, h=5 → V=20π"
+            ],
+            [
+              "Esfera",
+              "V = (4/3) π · r³",
+              "r=3 → V=36π"
+            ]
+          ],
+          "fontes": [
+            "matematica-geral",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ge-pitagoras",
+          "texto": "**Teorema de Pitágoras**: no **triângulo retângulo**, o quadrado da **hipotenusa** (lado maior) é igual à soma dos quadrados dos **catetos**: **h² = c₲ + c₲** (c₲ e c₲ os catetos). **Importante**: só vale no **triângulo retângulo**. Exemplo: catetos 3 e 4 → hipotenusa = √(9+16) = √25 = **5**.",
+          "fontes": [
+            "matematica-geral",
+            "buzzetto"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "id": "ge-perimetro",
+          "texto": "**Perímetro** é o **comprimento total** do contorno de uma figura; **área** é a **superfície** coberta; **volume** é o **espaço** ocupado. Não confunda: perímetro (comprimento), área (superfície), volume (espaço).",
+          "fontes": [
+            "matematica-geral"
+          ]
+        },
+        {
+          "tipo": "gotcha",
+          "id": "ge-gotcha",
+          "titulo": "As pegadinhas clássicas",
+          "texto": "A banca troca **área com perímetro** (perímetro = contorno, área = superfície); testa **Pitágoras em triângulo não retângulo** (não vale — só no triângulo retângulo); e pergunta a **fórmula da área do triângulo** (**b × h / 2**, não b × h). Lembre: **hipotenusa** é o lado **maior**, oposto ao ângulo reto."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz-rlm-01",
+    "titulo": "Quiz — Raciocínio Lógico e Matemática (aula 1)",
+    "instrucoes": "Escolha uma alternativa em cada questão. Todas trazem explicação, inclusive a correta.",
+    "questoes": [
+      {
+        "id": "q-lp-operadores",
+        "enunciado": "Se p é verdadeiro e q é falso, o valor da disjunção p ∨ q é:",
+        "opcoes": [
+          {
+            "texto": "Falso.",
+            "correta": false,
+            "explicacao": "Não. Na disjunção, basta um verdadeiro para o resultado ser verdadeiro."
+          },
+          {
+            "texto": "Verdadeiro.",
+            "correta": true,
+            "explicacao": "Certo. p ∨ q é verdadeiro quando pelo menos um dos termos é verdadeiro; p é V, logo o resultado é V."
+          },
+          {
+            "texto": "Indeterminado.",
+            "correta": false,
+            "explicacao": "Não. A disjunção tem valor definido quando os termos são definidos."
+          },
+          {
+            "texto": "Só verdadeiro se q também for verdadeiro.",
+            "correta": false,
+            "explicacao": "Não. Isso seria a conjunção (e), não a disjunção (ou)."
+          },
+          {
+            "texto": "Falso, pois q é falso.",
+            "correta": false,
+            "explicacao": "Não. O valor da disjunção não depende só de q."
+          }
+        ],
+        "secao_id": "logica-proposicional",
+        "fonte_id": "iezzi"
+      },
+      {
+        "id": "q-lp-condicional",
+        "enunciado": "A implicação (condicional) p → q é falsa quando:",
+        "opcoes": [
+          {
+            "texto": "p é verdadeiro e q é falso.",
+            "correta": true,
+            "explicacao": "Certo. A implicação só é falsa quando a premissa (p) é verdadeira e a conclusão (q) é falsa."
+          },
+          {
+            "texto": "p é falso, independentemente de q.",
+            "correta": false,
+            "explicacao": "Não. Se p é falso, a implicação é verdadeira (qualquer conclusão vale)."
+          },
+          {
+            "texto": "q é verdadeiro, independentemente de p.",
+            "correta": false,
+            "explicacao": "Não. Se q é verdadeiro, a implicação é verdadeira, não falsa."
+          },
+          {
+            "texto": "Ambos p e q são falsos.",
+            "correta": false,
+            "explicacao": "Não. Se p é falso, a implicação é verdadeira."
+          },
+          {
+            "texto": "A implicação é sempre verdadeira.",
+            "correta": false,
+            "explicacao": "Não. Ela é falsa quando p é V e q é F."
+          }
+        ],
+        "secao_id": "logica-proposicional",
+        "fonte_id": "iezzi"
+      },
+      {
+        "id": "q-cs-operacoes",
+        "enunciado": "Se A = {1, 2, 3, 4} e B = {3, 4, 5, 6}, então a interseção A ∩ B é:",
+        "opcoes": [
+          {
+            "texto": "{1, 2, 3, 4, 5, 6}.",
+            "correta": false,
+            "explicacao": "Não. Isso é a união, não a interseção."
+          },
+          {
+            "texto": "{3, 4}.",
+            "correta": true,
+            "explicacao": "Certo. A interseção contém os elementos comuns a A e B: 3 e 4."
+          },
+          {
+            "texto": "{1, 2}.",
+            "correta": false,
+            "explicacao": "Não. 1 e 2 são de A, mas não pertencem a B."
+          },
+          {
+            "texto": "{5, 6}.",
+            "correta": false,
+            "explicacao": "Não. 5 e 6 são de B, mas não pertencem a A."
+          },
+          {
+            "texto": "A interseção é vazia.",
+            "correta": false,
+            "explicacao": "Não. Os conjuntos têm elementos comuns (3 e 4)."
+          }
+        ],
+        "secao_id": "conjuntos",
+        "fonte_id": "buzzetto"
+      },
+      {
+        "id": "q-cs-regra",
+        "enunciado": "Dados n(A) = 10, n(B) = 15 e n(A ∩ B) = 4, o número de elementos da união n(A ∪ B) é:",
+        "opcoes": [
+          {
+            "texto": "25.",
+            "correta": false,
+            "explicacao": "Não. 10+15=25, mas isso conta os elementos comuns duas vezes."
+          },
+          {
+            "texto": "21.",
+            "correta": true,
+            "explicacao": "Certo. n(A∪B) = n(A)+n(B)−n(A∩B) = 10+15−4 = 21."
+          },
+          {
+            "texto": "19.",
+            "correta": false,
+            "explicacao": "Não. 10+15−11=14, não 19; o cálculo correto é 10+15−4."
+          },
+          {
+            "texto": "15.",
+            "correta": false,
+            "explicacao": "Não. 15 é o número de elementos de B, não da união."
+          },
+          {
+            "texto": "10.",
+            "correta": false,
+            "explicacao": "Não. 10 é o número de elementos de A, não da união."
+          }
+        ],
+        "secao_id": "conjuntos",
+        "fonte_id": "buzzetto"
+      },
+      {
+        "id": "q-cm-combinacao",
+        "enunciado": "De 5 pessoas, quantas duplas distintas podem ser formadas (a ordem não importa)?",
+        "opcoes": [
+          {
+            "texto": "10.",
+            "correta": true,
+            "explicacao": "Certo. C(5,2) = 5!/[2!·3!] = (5×4)/2 = 10."
+          },
+          {
+            "texto": "120.",
+            "correta": false,
+            "explicacao": "Não. 120 = 5! (permutação), que considera a ordem, diferente da dupla."
+          },
+          {
+            "texto": "25.",
+            "correta": false,
+            "explicacao": "Não. 25 = 5×5; não é a fórmula de combinação."
+          },
+          {
+            "texto": "5.",
+            "correta": false,
+            "explicacao": "Não. 5 é o número de pessoas, não o número de duplas."
+          },
+          {
+            "texto": "15.",
+            "correta": false,
+            "explicacao": "Não. C(6,2)=15, mas com 5 pessoas é C(5,2)=10."
+          }
+        ],
+        "secao_id": "combinaria",
+        "fonte_id": "buzzetto"
+      },
+      {
+        "id": "q-ar-porcentagem",
+        "enunciado": "Qual é 20% de 150?",
+        "opcoes": [
+          {
+            "texto": "30.",
+            "correta": true,
+            "explicacao": "Certo. 20% de 150 = (20/100)×150 = 0,2×150 = 30."
+          },
+          {
+            "texto": "150.",
+            "correta": false,
+            "explicacao": "Não. 150 é o valor original, não 20% dele."
+          },
+          {
+            "texto": "300.",
+            "correta": false,
+            "explicacao": "Não. 300 é o dobro de 150, não 20% de 150."
+          },
+          {
+            "texto": "20.",
+            "correta": false,
+            "explicacao": "Não. 20 é a porcentagem, não o valor de 20% de 150."
+          },
+          {
+            "texto": "120.",
+            "correta": false,
+            "explicacao": "Não. 120 seria 150 com 20% de desconto, não 20% de 150."
+          }
+        ],
+        "secao_id": "aritmetica",
+        "fonte_id": "matematica-geral"
+      },
+      {
+        "id": "q-ar-juros",
+        "enunciado": "Com capital de R$ 1000, taxa de juros simples de 5% ao mês e tempo de 3 meses, o montante é:",
+        "opcoes": [
+          {
+            "texto": "R$ 1150.",
+            "correta": true,
+            "explicacao": "Certo. J = C×i×t = 1000×0,05×3 = 150; M = 1000+150 = 1150."
+          },
+          {
+            "texto": "R$ 150.",
+            "correta": false,
+            "explicacao": "Não. 150 é o valor dos juros (J), não o montante (que soma o capital)."
+          },
+          {
+            "texto": "R$ 1050.",
+            "correta": false,
+            "explicacao": "Não. 1050 consideraria juros de 1 mês (1000×0,05), não 3 meses."
+          },
+          {
+            "texto": "R$ 1155.",
+            "correta": false,
+            "explicacao": "Não. 1155 seria capital+juros compostos aproximados; com juros simples o montante é 1150."
+          },
+          {
+            "texto": "R$ 1000.",
+            "correta": false,
+            "explicacao": "Não. 1000 é só o capital, sem juros."
+          }
+        ],
+        "secao_id": "aritmetica",
+        "fonte_id": "matematica-geral"
+      },
+      {
+        "id": "q-ge-pitagoras",
+        "enunciado": "Em um triângulo retângulo, os catetos medem 3 e 4. A hipotenusa mede:",
+        "opcoes": [
+          {
+            "texto": "5.",
+            "correta": true,
+            "explicacao": "Certo. h = √(3²+4²) = √(9+16) = √25 = 5."
+          },
+          {
+            "texto": "7.",
+            "correta": false,
+            "explicacao": "Não. 7 seria a soma dos catetos (3+4), não a hipotenusa."
+          },
+          {
+            "texto": "6.",
+            "correta": false,
+            "explicacao": "Não. 6 não resulta da soma dos quadrados (9+16=25)."
+          },
+          {
+            "texto": "12.",
+            "correta": false,
+            "explicacao": "Não. 12 é o produto dos catetos, não a hipotenusa."
+          },
+          {
+            "texto": "25.",
+            "correta": false,
+            "explicacao": "Não. 25 é o quadrado da hipotenusa, não a hipotenusa (5)."
+          }
+        ],
+        "secao_id": "geometria",
+        "fonte_id": "matematica-geral"
+      }
+    ]
+  },
+  "incidencia": {
+    "fonte": "Sem questões coladas até a data",
+    "atualizado_em": "2026-11-23",
+    "temas": [],
+    "observacao": "Nenhuma questão da banca AOCP sobre raciocínio lógico e matemática foi colada até a data. Quando houver, registrar os temas efetivamente cobrados e pesos que somem 100. O conteúdo foi elaborado a partir de obras de referência em raciocínio lógico e matemática, não de banca específica."
+  },
+  "revisao": {
+    "status": "pendente",
+    "proxima_em": "2026-11-29",
+    "ritual": [
+      "Reler os operadores lógicos, equivalências e silogismos.",
+      "Conferir as operações com conjuntos e a regra da inclusão-exclusão.",
+      "Revisar arranjo, permutação e combinação (ordem importa ou não).",
+      "Conferir porcentagem, juros simples e regra de três.",
+      "Revisar áreas, volumes e o teorema de Pitágoras."
+    ]
+  },
+  "metadados": {
+    "versao": "1.0.0",
+    "criado_em": "2026-11-23",
+    "atualizado_em": "2026-11-23",
+    "autores": [
+      "Equipe Hermes"
+    ],
+    "revisores": [],
+    "licenca": "NOASSERTION",
+    "origem": "Aula escrita para o cargo 301 (Assistente em Administração, IFG) a partir de obras de referência em raciocínio lógico e matemática.",
+    "alteracoes": "Versão inicial da aula 1 de raciocínio lógico e matemática (lógica proposicional, conjuntos, combinatória, aritmética e geometria)."
+  },
+  "notas": "Blocos de raciocínio lógico e matemática escritos a partir de obras de referência consolidadas (Iezzi, Buzzetto, matemática geral); não houve extração de página de nenhuma fonte. As fórmulas e regras são as padrão da disciplina. Revisão de ortografia feita manualmente (sem corretor ortográfico no sandbox)."
+}
