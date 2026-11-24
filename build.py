@@ -380,7 +380,9 @@ def _nav(dados: dict[str, Any]) -> str:
 CSS = """\
 :root{--bg:#f4f5f7;--card:#fff;--ink:#1b2430;--text2:#4d586b;--muted:#7c8797;
 --line:#e3e6eb;--shadow:0 2px 6px rgba(20,30,50,.05),0 10px 24px rgba(20,30,50,.04);--r:14px}
-@media(prefers-color-scheme:dark){:root{--bg:#11151c;--card:#1a2029;--ink:#e9edf4;
+html.modo-escuro{--bg:#11151c;--card:#1a2029;--ink:#e9edf4;--text2:#b4bfce;
+--muted:#8592a3;--line:#2b3441;--shadow:none}
+@media(prefers-color-scheme:dark){html:not(.modo-claro){--bg:#11151c;--card:#1a2029;--ink:#e9edf4;
 --text2:#b4bfce;--muted:#8592a3;--line:#2b3441;--shadow:none}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -587,6 +589,22 @@ btnRevisao.addEventListener('click', () => {
     if (!t.hidden) t.open = true;
   });
 });
+
+const botoesModo = document.querySelectorAll('[data-modo]');
+function aplicarModo(modo) {
+  if (modo === 'escuro') {
+    document.documentElement.classList.remove('modo-claro');
+    document.documentElement.classList.add('modo-escuro');
+  } else {
+    document.documentElement.classList.remove('modo-escuro');
+    document.documentElement.classList.add('modo-claro');
+  }
+  botoesModo.forEach(b => b.classList.toggle('ativo', b.dataset.modo === modo));
+  localStorage.setItem('mapa-modo', modo);
+}
+const savedModo = localStorage.getItem('mapa-modo');
+aplicarModo(savedModo || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro'));
+botoesModo.forEach(b => b.addEventListener('click', () => aplicarModo(b.dataset.modo)));
 """
 
 
@@ -622,6 +640,10 @@ def renderizar(dados: dict[str, Any]) -> str:
         f'<div class="chips">{chips}</div></div></header>'
         '<div class="layout"><aside class="nav">'
         '<input class="busca" id="busca" type="search" placeholder="Buscar assunto...">'
+        '<p class="nav-titulo">Aparência</p>'
+        '<div class="filtros">'
+        '<button data-modo="claro">Modo claro</button>'
+        '<button data-modo="escuro">Modo escuro</button></div>'
         '<div class="filtros">'
         '<button data-filtro="todos" class="ativo">Todos</button>'
         '<button data-filtro="mapeado">Mapeados</button>'
