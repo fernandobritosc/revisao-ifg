@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -40,6 +41,34 @@ STATUS_LABEL = {
 
 def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
+
+
+TERMOS_IMPORTANTES = [
+    "suspensão dos direitos políticos", "perda dos direitos políticos",
+    "perda da função pública", "indisponibilidade dos bens",
+    "ressarcimento ao erário", "suspensão", "indisponibilidade", "ressarcimento",
+    "readaptação", "enquanto permanecer", "acréscimos pecuniários",
+    "não serão computados", "não serão acumulados", "rompimento do vínculo",
+    "promoção pessoal", "não podendo constar", "culta", "rebuscada",
+    "figuras de linguagem", "regionalismos", "modismos", "jargão burocrático",
+    "clareza", "precisão", "objetividade", "concisão", "coesão", "coerência",
+    "impessoalidade", "formalidade", "padronização", "norma padrão",
+    "art. 37, §4º", "art. 37, §13", "art. 37, §14", "art. 37, XIV",
+    "art. 37, §1º", "art. 18", "art. 20", "art. 21", "art. 26", "art. 28",
+    "§4º", "§13", "§14", "§1º", "XIV", "CF/88", "MRPR",
+    "territórios", "entes autônomos", "recursos minerais", "subsolo",
+    "primeiro domingo", "último domingo", "material bélico",
+    "não", "ERRO", "acerto",
+]
+_palavras = re.compile(
+    "|".join(re.escape(t) for t in sorted(TERMOS_IMPORTANTES, key=len, reverse=True)),
+    re.IGNORECASE,
+)
+
+
+def _negrito(texto: Any) -> str:
+    """Escapa e coloca em negrito os termos importantes, numa única passada."""
+    return _palavras.sub(lambda m: f"<strong>{m.group(0)}</strong>", esc(texto))
 
 
 def _data_pt(value: Any) -> str:
@@ -159,7 +188,7 @@ def _lista(itens: Any, vazio: str) -> str:
     if not itens:
         return f'<p class="vazio">{esc(vazio)}</p>'
     return "<ul>" + "".join(
-        f"<li>{esc(item.get('texto', item)) if isinstance(item, dict) else esc(item)}</li>"
+        f"<li>{_negrito(item.get('texto', item)) if isinstance(item, dict) else _negrito(item)}</li>"
         for item in itens
     ) + "</ul>"
 
@@ -177,7 +206,7 @@ def _inc_linha(item: dict[str, Any]) -> str:
         )
     return (
         f'<li><span class="vezes vezes-{classe}">{vezes}x</span>'
-        f'<span class="inc-texto">{esc(item.get("texto", ""))}{ids_html}</span></li>'
+        f'<span class="inc-texto">{_negrito(item.get("texto", ""))}{ids_html}</span></li>'
     )
 
 
@@ -212,7 +241,7 @@ def _lista_marcada(itens: list[Any], vazio: str) -> str:
     for item in itens:
         texto = str(item)
         classe = ' class="questao-erro"' if "ERRO" in texto else ""
-        linhas.append(f"<li{classe}>{esc(texto)}</li>")
+        linhas.append(f"<li{classe}>{_negrito(texto)}</li>")
     return "<ul>" + "".join(linhas) + "</ul>"
 
 
@@ -222,10 +251,10 @@ def _lista_com_cauda(
     """Lista curta + details com o excedente, sem esconder dados atrás de aviso."""
     if not itens:
         return f'<p class="vazio">{esc(vazio)}</p>'
-    html = "<ul>" + "".join(f"<li>{esc(i)}</li>" for i in itens[:limite]) + "</ul>"
+    html = "<ul>" + "".join(f"<li>{_negrito(i)}</li>" for i in itens[:limite]) + "</ul>"
     resto = itens[limite:]
     if resto:
-        linhas = "".join(f"<li>{esc(i)}</li>" for i in resto)
+        linhas = "".join(f"<li>{_negrito(i)}</li>" for i in resto)
         html += (
             f'<details class="cauda"><summary>Ver mais {len(resto)} {rotulo}</summary>'
             f'<ul class="incidencias">{linhas}</ul></details>'
@@ -263,7 +292,7 @@ def _cartao(node: dict[str, Any]) -> str:
 
     blocos: list[tuple[str, str, bool]] = []
     if node.get("explicacao"):
-        texto = "".join(f"<p>{esc(p)}</p>" for p in node["explicacao"])
+        texto = "".join(f"<p>{_negrito(p)}</p>" for p in node["explicacao"])
         blocos.append(("Como decorar", f'<div class="explicacao">{texto}</div>', True))
     blocos.append(("Onde já caiu (incidência)", _incidencias_html(node.get("incidencias", [])), True))
     blocos.append((
@@ -290,7 +319,7 @@ def _cartao(node: dict[str, Any]) -> str:
     )
     nota = node.get("notas") or node.get("nota")
     if nota:
-        corpo += f'<p class="nota"><strong>Edital:</strong> {esc(nota)}</p>'
+        corpo += f'<p class="nota"><strong>Edital:</strong> {_negrito(nota)}</p>'
     return f'<div class="cartao">{cabecalho}{corpo}</div>'
 
 
@@ -491,6 +520,7 @@ button,input{font:inherit}
 .modo-revisao .decore{background:linear-gradient(120deg,#7c3aed,#be185d)}
 .bloco h5{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 .3rem}
 .bloco ul{margin:0;padding-left:1.1rem;font-size:.85rem}
+.bloco strong{font-weight:700;color:var(--ink)}
 .bloco li{margin:.18rem 0}
 .explicacao{font-size:.9rem;color:var(--text2)}
 .explicacao p{margin:0 0 .55rem}

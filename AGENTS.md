@@ -123,6 +123,9 @@ Estes erros já aconteceram e o usuário os pegou. Não repita:
 - **Contadores das disciplinas** contam **mapeamento iniciado**, não só `mapeado`:
   `status != nao-mapeado` OU `questoes > 0` OU `incidencias` não vazia. Assim
   CE-1.1 (`em-mapeamento`, 7 questões) aparece como `1/36`, não `0/36`.
+- **Termos importantes em negrito:** o `build.py` aplica `_negrito()` em explicações,
+  incidências, pegadinhas e notas, com uma única passada de regex (evita `<strong>`
+  aninhado). Não remova esse destaque — é âncora visual para o usuário (TDH).
 - **Contar itens com `conteudo.count("<li")`, nunca `"<li>"`:** itens marcados
   (erros em vermelho) usam `<li class="...">` e eram subcontados no rótulo do
   "ver mais".
