@@ -61,7 +61,41 @@
     "CC-2": {
       "titulo": "Legislação",
       "filhos": [
-        {"id": "CC-2.1", "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)"},
+        {
+          "id": "CC-2.1",
+          "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
+          "status": "em-mapeamento",
+          "questoes": 1,
+          "erros": 0,
+          "revisado_em": null,
+          "decore": {
+            "chave": "SUSPENSÃO, NÃO PERDA",
+            "truque": "Art. 37, §4º = S-P-I-R: Suspensão dos direitos políticos · Perda da função · Indisponibilidade dos bens · Ressarcimento ao erário",
+            "erro": "Perda dos direitos políticos NÃO é sanção de improbidade — o texto diz SUSPENSÃO."
+          },
+          "explicacao": [
+            "Art. 37, §4º da CF: atos de improbidade administrativa importam suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
+            "As sanções são aplicadas na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.",
+            "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe."
+          ],
+          "incidencias": [
+            {
+              "texto": "Art. 37, §4º: suspensão (não perda) dos direitos políticos, perda da função, indisponibilidade e ressarcimento",
+              "vezes": 1,
+              "questoes": ["#3791504"]
+            }
+          ],
+          "pegadinhas": [
+            "Trocar 'suspensão dos direitos políticos' por 'perda dos direitos políticos' — a perda não está no §4º.",
+            "Questão pede o que NÃO importa: marcar a sanção que existe (ressarcimento, indisponibilidade, perda da função) como se fosse a resposta."
+          ],
+          "questoes_lista": ["#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)"],
+          "fora_do_resumo": [],
+          "fontes": [
+            "CF/88 art. 37, §4º — improbidade administrativa",
+            "Questão #3791504 — AOCP 2026 (DEPEN MG)"
+          ]
+        },
         {"id": "CC-2.2", "titulo": "Lei Federal nº 8.112/1990 — regime jurídico do servidor público federal"},
         {"id": "CC-2.3", "titulo": "Decreto Federal nº 1.171/1994 — Código de Ética do Servidor Público"},
         {"id": "CC-2.4", "titulo": "Lei Federal nº 9.394/1996 — LDB"},
@@ -71,7 +105,70 @@
         {"id": "CC-2.8", "titulo": "Lei Federal nº 13.709/2018 — LGPD"},
         {"id": "CC-2.9", "titulo": "Lei Federal nº 14.133/2021 — Licitações e contratos"},
         {"id": "CC-2.10", "titulo": "Lei Federal nº 9.784/1999 — Processo administrativo federal"},
-        {"id": "CC-2.11", "titulo": "Lei Federal nº 8.429/1992 — Improbidade administrativa"}
+        {"id": "CC-2.11", "titulo": "Lei Federal nº 8.429/1992 — Improbidade administrativa"},
+        {
+          "id": "CC-2.EX",
+          "titulo": "CF/88 fora do recorte do edital — organização do Estado, bens e competências",
+          "status": "em-mapeamento",
+          "questoes": 1,
+          "erros": 0,
+          "revisado_em": null,
+          "nota": "O Anexo III cita da CF apenas o Título III, Cap. VII e o Título VIII, Caps. III e IV. Este nó foi criado porque a questão #2775249 cobrou os arts. 18, 20, 21, 26 e 28 — fora desse recorte. Fica registrado para não perder a informação; o usuário decide se mantém.",
+          "decore": {
+            "chave": "UNIÃO × ESTADOS",
+            "truque": "18 = entes da federação · 20 = bens da União · 21 = competências da União · 26 = bens dos Estados · 28 = eleição do governador",
+            "erro": "Território não é ente autônomo; minério do subsolo é da União; 1º turno da eleição é no PRIMEIRO domingo de outubro."
+          },
+          "explicacao": [
+            "São entes autônomos da federação apenas União, Estados, Distrito Federal e Municípios (art. 18). Territórios integram a União e não são entes autônomos (§2º).",
+            "Bens da União (art. 20): recursos minerais, inclusive os do subsolo, e terras devolutas indispensáveis à defesa das fronteiras, fortificações, vias federais e preservação ambiental.",
+            "Bens dos Estados (art. 26): terras devolutas não compreendidas entre as da União. Competência da União (art. 21, VI): autorizar e fiscalizar produção e comércio de material bélico.",
+            "Governador e vice: 1º turno no primeiro domingo de outubro; 2º turno, se houver, no último domingo de outubro; posse em 6 de janeiro (art. 28)."
+          ],
+          "incidencias": [
+            {
+              "texto": "Territórios não são entes autônomos: integram a União (art. 18, §2º)",
+              "vezes": 1,
+              "questoes": ["#2775249"]
+            },
+            {
+              "texto": "Recursos minerais, inclusive os do subsolo, são bens da União (art. 20, IX)",
+              "vezes": 1,
+              "questoes": ["#2775249"]
+            },
+            {
+              "texto": "Eleição de governador: 1º turno no primeiro domingo de outubro, não no último (art. 28)",
+              "vezes": 1,
+              "questoes": ["#2775249"]
+            },
+            {
+              "texto": "Terras devolutas: dos Estados, salvo as da União por defesa/vias/ambiente (arts. 20, II e 26, IV)",
+              "vezes": 1,
+              "questoes": ["#2775249"]
+            },
+            {
+              "texto": "União autoriza e fiscaliza produção e comércio de material bélico (art. 21, VI)",
+              "vezes": 1,
+              "questoes": ["#2775249"]
+            }
+          ],
+          "pegadinhas": [
+            "Colocar Territórios como entes autônomos da federação.",
+            "Atribuir recursos minerais e subsolo aos Estados e ao DF.",
+            "Trocar 'primeiro domingo' por 'último domingo' no 1º turno da eleição de governador.",
+            "Dizer que todas as terras devolutas são dos Estados — as de defesa/vias/ambiente são da União."
+          ],
+          "questoes_lista": ["#2775249 · AOCP 2024 · Oficial PM PE/Combatente — acerto (E)"],
+          "fora_do_resumo": [],
+          "fontes": [
+            "CF/88 art. 18 e §2º",
+            "CF/88 art. 20, II e IX",
+            "CF/88 art. 21, VI",
+            "CF/88 art. 26, IV",
+            "CF/88 art. 28",
+            "Questão #2775249 — AOCP 2024 (PM PE)"
+          ]
+        }
       ]
     },
     "CC-3": {
