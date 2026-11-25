@@ -22,6 +22,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Trava de qualidade: se o build sair do ar, o bruto divergir do mapa.json,
+      # um card com incidência perder o DECORE ou o index.html commitado estiver
+      # desatualizado, o deploy NÃO acontece.
+      - name: Teste rápido
+        run: python test_rapido.py
+
       - name: Configurar Pages
         uses: actions/configure-pages@v5
         with:
