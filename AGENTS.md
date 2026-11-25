@@ -65,6 +65,12 @@ A hierarquia espelha o edital: `CC-1.1`, `CC-2.3`, `CE-7.5` etc. O edital pulou 
 
 Status: `nao-mapeado` → `em-mapeamento` → `mapeado`. Só mude para `mapeado` quando o usuário disser explicitamente `fechou <id>`.
 
+**Cabeçalho "(e mais N concursos)": desconsiderar.** É ruído estatístico: não entra
+como incidência, não ganha destaque e nunca vira anotação como "forte sinal" ou
+"reapareceu em N provas". O texto integral permanece no bruto apenas por fidelidade
+à questão original. Incidência é contada por questão efetivamente mapeada, não por
+quantas vezes o enunciado diz ter sido aplicado.
+
 **Revisão espaçada:** quando o usuário disser `revisei <id>`, atualize `revisado_em`
 com a data de hoje (ISO `AAAA-MM-DD`). A página mostra `revisado hoje` / `há N dia(s)`
 com cor: até 3 dias verde, 4–7 âmbar, acima de 7 vermelho. Nunca preencha essa data
