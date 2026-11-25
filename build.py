@@ -51,6 +51,8 @@ TERMOS_IMPORTANTES = [
     "não serão computados", "não serão acumulados", "rompimento do vínculo",
     "promoção pessoal", "não podendo constar", "culta", "rebuscada",
     "figuras de linguagem", "regionalismos", "modismos", "jargão burocrático",
+    "teto do Executivo", "vinculação", "equiparação", "estrangeiros",
+    "Legislativo", "Judiciário", "Executivo", "vencimentos",
     "clareza", "precisão", "objetividade", "concisão", "coesão", "coerência",
     "impessoalidade", "formalidade", "padronização", "norma padrão",
     "art. 37, §4º", "art. 37, §13", "art. 37, §14", "art. 37, XIV",
