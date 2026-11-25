@@ -11,51 +11,161 @@
     "regra": "60 pontos para aprovar, além do mínimo em cada disciplina"
   },
   "disciplinas": [
-    {"id": "CC-1", "nome": "Língua Portuguesa", "grupo": "Comuns", "questoes": 10, "peso": 2, "minimo": 12.0, "maximo": 20.0},
-    {"id": "CC-2", "nome": "Legislação", "grupo": "Comuns", "questoes": 10, "peso": 1, "minimo": 5.0, "maximo": 10.0},
-    {"id": "CC-3", "nome": "Raciocínio Lógico e Matemática", "grupo": "Comuns", "questoes": 5, "peso": 1, "minimo": 2.0, "maximo": 5.0},
-    {"id": "CC-4", "nome": "Informática", "grupo": "Comuns", "questoes": 5, "peso": 1, "minimo": 2.0, "maximo": 5.0},
-    {"id": "CE", "nome": "Conhecimentos Específicos", "grupo": "Específicos", "questoes": 20, "peso": 3, "minimo": 39.0, "maximo": 60.0}
+    {
+      "id": "CC-1",
+      "nome": "Língua Portuguesa",
+      "grupo": "Comuns",
+      "questoes": 10,
+      "peso": 2,
+      "minimo": 12.0,
+      "maximo": 20.0
+    },
+    {
+      "id": "CC-2",
+      "nome": "Legislação",
+      "grupo": "Comuns",
+      "questoes": 10,
+      "peso": 1,
+      "minimo": 5.0,
+      "maximo": 10.0
+    },
+    {
+      "id": "CC-3",
+      "nome": "Raciocínio Lógico e Matemática",
+      "grupo": "Comuns",
+      "questoes": 5,
+      "peso": 1,
+      "minimo": 2.0,
+      "maximo": 5.0
+    },
+    {
+      "id": "CC-4",
+      "nome": "Informática",
+      "grupo": "Comuns",
+      "questoes": 5,
+      "peso": 1,
+      "minimo": 2.0,
+      "maximo": 5.0
+    },
+    {
+      "id": "CE",
+      "nome": "Conhecimentos Específicos",
+      "grupo": "Específicos",
+      "questoes": 20,
+      "peso": 3,
+      "minimo": 39.0,
+      "maximo": 60.0
+    }
   ],
   "areas": [
     {
       "id": "COMUNS",
       "titulo": "Conhecimentos comuns",
       "descricao": "Comuns a todos os cargos de nível médio e superior. 30 questões, 40 pontos.",
-      "disciplinas": ["CC-1", "CC-2", "CC-3", "CC-4"]
+      "disciplinas": [
+        "CC-1",
+        "CC-2",
+        "CC-3",
+        "CC-4"
+      ]
     },
     {
       "id": "ESPECIFICOS",
       "titulo": "Conhecimentos específicos — cargo 301",
       "descricao": "20 questões, 60 pontos. É onde a maior parte da nota está.",
-      "disciplinas": ["CE"]
+      "disciplinas": [
+        "CE"
+      ]
     }
   ],
   "arvore": {
     "CC-1": {
       "titulo": "Língua Portuguesa",
       "filhos": [
-        {"id": "CC-1.1", "titulo": "Compreensão e interpretação de texto"},
-        {"id": "CC-1.2", "titulo": "Tipologia e gêneros textuais"},
-        {"id": "CC-1.3", "titulo": "Figuras de linguagem"},
-        {"id": "CC-1.4", "titulo": "Significação de palavras e expressões"},
-        {"id": "CC-1.5", "titulo": "Relações de sinonímia e de antonímia"},
-        {"id": "CC-1.6", "titulo": "Ortografia"},
-        {"id": "CC-1.7", "titulo": "Acentuação gráfica"},
-        {"id": "CC-1.8", "titulo": "Uso da crase"},
-        {"id": "CC-1.9", "titulo": "Morfologia: classes de palavras variáveis e invariáveis e seus empregos no texto"},
-        {"id": "CC-1.10", "titulo": "Locuções verbais (perífrases verbais)"},
-        {"id": "CC-1.11", "titulo": "Funções do “que” e do “se”"},
-        {"id": "CC-1.12", "titulo": "Formação de palavras"},
-        {"id": "CC-1.13", "titulo": "Elementos de comunicação"},
-        {"id": "CC-1.14", "titulo": "Sintaxe: relações sintático-semânticas entre orações, períodos e parágrafos (período simples e composto por coordenação e subordinação)"},
-        {"id": "CC-1.15", "titulo": "Concordância verbal e nominal"},
-        {"id": "CC-1.16", "titulo": "Regência verbal e nominal"},
-        {"id": "CC-1.17", "titulo": "Colocação pronominal"},
-        {"id": "CC-1.18", "titulo": "Emprego dos sinais de pontuação e sua função no texto"},
-        {"id": "CC-1.19", "titulo": "Elementos de coesão"},
-        {"id": "CC-1.20", "titulo": "Função textual dos vocábulos"},
-        {"id": "CC-1.21", "titulo": "Variação linguística"}
+        {
+          "id": "CC-1.1",
+          "titulo": "Compreensão e interpretação de texto"
+        },
+        {
+          "id": "CC-1.2",
+          "titulo": "Tipologia e gêneros textuais"
+        },
+        {
+          "id": "CC-1.3",
+          "titulo": "Figuras de linguagem"
+        },
+        {
+          "id": "CC-1.4",
+          "titulo": "Significação de palavras e expressões"
+        },
+        {
+          "id": "CC-1.5",
+          "titulo": "Relações de sinonímia e de antonímia"
+        },
+        {
+          "id": "CC-1.6",
+          "titulo": "Ortografia"
+        },
+        {
+          "id": "CC-1.7",
+          "titulo": "Acentuação gráfica"
+        },
+        {
+          "id": "CC-1.8",
+          "titulo": "Uso da crase"
+        },
+        {
+          "id": "CC-1.9",
+          "titulo": "Morfologia: classes de palavras variáveis e invariáveis e seus empregos no texto"
+        },
+        {
+          "id": "CC-1.10",
+          "titulo": "Locuções verbais (perífrases verbais)"
+        },
+        {
+          "id": "CC-1.11",
+          "titulo": "Funções do “que” e do “se”"
+        },
+        {
+          "id": "CC-1.12",
+          "titulo": "Formação de palavras"
+        },
+        {
+          "id": "CC-1.13",
+          "titulo": "Elementos de comunicação"
+        },
+        {
+          "id": "CC-1.14",
+          "titulo": "Sintaxe: relações sintático-semânticas entre orações, períodos e parágrafos (período simples e composto por coordenação e subordinação)"
+        },
+        {
+          "id": "CC-1.15",
+          "titulo": "Concordância verbal e nominal"
+        },
+        {
+          "id": "CC-1.16",
+          "titulo": "Regência verbal e nominal"
+        },
+        {
+          "id": "CC-1.17",
+          "titulo": "Colocação pronominal"
+        },
+        {
+          "id": "CC-1.18",
+          "titulo": "Emprego dos sinais de pontuação e sua função no texto"
+        },
+        {
+          "id": "CC-1.19",
+          "titulo": "Elementos de coesão"
+        },
+        {
+          "id": "CC-1.20",
+          "titulo": "Função textual dos vocábulos"
+        },
+        {
+          "id": "CC-1.21",
+          "titulo": "Variação linguística"
+        }
       ]
     },
     "CC-2": {
@@ -74,78 +184,104 @@
             "erro": "Prazo do concurso é ATÉ 2 anos, não 'de 2 anos'. Teto é STF, não STJ. Estrangeiros não são vedados, o teto do Executivo não se inverte e 'técnico/científico' está obsoleto (EC 138/2025)."
           },
           "explicacao": [
-            "Art. 37, §4º da CF: atos de improbidade administrativa importam suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
-            "As sanções são aplicadas na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.",
-            "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe.",
-            "Readaptação (§13): serve enquanto permanecer a limitação física ou mental, com habilitação para o cargo de destino e remuneração do cargo de origem — não é até a aposentadoria.",
+            "Regra geral: inacumulabilidade. As três alíneas do XVI são as ÚNICAS exceções — compatibilidade de horários é condição necessária, mas não suficiente. O XVII alcança até sociedades de economia mista controladas indiretamente.",
             "Acréscimos pecuniários (XIV) não são computados nem acumulados para acréscimos ulteriores. Aposentadoria usando tempo de cargo público ou RGPS rompe o vínculo (§14). Publicidade não pode ter promoção pessoal (§1º).",
             "Teto do Executivo (XII): vencimentos do Legislativo e do Judiciário não podem superar os do Executivo. Acesso (I): brasileiros e estrangeiros, na forma da lei. Remuneração (XIII): vedada vinculação ou equiparação.",
             "Acumulação (XVI): desde 22/12/2025, um cargo de professor pode ser acumulado com outro de qualquer natureza (EC 138/2025) — antes era só técnico ou científico. Sempre com compatibilidade de horários e respeito ao teto (XI).",
-            "Regra geral: inacumulabilidade. As três alíneas do XVI são as ÚNICAS exceções — compatibilidade de horários é condição necessária, mas não suficiente. O XVII alcança até sociedades de economia mista controladas indiretamente.",
             "Concurso (III): validade de ATÉ dois anos, prorrogável uma vez por igual período — é teto, não prazo fixo. Investidura (II): conforme natureza e complexidade do cargo, sem 'aspectos salariais'.",
             "Funções de confiança e cargos em comissão (V): apenas direção, chefia e assessoramento. Teto (XI): Ministros do STF, nunca do STJ.",
-            "Saúde (XVI, c): dois cargos de profissionais de saúde só com profissões regulamentadas. A vedação (XVII) alcança empregos, funções e toda a administração indireta."
+            "Saúde (XVI, c): dois cargos de profissionais de saúde só com profissões regulamentadas. A vedação (XVII) alcança empregos, funções e toda a administração indireta.",
+            "Art. 37, §4º da CF: atos de improbidade administrativa importam suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
+            "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe.",
+            "Readaptação (§13): serve enquanto permanecer a limitação física ou mental, com habilitação para o cargo de destino e remuneração do cargo de origem — não é até a aposentadoria.",
+            "As sanções são aplicadas na forma e gradação previstas em lei, sem prejuízo da ação penal cabível."
           ],
           "incidencias": [
             {
               "texto": "Art. 37, §4º: suspensão (não perda) dos direitos políticos, perda da função, indisponibilidade e ressarcimento",
               "vezes": 1,
-              "questoes": ["#3791504"]
+              "questoes": [
+                "#3791504"
+              ]
             },
             {
               "texto": "Readaptação dura enquanto permanecer a limitação, não até a aposentadoria (art. 37, §13)",
               "vezes": 1,
-              "questoes": ["#3791510"]
+              "questoes": [
+                "#3791510"
+              ]
             },
             {
               "texto": "Acréscimos pecuniários não são computados nem acumulados para acréscimos ulteriores (art. 37, XIV)",
               "vezes": 1,
-              "questoes": ["#3791510"]
+              "questoes": [
+                "#3791510"
+              ]
             },
             {
               "texto": "Aposentadoria com tempo de cargo público/RGPS rompe o vínculo que gerou o tempo (art. 37, §14)",
               "vezes": 1,
-              "questoes": ["#3791510"]
+              "questoes": [
+                "#3791510"
+              ]
             },
             {
               "texto": "Publicidade oficial não pode conter promoção pessoal de autoridade ou servidor (art. 37, §1º)",
               "vezes": 1,
-              "questoes": ["#3791510"]
+              "questoes": [
+                "#3791510"
+              ]
             },
             {
               "texto": "Teto do Executivo: Legislativo e Judiciário não podem exceder o Executivo (art. 37, XII) — cobrado 2x na mesma questão, uma invertida",
               "vezes": 1,
-              "questoes": ["#3840967"]
+              "questoes": [
+                "#3840967"
+              ]
             },
             {
               "texto": "Cargos públicos acessíveis a brasileiros e também a estrangeiros, na forma da lei (art. 37, I)",
               "vezes": 2,
-              "questoes": ["#3840967", "#4013754"]
+              "questoes": [
+                "#3840967",
+                "#4013754"
+              ]
             },
             {
               "texto": "Vedada vinculação ou equiparação de espécies remuneratórias (art. 37, XIII)",
               "vezes": 1,
-              "questoes": ["#3840967"]
+              "questoes": [
+                "#3840967"
+              ]
             },
             {
               "texto": "EC 138/2025: professor pode acumular com cargo de qualquer natureza (art. 37, XVI, b) — redação antiga 'técnico ou científico' está obsoleta",
               "vezes": 1,
-              "questoes": ["#3997938"]
+              "questoes": [
+                "#3997938"
+              ]
             },
             {
               "texto": "Prazo do concurso é ATÉ 2 anos (teto, não obrigatoriedade) e a investidura é conforme natureza e complexidade (art. 37, II e III)",
               "vezes": 1,
-              "questoes": ["#4013754"]
+              "questoes": [
+                "#4013754"
+              ]
             },
             {
               "texto": "Funções de confiança/cargos em comissão só para direção, chefia e assessoramento (V); teto é dos Ministros do STF, não do STJ (XI)",
               "vezes": 1,
-              "questoes": ["#4013754"]
+              "questoes": [
+                "#4013754"
+              ]
             },
             {
               "texto": "Regra geral é a inacumulabilidade: só as 3 alíneas do XVI; compatibilidade de horários é necessária, mas não basta; saúde exige profissões regulamentadas; XVII alcança sociedade de economia mista controlada indiretamente",
               "vezes": 2,
-              "questoes": ["#3997938", "#4013456"]
+              "questoes": [
+                "#3997938",
+                "#4013456"
+              ]
             }
           ],
           "pegadinhas": [
@@ -196,16 +332,46 @@
             "Questão #4013754 — AOCP 2026 (IF CE)"
           ]
         },
-        {"id": "CC-2.2", "titulo": "Lei Federal nº 8.112/1990 — regime jurídico do servidor público federal"},
-        {"id": "CC-2.3", "titulo": "Decreto Federal nº 1.171/1994 — Código de Ética do Servidor Público"},
-        {"id": "CC-2.4", "titulo": "Lei Federal nº 9.394/1996 — LDB"},
-        {"id": "CC-2.5", "titulo": "Lei Federal nº 11.892/2008 — Rede Federal de Educação Profissional"},
-        {"id": "CC-2.6", "titulo": "Lei Federal nº 11.091/2005 — PCCTAE"},
-        {"id": "CC-2.7", "titulo": "Lei Federal nº 12.527/2011 — Lei de Acesso à Informação"},
-        {"id": "CC-2.8", "titulo": "Lei Federal nº 13.709/2018 — LGPD"},
-        {"id": "CC-2.9", "titulo": "Lei Federal nº 14.133/2021 — Licitações e contratos"},
-        {"id": "CC-2.10", "titulo": "Lei Federal nº 9.784/1999 — Processo administrativo federal"},
-        {"id": "CC-2.11", "titulo": "Lei Federal nº 8.429/1992 — Improbidade administrativa"},
+        {
+          "id": "CC-2.2",
+          "titulo": "Lei Federal nº 8.112/1990 — regime jurídico do servidor público federal"
+        },
+        {
+          "id": "CC-2.3",
+          "titulo": "Decreto Federal nº 1.171/1994 — Código de Ética do Servidor Público"
+        },
+        {
+          "id": "CC-2.4",
+          "titulo": "Lei Federal nº 9.394/1996 — LDB"
+        },
+        {
+          "id": "CC-2.5",
+          "titulo": "Lei Federal nº 11.892/2008 — Rede Federal de Educação Profissional"
+        },
+        {
+          "id": "CC-2.6",
+          "titulo": "Lei Federal nº 11.091/2005 — PCCTAE"
+        },
+        {
+          "id": "CC-2.7",
+          "titulo": "Lei Federal nº 12.527/2011 — Lei de Acesso à Informação"
+        },
+        {
+          "id": "CC-2.8",
+          "titulo": "Lei Federal nº 13.709/2018 — LGPD"
+        },
+        {
+          "id": "CC-2.9",
+          "titulo": "Lei Federal nº 14.133/2021 — Licitações e contratos"
+        },
+        {
+          "id": "CC-2.10",
+          "titulo": "Lei Federal nº 9.784/1999 — Processo administrativo federal"
+        },
+        {
+          "id": "CC-2.11",
+          "titulo": "Lei Federal nº 8.429/1992 — Improbidade administrativa"
+        },
         {
           "id": "CC-2.EX",
           "titulo": "CF/88 fora do recorte do edital — organização do Estado, bens e competências",
@@ -229,27 +395,37 @@
             {
               "texto": "Territórios não são entes autônomos: integram a União (art. 18, §2º)",
               "vezes": 1,
-              "questoes": ["#2775249"]
+              "questoes": [
+                "#2775249"
+              ]
             },
             {
               "texto": "Recursos minerais, inclusive os do subsolo, são bens da União (art. 20, IX)",
               "vezes": 1,
-              "questoes": ["#2775249"]
+              "questoes": [
+                "#2775249"
+              ]
             },
             {
               "texto": "Eleição de governador: 1º turno no primeiro domingo de outubro, não no último (art. 28)",
               "vezes": 1,
-              "questoes": ["#2775249"]
+              "questoes": [
+                "#2775249"
+              ]
             },
             {
               "texto": "Terras devolutas: dos Estados, salvo as da União por defesa/vias/ambiente (arts. 20, II e 26, IV)",
               "vezes": 1,
-              "questoes": ["#2775249"]
+              "questoes": [
+                "#2775249"
+              ]
             },
             {
               "texto": "União autoriza e fiscaliza produção e comércio de material bélico (art. 21, VI)",
               "vezes": 1,
-              "questoes": ["#2775249"]
+              "questoes": [
+                "#2775249"
+              ]
             }
           ],
           "pegadinhas": [
@@ -258,7 +434,9 @@
             "Trocar 'primeiro domingo' por 'último domingo' no 1º turno da eleição de governador.",
             "Dizer que todas as terras devolutas são dos Estados — as de defesa/vias/ambiente são da União."
           ],
-          "questoes_lista": ["#2775249 · AOCP 2024 · Oficial PM PE/Combatente — acerto (E)"],
+          "questoes_lista": [
+            "#2775249 · AOCP 2024 · Oficial PM PE/Combatente — acerto (E)"
+          ],
           "fora_do_resumo": [],
           "fontes": [
             "CF/88 art. 18 e §2º",
@@ -274,109 +452,155 @@
     "CC-3": {
       "titulo": "Raciocínio Lógico e Matemática",
       "filhos": [
-        {"id": "CC-3.1", "titulo": "Raciocínio dedutivo — lógica aristotélica: proposições, conectivos, quantificadores, regras de dedução, falácias"},
-        {"id": "CC-3.2", "titulo": "Análise combinatória e probabilidades: contagem, princípio multiplicativo, permutações, arranjos, combinações"},
-        {"id": "CC-3.3", "titulo": "Aritmética: operações elementares, razões e proporções, regra de três simples e composta"},
-        {"id": "CC-3.4", "titulo": "Teoria dos conjuntos: reunião, interseção, complemento, cardinalidade"},
-        {"id": "CC-3.5", "titulo": "Geometria: perímetro, área e volume"}
+        {
+          "id": "CC-3.1",
+          "titulo": "Raciocínio dedutivo — lógica aristotélica: proposições, conectivos, quantificadores, regras de dedução, falácias"
+        },
+        {
+          "id": "CC-3.2",
+          "titulo": "Análise combinatória e probabilidades: contagem, princípio multiplicativo, permutações, arranjos, combinações"
+        },
+        {
+          "id": "CC-3.3",
+          "titulo": "Aritmética: operações elementares, razões e proporções, regra de três simples e composta"
+        },
+        {
+          "id": "CC-3.4",
+          "titulo": "Teoria dos conjuntos: reunião, interseção, complemento, cardinalidade"
+        },
+        {
+          "id": "CC-3.5",
+          "titulo": "Geometria: perímetro, área e volume"
+        }
       ]
     },
     "CC-4": {
       "titulo": "Informática",
       "filhos": [
         {
-            "id": "CC-4.1",
-            "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
-            "status": "em-mapeamento",
-            "questoes": 5,
-            "erros": 0,
-            "revisado_em": null,
-            "decore": {
-              "chave": "CPU = Unidade Central de Processamento (chip que executa as instruções)",
-              "truque": "U + C + A = Unidade de Controle e Unidade de Lógica e Aritmética; registradores são pequenos registros dentro do chip",
-              "erro": "Erros clássicos: afirmar que a CPU tem portas de conexão (USB/LPT); que contém ROM; que usa o HD como memória primária; que tem suporte a plug-and-play"
-            },
-            "explicacao": [
-              "CPU (Unidade Central de Processamento) é o chip responsável por interpretar e executar as instruções dos programas; é o dispositivo eletrônico mais importante do computador.",
-              "O chip é formado por dois blocos funcionais: a Unidade de Controle (UC), que gerencia, decodifica e executa as instruções, e a Unidade de Lógica e Aritmética (ULA), que realiza os cálculos lógicos e aritméticos.",
-              "Dentro do encapsulamento da CPU também existem os registradores: unidades muito pequenas e extremamente rápidas de memória.",
-              "Memórias dentro da CPU: registradores e cache. Não há ROM nem HD dentro da CPU — a ROM fica na placa-mãe e o HD é um dispositivo de memória secundária, não a memória primária das informações."
-            ],
-            "incidencias": [
-              {
-                "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
-                "vezes": 2,
-                "questoes": ["#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)", "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"]
-              },
-              {
-                "texto": "ROM (Read Only Memory): memória apenas de leitura — não se pode gravar, alterar ou apagar",
-                "vezes": 2,
-                "questoes": ["#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)", "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"]
-              },
-              {
-                "texto": "Memória CACHE: memória de acesso rápido que trabalha em conjunto com o processador (SRAM, entre DRAM e CPU)",
-                "vezes": 1,
-                "questoes": ["#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)"]
-              }
-            ],
-            "pegadinhas": [
-              "Assumir que a CPU tem portas USB/LPT — as portas ficam no gabinete e chegam à placa-mãe por barramentos",
-              "Assumir que ROM/HD estão dentro da CPU — dentro do encapsulamento são a cache e os registradores"
-            ],
-            "questoes_lista": [
-              "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
-              "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)",
-              "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)",
-              "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)",
-              "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"
-            ],
-            "fora_do_resumo": [],
-            "fontes": []
+          "id": "CC-4.1",
+          "titulo": "Conceitos básicos de hardware: placa-mãe, memórias, processadores e periféricos",
+          "status": "em-mapeamento",
+          "questoes": 5,
+          "erros": 0,
+          "revisado_em": null,
+          "decore": {
+            "chave": "CPU = Unidade Central de Processamento (chip que executa as instruções)",
+            "truque": "U + C + A = Unidade de Controle e Unidade de Lógica e Aritmética; registradores são pequenos registros dentro do chip",
+            "erro": "Erros clássicos: afirmar que a CPU tem portas de conexão (USB/LPT); que contém ROM; que usa o HD como memória primária; que tem suporte a plug-and-play"
           },
-        {"id": "CC-4.2", "titulo": "Softwares utilitários: compactadores, chat, e-mail, reprodutores, visualizadores, antivírus"},
-        {"id": "CC-4.3", "titulo": "Ambientes operacionais: Windows 10 e 11 (português)"},
-        {"id": "CC-4.4", "titulo": "Microsoft Office 365: Word, Excel e PowerPoint (português)"},
-        {"id": "CC-4.5", "titulo": "LibreOffice 7: Writer, Calc e Impress (português)"},
-        {"id": "CC-4.6", "titulo": "Internet: conceitos, busca e pesquisa na Web"},
-        {"id": "CC-4.7", "titulo": "Navegadores: Microsoft Edge, Mozilla Firefox, Google Chrome"},
-        {"id": "CC-4.8", "titulo": "Segurança na Internet e malwares"},
-        {
-            "id": "CC-4.9",
-            "titulo": "Disco óptico e mídias de armazenamento",
-            "status": "em-mapeamento",
-            "questoes": 1,
-            "erros": 0,
-            "revisado_em": null,
-            "decore": {
-              "chave": "CD-RW: disco óptico regravável de armazenamento externo",
-              "truque": "RW = Read and Write — grava e regrava a mesma área; mídia não-volátil",
-              "erro": "Aceitar que CD-RW é write-once, volátil ou que tem senha de proteção"
+          "explicacao": [
+            "CPU (Unidade Central de Processamento) é o chip responsável por interpretar e executar as instruções dos programas; é o dispositivo eletrônico mais importante do computador.",
+            "O chip é formado por dois blocos funcionais: a Unidade de Controle (UC), que gerencia, decodifica e executa as instruções, e a Unidade de Lógica e Aritmética (ULA), que realiza os cálculos lógicos e aritméticos.",
+            "Dentro do encapsulamento da CPU também existem os registradores: unidades muito pequenas e extremamente rápidas de memória.",
+            "Memórias dentro da CPU: registradores e cache. Não há ROM nem HD dentro da CPU — a ROM fica na placa-mãe e o HD é um dispositivo de memória secundária, não a memória primária das informações."
+          ],
+          "incidencias": [
+            {
+              "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
+              "vezes": 2,
+              "questoes": [
+                "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
+                "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"
+              ]
             },
-            "explicacao": [
-              "Disco óptico é mídia de armazenamento externo (não fica dentro do computador) que usa luz para ler/gravar dados em discos com reflexos.",
-              "A sigla CD-RW significa Compact Disc Read Write: 'Read' acesso à leitura, 'Write' gravação — e a mídia pode ser gravada e regravada várias vezes (apagando a área anterior).",
-              "A regravabilidade é o que torna CD-RW mais caro; CD-R (write-once) é mais barato. A capacidade de um CD é de ~700 MB, semelhante ao R.",
-              "Diferenças vistas nas alternativas erradas: CD-RW não tem senha de proteção por padrão, e mídias ópticas são não-voláteis (dados não são perdidos quando o computador é desligado)."
-            ],
-            "incidencias": [
-              {
-                "texto": "CD-RW permite gravação e regravação (RW = Read and Write)",
-                "vezes": 1,
-                "questoes": ["#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"]
-              }
-            ],
-            "pegadinhas": [
-              "Achar que CD-RW é write-once como CD-R",
-              "Achar que CD-RW tem senha de proteção",
-              "Achar que é volátil",
-              "Achar que capacidade é maior que CD-R"
-            ],
-            "questoes_lista": [
-              "#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"
-            ],
-            "fora_do_resumo": [],
-            "fontes": []
-          }
+            {
+              "texto": "ROM (Read Only Memory): memória apenas de leitura — não se pode gravar, alterar ou apagar",
+              "vezes": 2,
+              "questoes": [
+                "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)",
+                "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"
+              ]
+            },
+            {
+              "texto": "Memória CACHE: memória de acesso rápido que trabalha em conjunto com o processador (SRAM, entre DRAM e CPU)",
+              "vezes": 1,
+              "questoes": [
+                "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)"
+              ]
+            }
+          ],
+          "pegadinhas": [
+            "Assumir que a CPU tem portas USB/LPT — as portas ficam no gabinete e chegam à placa-mãe por barramentos",
+            "Assumir que ROM/HD estão dentro da CPU — dentro do encapsulamento são a cache e os registradores"
+          ],
+          "questoes_lista": [
+            "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
+            "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)",
+            "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)",
+            "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)",
+            "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"
+          ],
+          "fora_do_resumo": [],
+          "fontes": []
+        },
+        {
+          "id": "CC-4.2",
+          "titulo": "Softwares utilitários: compactadores, chat, e-mail, reprodutores, visualizadores, antivírus"
+        },
+        {
+          "id": "CC-4.3",
+          "titulo": "Ambientes operacionais: Windows 10 e 11 (português)"
+        },
+        {
+          "id": "CC-4.4",
+          "titulo": "Microsoft Office 365: Word, Excel e PowerPoint (português)"
+        },
+        {
+          "id": "CC-4.5",
+          "titulo": "LibreOffice 7: Writer, Calc e Impress (português)"
+        },
+        {
+          "id": "CC-4.6",
+          "titulo": "Internet: conceitos, busca e pesquisa na Web"
+        },
+        {
+          "id": "CC-4.7",
+          "titulo": "Navegadores: Microsoft Edge, Mozilla Firefox, Google Chrome"
+        },
+        {
+          "id": "CC-4.8",
+          "titulo": "Segurança na Internet e malwares"
+        },
+        {
+          "id": "CC-4.9",
+          "titulo": "Disco óptico e mídias de armazenamento",
+          "status": "em-mapeamento",
+          "questoes": 1,
+          "erros": 0,
+          "revisado_em": null,
+          "decore": {
+            "chave": "CD-RW: disco óptico regravável de armazenamento externo",
+            "truque": "RW = Read and Write — grava e regrava a mesma área; mídia não-volátil",
+            "erro": "Aceitar que CD-RW é write-once, volátil ou que tem senha de proteção"
+          },
+          "explicacao": [
+            "Disco óptico é mídia de armazenamento externo (não fica dentro do computador) que usa luz para ler/gravar dados em discos com reflexos.",
+            "A sigla CD-RW significa Compact Disc Read Write: 'Read' acesso à leitura, 'Write' gravação — e a mídia pode ser gravada e regravada várias vezes (apagando a área anterior).",
+            "A regravabilidade é o que torna CD-RW mais caro; CD-R (write-once) é mais barato. A capacidade de um CD é de ~700 MB, semelhante ao R.",
+            "Diferenças vistas nas alternativas erradas: CD-RW não tem senha de proteção por padrão, e mídias ópticas são não-voláteis (dados não são perdidos quando o computador é desligado)."
+          ],
+          "incidencias": [
+            {
+              "texto": "CD-RW permite gravação e regravação (RW = Read and Write)",
+              "vezes": 1,
+              "questoes": [
+                "#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"
+              ]
+            }
+          ],
+          "pegadinhas": [
+            "Achar que CD-RW é write-once como CD-R",
+            "Achar que CD-RW tem senha de proteção",
+            "Achar que é volátil",
+            "Achar que capacidade é maior que CD-R"
+          ],
+          "questoes_lista": [
+            "#2251461 · AOCP 2022 · Agente Comunitário de Saúde (Pref Pinhais)/Ed. 004.2022 (e mais 5 concursos) — acerto (B)"
+          ],
+          "fora_do_resumo": [],
+          "fontes": []
+        }
       ]
     },
     "CE": {
@@ -410,37 +634,64 @@
                 {
                   "texto": "Lista dos 7 atributos do MRPR (C-O-C-C-I-F-N)",
                   "vezes": 3,
-                  "questoes": ["#3803997", "#3563761", "#3564013"]
+                  "questoes": [
+                    "#3803997",
+                    "#3563761",
+                    "#3564013"
+                  ]
                 },
                 {
                   "texto": "Linguagem culta, mas não rebuscada (sem figuras literárias)",
                   "vezes": 3,
-                  "questoes": ["#3803997", "#3563761", "#3566142"]
+                  "questoes": [
+                    "#3803997",
+                    "#3563761",
+                    "#3566142"
+                  ]
                 },
                 {
                   "texto": "Impessoalidade — sem opinião pessoal; 'pode haver', não 'podem haver'",
                   "vezes": 2,
-                  "questoes": ["#3803997", "#3563761"]
+                  "questoes": [
+                    "#3803997",
+                    "#3563761"
+                  ]
                 },
                 {
                   "texto": "Concisão/coesão: frases curtas, sem adjetivos nem subordinação excessiva; conciso ≠ economia de pensamento (corte só o inútil); coesão = retomada por substituição, elipse e conjunção (ex.: 'No entanto' = adversidade); coerência = ideias em ordem lógica",
                   "vezes": 6,
-                  "questoes": ["#3803997", "#3563761", "#3564434", "#3626147", "#2853348", "#2919359"]
+                  "questoes": [
+                    "#3803997",
+                    "#3563761",
+                    "#3564434",
+                    "#3626147",
+                    "#2853348",
+                    "#2919359"
+                  ]
                 },
                 {
                   "texto": "Clareza = linguagem simples/acessível sem alterar o conteúdo: consonância entre intenção do emissor e compreensão do destinatário; sigla na 1ª, tempo verbal uniforme, sem sinonímia estilística",
                   "vezes": 2,
-                  "questoes": ["#3564434", "#3626039"]
+                  "questoes": [
+                    "#3564434",
+                    "#3626039"
+                  ]
                 },
                 {
                   "texto": "Padrão culto fica acima das diferenças lexicais, morfológicas, sintáticas, regionais, modismos e particularidades — não aceita exceção",
                   "vezes": 3,
-                  "questoes": ["#3563761", "#3566142", "#2959223"]
+                  "questoes": [
+                    "#3563761",
+                    "#3566142",
+                    "#2959223"
+                  ]
                 },
                 {
                   "texto": "Consulta ao dicionário e à gramática é imperativa num bom texto",
                   "vezes": 1,
-                  "questoes": ["#3566142"]
+                  "questoes": [
+                    "#3566142"
+                  ]
                 }
               ],
               "pegadinhas": [
@@ -481,46 +732,94 @@
               ],
               "notas": "Questões de outros cargos reaproveitadas: o ponto cobrado é o mesmo do edital IFG/301. A questão #3626039 toca CE-10.1 (memorando extinto no âmbito federal, absorvido pelo padrão ofício), mas não cobrou esse ponto — o texto está no bruto."
             },
-            {"id": "CE-1.2", "titulo": "Redação dos atos normativos e comunicações"},
-            {"id": "CE-1.3", "titulo": "Ortografia e gramática aplicadas à redação oficial"}
+            {
+              "id": "CE-1.2",
+              "titulo": "Redação dos atos normativos e comunicações"
+            },
+            {
+              "id": "CE-1.3",
+              "titulo": "Ortografia e gramática aplicadas à redação oficial"
+            }
           ]
         },
         {
           "id": "CE-2",
           "titulo": "Arquivologia",
           "filhos": [
-            {"id": "CE-2.1", "titulo": "Gestão, classificação e avaliação de documentos"},
-            {"id": "CE-2.2", "titulo": "Organização, planejamento, sistemas e métodos de arquivamento"},
-            {"id": "CE-2.3", "titulo": "Arquivística e informática"}
+            {
+              "id": "CE-2.1",
+              "titulo": "Gestão, classificação e avaliação de documentos"
+            },
+            {
+              "id": "CE-2.2",
+              "titulo": "Organização, planejamento, sistemas e métodos de arquivamento"
+            },
+            {
+              "id": "CE-2.3",
+              "titulo": "Arquivística e informática"
+            }
           ]
         },
         {
           "id": "CE-3",
           "titulo": "Comportamento organizacional",
           "filhos": [
-            {"id": "CE-3.1", "titulo": "Pessoas, grupos e dinâmica organizacional"},
-            {"id": "CE-3.2", "titulo": "Comunicação"},
-            {"id": "CE-3.3", "titulo": "Liderança e poder"},
-            {"id": "CE-3.4", "titulo": "Conflito e negociação"}
+            {
+              "id": "CE-3.1",
+              "titulo": "Pessoas, grupos e dinâmica organizacional"
+            },
+            {
+              "id": "CE-3.2",
+              "titulo": "Comunicação"
+            },
+            {
+              "id": "CE-3.3",
+              "titulo": "Liderança e poder"
+            },
+            {
+              "id": "CE-3.4",
+              "titulo": "Conflito e negociação"
+            }
           ]
         },
         {
           "id": "CE-4",
           "titulo": "Ética geral e profissional",
           "filhos": [
-            {"id": "CE-4.1", "titulo": "Conceitos e fundamentos"},
-            {"id": "CE-4.2", "titulo": "Relações de trabalho"},
-            {"id": "CE-4.3", "titulo": "Responsabilidade social das empresas"},
-            {"id": "CE-4.4", "titulo": "Assédio"}
+            {
+              "id": "CE-4.1",
+              "titulo": "Conceitos e fundamentos"
+            },
+            {
+              "id": "CE-4.2",
+              "titulo": "Relações de trabalho"
+            },
+            {
+              "id": "CE-4.3",
+              "titulo": "Responsabilidade social das empresas"
+            },
+            {
+              "id": "CE-4.4",
+              "titulo": "Assédio"
+            }
           ]
         },
         {
           "id": "CE-5",
           "titulo": "Introdução à Administração",
           "filhos": [
-            {"id": "CE-5.1", "titulo": "Conceito de administração"},
-            {"id": "CE-5.2", "titulo": "Habilidades, competências e papéis do administrador"},
-            {"id": "CE-5.3", "titulo": "Processos administrativos"}
+            {
+              "id": "CE-5.1",
+              "titulo": "Conceito de administração"
+            },
+            {
+              "id": "CE-5.2",
+              "titulo": "Habilidades, competências e papéis do administrador"
+            },
+            {
+              "id": "CE-5.3",
+              "titulo": "Processos administrativos"
+            }
           ]
         },
         {
@@ -528,49 +827,106 @@
           "titulo": "Gestão documental, protocolo e processos administrativos internos",
           "nota": "O edital não numerou este item: pula de 5 para 7. Aqui ele recebeu o número 6 apenas para manter a sequência.",
           "filhos": [
-            {"id": "CE-6.1", "titulo": "Gestão documental"},
-            {"id": "CE-6.2", "titulo": "Protocolo"},
-            {"id": "CE-6.3", "titulo": "Processos administrativos internos"}
+            {
+              "id": "CE-6.1",
+              "titulo": "Gestão documental"
+            },
+            {
+              "id": "CE-6.2",
+              "titulo": "Protocolo"
+            },
+            {
+              "id": "CE-6.3",
+              "titulo": "Processos administrativos internos"
+            }
           ]
         },
         {
           "id": "CE-7",
           "titulo": "Administração de pessoas",
           "filhos": [
-            {"id": "CE-7.1", "titulo": "Conceito e processos"},
-            {"id": "CE-7.2", "titulo": "Relações humanas no trabalho"},
-            {"id": "CE-7.3", "titulo": "Liderança e trabalho em equipe"},
-            {"id": "CE-7.4", "titulo": "Motivação"},
-            {"id": "CE-7.5", "titulo": "Recrutamento e seleção"},
-            {"id": "CE-7.6", "titulo": "Cargos e salários"},
-            {"id": "CE-7.7", "titulo": "Treinamento e desenvolvimento"},
-            {"id": "CE-7.8", "titulo": "Avaliação de desempenho"}
+            {
+              "id": "CE-7.1",
+              "titulo": "Conceito e processos"
+            },
+            {
+              "id": "CE-7.2",
+              "titulo": "Relações humanas no trabalho"
+            },
+            {
+              "id": "CE-7.3",
+              "titulo": "Liderança e trabalho em equipe"
+            },
+            {
+              "id": "CE-7.4",
+              "titulo": "Motivação"
+            },
+            {
+              "id": "CE-7.5",
+              "titulo": "Recrutamento e seleção"
+            },
+            {
+              "id": "CE-7.6",
+              "titulo": "Cargos e salários"
+            },
+            {
+              "id": "CE-7.7",
+              "titulo": "Treinamento e desenvolvimento"
+            },
+            {
+              "id": "CE-7.8",
+              "titulo": "Avaliação de desempenho"
+            }
           ]
         },
         {
           "id": "CE-8",
           "titulo": "Administração de recursos materiais, patrimoniais e logística",
           "filhos": [
-            {"id": "CE-8.1", "titulo": "Compras e estoques"},
-            {"id": "CE-8.2", "titulo": "Componentes da logística"}
+            {
+              "id": "CE-8.1",
+              "titulo": "Compras e estoques"
+            },
+            {
+              "id": "CE-8.2",
+              "titulo": "Componentes da logística"
+            }
           ]
         },
         {
           "id": "CE-9",
           "titulo": "Administração financeira",
           "filhos": [
-            {"id": "CE-9.1", "titulo": "Execução orçamentária: empenho, liquidação e pagamento"},
-            {"id": "CE-9.2", "titulo": "Demonstração do resultado"},
-            {"id": "CE-9.3", "titulo": "Fluxo de caixa"},
-            {"id": "CE-9.4", "titulo": "Balanço patrimonial"}
+            {
+              "id": "CE-9.1",
+              "titulo": "Execução orçamentária: empenho, liquidação e pagamento"
+            },
+            {
+              "id": "CE-9.2",
+              "titulo": "Demonstração do resultado"
+            },
+            {
+              "id": "CE-9.3",
+              "titulo": "Fluxo de caixa"
+            },
+            {
+              "id": "CE-9.4",
+              "titulo": "Balanço patrimonial"
+            }
           ]
         },
         {
           "id": "CE-10",
           "titulo": "Redação oficial e comunicação administrativa",
           "filhos": [
-            {"id": "CE-10.1", "titulo": "Tipos de correspondências"},
-            {"id": "CE-10.2", "titulo": "Estruturas e formas de tratamento"}
+            {
+              "id": "CE-10.1",
+              "titulo": "Tipos de correspondências"
+            },
+            {
+              "id": "CE-10.2",
+              "titulo": "Estruturas e formas de tratamento"
+            }
           ]
         }
       ]
