@@ -68,10 +68,15 @@ TERMOS_IMPORTANTES = [
     "§4º", "§13", "§14", "§1º", "XIV", "CF/88", "MRPR",
     "territórios", "entes autônomos", "recursos minerais", "subsolo",
     "primeiro domingo", "último domingo", "material bélico",
-    "não", "ERRO", "acerto",
+    "ERRO", "acerto",
 ]
+# Lookarounds de palavra: sem eles, "culta" casava dentro de "ocultar" e
+# "formalidade" dentro de "informalidade", corrompendo o texto exibido.
 _palavras = re.compile(
-    "|".join(re.escape(t) for t in sorted(TERMOS_IMPORTANTES, key=len, reverse=True)),
+    "|".join(
+        r"(?<!\w)" + re.escape(t) + r"(?!\w)"
+        for t in sorted(TERMOS_IMPORTANTES, key=len, reverse=True)
+    ),
     re.IGNORECASE,
 )
 

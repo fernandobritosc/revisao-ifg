@@ -135,6 +135,10 @@ Estes erros já aconteceram e o usuário os pegou. Não repita:
 - **Termos importantes em negrito:** o `build.py` aplica `_negrito()` em explicações,
   incidências, pegadinhas e notas, com uma única passada de regex (evita `<strong>`
   aninhado). Não remova esse destaque — é âncora visual para o usuário (TDH).
+  A regex usa `(?<!\w)…(?!\w)` — sem isso, "culta" casava dentro de "ocultar" e
+  "formalidade" dentro de "informalidade", corrompendo a palavra na tela. `"não"`
+  **não** está na lista: destacá-lo em toda frase dilui a âncora (36 ocorrências).
+  O `test_rapido.py` verifica as três coisas.
 - **Contar itens com `conteudo.count("<li")`, nunca `"<li>"`:** itens marcados
   (erros em vermelho) usam `<li class="...">` e eram subcontados no rótulo do
   "ver mais".

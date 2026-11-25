@@ -254,6 +254,18 @@ def teste_html(html_gerado: str) -> None:
     checar("IDsIDs" not in html_gerado, 'não há o bug "IDsIDs"')
     checar("<summary>IDsIDs" not in html_gerado, "summary 'IDs' não está duplicado")
     checar(
+        "o<strong>culta</strong>r" not in html_gerado,
+        "negrito não casa 'culta' dentro de 'ocultar'",
+    )
+    checar(
+        "in<strong>formalidade</strong>" not in html_gerado,
+        "negrito não casa 'formalidade' dentro de 'informalidade'",
+    )
+    checar(
+        "<strong>não</strong>" not in html_gerado,
+        "'não' não vira destaque em toda frase",
+    )
+    checar(
         not re.search(r"\(\d+\s+concursos?\)", html_gerado),
         'não exibe "(N concursos)" ao lado da incidência',
     )
