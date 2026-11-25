@@ -251,6 +251,14 @@ def teste_html(html_gerado: str) -> None:
     duplicados = sorted({i for i in ids if ids.count(i) > 1})
     checar(not duplicados, f"nenhum id HTML duplicado (achei: {duplicados})")
 
+    checar(
+        re.search(r"Meus erros · (\d+) em (\d+) assunto\(s\)", html_gerado) is not None,
+        "botão de erros informa total e quantidade de assuntos",
+    )
+    checar(
+        not re.search(r"Meus erros \(\d+\)", html_gerado),
+        "rótulo antigo do botão de erros não voltou",
+    )
     checar("IDsIDs" not in html_gerado, 'não há o bug "IDsIDs"')
     checar("<summary>IDsIDs" not in html_gerado, "summary 'IDs' não está duplicado")
     checar(

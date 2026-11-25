@@ -280,6 +280,7 @@ def estatisticas(dados: dict[str, Any]) -> dict[str, int]:
         "em_mapeamento": sum(1 for n in todas if n["status"] == "em-mapeamento"),
         "questoes": sum(int(n.get("questoes", 0)) for n in todas),
         "erros": sum(int(n.get("erros", 0)) for n in todas),
+        "assuntos_com_erros": sum(1 for n in todas if int(n.get("erros", 0)) > 0),
         "com_incidencia": sum(1 for n in todas if _max_incidencia(n) >= 2),
     }
 
@@ -810,7 +811,8 @@ def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None)
         '<button data-freq="2x">2 vezes</button>'
         '<button data-freq="1x">1 vez</button></div>'
         '<button class="revisao-btn" id="revisao-rapida">⚡ Revisão rápida (3+ vezes)</button>'
-        f'<button class="revisao-btn erro-btn" id="meus-erros">⚠ Meus erros ({stats["erros"]})</button>'
+        '<button class="revisao-btn erro-btn" id="meus-erros">'
+        f'⚠ Meus erros · {stats["erros"]} em {stats["assuntos_com_erros"]} assunto(s)</button>'
         '<p class="nav-titulo">Prioridade (incidência × peso)</p>'
         '<div class="filtros">'
         '<button data-score-filtro="todos" class="ativo">Todas</button>'
