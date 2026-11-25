@@ -408,6 +408,22 @@ def teste_normalizador() -> None:
     checar("gabarito" in normado and normado["gabarito"] is None,
            "campo 'gabarito' ausente vira null explícito")
 
+    # o leitor seguro rejeita o que o json puro aceita calado
+    with tempfile.TemporaryDirectory() as tmp:
+        arq = Path(tmp) / "ruim.jsonl"
+        arq.write_text('{"id":"1","id":"2"}\n', encoding="utf-8")
+        try:
+            norm.carregar(arq)
+            checar(False, "normalizador rejeita chave duplicada")
+        except SystemExit as erro:
+            checar("duplicada" in str(erro), "normalizador rejeita chave duplicada")
+        arq.write_text('{"id": NaN}\n', encoding="utf-8")
+        try:
+            norm.carregar(arq)
+            checar(False, "normalizador rejeita NaN")
+        except SystemExit as erro:
+            checar("NaN" in str(erro), "normalizador rejeita NaN")
+
 
 def main() -> int:
     if not build.DEFAULT_MAP.exists():

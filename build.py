@@ -21,6 +21,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+from json_seguro import loads
+
 ROOT = Path(__file__).resolve().parent
 DEFAULT_MAP = ROOT / "mapa.json"
 DEFAULT_OUT = ROOT / "index.html"
@@ -98,7 +100,7 @@ def _data_pt(value: Any) -> str:
 
 def carregar(caminho: Path) -> dict[str, Any]:
     with caminho.open(encoding="utf-8") as arquivo:
-        dados = json.load(arquivo)
+        dados = loads(arquivo.read())
     if not isinstance(dados, dict):
         raise ValueError("mapa.json precisa ser um objeto JSON")
     return dados
@@ -114,8 +116,8 @@ def carregar_bruto(caminho: Path) -> list[dict[str, Any]]:
             if not linha.strip():
                 continue
             try:
-                registros.append(json.loads(linha))
-            except json.JSONDecodeError as erro:
+                registros.append(loads(linha))
+            except ValueError as erro:
                 raise ValueError(f"{caminho.name} linha {numero}: JSON inválido ({erro})") from erro
     return registros
 

@@ -22,6 +22,8 @@ import json
 import sys
 from pathlib import Path
 
+from json_seguro import loads
+
 ROOT = Path(__file__).resolve().parent
 ARQUIVO = ROOT / "questoes.jsonl"
 
@@ -69,8 +71,8 @@ def carregar(caminho: Path) -> list[dict]:
             if not linha.strip():
                 continue
             try:
-                registro = json.loads(linha)
-            except json.JSONDecodeError as erro:
+                registro = loads(linha)
+            except ValueError as erro:
                 raise SystemExit(f"linha {numero}: JSON inválido ({erro})") from erro
             registro = normalizar(registro)
             if registro["id"] in vistos:
