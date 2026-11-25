@@ -65,13 +65,13 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 3,
+          "questoes": 4,
           "erros": 0,
           "revisado_em": null,
           "decore": {
             "chave": "ART. 37 — SANÇÕES E SERVIDOR",
-            "truque": "§4º = S-P-I-R (Suspensão, Perda da função, Indisponibilidade, Ressarcimento) · I = brasileiros e estrangeiros · XII = Legislativo/Judiciário ≤ Executivo · XIII = sem vinculação ou equiparação · XIV = sem acumular acréscimos · §13 = readaptação temporária · §14 = rompe o vínculo · §1º = sem promoção pessoal",
-            "erro": "Não é 'perda dos direitos políticos' (é suspensão), nem readaptação 'até a aposentadoria'; não inverta os Poderes no teto do Executivo e não diga que estrangeiros são vedados."
+            "truque": "XVI = professor + cargo de QUALQUER natureza (EC 138/2025) · §4º = S-P-I-R · I = brasileiros e estrangeiros · XII = Legislativo/Judiciário ≤ Executivo · XIII = sem equiparação · XIV = sem acumular acréscimos · §13 = readaptação temporária · §14 = rompe o vínculo · §1º = sem promoção pessoal",
+            "erro": "Nunca use 'professor com cargo técnico ou científico' — a EC 138/2025 mudou para 'qualquer natureza'. Também não diga que estrangeiros são vedados nem inverta o teto do Executivo."
           },
           "explicacao": [
             "Art. 37, §4º da CF: atos de improbidade administrativa importam suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
@@ -79,7 +79,9 @@
             "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe.",
             "Readaptação (§13): serve enquanto permanecer a limitação física ou mental, com habilitação para o cargo de destino e remuneração do cargo de origem — não é até a aposentadoria.",
             "Acréscimos pecuniários (XIV) não são computados nem acumulados para acréscimos ulteriores. Aposentadoria usando tempo de cargo público ou RGPS rompe o vínculo (§14). Publicidade não pode ter promoção pessoal (§1º).",
-            "Teto do Executivo (XII): vencimentos do Legislativo e do Judiciário não podem superar os do Executivo. Acesso (I): brasileiros e estrangeiros, na forma da lei. Remuneração (XIII): vedada vinculação ou equiparação."
+            "Teto do Executivo (XII): vencimentos do Legislativo e do Judiciário não podem superar os do Executivo. Acesso (I): brasileiros e estrangeiros, na forma da lei. Remuneração (XIII): vedada vinculação ou equiparação.",
+            "Acumulação (XVI): desde 22/12/2025, um cargo de professor pode ser acumulado com outro de qualquer natureza (EC 138/2025) — antes era só técnico ou científico. Sempre com compatibilidade de horários e respeito ao teto (XI).",
+            "Saúde (XVI, c): dois cargos de profissionais de saúde só com profissões regulamentadas. A vedação (XVII) alcança empregos, funções e toda a administração indireta."
           ],
           "incidencias": [
             {
@@ -121,6 +123,16 @@
               "texto": "Vedada vinculação ou equiparação de espécies remuneratórias (art. 37, XIII)",
               "vezes": 1,
               "questoes": ["#3840967"]
+            },
+            {
+              "texto": "EC 138/2025: professor pode acumular com cargo de qualquer natureza (art. 37, XVI, b) — redação antiga 'técnico ou científico' está obsoleta",
+              "vezes": 1,
+              "questoes": ["#3997938"]
+            },
+            {
+              "texto": "Saúde exige profissões regulamentadas e a vedação alcança a administração indireta (art. 37, XVI, c e XVII)",
+              "vezes": 1,
+              "questoes": ["#3997938"]
             }
           ],
           "pegadinhas": [
@@ -131,15 +143,20 @@
             "Trocar 'não podendo constar' por 'podendo constar' nomes/símbolos em publicidade oficial.",
             "Inverter o art. 37, XII: dizer que Executivo e Judiciário não podem exceder o Legislativo.",
             "Afirmar que estrangeiros são vedados a cargos públicos — o inciso I permite 'na forma da lei'.",
-            "Em questão V/F, a mesma norma aparecer duas vezes: uma invertida (F) e uma correta (V)."
+            "Em questão V/F, a mesma norma aparecer duas vezes: uma invertida (F) e uma correta (V).",
+            "Usar 'professor com cargo técnico ou científico' — redação vencida pela EC 138/2025.",
+            "Achar que dois cargos de saúde dispensam profissões regulamentadas ou que a vedação não alcança a administração indireta."
           ],
           "questoes_lista": [
             "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
             "#3791510 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (C)",
-            "#3840967 · AOCP 2026 · Assistente (UNIRIO)/Alunos — acerto (C)"
+            "#3840967 · AOCP 2026 · Assistente (UNIRIO)/Alunos — acerto (C)",
+            "#3997938 · AOCP 2026 · Professor (IF CE) — acerto (D)"
           ],
           "fora_do_resumo": [],
           "fontes": [
+            "CF/88 art. 37, XVI e XVII — acumulação remunerada",
+            "EC 138/2025 — art. 37, XVI, b (professor + qualquer natureza)",
             "CF/88 art. 37, I — acesso a cargos (brasileiros e estrangeiros)",
             "CF/88 art. 37, XII — teto do Executivo",
             "CF/88 art. 37, XIII — vedada vinculação/equiparação",
@@ -149,7 +166,8 @@
             "CF/88 art. 37, §13 — readaptação",
             "CF/88 art. 37, §14 — rompimento do vínculo",
             "Questões #3791504 e #3791510 — AOCP 2026 (DEPEN MG)",
-            "Questão #3840967 — AOCP 2026 (UNIRIO)"
+            "Questão #3840967 — AOCP 2026 (UNIRIO)",
+            "Questão #3997938 — AOCP 2026 (IF CE)"
           ]
         },
         {"id": "CC-2.2", "titulo": "Lei Federal nº 8.112/1990 — regime jurídico do servidor público federal"},
