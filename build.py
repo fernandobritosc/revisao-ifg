@@ -42,6 +42,16 @@ def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
+def _data_pt(value: Any) -> str:
+    """Converte AAAA-MM-DD em DD/MM/AAAA para exibição."""
+    if not isinstance(value, str):
+        return ""
+    partes = value.split("-")
+    if len(partes) == 3 and all(p.isdigit() for p in partes):
+        return f"{partes[2]}/{partes[1]}/{partes[0]}"
+    return value
+
+
 def carregar(caminho: Path) -> dict[str, Any]:
     with caminho.open(encoding="utf-8") as arquivo:
         dados = json.load(arquivo)
@@ -635,7 +645,7 @@ def renderizar(dados: dict[str, Any]) -> str:
         '<header class="topo"><div class="topo-inner">'
         f'<div><p class="eyebrow">{esc(concurso["edital"])} · {esc(concurso["banca"])}</p>'
         f'<h1>Mapa de revisão <span>— {esc(concurso["cargo"])}</span></h1>'
-        f'<p class="meta">Prova {esc(concurso["prova"])} · {esc(concurso["local"])} · '
+        f'<p class="meta">Prova {esc(_data_pt(concurso["prova"]))} · {esc(concurso["local"])} · '
         f'{esc(concurso["regra"])}</p></div>'
         f'<div class="chips">{chips}</div></div></header>'
         '<div class="layout"><aside class="nav">'
