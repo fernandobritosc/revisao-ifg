@@ -1,3 +1,26 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Saídas geradas que NÃO devem ser publicadas nem versionadas
+# (o site publicado é o index.html; qualquer outra saída é rascunho)
+site.html
+*.tmp.html
 _temp_*
+temp/
+dist/
+build/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
