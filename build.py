@@ -24,6 +24,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 DEFAULT_MAP = ROOT / "mapa.json"
 DEFAULT_OUT = ROOT / "index.html"
+DEFAULT_BRUTO = ROOT / "questoes.jsonl"
 
 CORES = {
     "CC-1": ("#2563eb", "#e8effd"),
@@ -96,6 +97,91 @@ def carregar(caminho: Path) -> dict[str, Any]:
     if not isinstance(dados, dict):
         raise ValueError("mapa.json precisa ser um objeto JSON")
     return dados
+
+
+def carregar_bruto(caminho: Path) -> list[dict[str, Any]]:
+    """Lê questoes.jsonl. Arquivo ausente = lista vazia (o build não quebra)."""
+    if not caminho.exists():
+        return []
+    registros: list[dict[str, Any]] = []
+    with caminho.open(encoding="utf-8") as arquivo:
+        for numero, linha in enumerate(arquivo, 1):
+            if not linha.strip():
+                continue
+            try:
+                registros.append(json.loads(linha))
+            except json.JSONDecodeError as erro:
+                raise ValueError(f"{caminho.name} linha {numero}: JSON inválido ({erro})") from erro
+    return registros
+
+
+# O gabarito nem sempre está num campo próprio: muitas resoluções do TEC trazem
+# "Gabarito: LETRA C" ou "A RESPOSTA É A LETRA D" no corpo do texto do bruto.
+_PADROES_GABARITO = (
+    re.compile(r"gabarito\s*:?\s*(?:letra\s*)?([A-E])\b", re.IGNORECASE),
+    re.compile(r"resposta\s+[ée]\s+(?:a\s+)?letra\s*([A-E])\b", re.IGNORECASE),
+    re.compile(r"alternativa\s+correta\s+[ée]\s+(?:a\s+)?letra\s*([A-E])\b", re.IGNORECASE),
+)
+
+
+def _letra(registro: dict[str, Any]) -> str:
+    """Letra da resposta: resposta_dada > gabarito > texto do bruto."""
+    for campo in ("resposta_dada", "gabarito"):
+        valor = registro.get(campo)
+        if isinstance(valor, str) and valor.strip():
+            return valor.strip()[0].upper()
+        if isinstance(valor, int):
+            return str(valor)
+    texto = str(registro.get("bruto", ""))
+    for padrao in _PADROES_GABARITO:
+        achado = padrao.search(texto)
+        if achado:
+            return achado.group(1).upper()
+    return "?"
+
+
+def _banca_curta(banca: Any) -> str:
+    """'Instituto AOCP' -> 'AOCP'; preserva o que já é curto."""
+    texto = str(banca or "").strip()
+    return texto[len("Instituto "):] if texto.lower().startswith("instituto ") else texto
+
+
+def _questao_linha(registro: dict[str, Any]) -> str:
+    """Linha do cartão derivada do bruto: '#ID · BANCA ANO · CARGO — resultado'."""
+    cabeca = (
+        f"#{registro.get('id', '?')} · {_banca_curta(registro.get('banca'))} "
+        f"{registro.get('ano', '?')} · {registro.get('cargo', '')}"
+    )
+    letra = _letra(registro)
+    if registro.get("acerto") is True:
+        return f"{cabeca} — acerto ({letra})"
+    gabarito = _letra(
+        {"gabarito": registro.get("gabarito"), "bruto": registro.get("bruto", "")}
+    )
+    return f"{cabeca} — ERRO (marquei {letra}, gabarito {gabarito})"
+
+
+def _registros_do_assunto(
+    node: dict[str, Any], bruto: list[dict[str, Any]]
+) -> list[str]:
+    """Questões do assunto, derivadas do bruto na ordem de registro.
+
+    O `questoes_lista` do mapa.json deixa de ser fonte: se ainda houver linhas
+    lá que não existam no bruto, elas são preservadas no fim, para nada se perder.
+    """
+    ident = str(node.get("id", ""))
+    derivadas = [
+        _questao_linha(r) for r in bruto
+        if str(r.get("assunto", "")) == ident
+    ]
+    ids_bruto = {str(r.get("id", "")) for r in bruto}
+    legado = []
+    for linha in node.get("questoes_lista", []) or []:
+        texto = str(linha).split(" · reapareceu em")[0]
+        id_linha = texto.split(" · ")[0].lstrip("#").strip()
+        if id_linha and id_linha not in ids_bruto:
+            legado.append(texto)
+    return derivadas + legado
 
 
 def _filhos(node: dict[str, Any]) -> list[dict[str, Any]]:
@@ -276,9 +362,10 @@ def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
     if titulo in {"Questões", "Fontes"}:
         total = conteudo.count("<li")
         rotulo = "questão(ões)" if titulo == "Questões" else "fonte(s)"
+        contador = f"{total} {rotulo} — ver mais" if total else f"{total} {rotulo}"
         return (
             '<details class="bloco bloco-dobra">'
-            f'<summary>{esc(titulo)} · <span class="conta">{total} {rotulo} — ver mais</span>'
+            f'<summary>{esc(titulo)} · <span class="conta">{contador}</span>'
             '</summary>'
             f'<div class="dobra-conteudo">{conteudo}</div></details>'
         )
@@ -286,7 +373,7 @@ def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
     return f'<section class="bloco{classe}"><h5>{esc(titulo)}</h5>{conteudo}</section>'
 
 
-def _cartao(node: dict[str, Any]) -> str:
+def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
     cabecalho = ""
     decore = node.get("decore")
     if isinstance(decore, dict) and decore:
@@ -300,8 +387,17 @@ def _cartao(node: dict[str, Any]) -> str:
         cabecalho = f'<div class="decore keep">{linhas}</div>'
 
     blocos: list[tuple[str, str, bool]] = []
-    if node.get("explicacao"):
-        texto = "".join(f"<p>{_negrito(p)}</p>" for p in node["explicacao"])
+    explicacao = [p for p in (node.get("explicacao") or []) if str(p).strip()]
+    if explicacao:
+        # Teto de 6 parágrafos: o excesso não é apagado, vai para a cauda dobrada.
+        visiveis, excedente = explicacao[:6], explicacao[6:]
+        texto = "".join(f"<p>{_negrito(p)}</p>" for p in visiveis)
+        if excedente:
+            resto = "".join(f"<p>{_negrito(p)}</p>" for p in excedente)
+            texto += (
+                f'<details class="cauda"><summary>Ver mais {len(excedente)} '
+                f'parágrafo(s)</summary><div class="explicacao">{resto}</div></details>'
+            )
         blocos.append(("Como decorar", f'<div class="explicacao">{texto}</div>', True))
     blocos.append(("Onde já caiu (incidência)", _incidencias_html(node.get("incidencias", [])), True))
     blocos.append((
@@ -314,10 +410,7 @@ def _cartao(node: dict[str, Any]) -> str:
         ),
         False,
     ))
-    registro = [
-        str(q).split(" · reapareceu em")[0]
-        for q in node.get("questoes_lista", [])
-    ]
+    registro = _registros_do_assunto(node, bruto)
     blocos.append(("Questões", _lista_marcada(registro, "Nenhuma questão colada ainda."), False))
     if node.get("fora_do_resumo"):
         blocos.append(("Fora do resumo", _lista(node.get("fora_do_resumo")), False))
@@ -332,7 +425,9 @@ def _cartao(node: dict[str, Any]) -> str:
     return f'<div class="cartao">{cabecalho}{corpo}</div>'
 
 
-def _topico(node: dict[str, Any], peso: int = 1) -> str:
+def _topico(
+    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None
+) -> str:
     numero = _numero(node)
     titulo = node.get("titulo", "")
     status = node["status"]
@@ -360,15 +455,17 @@ def _topico(node: dict[str, Any], peso: int = 1) -> str:
         f'<summary><span class="num cobertura-{cobertura}">{esc(numero)}</span>'
         f'<span class="titulo">{esc(titulo)}</span>{freq}{revisado_html}'
         f'<span class="ponto ponto-{esc(status)}" title="{esc(STATUS_LABEL.get(status, status))}"></span>'
-        f'{extra}</summary>{_cartao(node)}</details>'
+        f'{extra}</summary>{_cartao(node, bruto or [])}</details>'
     )
 
 
-def _grupo(node: dict[str, Any], peso: int = 1) -> str:
+def _grupo(
+    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None
+) -> str:
     filhos = _filhos(node)
     if not filhos:
-        return _topico(node, peso)
-    itens = "".join(_topico(filho, peso) for filho in filhos)
+        return _topico(node, peso, bruto)
+    itens = "".join(_topico(filho, peso, bruto) for filho in filhos)
     return (
         f'<div class="grupo" data-status="{esc(node["status"])}">'
         f'<div class="grupo-head"><span class="num">{esc(_numero(node))}</span>'
@@ -378,7 +475,9 @@ def _grupo(node: dict[str, Any], peso: int = 1) -> str:
     )
 
 
-def _disciplina(dados: dict[str, Any], disc_id: str) -> str:
+def _disciplina(
+    dados: dict[str, Any], disc_id: str, bruto: list[dict[str, Any]] | None = None
+) -> str:
     disc = next(d for d in dados["disciplinas"] if d["id"] == disc_id)
     raiz = dados["arvore"][disc_id]
     raiz.setdefault("id", disc_id)
@@ -389,7 +488,8 @@ def _disciplina(dados: dict[str, Any], disc_id: str) -> str:
     pct = round(100 * feitos / total) if total else 0
     peso = int(disc["peso"])
     corpo = "".join(
-        _grupo(f, peso) if _filhos(f) else _topico(f, peso) for f in _filhos(raiz)
+        _grupo(f, peso, bruto) if _filhos(f) else _topico(f, peso, bruto)
+        for f in _filhos(raiz)
     )
     return (
         f'<section class="disciplina" id="disc-{esc(disc_id)}" '
@@ -657,12 +757,13 @@ botoesModo.forEach(b => b.addEventListener('click', () => aplicarModo(b.dataset.
 """
 
 
-def renderizar(dados: dict[str, Any]) -> str:
+def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None) -> str:
+    bruto = bruto or []
     concurso = dados["concurso"]
     stats = estatisticas(dados)
     conteudo = "".join(
         '<div class="area-bloco">'
-        + "".join(_disciplina(dados, did) for did in a["disciplinas"])
+        + "".join(_disciplina(dados, did, bruto) for did in a["disciplinas"])
         + "</div>"
         for a in dados["areas"]
     )
@@ -723,14 +824,19 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Gera o índice do mapa de revisão.")
     parser.add_argument("--mapa", type=Path, default=DEFAULT_MAP)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument(
+        "--bruto", type=Path, default=DEFAULT_BRUTO,
+        help="questoes.jsonl de onde sai a lista de questões de cada assunto",
+    )
     args = parser.parse_args()
     dados = carregar(args.mapa)
-    args.out.write_text(renderizar(dados), encoding="utf-8")
+    bruto = carregar_bruto(args.bruto)
+    args.out.write_text(renderizar(dados, bruto), encoding="utf-8")
     stats = estatisticas(dados)
     print(
         f"OK  {args.out} — {stats['assuntos']} assuntos, "
         f"{stats['com_incidencia']} com incidência, {stats['questoes']} questões, "
-        f"{stats['erros']} erros."
+        f"{stats['erros']} erros, {len(bruto)} no bruto."
     )
     return 0
 

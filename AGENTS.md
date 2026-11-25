@@ -52,12 +52,13 @@ A hierarquia espelha o edital: `CC-1.1`, `CC-2.3`, `CE-7.5` etc. O edital pulou 
 ## 4. Protocolo para cada questão que o usuário mandar
 
 1. **Identificar**: ID, banca, ano, cargo de origem, acerto/erro, assunto. Questão de outro cargo serve — o filtro é o assunto, não o cargo.
-2. **Gravar o bruto**: acrescente uma linha em `questoes.jsonl` com o texto completo que o usuário colou (`bruto`), mais `id`, `assunto`, `banca`, `ano`, `cargo`, `acerto`. Sem cortes.
+2. **Gravar o bruto**: acrescente uma linha em `questoes.jsonl` com o texto completo que o usuário colou (`bruto`), mais `id`, `assunto`, `banca`, `ano`, `cargo`, `acerto`, e — quando existirem — `resposta_dada` e `gabarito`. Sem cortes.
+   O formato é **um só** (ver §6.1): os dois campos de letra podem ser `null`, mas devem existir na linha. Rode `python normalizar_jsonl.py` depois de acrescentar: ele padroniza a ordem dos campos, cria os `null` que faltarem e falha se houver `id` duplicado. **Nunca edite o campo `bruto` com esse script** — ele não toca no conteúdo, só no formato.
 3. **Classificar**: escolha o nó do edital (`id` no `mapa.json`). Se não houver nó adequado, crie um com numeração coerente e avise.
 4. **Comparar o núcleo** com as `incidencias` existentes do nó:
    - **Mesmo núcleo com palavras diferentes** → some `+1` em `vezes`, inclua o ID em `questoes` e registre a variação curta se trouxer nuance nova. **Não crie outro ponto.**
    - **Núcleo novo** → crie incidência com `vezes: 1`.
-5. **Atualizar** `questoes`, `erros`, `questoes_lista`, `fontes`.
+5. **Atualizar** `questoes`, `erros`, `fontes`. **Não digite `questoes_lista`**: desde a mudança do `build.py`, a lista de "Questões" de cada card é **derivada do `questoes.jsonl`** pelo campo `assunto` — o `mapa.json` é a fonte do texto, o bruto é a fonte das questões. Digitar as duas coisas à mão é o que gerava divergência de formato entre `#2016286` (nas incidências) e `#2016286 · AOCP 2022 · …` (na lista). Se existir uma linha legada no `mapa.json` cujo ID não esteja no bruto, o build a preserva no fim, para nada se perder.
 6. **Garantir o bloco `decore`** com `chave`, `truque`, `erro` e a `explicacao` curta (3–4 parágrafos, com sigla quando ajudar). É obrigatório para todo card com incidência.
 7. **Fechar**: `python build.py`. Nunca escreva HTML na mão.
 8. **Deploy**: envie as alterações ao repositório remoto (`git add -A`, `git commit`, `git push`) para o GitHub Pages refletir a mudança; faça isso antes de responder.
@@ -100,7 +101,9 @@ eventual, nunca como fonte do cartão.
 
 - Bruto se acumula; explicação se comprime.
 - Cartão com **teto fixo**: no máximo **5 incidências visíveis** (sempre as de maior `vezes`), **7 pegadinhas** e **6 parágrafos** de explicação. O excesso de incidências e de pegadinhas aparece numa cauda recolhida ("Ver mais N...") **dentro do próprio cartão**, nunca atrás de aviso que diga "no arquivo bruto". Nada é apagado: o texto integral da questão está no `questoes.jsonl`.
-- **Ponto novo com `1x` não ganha linha no cartão**: funda-se numa incidência existente ou entra na cauda. Só crie incidência visível se ela já tiver 3+ questões ou trouxer um núcleo claramente distinto.
+- **Como a incidência aparece no cartão (é o que o `build.py` faz):** as **5 incidências de maior `vezes`** ficam visíveis; todas as demais vão para a cauda `Ver mais N ponto(s) de menor incidência`, **dentro** do cartão. Não existe filtro escondendo `1x`: se um ponto entrou no `mapa.json`, ele é renderizado — visível ou na cauda.
+  - Um ponto `1x` **pode** ficar visível, mas só se estiver entre os 5 maiores. Ainda assim, prefira **fundir** num núcleo existente (somando `vezes` e o ID) em vez de abrir ponto novo: ponto `1x` só vale linha própria quando traz um **núcleo claramente distinto**.
+  - Ao passar de ~7 incidências num assunto, agrupe as `1x` numa incidência única do tipo "caiu uma vez" com os IDs — o cartão continua enxuto sem que a regra escrita minta para quem vier depois.
 - Não existe limite de questões: cada uma gera uma linha no bruto. Quem cresce é o arquivo, não o cartão.
 - **Saturação:** depois de ~25–30 questões no mesmo assunto, se a maioria apenas reconfirma núcleos já registrados, diga ao usuário que o assunto está mapeado e sugira `fechou <id>` — parar de questionalo é parte do método.
 - Toda explicação tem âncora visual: **CHAVE** (conceito), **TRUQUE** (sigla/regra), **ERRO CLÁSSICO** (pegadinha principal).
@@ -167,19 +170,38 @@ Exemplo simplificado (valores reais e atualizados sempre em `mapa.json`), use co
     }
   ],
   "pegadinhas": ["pegadinha curta"],
-  "questoes_lista": ["#3803997 · AOCP 2026 · acerto (E)"],
+  "questoes_lista": [],
   "fora_do_resumo": [],
   "fontes": ["MRPR 3ª ed., item 3.1", "MRPR 3ª ed., item 3.6", "CF/88 art. 37"],
   "notas": "Contexto opcional."
 }
 ```
 
-`questoes.jsonl` — uma linha JSON por questão, com `bruto` contendo o texto integral.
+`questoes_lista` é **derivado** (ver §4, passo 5) e não precisa ser preenchido à mão.
+
+### 6.1 `questoes.jsonl` — formato único
+
+Uma linha JSON por questão, campos **sempre nesta ordem** (os extras, se houver, ficam no fim):
+
+```json
+{"id": "3803997", "assunto": "CE-1.1", "banca": "Instituto AOCP", "ano": 2026,
+ "cargo": "Fiscal Sanitarista (SES SC)", "acerto": true,
+ "resposta_dada": "E", "gabarito": "E", "bruto": "#3803997 Instituto AOCP - 2026 - ..."}
+```
+
+- `id`: **sem** `#` no JSON (o `#` é só de exibição).
+- `acerto`: booleano de verdade (`true`/`false`), não `"sim"`/`"errei"`.
+- `resposta_dada` / `gabarito`: letra `A`–`E` **ou** `null`. Obrigatoriamente `null` quando não registrados — nunca omita o campo, é isso que fazia metade do arquivo ter formato diferente.
+- Se `acerto` for `false`, `resposta_dada` é obrigatória (o script falha sem ela).
+- `bruto`: texto integral colado pelo usuário. **Nunca** resumido, nunca reformatado, nunca reescrito pelo `normalizar_jsonl.py`.
+- Quando a resolução traz o gabarito só no corpo do texto ("Gabarito: LETRA C", "A RESPOSTA É A LETRA D"), o `build.py` extrai a letra sozinho para montar a linha do card — mas o campo `gabarito` continua sendo o lugar correto para registrá-lo quando você o conhece.
 
 ## 7. Comandos
 
 ```bash
-python build.py                       # regera index.html
+python build.py                       # regera index.html (lê mapa.json + questoes.jsonl)
+python normalizar_jsonl.py             # padroniza o formato do bruto
+python normalizar_jsonl.py --check     # só verifica o formato, sem escrever
 python -m json.tool mapa.json          # checa JSON
 python -c "import json; [json.loads(l) for l in open('questoes.jsonl',encoding='utf-8') if l.strip()]"  # checa bruto
 ```
