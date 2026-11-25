@@ -259,6 +259,19 @@ def teste_html(html_gerado: str) -> None:
         not re.search(r"Meus erros \(\d+\)", html_gerado),
         "rótulo antigo do botão de erros não voltou",
     )
+    checar(
+        '<a class="skip" href="#conteudo">' in html_gerado
+        and 'id="conteudo"' in html_gerado,
+        "link 'pular para o conteúdo' tem alvo válido",
+    )
+    checar(
+        "aria-pressed" in html_gerado,
+        "botões de filtro expõem estado por aria-pressed",
+    )
+    checar(
+        html_gerado.count("catch (e)") >= 2,
+        "acesso ao localStorage está protegido (leitura e escrita)",
+    )
     checar("IDsIDs" not in html_gerado, 'não há o bug "IDsIDs"')
     checar("<summary>IDsIDs" not in html_gerado, "summary 'IDs' não está duplicado")
     checar(

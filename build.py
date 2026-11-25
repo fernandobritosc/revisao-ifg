@@ -656,6 +656,10 @@ button,input{font:inherit}
 .vazio{color:var(--muted);font-style:italic;font-size:.82rem;margin:0}
 .nota{grid-column:1/-1;font-size:.8rem;color:var(--text2);background:var(--soft);padding:.55rem .7rem;border-radius:8px;margin:0}
 .rodape{max-width:1400px;margin:0 auto;padding:0 1.5rem 2rem;color:var(--muted);font-size:.78rem}
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--card);color:var(--ink);
+padding:.6rem .9rem;border:2px solid var(--ink);border-radius:8px;text-decoration:none;font-weight:700}
+.skip:focus{left:.75rem;top:.75rem}
+main:focus{outline:none}
 @media print{.nav{display:none}.layout{display:block;padding:0}.topo{background:#333}.disciplina,.topico{box-shadow:none;break-inside:avoid}}
 """
 
@@ -670,6 +674,14 @@ let filtro = 'todos';
 let freq = 'todas';
 let scoreFiltro = 'todos';
 let soErros = false;
+
+function marcar(botoes, ativo) {
+  botoes.forEach(b => {
+    const on = typeof ativo === 'function' ? ativo(b) : b === ativo;
+    b.classList.toggle('ativo', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+}
 
 function aplicar() {
   const q = busca.value.toLowerCase().trim();
@@ -697,31 +709,31 @@ function aplicar() {
 busca.addEventListener('input', aplicar);
 botoesStatus.forEach(b => b.addEventListener('click', () => {
   filtro = b.dataset.filtro;
-  botoesStatus.forEach(x => x.classList.toggle('ativo', x === b));
+  marcar(botoesStatus, b);
   aplicar();
 }));
 botoesFreq.forEach(b => b.addEventListener('click', () => {
   freq = b.dataset.freq;
-  botoesFreq.forEach(x => x.classList.toggle('ativo', x === b));
+  marcar(botoesFreq, b);
   aplicar();
 }));
 botoesScore.forEach(b => b.addEventListener('click', () => {
   scoreFiltro = b.dataset.scoreFiltro;
-  botoesScore.forEach(x => x.classList.toggle('ativo', x === b));
+  marcar(botoesScore, b);
   aplicar();
 }));
 
 btnErros.addEventListener('click', () => {
   soErros = !soErros;
   btnErros.classList.toggle('ligado', soErros);
+  btnErros.setAttribute('aria-pressed', soErros ? 'true' : 'false');
   if (soErros) {
     filtro = 'todos';
     freq = 'todas';
     scoreFiltro = 'todos';
-    document.querySelectorAll('[data-filtro]').forEach(x =>
-      x.classList.toggle('ativo', x.dataset.filtro === 'todos'));
-    botoesFreq.forEach(x => x.classList.toggle('ativo', x.dataset.freq === 'todas'));
-    botoesScore.forEach(x => x.classList.toggle('ativo', x.dataset.scoreFiltro === 'todos'));
+    marcar(botoesStatus, b => b.dataset.filtro === 'todos');
+    marcar(botoesFreq, b => b.dataset.freq === 'todas');
+    marcar(botoesScore, b => b.dataset.scoreFiltro === 'todos');
   }
   aplicar();
   if (soErros) document.querySelectorAll('.topico').forEach(t => {
@@ -733,12 +745,14 @@ const btnRevisao = document.getElementById('revisao-rapida');
 btnRevisao.addEventListener('click', () => {
   const ativo = document.body.classList.toggle('modo-revisao');
   btnRevisao.classList.toggle('ligado', ativo);
+  btnRevisao.setAttribute('aria-pressed', ativo ? 'true' : 'false');
   freq = ativo ? '3+' : 'todas';
   scoreFiltro = 'todos';
   soErros = false;
   btnErros.classList.remove('ligado');
-  botoesFreq.forEach(x => x.classList.toggle('ativo', x.dataset.freq === freq));
-  botoesScore.forEach(x => x.classList.toggle('ativo', x.dataset.scoreFiltro === 'todos'));
+  btnErros.setAttribute('aria-pressed', 'false');
+  marcar(botoesFreq, b => b.dataset.freq === freq);
+  marcar(botoesScore, b => b.dataset.scoreFiltro === 'todos');
   aplicar();
   if (ativo) document.querySelectorAll('.topico').forEach(t => {
     if (!t.hidden) t.open = true;
@@ -754,12 +768,18 @@ function aplicarModo(modo) {
     document.documentElement.classList.remove('modo-escuro');
     document.documentElement.classList.add('modo-claro');
   }
-  botoesModo.forEach(b => b.classList.toggle('ativo', b.dataset.modo === modo));
-  localStorage.setItem('mapa-modo', modo);
+  marcar(botoesModo, b => b.dataset.modo === modo);
+  try { localStorage.setItem('mapa-modo', modo); } catch (e) { /* navegação restrita */ }
 }
-const savedModo = localStorage.getItem('mapa-modo');
+let savedModo = null;
+try { savedModo = localStorage.getItem('mapa-modo'); } catch (e) { /* navegação restrita */ }
 aplicarModo(savedModo || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro'));
 botoesModo.forEach(b => b.addEventListener('click', () => aplicarModo(b.dataset.modo)));
+marcar(botoesStatus, b => b.classList.contains('ativo'));
+marcar(botoesFreq, b => b.classList.contains('ativo'));
+marcar(botoesScore, b => b.classList.contains('ativo'));
+btnErros.setAttribute('aria-pressed', 'false');
+btnRevisao.setAttribute('aria-pressed', 'false');
 """
 
 
@@ -788,6 +808,7 @@ def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None)
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f"<title>Mapa de revisão — {esc(concurso['cargo'])}</title>\n"
         f"<style>{CSS}</style>\n</head>\n<body>\n"
+        '<a class="skip" href="#conteudo">Pular para o conteúdo</a>\n'
         '<header class="topo"><div class="topo-inner">'
         f'<div><p class="eyebrow">{esc(concurso["edital"])} · {esc(concurso["banca"])}</p>'
         f'<h1>Mapa de revisão <span>— {esc(concurso["cargo"])}</span></h1>'
@@ -820,7 +841,7 @@ def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None)
         '<p class="legenda">Cobertura: <b>cinza</b> = 0 questão · '
         '<b>âmbar</b> = 1–2 · <b>verde</b> = 3+</p>'
         f'{_nav(dados)}<p class="resultado" id="resultado"></p>'
-        '</aside><main>' + conteudo + '</main></div>'
+        '</aside><main id="conteudo" tabindex="-1">' + conteudo + '</main></div>'
         f'<footer class="rodape">Fonte da hierarquia: {esc(concurso["fonte"])}. '
         'Gerado por build.py a partir de mapa.json.</footer>'
         f"<script>{JS}</script>\n</body>\n</html>\n"
