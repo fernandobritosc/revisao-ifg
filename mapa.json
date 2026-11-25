@@ -65,35 +65,67 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 1,
+          "questoes": 2,
           "erros": 0,
           "revisado_em": null,
           "decore": {
-            "chave": "SUSPENSÃO, NÃO PERDA",
-            "truque": "Art. 37, §4º = S-P-I-R: Suspensão dos direitos políticos · Perda da função · Indisponibilidade dos bens · Ressarcimento ao erário",
-            "erro": "Perda dos direitos políticos NÃO é sanção de improbidade — o texto diz SUSPENSÃO."
+            "chave": "ART. 37 — SANÇÕES E SERVIDOR",
+            "truque": "§4º = S-P-I-R (Suspensão, Perda da função, Indisponibilidade, Ressarcimento) · §13 = readaptação enquanto durar a limitação · XIV = acréscimos não se acumulam · §14 = aposentadoria rompe o vínculo · §1º = sem promoção pessoal",
+            "erro": "Não é 'perda dos direitos políticos' (é suspensão), não é readaptação 'até a aposentadoria' e publicidade não pode ter promoção pessoal."
           },
           "explicacao": [
             "Art. 37, §4º da CF: atos de improbidade administrativa importam suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
             "As sanções são aplicadas na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.",
-            "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe."
+            "Atenção à palavra exata: SUSPENSÃO dos direitos políticos, e não PERDA. A perda da função pública, essa sim, existe.",
+            "Readaptação (§13): serve enquanto permanecer a limitação física ou mental, com habilitação para o cargo de destino e remuneração do cargo de origem — não é até a aposentadoria.",
+            "Acréscimos pecuniários (XIV) não são computados nem acumulados para acréscimos ulteriores. Aposentadoria usando tempo de cargo público ou RGPS rompe o vínculo (§14). Publicidade não pode ter promoção pessoal (§1º)."
           ],
           "incidencias": [
             {
               "texto": "Art. 37, §4º: suspensão (não perda) dos direitos políticos, perda da função, indisponibilidade e ressarcimento",
               "vezes": 1,
               "questoes": ["#3791504"]
+            },
+            {
+              "texto": "Readaptação dura enquanto permanecer a limitação, não até a aposentadoria (art. 37, §13)",
+              "vezes": 1,
+              "questoes": ["#3791510"]
+            },
+            {
+              "texto": "Acréscimos pecuniários não são computados nem acumulados para acréscimos ulteriores (art. 37, XIV)",
+              "vezes": 1,
+              "questoes": ["#3791510"]
+            },
+            {
+              "texto": "Aposentadoria com tempo de cargo público/RGPS rompe o vínculo que gerou o tempo (art. 37, §14)",
+              "vezes": 1,
+              "questoes": ["#3791510"]
+            },
+            {
+              "texto": "Publicidade oficial não pode conter promoção pessoal de autoridade ou servidor (art. 37, §1º)",
+              "vezes": 1,
+              "questoes": ["#3791510"]
             }
           ],
           "pegadinhas": [
             "Trocar 'suspensão dos direitos políticos' por 'perda dos direitos políticos' — a perda não está no §4º.",
-            "Questão pede o que NÃO importa: marcar a sanção que existe (ressarcimento, indisponibilidade, perda da função) como se fosse a resposta."
+            "Questão pede o que NÃO importa: marcar a sanção que existe (ressarcimento, indisponibilidade, perda da função) como se fosse a resposta.",
+            "Dizer que a readaptação vai 'até a aposentadoria' — o §13 diz 'enquanto permanecer nesta condição'.",
+            "Afirmar que acréscimos pecuniários podem ser acumulados para gerar novos acréscimos (o XIV veda).",
+            "Trocar 'não podendo constar' por 'podendo constar' nomes/símbolos em publicidade oficial."
           ],
-          "questoes_lista": ["#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)"],
+          "questoes_lista": [
+            "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
+            "#3791510 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (C)"
+          ],
           "fora_do_resumo": [],
           "fontes": [
+            "CF/88 art. 37, §1º — publicidade e impessoalidade",
+            "CF/88 art. 37, XIV — acréscimos pecuniários",
             "CF/88 art. 37, §4º — improbidade administrativa",
-            "Questão #3791504 — AOCP 2026 (DEPEN MG)"
+            "CF/88 art. 37, §13 — readaptação",
+            "CF/88 art. 37, §14 — rompimento do vínculo",
+            "Questões #3791504 e #3791510 — AOCP 2026 (DEPEN MG)"
           ]
         },
         {"id": "CC-2.2", "titulo": "Lei Federal nº 8.112/1990 — regime jurídico do servidor público federal"},
