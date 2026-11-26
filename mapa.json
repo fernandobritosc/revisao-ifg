@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 18,
+          "questoes": 19,
           "erros": 3,
           "revisado_em": null,
           "decore": {
@@ -259,11 +259,12 @@
             },
             {
               "texto": "Princípios expressos do art. 37, caput: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE)",
-              "vezes": 3,
+              "vezes": 4,
               "questoes": [
                 "#4013755",
                 "#3569997",
-                "#3732358"
+                "#3732358",
+                "#2959187"
               ]
             },
             {
@@ -363,7 +364,8 @@
             "#3814470 · AOCP 2025 · Juiz Leigo (TJ GO) — acerto (D)",
             "#2921187 · AOCP 2024 · Soldado Bombeiro Militar (CBM PE) — acerto (D)",
             "#2959166 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (C)",
-            "#2959168 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (D)"
+            "#2959168 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (D)",
+            "#2959187 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (A)"
           ],
           "fora_do_resumo": [],
           "fontes": [
