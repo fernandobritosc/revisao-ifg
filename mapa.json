@@ -175,8 +175,8 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 13,
-          "erros": 2,
+          "questoes": 14,
+          "erros": 3,
           "revisado_em": null,
           "decore": {
             "chave": "ART. 37 — SANÇÕES E SERVIDOR",
@@ -279,6 +279,20 @@
               "vezes": 1,
               "questoes": [
                 "#3451294"
+              ]
+            },
+            {
+              "texto": "Dever de agir / poder-dever: não se omite quando a lei autoriza a intervenção; omissão configura abuso de poder (indisponibilidade do interesse público)",
+              "vezes": 1,
+              "questoes": [
+                "#3732533"
+              ]
+            },
+            {
+              "texto": "Poder hierárquico: superior ordena, delega e avoca; obediência é obrigatória a ordens legais (salvo manifesta ilegalidade)",
+              "vezes": 1,
+              "questoes": [
+                "#3732533"
               ]
             }
           ],
