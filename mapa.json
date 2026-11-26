@@ -206,56 +206,52 @@
               ]
             },
             {
-              "texto": "Readaptação dura enquanto permanecer a limitação, não até a aposentadoria (art. 37, §13)",
+              "texto": "Aposentadoria com tempo de cargo/RGPS rompe o vínculo que gerou o tempo (art. 37, §14)",
               "vezes": 1,
               "questoes": [
                 "#3791510"
               ]
             },
             {
-              "texto": "Acréscimos pecuniários não são computados nem acumulados para acréscimos ulteriores (art. 37, XIV)",
-              "vezes": 2,
-              "questoes": [
-                "#3791510",
-                "#4163319"
-              ]
-            },
-            {
-              "texto": "Aposentadoria com tempo de cargo público/RGPS rompe o vínculo que gerou o tempo (art. 37, §14)",
+              "texto": "Teto do Executivo: Legislativo e Judiciário não podem exceder o Executivo (art. 37, XII)",
               "vezes": 1,
               "questoes": [
-                "#3791510"
-              ]
-            },
-            {
-              "texto": "Publicidade oficial não pode conter promoção pessoal de autoridade ou servidor (art. 37, §1º)",
-              "vezes": 1,
-              "questoes": [
-                "#3791510"
-              ]
-            },
-            {
-              "texto": "Teto do Executivo: Legislativo e Judiciário não podem exceder o Executivo (art. 37, XII) — cobrado 2x na mesma questão, uma invertida",
-              "vezes": 2,
-              "questoes": [
-                "#3840967",
-                "#4163319"
+                "#3840967"
               ]
             },
             {
               "texto": "Cargos públicos acessíveis a brasileiros e também a estrangeiros, na forma da lei (art. 37, I)",
-              "vezes": 2,
+              "vezes": 1,
               "questoes": [
-                "#3840967",
-                "#4013754"
+                "#3840967"
               ]
             },
             {
               "texto": "Vedada vinculação ou equiparação de espécies remuneratórias (art. 37, XIII)",
-              "vezes": 2,
+              "vezes": 1,
               "questoes": [
-                "#3840967",
-                "#4163319"
+                "#3840967"
+              ]
+            },
+            {
+              "texto": "EC 138/2025: professor pode acumular com cargo de qualquer natureza (art. 37, XVI, b)",
+              "vezes": 1,
+              "questoes": [
+                "#3997938"
+              ]
+            },
+            {
+              "texto": "Regra geral é a inacumulabilidade: compatibilidade de horários é condição necessária, mas não suficiente (art. 37, XVI)",
+              "vezes": 1,
+              "questoes": [
+                "#4013456"
+              ]
+            },
+            {
+              "texto": "Funções de confiança/cargos em comissão só para direção, chefia e assessoramento (art. 37, V)",
+              "vezes": 1,
+              "questoes": [
+                "#4013754"
               ]
             },
             {
@@ -263,35 +259,6 @@
               "vezes": 1,
               "questoes": [
                 "#4163319"
-              ]
-            },
-            {
-              "texto": "EC 138/2025: professor pode acumular com cargo de qualquer natureza (art. 37, XVI, b) — redação antiga 'técnico ou científico' está obsoleta",
-              "vezes": 1,
-              "questoes": [
-                "#3997938"
-              ]
-            },
-            {
-              "texto": "Prazo do concurso é ATÉ 2 anos (teto, não obrigatoriedade) e a investidura é conforme natureza e complexidade (art. 37, II e III)",
-              "vezes": 1,
-              "questoes": [
-                "#4013754"
-              ]
-            },
-            {
-              "texto": "Funções de confiança/cargos em comissão só para direção, chefia e assessoramento (V); teto é dos Ministros do STF, não do STJ (XI)",
-              "vezes": 1,
-              "questoes": [
-                "#4013754"
-              ]
-            },
-            {
-              "texto": "Regra geral é a inacumulabilidade: só as 3 alíneas do XVI; compatibilidade de horários é necessária, mas não basta; saúde exige profissões regulamentadas; XVII alcança sociedade de economia mista controlada indiretamente",
-              "vezes": 2,
-              "questoes": [
-                "#3997938",
-                "#4013456"
               ]
             }
           ],
@@ -516,23 +483,29 @@
               "texto": "CPU é o chip que interpreta e executa as instruções dos programas; se constitui pela ULA, UC e Registradores",
               "vezes": 2,
               "questoes": [
-                "#2016286 · AOCP 2022 · Assistente em Administração (Pref Belém (PA)) — acerto (D)",
-                "#2254167 · AOCP 2022 · Operador de Máquina (Pref Pinhais) — acerto (D)"
+                "#2016286",
+                "#2254167"
               ]
             },
             {
               "texto": "ROM (Read Only Memory): memória apenas de leitura — não se pode gravar, alterar ou apagar",
-              "vezes": 2,
+              "vezes": 1,
               "questoes": [
-                "#2017771 · AOCP 2022 · Recepcionista (CM Bauru) (e mais 1 concurso) — acerto (A)",
-                "#1912989 · AOCP 2022 · Assistente em Previdência (IPE Prev) — acerto (B)"
+                "#2017771"
+              ]
+            },
+            {
+              "texto": "ROM: memória não volátil — dados não se perdem quando o computador é desligado",
+              "vezes": 1,
+              "questoes": [
+                "#1912989"
               ]
             },
             {
               "texto": "Memória CACHE: memória de acesso rápido que trabalha em conjunto com o processador (SRAM, entre DRAM e CPU)",
               "vezes": 1,
               "questoes": [
-                "#2253409 · AOCP 2022 · Motorista (Pref Pinhais)/III/Ed. 003.2022 — acerto (B)"
+                "#2253409"
               ]
             }
           ],
@@ -648,65 +621,55 @@
               ],
               "incidencias": [
                 {
-                  "texto": "Lista dos 7 atributos do MRPR (C-O-C-C-I-F-N)",
-                  "vezes": 3,
-                  "questoes": [
-                    "#3803997",
-                    "#3563761",
-                    "#3564013"
-                  ]
-                },
-                {
-                  "texto": "Linguagem culta, mas não rebuscada (sem figuras literárias)",
-                  "vezes": 3,
-                  "questoes": [
-                    "#3803997",
-                    "#3563761",
-                    "#3566142"
-                  ]
-                },
-                {
-                  "texto": "Impessoalidade — sem opinião pessoal; 'pode haver', não 'podem haver'",
+                  "texto": "Linguagem culta, mas não rebuscada",
                   "vezes": 2,
                   "questoes": [
                     "#3803997",
+                    "#3564434"
+                  ]
+                },
+                {
+                  "texto": "Clareza e objetividade",
+                  "vezes": 1,
+                  "questoes": [
                     "#3563761"
                   ]
                 },
                 {
-                  "texto": "Concisão/coesão: frases curtas, sem adjetivos nem subordinação excessiva; conciso ≠ economia de pensamento (corte só o inútil); coesão = retomada por substituição, elipse e conjunção (ex.: 'No entanto' = adversidade); coerência = ideias em ordem lógica",
-                  "vezes": 6,
+                  "texto": "Lista dos 7 atributos do MRPR (C-O-C-C-I-F-N)",
+                  "vezes": 1,
                   "questoes": [
-                    "#3803997",
-                    "#3563761",
-                    "#3564434",
+                    "#3564013"
+                  ]
+                },
+                {
+                  "texto": "Consulta ao dicionário e à gramática",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3566142"
+                  ]
+                },
+                {
+                  "texto": "Clareza = linguagem simples/acessível",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3626039"
+                  ]
+                },
+                {
+                  "texto": "Concisão/coesão: frases curtas, sem adjetivação",
+                  "vezes": 3,
+                  "questoes": [
                     "#3626147",
                     "#2853348",
                     "#2919359"
                   ]
                 },
                 {
-                  "texto": "Clareza = linguagem simples/acessível sem alterar o conteúdo: consonância entre intenção do emissor e compreensão do destinatário; sigla na 1ª, tempo verbal uniforme, sem sinonímia estilística",
-                  "vezes": 2,
-                  "questoes": [
-                    "#3564434",
-                    "#3626039"
-                  ]
-                },
-                {
-                  "texto": "Padrão culto fica acima das diferenças lexicais, morfológicas, sintáticas, regionais, modismos e particularidades — não aceita exceção",
-                  "vezes": 3,
-                  "questoes": [
-                    "#3563761",
-                    "#3566142",
-                    "#2959223"
-                  ]
-                },
-                {
-                  "texto": "Consulta ao dicionário e à gramática é imperativa num bom texto",
+                  "texto": "Padrão culto acima das diferenças lexicais, morfológicas, sintáticas e regionais",
                   "vezes": 1,
                   "questoes": [
-                    "#3566142"
+                    "#2959223"
                   ]
                 }
               ],
