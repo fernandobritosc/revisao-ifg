@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 14,
+          "questoes": 15,
           "erros": 3,
           "revisado_em": null,
           "decore": {
@@ -294,6 +294,13 @@
               "questoes": [
                 "#3732533"
               ]
+            },
+            {
+              "texto": "Responsabilidade civil objetiva do Estado (art. 37, §6º): ação por dano causado por agente público é ajuizada contra o Estado; servidor é parte ilegítima; regresso por dolo ou culpa (tema 940 STF)",
+              "vezes": 1,
+              "questoes": [
+                "#3814470"
+              ]
             }
           ],
           "pegadinhas": [
@@ -343,7 +350,8 @@
             "#3451741 · AOCP 2025 · Advogado (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
             "#3535613 · AOCP 2025 · Advogado (SANESUL) — acerto (E)",
             "#3569997 · AOCP 2025 · Analista Administrativo (IDEMA RN) — acerto (A)",
-            "#3732358 · AOCP 2025 · Administrador (UFABC) — acerto (A)"
+            "#3732358 · AOCP 2025 · Administrador (UFABC) — acerto (A)",
+            "#3814470 · AOCP 2025 · Juiz Leigo (TJ GO) — acerto (D)"
           ],
           "fora_do_resumo": [],
           "fontes": [
@@ -365,6 +373,7 @@
             "CF/88 art. 37, §13 — readaptação",
             "CF/88 art. 37, §14 — rompimento do vínculo",
             "CF/88 art. 38 — servidores em mandato eletivo",
+            "CF/88 art. 37, §6º — responsabilidade civil objetiva do Estado (tema 940 STF)",
             "Questões #3791504 e #3791510 — AOCP 2026 (DEPEN MG)",
             "Questão #3840967 — AOCP 2026 (UNIRIO)",
             "Questão #3997938 — AOCP 2026 (IF CE)",
@@ -376,6 +385,7 @@
             "Questão #3535613 — AOCP 2025 (SANESUL) — acerto (E)",
             "Questão #3569997 — AOCP 2025 (IDEMA RN) — acerto (A)",
             "Questão #3732358 — AOCP 2025 (UFABC) — acerto (A)",
+            "Questão #3814470 — AOCP 2025 (TJ GO) — acerto (D)",
             "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
           ]
         },
