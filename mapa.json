@@ -175,8 +175,8 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 9,
-          "erros": 1,
+          "questoes": 10,
+          "erros": 2,
           "revisado_em": null,
           "decore": {
             "chave": "ART. 37 — SANÇÕES E SERVIDOR",
@@ -265,9 +265,10 @@
             },
             {
               "texto": "Criação de autarquia e autorização de empresa pública, sociedade de economia mista e fundação dependem de lei específica (art. 37, XIX)",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#4163319"
+                "#4163319",
+                "#3451741"
               ]
             },
             {
@@ -297,7 +298,9 @@
             "Trocar 'LIMPE' por 'hierarquia', 'supremacia do interesse público', 'continuidade', 'razoabilidade', 'autotutela', 'economicidade' ou 'finalidade' — esses são implícitos, não expressos.",
             "Dizer que autarquia, empresa pública, sociedade de economia mista ou fundação podem ser criadas por decreto — o art. 37, XIX exige lei específica.",
             "Achar que vereador sem compatibilidade de horários permanece no cargo recebendo as duas remunerações — ele é afastado, com opção.",
-            "Trocar 'compatibilidade de horários' por afastamento em qualquer caso ou por permanência sem opção de remuneração."
+            "Trocar 'compatibilidade de horários' por afastamento em qualquer caso ou por permanência sem opção de remuneração.",
+            "Dizer que o prefeito não pode criar autarquia ou que é competência privativa do governador ou da Câmara de Vereadores.",
+            "Dizer que a autarquia pode ser criada por ato administrativo, sem lei específica."
           ],
           "questoes_lista": [
             "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
@@ -335,6 +338,7 @@
             "Questão #4013754 — AOCP 2026 (IF CE)",
             "Questão #4163319 — AOCP 2026 (CESAMA)",
             "Questão #3451294 — AOCP 2025 (PARANAPREVIDÊNCIA) — acerto (E)",
+            "Questão #3451741 — AOCP 2025 (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
             "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
           ]
         },

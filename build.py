@@ -61,6 +61,7 @@ TERMOS_IMPORTANTES = [
     "Eficiência", "princípios expressos",
     "hierarquia", "razoabilidade", "autotutela", "economicidade", "finalidade",
     "continuidade", "supremacia do interesse público",
+    "autarquia", "lei específica", "ato administrativo",
     "qualquer natureza", "técnico ou científico", "EC 138/2025",
     "inacumulabilidade", "sociedade de economia mista",
     "condição necessária", "acumulação", "profissões regulamentadas", "administração indireta",
