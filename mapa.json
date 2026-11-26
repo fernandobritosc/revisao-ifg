@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 17,
+          "questoes": 18,
           "erros": 3,
           "revisado_em": null,
           "decore": {
@@ -251,9 +251,10 @@
             },
             {
               "texto": "Funções de confiança/cargos em comissão só para direção, chefia e assessoramento (art. 37, V)",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#4013754"
+                "#4013754",
+                "#2959168"
               ]
             },
             {
@@ -361,7 +362,8 @@
             "#3732358 · AOCP 2025 · Administrador (UFABC) — acerto (A)",
             "#3814470 · AOCP 2025 · Juiz Leigo (TJ GO) — acerto (D)",
             "#2921187 · AOCP 2024 · Soldado Bombeiro Militar (CBM PE) — acerto (D)",
-            "#2959166 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (C)"
+            "#2959166 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (C)",
+            "#2959168 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (D)"
           ],
           "fora_do_resumo": [],
           "fontes": [
