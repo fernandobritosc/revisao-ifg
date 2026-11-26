@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 12,
+          "questoes": 13,
           "erros": 2,
           "revisado_em": null,
           "decore": {
@@ -258,10 +258,11 @@
             },
             {
               "texto": "Princípios expressos do art. 37, caput: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE)",
-              "vezes": 2,
+              "vezes": 3,
               "questoes": [
                 "#4013755",
-                "#3569997"
+                "#3569997",
+                "#3732358"
               ]
             },
             {
@@ -310,7 +311,10 @@
             "Dizer que o controle social é exclusivo dos Tribunais de Contas (art. 74, §2º admite denúncia de qualquer cidadão).",
             "Dizer que a fiscalização exclui a sociedade civil (participação popular é prevista).",
             "Dizer que o MP substitui o controle externo (são independentes e cumulativos).",
-            "Dizer que transparência é princípio secundário/complementar (é princípio fundamental e expresso)."
+            "Dizer que transparência é princípio secundário/complementar (é princípio fundamental e expresso).",
+            "Dizer que eficiência autoriza pré-seleção de fornecedores por 'afinidade' (viola impessoalidade).",
+            "Dizer que direcionamento licitatório é permitido se não houver prejuízo ao erário (viola impessoalidade, isonomia, legalidade, moralidade).",
+            "Dizer que ética administrativa é relativa ao contexto (moralidade é objetiva, extraída do ordenamento jurídico)."
           ],
           "questoes_lista": [
             "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
@@ -324,7 +328,8 @@
             "#3451294 · AOCP 2025 · Administrador (PARANAPREVIDÊNCIA) — acerto (E)",
             "#3451741 · AOCP 2025 · Advogado (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
             "#3535613 · AOCP 2025 · Advogado (SANESUL) — acerto (E)",
-            "#3569997 · AOCP 2025 · Analista Administrativo (IDEMA RN) — acerto (A)"
+            "#3569997 · AOCP 2025 · Analista Administrativo (IDEMA RN) — acerto (A)",
+            "#3732358 · AOCP 2025 · Administrador (UFABC) — acerto (A)"
           ],
           "fora_do_resumo": [],
           "fontes": [
@@ -356,6 +361,7 @@
             "Questão #3451741 — AOCP 2025 (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
             "Questão #3535613 — AOCP 2025 (SANESUL) — acerto (E)",
             "Questão #3569997 — AOCP 2025 (IDEMA RN) — acerto (A)",
+            "Questão #3732358 — AOCP 2025 (UFABC) — acerto (A)",
             "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
           ]
         },
