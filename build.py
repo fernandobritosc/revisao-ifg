@@ -63,6 +63,8 @@ TERMOS_IMPORTANTES = [
     "continuidade", "supremacia do interesse público",
     "autarquia", "lei específica", "ato administrativo",
     "estrangeiros", "deficiência", "readaptação", "subsidiárias",
+    "controle social", "Tribunais de Contas", "sociedade civil",
+    "Ministério Público", "controle externo", "transparência",
     "qualquer natureza", "técnico ou científico", "EC 138/2025",
     "inacumulabilidade", "sociedade de economia mista",
     "condição necessária", "acumulação", "profissões regulamentadas", "administração indireta",

@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 11,
+          "questoes": 12,
           "erros": 2,
           "revisado_em": null,
           "decore": {
@@ -258,9 +258,10 @@
             },
             {
               "texto": "Princípios expressos do art. 37, caput: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE)",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#4013755"
+                "#4013755",
+                "#3569997"
               ]
             },
             {
@@ -305,7 +306,11 @@
             "Dizer que cargos públicos são vedados a estrangeiros (art. 37, I admite estrangeiros na forma da lei).",
             "Dizer que a reserva de percentual para deficientes se faz por ato do PE (é por lei — art. 37, VIII).",
             "Dizer que subsidiárias e controladas indiretamente estão ressalvadas da proibição de acumular (art. 37, XVII inclui-as).",
-            "Dizer que a readaptação dispensa habilitação/nível de escolaridade (art. 37, §13 exige)."
+            "Dizer que a readaptação dispensa habilitação/nível de escolaridade (art. 37, §13 exige).",
+            "Dizer que o controle social é exclusivo dos Tribunais de Contas (art. 74, §2º admite denúncia de qualquer cidadão).",
+            "Dizer que a fiscalização exclui a sociedade civil (participação popular é prevista).",
+            "Dizer que o MP substitui o controle externo (são independentes e cumulativos).",
+            "Dizer que transparência é princípio secundário/complementar (é princípio fundamental e expresso)."
           ],
           "questoes_lista": [
             "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
@@ -318,7 +323,8 @@
             "#4163319 · AOCP 2026 · Analista de Saneamento (CESAMA) — acerto (B)",
             "#3451294 · AOCP 2025 · Administrador (PARANAPREVIDÊNCIA) — acerto (E)",
             "#3451741 · AOCP 2025 · Advogado (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
-            "#3535613 · AOCP 2025 · Advogado (SANESUL) — acerto (E)"
+            "#3535613 · AOCP 2025 · Advogado (SANESUL) — acerto (E)",
+            "#3569997 · AOCP 2025 · Analista Administrativo (IDEMA RN) — acerto (A)"
           ],
           "fora_do_resumo": [],
           "fontes": [
@@ -349,6 +355,7 @@
             "Questão #3451294 — AOCP 2025 (PARANAPREVIDÊNCIA) — acerto (E)",
             "Questão #3451741 — AOCP 2025 (PARANAPREVIDÊNCIA) — ERRO (marquei D, gabarito C)",
             "Questão #3535613 — AOCP 2025 (SANESUL) — acerto (E)",
+            "Questão #3569997 — AOCP 2025 (IDEMA RN) — acerto (A)",
             "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
           ]
         },
