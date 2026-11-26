@@ -175,15 +175,16 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 6,
+          "questoes": 7,
           "erros": 1,
           "revisado_em": null,
           "decore": {
             "chave": "ART. 37 — SANÇÕES E SERVIDOR",
-            "truque": "XVI = professor + cargo de QUALQUER natureza (EC 138/2025) · §4º = S-P-I-R · I = brasileiros e estrangeiros · XII = Legislativo/Judiciário ≤ Executivo · XIII = sem equiparação · XIV = sem acumular acréscimos · §13 = readaptação temporária · §14 = rompe o vínculo · §1º = sem promoção pessoal",
+            "truque": "XVI = professor + cargo de QUALQUER natureza (EC 138/2025) · XIX = lei específica cria autarquia e autoriza as demais · §4º = S-P-I-R · I = brasileiros e estrangeiros · XII = Legislativo/Judiciário ≤ Executivo · XIII = sem equiparação · XIV = sem acumular acréscimos · §13 = readaptação temporária · §14 = rompe o vínculo · §1º = sem promoção pessoal",
             "erro": "Prazo do concurso é ATÉ 2 anos, não 'de 2 anos'. Teto é STF, não STJ. Estrangeiros não são vedados, o teto do Executivo não se inverte e 'técnico/científico' está obsoleto (EC 138/2025)."
           },
           "explicacao": [
+            "Entidades (XIX): só lei específica cria autarquia e autoriza empresa pública, sociedade de economia mista e fundação; lei complementar define a área de atuação da fundação. SV 37 do STF: o Judiciário não pode aumentar vencimentos por isonomia.",
             "Regra geral: inacumulabilidade. As três alíneas do XVI são as ÚNICAS exceções — compatibilidade de horários é condição necessária, mas não suficiente. O XVII alcança até sociedades de economia mista controladas indiretamente.",
             "Acréscimos pecuniários (XIV) não são computados nem acumulados para acréscimos ulteriores. Aposentadoria usando tempo de cargo público ou RGPS rompe o vínculo (§14). Publicidade não pode ter promoção pessoal (§1º).",
             "Teto do Executivo (XII): vencimentos do Legislativo e do Judiciário não podem superar os do Executivo. Acesso (I): brasileiros e estrangeiros, na forma da lei. Remuneração (XIII): vedada vinculação ou equiparação.",
@@ -213,9 +214,10 @@
             },
             {
               "texto": "Acréscimos pecuniários não são computados nem acumulados para acréscimos ulteriores (art. 37, XIV)",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#3791510"
+                "#3791510",
+                "#4163319"
               ]
             },
             {
@@ -234,9 +236,10 @@
             },
             {
               "texto": "Teto do Executivo: Legislativo e Judiciário não podem exceder o Executivo (art. 37, XII) — cobrado 2x na mesma questão, uma invertida",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#3840967"
+                "#3840967",
+                "#4163319"
               ]
             },
             {
@@ -249,9 +252,17 @@
             },
             {
               "texto": "Vedada vinculação ou equiparação de espécies remuneratórias (art. 37, XIII)",
+              "vezes": 2,
+              "questoes": [
+                "#3840967",
+                "#4163319"
+              ]
+            },
+            {
+              "texto": "Criação de autarquia e autorização de empresa pública, sociedade de economia mista e fundação dependem de lei específica (art. 37, XIX)",
               "vezes": 1,
               "questoes": [
-                "#3840967"
+                "#4163319"
               ]
             },
             {
@@ -299,7 +310,8 @@
             "Criar 'ressalva' para sociedade de economia mista controlada indiretamente: ela está expressamente na vedação do art. 37, XVII.",
             "Ler 'deve ser de dois anos' onde a CF diz 'ATÉ dois anos' — erro real: o prazo pode ser menor.",
             "Acrescentar 'aspectos salariais' ao critério do concurso (o inciso II só diz natureza e complexidade).",
-            "Trocar Ministros do STF por Ministros do STJ no teto remuneratório."
+            "Trocar Ministros do STF por Ministros do STJ no teto remuneratório.",
+            "Dizer que autarquia, empresa pública, sociedade de economia mista ou fundação podem ser criadas por decreto — o art. 37, XIX exige lei específica."
           ],
           "questoes_lista": [
             "#3791504 · AOCP 2026 · Policial Penal (DEPEN MG) — acerto (A)",
@@ -315,6 +327,8 @@
             "CF/88 art. 37, III — prazo de validade do concurso",
             "CF/88 art. 37, V — funções de confiança e cargos em comissão",
             "CF/88 art. 37, XI — teto remuneratório (STF)",
+            "CF/88 art. 37, XIX — criação de entidades da administração indireta",
+            "STF Súmula Vinculante 37 — isonomia não autoriza aumento de vencimentos",
             "CF/88 art. 37, XVI e XVII — acumulação remunerada",
             "EC 138/2025 — art. 37, XVI, b (professor + qualquer natureza)",
             "CF/88 art. 37, I — acesso a cargos (brasileiros e estrangeiros)",
@@ -329,7 +343,9 @@
             "Questão #3840967 — AOCP 2026 (UNIRIO)",
             "Questão #3997938 — AOCP 2026 (IF CE)",
             "Questão #4013456 — AOCP 2026 (IF CE)",
-            "Questão #4013754 — AOCP 2026 (IF CE)"
+            "Questão #4013754 — AOCP 2026 (IF CE)",
+            "Questão #4163319 — AOCP 2026 (CESAMA)",
+            "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
           ]
         },
         {
