@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 20,
+          "questoes": 21,
           "erros": 3,
           "revisado_em": null,
           "decore": {
@@ -279,9 +279,10 @@
             },
             {
               "texto": "Art. 38, III: vereador com compatibilidade de horários percebe vantagens do cargo sem prejuízo da remuneração do mandato; sem compatibilidade, afastamento com opção de remuneração",
-              "vezes": 1,
+              "vezes": 2,
               "questoes": [
-                "#3451294"
+                "#3451294",
+                "#2959347"
               ]
             },
             {
@@ -367,7 +368,8 @@
             "#2959166 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (C)",
             "#2959168 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (D)",
             "#2959187 · AOCP 2024 · Assistente em Administração (UFTM) — acerto (A)",
-            "#2959346 · AOCP 2024 · Auditor (UFTM) — acerto (A)"
+            "#2959346 · AOCP 2024 · Auditor (UFTM) — acerto (A)",
+            "#2959347 · AOCP 2024 · Auditor (UFTM) — acerto (B)"
           ],
           "fora_do_resumo": [],
           "fontes": [
