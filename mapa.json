@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 15,
+          "questoes": 16,
           "erros": 3,
           "revisado_em": null,
           "decore": {
@@ -301,6 +301,13 @@
               "questoes": [
                 "#3814470"
               ]
+            },
+            {
+              "texto": "Contratação por tempo determinado (art. 37, IX): necessidade temporária de excepcional interesse público",
+              "vezes": 1,
+              "questoes": [
+                "#2921187"
+              ]
             }
           ],
           "pegadinhas": [
@@ -351,7 +358,8 @@
             "#3535613 · AOCP 2025 · Advogado (SANESUL) — acerto (E)",
             "#3569997 · AOCP 2025 · Analista Administrativo (IDEMA RN) — acerto (A)",
             "#3732358 · AOCP 2025 · Administrador (UFABC) — acerto (A)",
-            "#3814470 · AOCP 2025 · Juiz Leigo (TJ GO) — acerto (D)"
+            "#3814470 · AOCP 2025 · Juiz Leigo (TJ GO) — acerto (D)",
+            "#2921187 · AOCP 2024 · Soldado Bombeiro Militar (CBM PE) — acerto (D)"
           ],
           "fora_do_resumo": [],
           "fontes": [
@@ -386,7 +394,8 @@
             "Questão #3569997 — AOCP 2025 (IDEMA RN) — acerto (A)",
             "Questão #3732358 — AOCP 2025 (UFABC) — acerto (A)",
             "Questão #3814470 — AOCP 2025 (TJ GO) — acerto (D)",
-            "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611"
+            "LENZA, Pedro — Direito constitucional, 30. ed. (2026), p. 611",
+            "CF/88 art. 37, IX — contratação por tempo determinado"
           ]
         },
         {
