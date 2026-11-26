@@ -74,6 +74,8 @@ TERMOS_IMPORTANTES = [
     "§4º", "§13", "§14", "§1º", "XIV", "CF/88", "MRPR",
     "territórios", "entes autônomos", "recursos minerais", "subsolo",
     "primeiro domingo", "último domingo", "material bélico",
+    "mandato eletivo", "vereador", "compatibilidade de horários", "afastamento",
+    "art. 38",
     "ERRO", "acerto",
 ]
 # Lookarounds de palavra: sem eles, "culta" casava dentro de "ocultar" e
