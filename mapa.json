@@ -843,9 +843,9 @@
               "erros": 1,
               "status": "em-mapeamento",
               "decore": {
-                "chave": "Singular vs múltiplo = quantidade de instituições atendidas",
-                "truque": "Singular = uma instituição · Múltiplo = várias instituições",
-                "erro": "Confundir com corrente/intermediário/permanente (idade), centralizado/descentralizado (localização) ou público/privado (natureza jurídica)"
+                "chave": "Arquivologia em 4 pontos: singular/múltiplo · propriedades · público vs privado · fases",
+                "truque": "SINGULAR=1 instituição, MÚLTIPLO=várias · propriedades: naturalidade, autenticidade, unicidade, organicidade, IMPARCIALIDADE · arquivo público: produzido E recebido por órgão público (Lei 8.159/91, art. 7º) · fases: corrente → intermediário → permanente",
+                "erro": "Confundir singular/múltiplo com fases ou com localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente ou permanente"
               },
               "explicacao": [
                 "Arquivo singular: atende a uma única entidade, instituição ou produtor documental.",
