@@ -839,7 +839,7 @@
             {
               "id": "CE-2.1",
               "titulo": "Gestão, classificação e avaliação de documentos",
-              "questoes": 1,
+              "questoes": 2,
               "erros": 1,
               "status": "em-mapeamento",
               "decore": {
@@ -859,19 +859,29 @@
                   "questoes": [
                     "#4076132"
                   ]
+                },
+                {
+                  "texto": "Propriedades arquivísticas dos documentos: naturalidade, autenticidade, unicidade, organicidade, imparcialidade (parcialidade NÃO é propriedade)",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3563764"
+                  ]
                 }
               ],
               "pegadinhas": [
                 "Dizer que singular/múltiplo depende da finalidade dos documentos — não depende, depende da quantidade de instituições atendidas.",
                 "Confundir singular/múltiplo com corrente/intermediário/permanente — esses são por idade dos documentos.",
                 "Confundir singular/múltiplo com centralizado/descentralizado — esses são por localização física.",
-                "Confundir singular/múltiplo com público/privado — esses são por natureza jurídica da instituição."
+                "Confundir singular/múltiplo com público/privado — esses são por natureza jurídica da instituição.",
+                "Dizer que parcialidade é propriedade arquivística — a correta é imparcialidade."
               ],
               "questoes_lista": [
-                "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)"
+                "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)",
+                "#3563764 · AOCP 2025 · Analista do MP (MPE RS)/Arquivologia — acerto (E)"
               ],
               "fontes": [
-                "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)"
+                "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)",
+                "Propriedades arquivísticas: naturalidade, autenticidade, unicidade, organicidade, imparcialidade"
               ]
             },
             {
