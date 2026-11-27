@@ -839,13 +839,13 @@
             {
               "id": "CE-2.1",
               "titulo": "Gestão, classificação e avaliação de documentos",
-              "questoes": 5,
-              "erros": 1,
+              "questoes": 6,
+              "erros": 2,
               "status": "em-mapeamento",
               "decore": {
-                "chave": "Arquivologia em 5 pontos: singular/múltiplo · propriedades · público vs privado · fases · setorial/geral",
-                "truque": "SINGULAR=1 instituição, MÚLTIPLO=várias · propriedades: naturalidade, autenticidade, unicidade, organicidade, IMPARCIALIDADE · arquivo público: produzido E recebido por órgão público (Lei 8.159/91, art. 7º) · fases: corrente -> intermediário -> permanente · extensão: SETORIAL=uma unidade, GERAL/CENTRAL=várias",
-                "erro": "Confundir singular/múltiplo com fases ou localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente/permanente · 4 fases com descarte · valor terciário · natureza público/privado vs arquivo especial · horizontal/vertical é arquivamento"
+                "chave": "Arquivologia em 6 pontos: singular/múltiplo · propriedades · público vs privado · fases · setorial/geral · permanente",
+                "truque": "SINGULAR=1 instituição, MÚLTIPLO=várias · propriedades: naturalidade, autenticidade, unicidade, organicidade, IMPARCIALIDADE · arquivo público: produzido E recebido por órgão público (Lei 8.159/91, art. 7º) · fases: corrente -> intermediário -> permanente · extensão: SETORIAL=uma unidade, GERAL/CENTRAL=várias · permanente: difusão, descrição, arranjo, ordenação; CLASSIFICAÇÃO NÃO",
+                "erro": "Confundir singular/múltiplo com fases ou localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente/permanente · 4 fases com descarte · valor terciário · horizontal/vertical é arquivamento · dizer classificação é atividade do permanente; no permanente é arranjo"
               },
               "explicacao": [
                 "Singular vs múltiplo: a classificação dos arquivos em singulares e múltiplos fundamenta-se na quantidade de instituições atendidas. Arquivo singular atende a uma única entidade, instituição ou produtor documental; arquivo múltiplo atende a mais de uma entidade ou reúne documentos de diferentes instituições/produtores.",
@@ -888,6 +888,13 @@
                   "questoes": [
                     "#3020327"
                   ]
+                },
+                {
+                  "texto": "Atividades típicas do arquivo permanente: difusão, descrição, arranjo, ordenação; CLASSIFICAÇÃO NÃO é típica do permanente (arranjo substitui; classificação vale em corrente/intermediário)",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3035678"
+                  ]
                 }
               ],
               "pegadinhas": [
@@ -904,14 +911,18 @@
                 "Dizer que há valor terciário — valor é primário/secundário.",
                 "Confundir extensão de atuação (setorial/geral ou central) com singular/múltiplo ou com localização.",
                 "Dizer que natureza é arquivo especial/especializado/geral — natureza é público/privado.",
-                "Confundir horizontal/vertical com gênero — horizontal/vertical é arquivamento; gênero é textual/iconográfico/cartográfico/informático..."
+                "Confundir horizontal/vertical com gênero — horizontal/vertical é arquivamento; gênero é textual/iconográfico/cartográfico/informático...",
+                "Dizer que classificação documental é atividade típica do arquivo permanente — no permanente, arranjo substitui; classificação vale em corrente/intermediário.",
+                "Confundir arranjo com classificação no arquivo permanente.",
+                "Esquecer difusão, descrição ou ordenação como atividades do arquivo permanente."
               ],
               "questoes_lista": [
                 "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)",
                 "#3563764 · AOCP 2025 · Analista do MP (MPE RS)/Arquivologia — acerto (E)",
                 "#3097531 · AOCP 2024 · Agente de Servicos Publicos (Pref Uberaba)/Agente Administrativo — acerto (A)",
                 "#3035631 · AOCP 2024 · Analista Judiciário (TRF 2ª Região)/Arquivologia — acerto (B)",
-                "#3020327 · AOCP 2024 · Técnico de Defensoria (DPE MS)/Administrativa — acerto (C)"
+                "#3020327 · AOCP 2024 · Técnico de Defensoria (DPE MS)/Administrativa — acerto (C)",
+                "#3035678 · AOCP 2024 · Analista Judiciário (TRF 2ª Região)/Arquivologia — ERRO (marquei C, gabarito D)"
               ],
               "fontes": [
                 "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)",
