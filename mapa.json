@@ -839,7 +839,7 @@
             {
               "id": "CE-2.1",
               "titulo": "Gestão, classificação e avaliação de documentos",
-              "questoes": 3,
+              "questoes": 4,
               "erros": 1,
               "status": "em-mapeamento",
               "decore": {
@@ -873,6 +873,13 @@
                   "questoes": [
                     "#3097531"
                   ]
+                },
+                {
+                  "texto": "Fases do arquivo por idade: corrente (ativo, uso frequente, junto ao produtor); intermediário (semiativo, baixo uso, aguarda destinação); permanente (preservado por valor histórico/probatório/informativo)",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3035631"
+                  ]
                 }
               ],
               "pegadinhas": [
@@ -882,17 +889,21 @@
                 "Confundir singular/múltiplo com público/privado — esses são por natureza jurídica da instituição.",
                 "Dizer que parcialidade é propriedade arquivística — a correta é imparcialidade.",
                 "Dizer que arquivo publico e so produzido ou so recebido — e produzido E recebido (art. 7o, Lei 8.159/91).",
-                "Dizer que arquivos privados tambem sao arquivos públicos — privado e privado, separado do publico."
+                "Dizer que arquivos privados tambem sao arquivos públicos — privado e privado, separado do publico.",
+                "Confundir fases do arquivo (corrente/intermediário/permanente) com classificação singular/múltiplo — essas são por quantidade de instituições atendidas.",
+                "Dizer que arquivo intermediário é sinônimo de arquivo corrente — são fases distintas por idade e frequência de uso."
               ],
               "questoes_lista": [
                 "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)",
                 "#3563764 · AOCP 2025 · Analista do MP (MPE RS)/Arquivologia — acerto (E)",
-                "#3097531 · AOCP 2024 · Agente de Servicos Publicos (Pref Uberaba)/Agente Administrativo — acerto (A)"
+                "#3097531 · AOCP 2024 · Agente de Servicos Publicos (Pref Uberaba)/Agente Administrativo — acerto (A)",
+                "#3035631 · AOCP 2024 · Analista Judiciário (TRF 2ª Região)/Arquivologia — acerto (B)"
               ],
               "fontes": [
                 "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)",
                 "Propriedades arquivísticas: naturalidade, autenticidade, unicidade, organicidade, imparcialidade",
-                "Lei 8.159/91, art. 7o — definicao de arquivos publicos"
+                "Lei 8.159/91, art. 7o — definicao de arquivos publicos",
+                "Fases do arquivo: corrente/intermediário/permanente (PAES, 1986)"
               ]
             },
             {
