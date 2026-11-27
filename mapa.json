@@ -838,7 +838,41 @@
           "filhos": [
             {
               "id": "CE-2.1",
-              "titulo": "Gestão, classificação e avaliação de documentos"
+              "titulo": "Gestão, classificação e avaliação de documentos",
+              "questoes": 1,
+              "erros": 1,
+              "status": "em-mapeamento",
+              "decore": {
+                "chave": "Singular vs múltiplo = quantidade de instituições atendidas",
+                "truque": "Singular = uma instituição · Múltiplo = várias instituições",
+                "erro": "Confundir com corrente/intermediário/permanente (idade), centralizado/descentralizado (localização) ou público/privado (natureza jurídica)"
+              },
+              "explicacao": [
+                "Arquivo singular: atende a uma única entidade, instituição ou produtor documental.",
+                "Arquivo múltiplo: atende a mais de uma entidade ou reúne documentos de diferentes instituições/produtores.",
+                "Outras classificações: corrente/intermediário/permanente (idade); centralizado/descentralizado (localização); público/privado (natureza jurídica)."
+              ],
+              "incidencias": [
+                {
+                  "texto": "Classificação singular/múltiplo: critério é a quantidade de instituições atendidas (singular = uma; múltiplo = várias)",
+                  "vezes": 1,
+                  "questoes": [
+                    "#4076132"
+                  ]
+                }
+              ],
+              "pegadinhas": [
+                "Dizer que singular/múltiplo depende da finalidade dos documentos — não depende, depende da quantidade de instituições atendidas.",
+                "Confundir singular/múltiplo com corrente/intermediário/permanente — esses são por idade dos documentos.",
+                "Confundir singular/múltiplo com centralizado/descentralizado — esses são por localização física.",
+                "Confundir singular/múltiplo com público/privado — esses são por natureza jurídica da instituição."
+              ],
+              "questoes_lista": [
+                "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)"
+              ],
+              "fontes": [
+                "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)"
+              ]
             },
             {
               "id": "CE-2.2",

@@ -313,8 +313,8 @@ def teste_html(html_gerado: str) -> None:
 
     # contadores das disciplinas contam mapeamento iniciado, não só 'mapeado'
     checar(
-        "1/36" in html_gerado,
-        "CE mostra 1/36 (mapeamento iniciado), não 0/36",
+        "2/36" in html_gerado,
+        "CE mostra 2/36 (mapeamento iniciado: CE-1.1 e CE-2.1), não 0/36",
     )
     checar(re.search(r"<b>\d+</b><span>assuntos</span>", html_gerado) is not None,
            "chip de assuntos presente")
