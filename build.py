@@ -409,9 +409,9 @@ def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
     if explicacao:
         # Teto de 6 parágrafos: o excesso não é apagado, vai para a cauda dobrada.
         visiveis, excedente = explicacao[:6], explicacao[6:]
-        texto = "".join(f"<p>{_negrito(p)}</p>" for p in visiveis)
+        texto = "".join(f'<p class="explic-par">{_negrito(p)}</p>' for p in visiveis)
         if excedente:
-            resto = "".join(f"<p>{_negrito(p)}</p>" for p in excedente)
+            resto = "".join(f'<p class="explic-par">{_negrito(p)}</p>' for p in excedente)
             texto += (
                 f'<details class="cauda"><summary>Ver mais {len(excedente)} '
                 f'parágrafo(s)</summary><div class="explicacao">{resto}</div></details>'
@@ -649,9 +649,13 @@ button,input{font:inherit}
 .bloco ul{margin:0;padding-left:1.1rem;font-size:.85rem}
 .bloco strong{font-weight:700;color:var(--ink)}
 .bloco li{margin:.18rem 0}
-.explicacao{font-size:.9rem;color:var(--text2)}
+.explicacao{font-size:.9rem;color:var(--text2);counter-reset:explic}
 .explicacao p{margin:0 0 .55rem}
 .explicacao p:last-child{margin:0}
+.explic-par{counter-increment:explic;border-top:1px solid var(--line);padding-top:.55rem;margin-top:.55rem}
+.explic-par:first-child{border-top:0;padding-top:0;margin-top:0}
+.explic-par::before{content:'PARTE ' counter(explic);display:block;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.25rem}
+.cauda .explic-par::before{counter-increment:explic}
 .incidencias{list-style:none;padding:0;margin:0}
 .incidencias li{display:flex;gap:.5rem;align-items:flex-start;padding:.3rem 0;border-bottom:1px solid var(--line)}
 .incidencias li:last-child{border-bottom:0}
