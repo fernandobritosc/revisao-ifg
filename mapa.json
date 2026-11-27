@@ -839,13 +839,13 @@
             {
               "id": "CE-2.1",
               "titulo": "Gestão, classificação e avaliação de documentos",
-              "questoes": 4,
+              "questoes": 5,
               "erros": 1,
               "status": "em-mapeamento",
               "decore": {
-                "chave": "Arquivologia em 4 pontos: singular/múltiplo · propriedades · público vs privado · fases",
-                "truque": "SINGULAR=1 instituição, MÚLTIPLO=várias · propriedades: naturalidade, autenticidade, unicidade, organicidade, IMPARCIALIDADE · arquivo público: produzido E recebido por órgão público (Lei 8.159/91, art. 7º) · fases: corrente → intermediário → permanente",
-                "erro": "Confundir singular/múltiplo com fases ou com localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente ou permanente"
+                "chave": "Arquivologia em 5 pontos: singular/múltiplo · propriedades · público vs privado · fases · setorial/geral",
+                "truque": "SINGULAR=1 instituição, MÚLTIPLO=várias · propriedades: naturalidade, autenticidade, unicidade, organicidade, IMPARCIALIDADE · arquivo público: produzido E recebido por órgão público (Lei 8.159/91, art. 7º) · fases: corrente -> intermediário -> permanente · extensão: SETORIAL=uma unidade, GERAL/CENTRAL=várias",
+                "erro": "Confundir singular/múltiplo com fases ou localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente/permanente · 4 fases com descarte · valor terciário · natureza público/privado vs arquivo especial · horizontal/vertical é arquivamento"
               },
               "explicacao": [
                 "Singular vs múltiplo: a classificação dos arquivos em singulares e múltiplos fundamenta-se na quantidade de instituições atendidas. Arquivo singular atende a uma única entidade, instituição ou produtor documental; arquivo múltiplo atende a mais de uma entidade ou reúne documentos de diferentes instituições/produtores.",
@@ -881,6 +881,13 @@
                   "questoes": [
                     "#3035631"
                   ]
+                },
+                {
+                  "texto": "Quanto à extensão de atuação: arquivo setorial atende a uma unidade/setor; arquivo geral ou central reúne documentos de várias unidades/setores",
+                  "vezes": 1,
+                  "questoes": [
+                    "#3020327"
+                  ]
                 }
               ],
               "pegadinhas": [
@@ -892,19 +899,26 @@
                 "Dizer que arquivo publico e so produzido ou so recebido — e produzido E recebido (art. 7o, Lei 8.159/91).",
                 "Dizer que arquivos privados tambem sao arquivos públicos — privado e privado, separado do publico.",
                 "Confundir fases do arquivo (corrente/intermediário/permanente) com classificação singular/múltiplo — essas são por quantidade de instituições atendidas.",
-                "Dizer que arquivo intermediário é sinônimo de arquivo corrente — são fases distintas por idade e frequência de uso."
+                "Dizer que arquivo intermediário é sinônimo de arquivo corrente — são fases distintas por idade e frequência de uso.",
+                "Dizer que há 4 fases do arquivo: corrente, intermediário, permanente ou descarte — descarte é destinação final, não fase.",
+                "Dizer que há valor terciário — valor é primário/secundário.",
+                "Confundir extensão de atuação (setorial/geral ou central) com singular/múltiplo ou com localização.",
+                "Dizer que natureza é arquivo especial/especializado/geral — natureza é público/privado.",
+                "Confundir horizontal/vertical com gênero — horizontal/vertical é arquivamento; gênero é textual/iconográfico/cartográfico/informático..."
               ],
               "questoes_lista": [
                 "#4076132 · AOCP 2025 · Arquivista (IF PB) — ERRO (marquei C, gabarito E)",
                 "#3563764 · AOCP 2025 · Analista do MP (MPE RS)/Arquivologia — acerto (E)",
                 "#3097531 · AOCP 2024 · Agente de Servicos Publicos (Pref Uberaba)/Agente Administrativo — acerto (A)",
-                "#3035631 · AOCP 2024 · Analista Judiciário (TRF 2ª Região)/Arquivologia — acerto (B)"
+                "#3035631 · AOCP 2024 · Analista Judiciário (TRF 2ª Região)/Arquivologia — acerto (B)",
+                "#3020327 · AOCP 2024 · Técnico de Defensoria (DPE MS)/Administrativa — acerto (C)"
               ],
               "fontes": [
                 "Arquivologia — classificação de arquivos: singular e múltiplo (critério: quantidade de instituições atendidas)",
                 "Propriedades arquivísticas: naturalidade, autenticidade, unicidade, organicidade, imparcialidade",
                 "Lei 8.159/91, art. 7o — definicao de arquivos publicos",
-                "Fases do arquivo: corrente/intermediário/permanente (PAES, 1986)"
+                "Fases do arquivo: corrente/intermediário/permanente (PAES, 1986)",
+                "PAES, Marilena Leite. Arquivo: teoria e prática. Rio de Janeiro: FGV, 1986."
               ]
             },
             {
