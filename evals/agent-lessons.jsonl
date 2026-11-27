@@ -1,0 +1,4 @@
+{"id": "layout-not-2col-inside", "tipo": "erro", "problema": "interpretei layout 2 partes como PARTE N em 2 colunas", "correcao_confirmada": "Como decorar span 2 + Onde ja caiu terceira; PARTE N vertical", "arquivo": "build.py"}
+{"id": "pegadinhas-not-bloco-dobra", "tipo": "erro", "problema": "nao convertia Pegadinhas em bloco-dobra", "correcao_confirmada": "Pegadinhas <details class=\"bloco-dobra\"> no fim", "arquivo": "build.py"}
+{"id": "claimed-not-watched-video", "tipo": "erro", "problema": "nao pude recuperar video; nao fingir", "correcao_confirmada": "honesto; pedir transcricao", "arquivo": null}
+{"id": "no-langsmith-traces", "tipo": "incerteza", "problema": "nao ha traces/projeto LangSmith", "correcao_confirmada": "scaffold conservador; nao afirmar integracao", "arquivo": "HARNESS-ENGINEERING.md"}
