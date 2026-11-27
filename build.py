@@ -376,11 +376,16 @@ def _lista_com_cauda(
 
 
 def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
-    """Questões e fontes ficam dobradas; o resto aparece aberto no cartão."""
-    if titulo in {"Questões", "Fontes"}:
+    """Questões, fontes e pegadinhas ficam dobradas; o resto aparece aberto no cartão."""
+    if titulo in {"Questões", "Fontes", "Pegadinhas"}:
         total = conteudo.count("<li")
-        rotulo = "questão(ões)" if titulo == "Questões" else "fonte(s)"
-        contador = f"{total} {rotulo} — ver mais" if total else f"{total} {rotulo}"
+        if titulo == "Questões":
+            rotulo = "questão(ões)"
+        elif titulo == "Fontes":
+            rotulo = "fonte(s)"
+        else:
+            rotulo = "pegadinha(s)"
+        contador = f"{total} {rotulo} · ver mais" if total else f"{total} {rotulo}"
         return (
             '<details class="bloco bloco-dobra">'
             f'<summary>{esc(titulo)} · <span class="conta">{contador}</span>'
@@ -388,7 +393,8 @@ def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
             f'<div class="dobra-conteudo">{conteudo}</div></details>'
         )
     classe = " keep" if manter else ""
-    return f'<section class="bloco{classe}"><h5>{esc(titulo)}</h5>{conteudo}</section>'
+    extra = " como-decorar" if titulo == "Como decorar" else ""
+    return f'<section class="bloco{classe}{extra}"><h5>{esc(titulo)}</h5>{conteudo}</section>'
 
 
 def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
@@ -418,6 +424,11 @@ def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
             )
         blocos.append(("Como decorar", f'<div class="explicacao">{texto}</div>', True))
     blocos.append(("Onde já caiu (incidência)", _incidencias_html(node.get("incidencias", [])), True))
+    registro = _registros_do_assunto(node, bruto)
+    blocos.append(("Questões", _lista_marcada(registro, "Nenhuma questão colada ainda."), False))
+    if node.get("fora_do_resumo"):
+        blocos.append(("Fora do resumo", _lista(node.get("fora_do_resumo")), False))
+    blocos.append(("Fontes", _lista(node.get("fontes"), "Nenhuma fonte registrada."), False))
     blocos.append((
         "Pegadinhas",
         _lista_com_cauda(
@@ -428,11 +439,6 @@ def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
         ),
         False,
     ))
-    registro = _registros_do_assunto(node, bruto)
-    blocos.append(("Questões", _lista_marcada(registro, "Nenhuma questão colada ainda."), False))
-    if node.get("fora_do_resumo"):
-        blocos.append(("Fora do resumo", _lista(node.get("fora_do_resumo")), False))
-    blocos.append(("Fontes", _lista(node.get("fontes"), "Nenhuma fonte registrada."), False))
     corpo = "".join(
         _bloco_html(titulo, conteudo, manter)
         for titulo, conteudo, manter in blocos
@@ -635,7 +641,7 @@ button,input{font:inherit}
 .cauda summary::-webkit-details-marker{display:none}
 .cauda summary::before{content:"▸ ";font-weight:700}
 .cauda[open] summary::before{content:"▾ "}
-.bloco-dobra{border-top:1px solid var(--line);padding-top:.5rem}
+.bloco-dobra{border-top:1px solid var(--line);padding-top:.5rem}.como-decorar{grid-column:1/-1}.como-decorar .explicacao{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.55rem}.como-decorar .explic-par{margin:0;border-top:0;padding-top:0}.como-decorar .explic-par::before{margin-bottom:.25rem}
 .bloco-dobra summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:.35rem;font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
 .bloco-dobra summary::-webkit-details-marker{display:none}
 .bloco-dobra summary::before{content:"▸";font-weight:700}
