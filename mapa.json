@@ -848,9 +848,10 @@
                 "erro": "Confundir singular/múltiplo com fases ou com localização · dizer parcialidade é propriedade (é imparcialidade) · dizer arquivo público é só produzido ou só recebido · confundir intermediário com corrente ou permanente"
               },
               "explicacao": [
-                "Arquivo singular: atende a uma única entidade, instituição ou produtor documental.",
-                "Arquivo múltiplo: atende a mais de uma entidade ou reúne documentos de diferentes instituições/produtores.",
-                "Outras classificações: corrente/intermediário/permanente (idade); centralizado/descentralizado (localização); público/privado (natureza jurídica)."
+                "Singular vs múltiplo: a classificação dos arquivos em singulares e múltiplos fundamenta-se na quantidade de instituições atendidas. Arquivo singular atende a uma única entidade, instituição ou produtor documental; arquivo múltiplo atende a mais de uma entidade ou reúne documentos de diferentes instituições/produtores.",
+                "Propriedades arquivísticas dos documentos: naturalidade, autenticidade, unicidade, organicidade e imparcialidade. A naturalidade vem da forma contínua e espontânea de produção; a autenticidade decorre de produção, manutenção e custódia regulares; a unicidade é o lugar próprio de cada documento; a organicidade é a relação natural com o conjunto do mesmo produtor; a imparcialidade é a ausência de intenção de construir uma versão para o futuro.",
+                "Arquivos públicos: são os conjuntos de documentos produzidos e recebidos por órgãos públicos, no exercício de funções administrativas, legislativas ou judiciárias. A base legal é o art. 7º da Lei 8.159/91. Arquivo público não é só produzido nem só recebido, e arquivo privado não faz parte da definição.",
+                "Fases do arquivo por idade: arquivo corrente/ativo usa com frequência e fica junto ao produtor; arquivo intermediário/semiativo tem baixo uso, aguarda destinação final e pode ficar fora da unidade produtora; arquivo permanente preserva documentos sem relação com a finalidade original, por valor histórico, probatório ou informativo."
               ],
               "incidencias": [
                 {
