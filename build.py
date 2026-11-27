@@ -393,7 +393,7 @@ def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
             f'<div class="dobra-conteudo">{conteudo}</div></details>'
         )
     classe = " keep" if manter else ""
-    extra = " como-decorar" if titulo == "Como decorar" else ""
+    extra = " como-decorar" if titulo == "Como decorar" else (" onde-caiu" if titulo.startswith("Onde já caiu") else "")
     return f'<section class="bloco{classe}{extra}"><h5>{esc(titulo)}</h5>{conteudo}</section>'
 
 
@@ -631,7 +631,8 @@ button,input{font:inherit}
 .ponto-em-mapeamento{background:#f59e0b}
 .ponto-mapeado{background:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.16)}
 .conta{font-size:.72rem;color:var(--muted);flex:none}
-.cartao{padding:.2rem 1rem 1.1rem;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cartao{padding:.2rem 1rem 1.1rem;display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:860px){.cartao{grid-template-columns:1fr}.como-decorar,.onde-caiu{grid-column:1/-1}}
 .decore{grid-column:1/-1;background:linear-gradient(120deg,#1e293b,#0f766e);color:#fff;border-radius:10px;padding:.8rem 1rem;display:grid;gap:.45rem}
 .decore div{display:grid;grid-template-columns:88px 1fr;gap:.6rem;align-items:start}
 .decore span{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7;font-weight:700;padding-top:.15rem}
@@ -641,7 +642,7 @@ button,input{font:inherit}
 .cauda summary::-webkit-details-marker{display:none}
 .cauda summary::before{content:"▸ ";font-weight:700}
 .cauda[open] summary::before{content:"▾ "}
-.bloco-dobra{border-top:1px solid var(--line);padding-top:.5rem}.como-decorar{grid-column:1/-1}.como-decorar .explicacao{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.55rem}.como-decorar .explic-par{margin:0;border-top:0;padding-top:0}.como-decorar .explic-par::before{margin-bottom:.25rem}
+.bloco-dobra{border-top:1px solid var(--line);padding-top:.5rem}.como-decorar{grid-column:1/span 2}.onde-caiu{grid-column:3}.como-decorar .explicacao{display:block}.como-decorar .explic-par{margin-top:.55rem}
 .bloco-dobra summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:.35rem;font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
 .bloco-dobra summary::-webkit-details-marker{display:none}
 .bloco-dobra summary::before{content:"▸";font-weight:700}
