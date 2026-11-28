@@ -180,22 +180,22 @@ def main():
     if args.tipo in ("classificacao", "todos"):
         casos = load_cases("classificacao")
         if casos:
-            print(f"\n📋 Classificação: {len(casos)} casos...")
+            print(f"\n[Classificacao] {len(casos)} casos...")
             r = eval_classificacao(casos, args.model)
             resultados.append(r)
-            print(f"   Acurácia: {r['acuracia']}% ({r['acertos']}/{r['total']})")
+            print(f"   Acuracia: {r['acuracia']}% ({r['acertos']}/{r['total']})")
         else:
-            print("⚠️  Nenhum caso de classificação encontrado")
+            print("[AVISO] Nenhum caso de classificacao encontrado")
 
     if args.tipo in ("fusao", "todos"):
         casos = load_cases("fusao")
         if casos:
-            print(f"\n🔗 Fusão: {len(casos)} casos...")
+            print(f"\n[Fusao] {len(casos)} casos...")
             r = eval_fusao(casos, args.model)
             resultados.append(r)
-            print(f"   Acurácia: {r['acuracia']}% ({r['acertos']}/{r['total']})")
+            print(f"   Acuracia: {r['acuracia']}% ({r['acertos']}/{r['total']})")
         else:
-            print("⚠️  Nenhum caso de fusão encontrado")
+            print("[AVISO] Nenhum caso de fusao encontrado")
 
     # Resumo geral
     if resultados:
@@ -209,14 +209,14 @@ def main():
         for r in resultados:
             erros = [d for d in r["detalhes"] if not d["ok"]]
             if erros:
-                print(f"\n❌ Erros em {r['tipo']}:")
+                print(f"\n[ERROS] {r['tipo']}:")
                 for e in erros:
                     print(f"  {e['id']}: esperado={e.get('esperado') or e.get('esperado_acao')}, previsto={e.get('previsto') or e.get('previsto_acao')}")
 
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:
             json.dump(resultados, f, ensure_ascii=False, indent=2)
-        print(f"\n💾 Resultados salvos em {args.output}")
+        print(f"\n[OK] Resultados salvos em {args.output}")
 
     # Exit code: 0 se >= 80%, 1 caso contrário
     if resultados:
