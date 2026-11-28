@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/validate_mapa.py",
+            "timeout": 60,
+            "statusMessage": "Validando mapa.json..."
+          }
+        ]
+      }
+    ]
+  }
+}
