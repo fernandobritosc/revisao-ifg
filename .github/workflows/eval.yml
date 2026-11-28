@@ -1,0 +1,46 @@
+name: Eval Harness
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Claude CLI
+        run: |
+          curl -fsSL https://claude.ai/install.sh | sh
+          echo "$HOME/.claude/local/bin" >> $GITHUB_PATH
+
+      - name: Verify Claude CLI
+        run: claude --version
+
+      - name: Run eval harness
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python evals/run.py --model sonnet
+
+      - name: Upload eval results (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: evals/resultados_*.json
+          retention-days: 7
