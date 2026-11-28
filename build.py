@@ -347,14 +347,20 @@ def _incidencias_html(incidencias: list[dict[str, Any]]) -> str:
 
 
 def _lista_marcada(itens: list[Any], vazio: str) -> str:
-    """Lista que marca em vermelho as questões registradas como erro."""
+    """Lista que marca em vermelho as questões registradas como erro, com checkbox Refazer."""
     if not itens:
         return f'<p class="vazio">{esc(vazio)}</p>'
     linhas = []
     for item in itens:
         texto = str(item)
-        classe = ' class="questao-erro"' if "ERRO" in texto else ""
-        linhas.append(f"<li{classe}>{_negrito(texto)}</li>")
+        is_erro = "ERRO" in texto
+        classe = ' class="questao-erro"' if is_erro else ""
+        refiz = ''
+        if is_erro:
+            # Extrair ID da questão para o checkbox
+            id_match = texto.split(" · ")[0].lstrip("#").strip()
+            refiz = f' <label class="refiz"><input type="checkbox"> Refazer</label>'
+        linhas.append(f"<li{classe}>{_negrito(texto)}{refiz}</li>")
     return "<ul>" + "".join(linhas) + "</ul>"
 
 
@@ -398,6 +404,19 @@ def _bloco_html(titulo: str, conteudo: str, manter: bool) -> str:
 
 
 def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
+    # Verificar se o tópico tem conteúdo real
+    tem_decore = bool(node.get("decore") and any(node["decore"].get(k) for k in ("chave", "truque", "erro")))
+    tem_explicacao = bool(node.get("explicacao") and any(str(p).strip() for p in node["explicacao"]))
+    tem_incidencias = bool(node.get("incidencias") and any(isinstance(i, dict) and i.get("vezes", 0) > 0 for i in node["incidencias"]))
+    tem_questoes = bool(_registros_do_assunto(node, bruto))
+    tem_fora_resumo = bool(node.get("fora_do_resumo"))
+    tem_fontes = bool(node.get("fontes"))
+    tem_pegadinhas = bool(node.get("pegadinhas"))
+    tem_nota = bool(node.get("notas") or node.get("nota"))
+
+    if not (tem_decore or tem_explicacao or tem_incidencias or tem_questoes or tem_fora_resumo or tem_fontes or tem_pegadinhas or tem_nota):
+        return '<div class="cartao-vazio">Nenhum conteúdo registrado para este assunto ainda.</div>'
+
     cabecalho = ""
     decore = node.get("decore")
     if isinstance(decore, dict) and decore:
@@ -450,7 +469,7 @@ def _cartao(node: dict[str, Any], bruto: list[dict[str, Any]]) -> str:
 
 
 def _topico(
-    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None
+    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None, tid: int = 0
 ) -> str:
     numero = _numero(node)
     titulo = node.get("titulo", "")
@@ -464,18 +483,21 @@ def _topico(
         freq = f'<span class="freq freq-{classe}">{vezes}x</span>'
         freq += f'<span class="score" title="incidência × peso da disciplina">P{score}</span>'
     extra = ""
-    if node.get("questoes") or node.get("erros"):
-        extra = f'<span class="conta">{int(node["questoes"])} q · {int(node["erros"])} e</span>'
-    cobertura = min(int(node.get("questoes", 0)), 3)
+    questoes_count = int(node.get("questoes", 0))
+    erros_count = int(node.get("erros", 0))
+    if questoes_count or erros_count:
+        extra = f'<span class="conta">{questoes_count} q · {erros_count} e</span>'
+    cobertura = min(questoes_count, 3)
     revisado = _revisado_info(node)
-    revisado_html = (
-        f'<span class="revisado revisado-{revisado[1]}">{esc(revisado[0])}</span>'
-        if revisado else ""
-    )
+    if revisado:
+        revisado_html = f'<span class="revisado revisado-{revisado[1]}">{esc(revisado[0])}</span>'
+    else:
+        # Badge "novo" para tópicos nunca revisados
+        revisado_html = '<span class="revisado revisado-novo">novo</span>'
     return (
         f'<details class="topico" data-status="{esc(status)}" data-inc="{vezes}" '
-        f'data-score="{score}" data-erros="{int(node.get("erros", 0))}" '
-        f'data-busca="{esc(busca)}">'
+        f'data-score="{score}" data-erros="{erros_count}" data-questoes="{questoes_count}" '
+        f'data-busca="{esc(busca)}" data-tid="t{tid}">'
         f'<summary><span class="num cobertura-{cobertura}">{esc(numero)}</span>'
         f'<span class="titulo">{esc(titulo)}</span>{freq}{revisado_html}'
         f'<span class="ponto ponto-{esc(status)}" title="{esc(STATUS_LABEL.get(status, status))}"></span>'
@@ -484,18 +506,29 @@ def _topico(
 
 
 def _grupo(
-    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None
+    node: dict[str, Any], peso: int = 1, bruto: list[dict[str, Any]] | None = None, tid_counter: list[int] | None = None
 ) -> str:
     filhos = _filhos(node)
+    if tid_counter is None:
+        tid_counter = [0]
     if not filhos:
-        return _topico(node, peso, bruto)
-    itens = "".join(_topico(filho, peso, bruto) for filho in filhos)
+        tid = tid_counter[0]
+        tid_counter[0] += 1
+        return _topico(node, peso, bruto, tid)
+    itens = []
+    for filho in filhos:
+        if _filhos(filho):
+            itens.append(_grupo(filho, peso, bruto, tid_counter))
+        else:
+            tid = tid_counter[0]
+            tid_counter[0] += 1
+            itens.append(_topico(filho, peso, bruto, tid))
     return (
         f'<div class="grupo" data-status="{esc(node["status"])}">'
         f'<div class="grupo-head"><span class="num">{esc(_numero(node))}</span>'
         f'<h4>{esc(node.get("titulo", ""))}</h4>'
         f'<span class="conta">{len(filhos)} assuntos</span></div>'
-        f'<div class="topicos">{itens}</div></div>'
+        f'<div class="topicos">{"".join(itens)}</div></div>'
     )
 
 
@@ -511,10 +544,16 @@ def _disciplina(
     feitos, total = _progresso(folhas)
     pct = round(100 * feitos / total) if total else 0
     peso = int(disc["peso"])
-    corpo = "".join(
-        _grupo(f, peso, bruto) if _filhos(f) else _topico(f, peso, bruto)
-        for f in _filhos(raiz)
-    )
+    tid_counter = [0]
+    corpo_parts = []
+    for f in _filhos(raiz):
+        if _filhos(f):
+            corpo_parts.append(_grupo(f, peso, bruto, tid_counter))
+        else:
+            tid = tid_counter[0]
+            tid_counter[0] += 1
+            corpo_parts.append(_topico(f, peso, bruto, tid))
+    corpo = "".join(corpo_parts)
     return (
         f'<section class="disciplina" id="disc-{esc(disc_id)}" '
         f'style="--accent:{CORES[disc_id][0]};--soft:{CORES[disc_id][1]}">'
@@ -627,6 +666,7 @@ button,input{font:inherit}
 .revisado-recente{background:#d1fae5;color:#047857}
 .revisado-atencao{background:#fef3c7;color:#b45309}
 .revisado-atrasado{background:#fee2e2;color:#b91c1c}
+.revisado-novo{background:#eef1f5;color:#526071}
 .ponto{width:9px;height:9px;border-radius:50%;background:#b6bfcb;flex:none}
 .ponto-em-mapeamento{background:#f59e0b}
 .ponto-mapeado{background:#10b981;box-shadow:0 0 0 3px rgba(16,185,129,.16)}
@@ -720,10 +760,34 @@ const botoesStatus = document.querySelectorAll('[data-filtro]');
 const botoesFreq = document.querySelectorAll('[data-freq]');
 const botoesScore = document.querySelectorAll('[data-score-filtro]');
 const btnErros = document.getElementById('meus-erros');
+const btnHoje = document.getElementById('revisar-hoje');
+const btnLimpar = document.getElementById('limpar-filtros');
+const btnExpandir = document.getElementById('expandir-todos');
+const vazioGeral = document.getElementById('vazio-geral');
 let filtro = 'todos';
 let freq = 'todas';
 let scoreFiltro = 'todos';
 let soErros = false;
+let soHoje = false;
+
+// Dados de revisão e erros refeitos (localStorage)
+function vazioDados() { return { revs: Object.create(null), refeitos: Object.create(null) }; }
+let dados = vazioDados();
+try { const s = localStorage.getItem('mapa-dados'); if (s) dados = JSON.parse(s); } catch (e) { /* navegação restrita */ }
+function salvar() { try { localStorage.setItem('mapa-dados', JSON.stringify(dados)); } catch (e) { /* navegação restrita */ } }
+
+// IDs estáveis para cada tópico
+document.querySelectorAll('.topico').forEach((t, i) => {
+  t._tid = t.dataset.tid || `t${i}`;
+  t._errosTotal = Number(t.dataset.erros || 0);
+  t._temConteudo = !t.querySelector(':scope > .cartao-vazio');
+  // Marcar erros refeitos salvos
+  const mapa = dados.refeitos[t._tid] || {};
+  t.querySelectorAll('li.questao-erro').forEach(li => {
+    const id = li.textContent.match(/#(\\d+)/);
+    if (id && mapa[id[1]]) li.classList.add('refeito');
+  });
+});
 
 function marcar(botoes, ativo) {
   botoes.forEach(b => {
@@ -733,8 +797,15 @@ function marcar(botoes, ativo) {
   });
 }
 
+function atualizarVazioGeral() {
+  const visiveis = [...document.querySelectorAll('.topico')].filter(t => !t.hidden).length;
+  const temFiltro = q || filtro !== 'todos' || freq !== 'todas' || scoreFiltro !== 'todos' || soErros || soHoje;
+  if (vazioGeral) vazioGeral.hidden = !(temFiltro && visiveis === 0);
+}
+
 function aplicar() {
   const q = busca.value.toLowerCase().trim();
+  const hoje = new Date().toISOString().slice(0, 10);
   document.querySelectorAll('.topico').forEach(el => {
     const okBusca = !q || (el.dataset.busca || '').includes(q);
     const okStatus = filtro === 'todos' ||
@@ -743,7 +814,9 @@ function aplicar() {
     const okFreq = freq === 'todas' || (freq === '3+' ? n >= 3 : n === Number(freq.replace('x','')));
     const okScore = scoreFiltro === 'todos' || Number(el.dataset.score || 0) >= 9;
     const okErro = !soErros || Number(el.dataset.erros || 0) > 0;
-    el.hidden = !(okBusca && okStatus && okFreq && okScore && okErro);
+    const rev = dados.revs[el._tid];
+    const okHoje = !soHoje || (rev && rev === hoje);
+    el.hidden = !(okBusca && okStatus && okFreq && okScore && okErro && okHoje);
   });
   document.querySelectorAll('.grupo').forEach(g => {
     g.hidden = ![...g.querySelectorAll('.topico')].some(t => !t.hidden);
@@ -752,9 +825,10 @@ function aplicar() {
     d.hidden = ![...d.querySelectorAll('.topico')].some(t => !t.hidden);
   });
   const visiveis = [...document.querySelectorAll('.topico')].filter(t => !t.hidden).length;
+  const temFiltro = q || filtro !== 'todos' || freq !== 'todas' || scoreFiltro !== 'todos' || soErros || soHoje;
   document.getElementById('resultado').textContent =
-    (q || filtro !== 'todos' || freq !== 'todas' || scoreFiltro !== 'todos' || soErros)
-      ? visiveis + ' assunto(s) encontrado(s)' : '';
+    temFiltro ? visiveis + ' assunto(s) encontrado(s)' : '';
+  atualizarVazioGeral();
 }
 busca.addEventListener('input', aplicar);
 botoesStatus.forEach(b => b.addEventListener('click', () => {
@@ -781,6 +855,9 @@ btnErros.addEventListener('click', () => {
     filtro = 'todos';
     freq = 'todas';
     scoreFiltro = 'todos';
+    soHoje = false;
+    btnHoje.classList.remove('ligado');
+    btnHoje.setAttribute('aria-pressed', 'false');
     marcar(botoesStatus, b => b.dataset.filtro === 'todos');
     marcar(botoesFreq, b => b.dataset.freq === 'todas');
     marcar(botoesScore, b => b.dataset.scoreFiltro === 'todos');
@@ -791,6 +868,71 @@ btnErros.addEventListener('click', () => {
   });
 });
 
+btnHoje.addEventListener('click', () => {
+  soHoje = !soHoje;
+  btnHoje.classList.toggle('ligado', soHoje);
+  btnHoje.setAttribute('aria-pressed', soHoje ? 'true' : 'false');
+  if (soHoje) {
+    soErros = false;
+    btnErros.classList.remove('ligado');
+    btnErros.setAttribute('aria-pressed', 'false');
+  }
+  aplicar();
+  if (soHoje) document.querySelectorAll('.topico').forEach(t => {
+    if (!t.hidden) t.open = true;
+  });
+});
+
+btnLimpar?.addEventListener('click', () => {
+  filtro = 'todos'; freq = 'todas'; scoreFiltro = 'todos'; soErros = false; soHoje = false;
+  btnErros.classList.remove('ligado'); btnErros.setAttribute('aria-pressed', 'false');
+  btnHoje.classList.remove('ligado'); btnHoje.setAttribute('aria-pressed', 'false');
+  buscar.value = '';
+  marcar(botoesStatus, b => b.dataset.filtro === 'todos');
+  marcar(botoesFreq, b => b.dataset.freq === 'todas');
+  marcar(botoesScore, b => b.dataset.scoreFiltro === 'todos');
+  aplicar();
+});
+
+btnExpandir?.addEventListener('click', () => {
+  document.querySelectorAll('.topico:not([hidden])').forEach(t => t.open = true);
+});
+
+// Erros refeitos: click no label "Refazer" alterna classe e salva
+document.querySelectorAll('.refiz input').forEach(cb => {
+  cb.addEventListener('change', e => {
+    const li = e.target.closest('li.questao-erro');
+    if (!li) return;
+    const t = li.closest('.topico');
+    if (!t) return;
+    const idMatch = li.textContent.match(/#(\\d+)/);
+    if (!idMatch) return;
+    const id = idMatch[1];
+    const mapa = dados.refeitos[t._tid] || (dados.refeitos[t._tid] = Object.create(null));
+    if (e.target.checked) mapa[id] = true;
+    else { delete mapa[id]; if (!Object.keys(mapa).length) delete dados.refeitos[t._tid]; }
+    li.classList.toggle('refeito', e.target.checked);
+    salvar();
+    // Atualizar contador de erros no botão
+    const feitos = dados.refeitos[t._tid] || {};
+    const pend = Math.max(0, t._errosTotal - Object.keys(feitos).length);
+    const conta = t.querySelector('.conta');
+    if (conta) conta.textContent = `${t.dataset.questoes || 0} q · ${pend} e`;
+  });
+});
+
+// Inicializar checkboxes de refazer
+document.querySelectorAll('.topico').forEach(t => {
+  const feitos = dados.refeitos[t._tid] || {};
+  t.querySelectorAll('li.questao-erro').forEach(li => {
+    const idMatch = li.textContent.match(/#(\\d+)/);
+    if (idMatch && feitos[idMatch[1]]) {
+      const cb = li.querySelector('.refiz input');
+      if (cb) cb.checked = true;
+    }
+  });
+});
+
 const btnRevisao = document.getElementById('revisao-rapida');
 btnRevisao.addEventListener('click', () => {
   const ativo = document.body.classList.toggle('modo-revisao');
@@ -798,9 +940,9 @@ btnRevisao.addEventListener('click', () => {
   btnRevisao.setAttribute('aria-pressed', ativo ? 'true' : 'false');
   freq = ativo ? '3+' : 'todas';
   scoreFiltro = 'todos';
-  soErros = false;
-  btnErros.classList.remove('ligado');
-  btnErros.setAttribute('aria-pressed', 'false');
+  soErros = false; soHoje = false;
+  btnErros.classList.remove('ligado'); btnErros.setAttribute('aria-pressed', 'false');
+  btnHoje.classList.remove('ligado'); btnHoje.setAttribute('aria-pressed', 'false');
   marcar(botoesFreq, b => b.dataset.freq === freq);
   marcar(botoesScore, b => b.dataset.scoreFiltro === 'todos');
   aplicar();
@@ -830,6 +972,7 @@ marcar(botoesFreq, b => b.classList.contains('ativo'));
 marcar(botoesScore, b => b.classList.contains('ativo'));
 btnErros.setAttribute('aria-pressed', 'false');
 btnRevisao.setAttribute('aria-pressed', 'false');
+btnHoje?.setAttribute('aria-pressed', 'false');
 """
 
 
@@ -866,14 +1009,16 @@ def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None)
         f'{esc(concurso["regra"])}</p></div>'
         f'<div class="chips">{chips}</div></div></header>'
         '<div class="layout"><aside class="nav">'
-        '<input class="busca" id="busca" type="search" placeholder="Buscar assunto...">'
+        '<input class="busca" id="busca" type="search" placeholder="Buscar assunto, termo ou #ID..." aria-label="Buscar assunto, termo ou número de questão">'
+        '<details class="nav-filtros" id="nav-filtros" open><summary>Filtros e navegação</summary>'
         '<p class="nav-titulo">Aparência</p>'
         '<div class="filtros">'
         '<button data-modo="claro">Modo claro</button>'
         '<button data-modo="escuro">Modo escuro</button></div>'
+        '<p class="nav-titulo">Status</p>'
         '<div class="filtros">'
         '<button data-filtro="todos" class="ativo">Todos</button>'
-        '<button data-filtro="mapeado">Mapeados</button>'
+        '<button data-filtro="mapeado" title="Assuntos com 3 ou mais questões">Mapeados</button>'
         '<button data-filtro="pendente">Pendentes</button></div>'
         '<p class="nav-titulo">Filtrar por incidência</p>'
         '<div class="filtros">'
@@ -884,14 +1029,26 @@ def renderizar(dados: dict[str, Any], bruto: list[dict[str, Any]] | None = None)
         '<button class="revisao-btn" id="revisao-rapida">⚡ Revisão rápida (3+ vezes)</button>'
         '<button class="revisao-btn erro-btn" id="meus-erros">'
         f'⚠ Meus erros · {stats["erros"]} em {stats["assuntos_com_erros"]} assunto(s)</button>'
+        '<button class="revisao-btn hoje-btn" id="revisar-hoje">📅 Revisar hoje</button>'
         '<p class="nav-titulo">Prioridade (incidência × peso)</p>'
         '<div class="filtros">'
         '<button data-score-filtro="todos" class="ativo">Todas</button>'
         '<button data-score-filtro="alto">Alta (9+)</button></div>'
         '<p class="legenda">Cobertura: <b>cinza</b> = 0 questão · '
         '<b>âmbar</b> = 1–2 · <b>verde</b> = 3+</p>'
-        f'{_nav(dados)}<p class="resultado" id="resultado"></p>'
-        '</aside><main id="conteudo" tabindex="-1">' + conteudo + '</main></div>'
+        f'{_nav(dados)}'
+        '<div class="acoes">'
+        '<button id="limpar-filtros" title="Limpar todos os filtros e busca">Limpar filtros</button>'
+        '<button id="expandir-todos" title="Expandir todos os tópicos visíveis">Expandir todos</button>'
+        '</div>'
+        '<p class="resultado" id="resultado"></p>'
+        '</details></aside>'
+        '<main id="conteudo" tabindex="-1">'
+        '<div id="vazio-geral" class="vazio-geral" hidden>'
+        'Nenhum assunto encontrado com os filtros atuais.'
+        '<div class="acoes"><button id="limpar-filtros-2">Limpar filtros</button></div>'
+        '</div>'
+        + conteudo + '</main></div>'
         f'<footer class="rodape">Fonte da hierarquia: {esc(concurso["fonte"])}. '
         'Gerado por build.py a partir de mapa.json.</footer>'
         f"<script>{JS}</script>\n</body>\n</html>\n"
