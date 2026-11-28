@@ -11,6 +11,17 @@
             "statusMessage": "Validando mapa.json..."
           }
         ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/validate_questoes.py",
+            "timeout": 60,
+            "statusMessage": "Validando questoes.jsonl..."
+          }
+        ]
       }
     ]
   }
