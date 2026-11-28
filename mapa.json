@@ -175,7 +175,7 @@
           "id": "CC-2.1",
           "titulo": "CF/88 — Título III, Cap. VII (Administração Pública); Título VIII, Caps. III e IV (Educação, Cultura, Desporto, Ciência e Tecnologia)",
           "status": "em-mapeamento",
-          "questoes": 23,
+          "questoes": 25,
           "erros": 4,
           "revisado_em": null,
           "decore": {
@@ -260,21 +260,23 @@
             },
             {
               "texto": "Princípios expressos do art. 37, caput: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE)",
-              "vezes": 4,
+              "vezes": 5,
               "questoes": [
                 "#4013755",
                 "#3569997",
                 "#3732358",
-                "#2959187"
+                "#2959187",
+                "#3106665"
               ]
             },
             {
               "texto": "Criação de autarquia e autorização de empresa pública, sociedade de economia mista e fundação dependem de lei específica (art. 37, XIX)",
-              "vezes": 3,
+              "vezes": 4,
               "questoes": [
                 "#4163319",
                 "#3451741",
-                "#3535613"
+                "#3535613",
+                "#3020314"
               ]
             },
             {
@@ -385,7 +387,8 @@
             "#2959346 · AOCP 2024 · Auditor (UFTM) — acerto (A)",
             "#2959347 · AOCP 2024 · Auditor (UFTM) — acerto (B)",
             "#2961540 · AOCP 2024 · Técnico (UFTM)/Laboratório/Biologia — acerto (A)",
-            "#3014254 · AOCP 2024 · Analista de Defensoria (DPE MS)/Contador — ERRO (marquei B, gabarito D)"
+            "#3014254 · AOCP 2024 · Analista de Defensoria (DPE MS)/Contador — ERRO (marquei B, gabarito D)",
+            "#3106665 · AOCP 2024 · Procurador do Município (Pref Uberaba) — acerto (A)"
           ],
           "fora_do_resumo": [],
           "fontes": [
